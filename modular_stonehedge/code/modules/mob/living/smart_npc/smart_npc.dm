@@ -68,7 +68,7 @@
 	if(L.lying && !L.get_active_held_item())
 		if(ishuman(L) && L.mind)
 			var/mob/living/carbon/human/badboi = L
-			if(badboi == lasthitter && Adjacent(badboi) && !badboi.handcuffed)
+			if(badboi == lasthitter && Adjacent(badboi) && !badboi.handcuffed && get_num_arms(TRUE) > 1)
 				var/obj/item/grabbing/G = new()
 				var/used_limb = badboi.find_used_grab_limb(src)
 				G.name = "[badboi]'s [parse_zone(used_limb)]"

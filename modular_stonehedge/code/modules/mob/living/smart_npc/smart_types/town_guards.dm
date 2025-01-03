@@ -120,7 +120,7 @@
 
 		// Handle lying targets
 		if(H.lying && !H.get_active_held_item())
-			if(H.mind && H == lasthitter && Adjacent(H) && !H.handcuffed)
+			if(H.mind && H == lasthitter && Adjacent(H) && !H.handcuffed && get_num_arms(TRUE) > 1)
 				say("I got you now, criminal scum.")
 				if(do_after_mob(src, H, 3 SECONDS, FALSE))
 					if(world.time > (last_report + 5 MINUTES))
