@@ -15906,8 +15906,6 @@
 	})
 "iCS" = (
 /obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "roomvi","roomvii";
 	name = "Terrace"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
