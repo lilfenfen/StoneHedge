@@ -174,7 +174,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/poison/giant_spider = 30,
 				/mob/living/simple_animal/hostile/retaliate/rogue/poison/giant_spider/hunter = 30,
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 30,
-				/mob/living/carbon/human/species/human/smart_npc = 20)
+				/mob/living/carbon/human/species/human/smart_npc/bandit = 20)
 	first_time_text = "THE FOREST"
 	converted_type = /area/rogue/indoors/shelter/woods
 /area/rogue/indoors/shelter/woods
