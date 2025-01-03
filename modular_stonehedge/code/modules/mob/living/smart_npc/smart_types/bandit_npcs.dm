@@ -33,6 +33,10 @@
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/human/smart_npc/bandit/pre_equip(mob/living/carbon/human/H)
+	if(prob(50)) //no free decaps
+		neck = /obj/item/clothing/neck/roguetown/gorget
+	else
+		neck = /obj/item/clothing/neck/roguetown/chaincoif
 	if(prob(85)) //normal bois
 		if(prob(50))
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather //leather bracers
@@ -120,9 +124,7 @@
 	H.STAEND = 12
 	H.STAINT = 12
 	H.STASTR = rand(12,15)
-	if(prob(30))
-		neck = /obj/item/clothing/neck/roguetown/chaincoif
-		H.eye_color = pick("27becc", "35cc27", "000000")
+	H.eye_color = pick("27becc", "35cc27", "000000")
 	H.hair_color = pick ("4f4f4f", "61310f", "faf6b9")
 	H.facial_hair_color = H.hair_color
 	//im not gonna ass with making them race named.
