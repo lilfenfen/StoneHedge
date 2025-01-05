@@ -880,6 +880,7 @@
 	layer = 2.8;
 	pixel_x = 8
 	},
+/obj/effect/landmark/start/henchman,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
@@ -4189,7 +4190,7 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/bath)
 "cpy" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
+/mob/living/carbon/human/species/human/smart_npc/townguard/sentry,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
@@ -8262,9 +8263,11 @@
 	name = "far stonehedge"
 	})
 "eCw" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/shelter/bog)
+/obj/effect/landmark/start/henchman,
+/turf/open/floor/rogue/greenstone,
+/area/rogue/indoors/town/bath{
+	first_time_text = "The Dreamers Demesne.."
+	})
 "eCy" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush2"
@@ -11601,8 +11604,7 @@
 /obj/item/rogueweapon/sickle,
 /obj/item/rogueweapon/hoe,
 /obj/machinery/light/rogue/torchholder{
-	dir = 4;
-	icon_state = "torchwall1"
+	dir = 4
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town/garrison{
@@ -12072,7 +12074,7 @@
 	})
 "gAd" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
+/mob/living/carbon/human/species/human/smart_npc/townguard/sentry,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
@@ -15265,8 +15267,7 @@
 	})
 "ipS" = (
 /obj/machinery/light/rogue/torchholder{
-	dir = 4;
-	icon_state = "torchwall1"
+	dir = 4
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town/garrison{
@@ -15525,7 +15526,6 @@
 /obj/effect/decal/dirt{
 	dir = 4
 	},
-/mob/living/carbon/human/species/human/smartnpc/townguard,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
@@ -15718,8 +15718,6 @@
 	})
 "iCS" = (
 /obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "roomvi","roomvii";
 	name = "Terrace"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -18499,7 +18497,7 @@
 	first_time_text = "The Twilight Woods"
 	})
 "kcf" = (
-/obj/structure/fluff/statue/small,
+/obj/structure/fluff/statue/lewd/random,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/bath)
 "kct" = (
@@ -22154,8 +22152,6 @@
 /area/rogue/indoors/town/bath)
 "lZX" = (
 /obj/structure/mineral_door/wood{
-	chat_color_name = "room";
-	lockid = "roomvi","roomvii";
 	name = "Nobility suite - Rooms VI and VII"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -23670,11 +23666,11 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/caves)
 "mOd" = (
-/obj/structure/flora/grass/jungle/b,
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
+/mob/living/carbon/human/species/human/smart_npc/townguard/sentry,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/beach{
+	first_time_text = "Emerald Shores";
+	name = "Shores of the Emerald Coast"
 	})
 "mOu" = (
 /obj/effect/decal/border/ruinedwood{
@@ -24853,11 +24849,9 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/river)
 "nuz" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard/brute,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/obj/machinery/tanningrack,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "nuA" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 8
@@ -25111,7 +25105,7 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town)
 "nBp" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard,
+/mob/living/carbon/human/species/human/smart_npc/townguard/sentry,
 /turf/open/floor/rogue/dirt/nrich{
 	icon_state = "road"
 	},
@@ -25665,14 +25659,13 @@
 /obj/item/clothing/shoes/roguetown/gladiator{
 	pixel_x = 9
 	},
-/obj/item/clothing/shoes/roguetown/boots/leather{
-	pixel_x = -5;
-	pixel_y = -5
-	},
 /obj/item/clothing/shoes/roguetown/boots{
 	pixel_x = 11;
 	pixel_y = -8
 	},
+/obj/item/clothing/shoes/roguetown/boots/armor/leather,
+/obj/item/clothing/shoes/roguetown/boots/armor/leather,
+/obj/item/clothing/shoes/roguetown/boots/armor/leather,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town)
 "nPq" = (
@@ -29079,12 +29072,6 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
-"pIz" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
 "pIF" = (
 /obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/hexstone,
@@ -29258,7 +29245,6 @@
 	})
 "pNn" = (
 /obj/structure/mineral_door/wood/fancywood{
-	lockid = "roomiv","roomv";
 	name = "Adventuring Suite - Rooms IV and V"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -29360,11 +29346,13 @@
 	name = "Shrine of Natures"
 	})
 "pOV" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard,
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/mob/living/carbon/human/species/human/smart_npc/townguard/brute{
+	friendlyfactions = null;
+	friendlyjobs = list("Guildmaster", "Guild Appraiser")
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/town/vault)
 "pOW" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom2"
@@ -30688,11 +30676,11 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cavewet)
 "qwx" = (
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/tavern{
-	first_time_text = "The Sylver Dragonne..";
-	name = "Silver Dragon"
+/mob/living/carbon/human/species/human/smart_npc/townguard/sentry,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
 	})
 "qwU" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -31709,6 +31697,7 @@
 	pixel_x = 1;
 	pixel_y = 7
 	},
+/obj/effect/landmark/start/henchman,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
@@ -34664,10 +34653,11 @@
 	})
 "sCW" = (
 /obj/structure/flora/grass/jungle/b,
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
+/obj/machinery/tanningrack,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/indoors/town/garrison{
+	first_time_text = "Adventurers Guild";
+	name = "Adventurers Guild"
 	})
 "sCZ" = (
 /obj/machinery/anvil,
@@ -35756,6 +35746,7 @@
 	pixel_x = 1;
 	pixel_y = 7
 	},
+/obj/effect/landmark/start/henchman,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
@@ -36488,8 +36479,7 @@
 	})
 "tCY" = (
 /obj/machinery/light/rogue/torchholder{
-	dir = 8;
-	icon_state = "torchwall1"
+	dir = 8
 	},
 /obj/structure/closet/crate/roguecloset/dark{
 	keylock = 1;
@@ -44102,7 +44092,7 @@
 	})
 "xKH" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
-/mob/living/carbon/human/species/human/smartnpc/townguard/sentry,
+/mob/living/carbon/human/species/human/smart_npc/townguard/sentry,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
@@ -67316,7 +67306,7 @@ nhM
 xAd
 hJP
 vFo
-vFo
+pOV
 cbK
 mgS
 vxU
@@ -110930,7 +110920,7 @@ gho
 tde
 tde
 tde
-dqn
+mOd
 vKE
 bYm
 bYm
@@ -132568,7 +132558,7 @@ beK
 nFS
 mJe
 pdF
-sdQ
+sCW
 mJR
 hiA
 hiA
@@ -137561,7 +137551,7 @@ tGs
 iiU
 nDs
 qWk
-bDQ
+eCw
 bAJ
 lss
 fnm
@@ -140606,7 +140596,7 @@ fqz
 fqz
 fqz
 fqz
-nuz
+fqz
 vil
 foY
 vVw
@@ -143045,7 +143035,7 @@ pFL
 uxu
 nPY
 nPY
-pIz
+hGY
 pwR
 oea
 pwR
@@ -143433,7 +143423,7 @@ nnZ
 qCV
 fhZ
 xBY
-pOV
+xBY
 xBY
 xBY
 drI
@@ -145264,7 +145254,7 @@ ubI
 dIC
 enz
 xsa
-nhz
+nuz
 kqj
 gZr
 sPO
@@ -170878,7 +170868,7 @@ rfD
 edm
 uxu
 uxu
-mOd
+nPY
 dKA
 fqz
 fqz
@@ -173722,7 +173712,7 @@ enU
 tJb
 tJb
 tJb
-qwx
+tJb
 tJb
 tJb
 tJb
@@ -175935,7 +175925,7 @@ dKA
 fqz
 fqz
 fqz
-sCW
+qnW
 nnZ
 xBY
 sPO
@@ -176053,7 +176043,7 @@ sib
 sib
 hKD
 eQy
-eCw
+qmG
 qmG
 vEo
 giU
@@ -180482,7 +180472,7 @@ beK
 beK
 beK
 qJZ
-ijB
+qwx
 hcX
 mBE
 pTJ
