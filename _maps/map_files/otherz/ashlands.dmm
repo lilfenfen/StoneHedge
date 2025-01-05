@@ -1659,7 +1659,7 @@
 	},
 /area/rogue/under/cavewet)
 "rH" = (
-/obj/structure/roguewindow/stained/yellow,
+/obj/structure/roguewindow/stained/zizo,
 /turf/open/floor/rogue/blocks/stone/stonepattern2,
 /area/rogue)
 "rJ" = (
@@ -1966,7 +1966,9 @@
 /area/rogue/under/cavewet)
 "uR" = (
 /obj/item/roguecoin/gold/pile,
-/obj/structure/fluff/statue/dragonl,
+/obj/structure/fluff/statue/dragonl{
+	icon_state = "6"
+	},
 /turf/open/floor/rogue/blocks/stone/stonepattern2,
 /area/rogue)
 "uT" = (
@@ -2006,7 +2008,9 @@
 	})
 "vu" = (
 /obj/item/roguecoin/gold/pile,
-/obj/structure/fluff/statue/dragonr,
+/obj/structure/fluff/statue/dragonr{
+	icon_state = "5"
+	},
 /turf/open/floor/rogue/blocks/stone/stonepattern2,
 /area/rogue)
 "vw" = (
@@ -2975,10 +2979,6 @@
 	first_time_text = "Underkeep";
 	name = "Underkeep"
 	})
-"Fy" = (
-/obj/structure/roguewindow/stained/yellow,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue)
 "FA" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /obj/structure/fluff/railing/wood{
@@ -45643,8 +45643,8 @@ CP
 Vv
 Vv
 Vv
-Vv
-Vv
+rH
+rH
 Vv
 Vv
 Vv
@@ -45912,7 +45912,7 @@ cw
 Lx
 cw
 FR
-Fy
+UC
 vP
 dZ
 Eu
@@ -46308,7 +46308,7 @@ RE
 iQ
 iQ
 FR
-Fy
+UC
 Rq
 Rq
 Rq
@@ -47364,7 +47364,7 @@ gi
 tm
 Hd
 FR
-Fy
+UC
 Rq
 Rq
 Rq
@@ -47496,7 +47496,7 @@ Dl
 Hd
 Hd
 FR
-Fy
+UC
 Rq
 Rq
 Rq
@@ -48151,8 +48151,8 @@ CP
 Vv
 Vv
 Vv
-Vv
-Vv
+rH
+rH
 Vv
 Vv
 Vv
