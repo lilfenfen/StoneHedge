@@ -8681,10 +8681,6 @@
 /obj/item/natural/rock/iron,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/caves)
-"eNK" = (
-/obj/structure/closet/crate/chest/refilling/mimic,
-/turf/open/floor/rogue/dirt,
-/area/rogue/indoors/cave/minotaurcave)
 "eOe" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = 1;
@@ -31985,10 +31981,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"ret" = (
-/obj/structure/closet/crate/chest/refilling/trait,
-/turf/open/floor/rogue/dirt,
-/area/rogue/indoors/cave/minotaurcave)
 "reE" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp/deep,
@@ -108988,7 +108980,7 @@ yhF
 tZZ
 nYE
 yhF
-ret
+hMK
 hMK
 hMK
 hMK
@@ -109191,7 +109183,7 @@ tZZ
 hMK
 hMK
 yhF
-eNK
+hMK
 hMK
 dTN
 yhF
