@@ -395,15 +395,24 @@
 
 /datum/quirk/bleublood
 	name = "Noble Lineage"
-	desc = "I am a Noble, I also happen to have a pouch filled with mammons."
+	desc = "I am of noble blood."
 	value = 1
 
 /datum/quirk/bleublood/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_NOBLE, QUIRK_TRAIT)
+	H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 2, TRUE)
+
+/datum/quirk/richpouch
+	name = "Rich Pouch"
+	desc = "I have a pouch full of mammons."
+	value = 1
+
+/datum/quirk/richpouch/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
 	var/obj/item/pouch = new /obj/item/storage/belt/rogue/pouch/coins/rich(get_turf(H))
 	H.put_in_hands(pouch, forced = TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 2, TRUE)
+
 
 /datum/quirk/swift
 	name = "Speedster"
