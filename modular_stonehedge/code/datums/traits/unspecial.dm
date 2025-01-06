@@ -407,13 +407,14 @@
 
 /datum/quirk/swift
 	name = "Speedster"
-	desc = "I am very athletic and fast. I can also avoid collisions with anything."
+	desc = "I am very athletic and fast, I can not only avoid collisions with anything but I can also dodge hits coming in my way if i'm not wearing any armor."
 	value = 4
 
 /datum/quirk/swift/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_SWIFTRUNNER, QUIRK_TRAIT)
 	ADD_TRAIT(H, TRAIT_GOODRUNNER, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_DODGEADEPT, QUIRK_TRAIT)
 	H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
 	H.change_stat("speed", 2)
 
