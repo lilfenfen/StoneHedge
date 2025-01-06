@@ -160,13 +160,14 @@
 
 /datum/quirk/training8
 	name = "Shield Training"
-	desc = "I have shield training and stashed a shield."
+	desc = "I have shield training and stashed a shield and as long as I have a shield in one hand, I can catch arrows with ease"
 	value = 2
 
 /datum/quirk/training8/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.mind.adjust_skillrank_up_to(/datum/skill/combat/shields, 3, TRUE)
 	H.mind.special_items["Shield"] = /obj/item/rogueweapon/shield/wood
+	ADD_TRAIT(H, TRAIT_SHIELDEXPERT, QUIRK_TRAIT)
 
 /datum/quirk/training9
 	name = "Unarmed Training"
@@ -750,3 +751,11 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_PROSOPAGNOSIA, QUIRK_TRAIT)
 
+/datum/quirk/martialeye
+	name = "Martial Eye"
+	desc = "Unlike others, I can gauge someone's speed and exertion at a glance"
+	value = 3
+
+/datum/quirk/martialeye/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_MARTIALEYE, QUIRK_TRAIT)
