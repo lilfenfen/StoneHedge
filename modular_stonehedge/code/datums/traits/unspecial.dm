@@ -770,3 +770,13 @@
 /datum/quirk/martialeye/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_MARTIALEYE, QUIRK_TRAIT)
+
+/datum/quirk/sloppysleeper
+	name = "Sloppy Sleeper"
+	desc = "I can sleep a bit faster and I can easily sleep in my armor if i have one.."
+	value = 3
+
+/datum/quirk/sloppysleeper/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_FASTSLEEP, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_SLOPPYSLEEPER, QUIRK_TRAIT)

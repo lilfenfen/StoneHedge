@@ -54,6 +54,7 @@
 #define TRAIT_FEINTMASTER "Feint Master"
 #define TRAIT_AMBIDEXTROUS "Ambidestrous"
 #define TRAIT_DODGEADEPT "Solid Reflexes"
+#define TRAIT_SLOPPYSLEEPER "Sloppy Sleeper"
 
 //Hearthstone change
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //! Will always find any tracks and analyzes them perfectly.
@@ -235,7 +236,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_MARTIALEYE =  span_info("I can gauge an opponent's speed and exertion at a glance."),
 	TRAIT_KICKUP =  span_info("I can quickly get back on my feet."),
 	TRAIT_AMBIDEXTROUS = span_info("I can use both of my hands effectively."),
-	TRAIT_DODGEADEPT = span_info("I can dodge well in light armor.")
+	TRAIT_DODGEADEPT = span_info("I can dodge well in light armor."),
+	TRAIT_SLOPPYSLEEPER = span_info("I can sleep anywhere.")
 ))
 
 // trait accessor defines
