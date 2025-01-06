@@ -103,7 +103,7 @@
 
 /datum/quirk/fence/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_DODGEADEPT, QUIRK_TRAIT)
 	H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.special_items["Rapier"] = /obj/item/rogueweapon/sword/rapier
 
@@ -314,6 +314,9 @@
 	H.grant_language(/datum/language/beast)
 	H.grant_language(/datum/language/draconic)
 	H.grant_language(/datum/language/faexin)
+	H.grant_language(/datum/language/canilunzt)
+	H.grant_language(/datum/language/grenzelhoftian)
+	H.grant_language(/datum/language/thievescant)
 	ADD_TRAIT(H, TRAIT_GOODLOVER, QUIRK_TRAIT)
 
 /datum/quirk/civilizedbarbarian
@@ -409,7 +412,7 @@
 	ADD_TRAIT(H, TRAIT_SWIFTRUNNER, QUIRK_TRAIT)
 	ADD_TRAIT(H, TRAIT_GOODRUNNER, QUIRK_TRAIT)
 	H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
-	H.change_stat("speed", 1)
+	H.change_stat("speed", 2)
 
 /datum/quirk/gourmand
 	name = "Gourmand"
@@ -479,7 +482,7 @@
 
 /datum/quirk/bounty/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	var/reason = ""
+	var/bounty_reason = ""
 	var/employer = "unknown employer"
 	var/employer_gender
 	if(prob(65))
@@ -492,25 +495,9 @@
 		employer = pick(list("Duchess", "Lady", "Noblelady", "Princess"))
 	employer = "[employer] [random_human_name(employer_gender, FALSE, FALSE)]"
 	var/amount = rand(150,300)
-	switch(rand(1,8))
-		if(1)
-			reason = "insulting a noble's crest"
-		if(2)
-			reason = "spilling wine on a noble's cloak"
-		if(3)
-			reason = "besmirching a noble's name"
-		if(4)
-			reason = "refusing to bow"
-		if(5)
-			reason = "painting an unflattering portrait"
-		if(6)
-			reason = "gossip"
-		if(7)
-			reason = "upstaging a harlequin"
-		if(8)
-			reason = "fluffery"
-	add_bounty(H.real_name, amount, FALSE, reason, employer)
-	to_chat(H, span_notice("Whether I done it or not, I have been accused of [reason], and a [employer] put a bounty on my head!"))
+	bounty_reason = pick_list_replacements("bounties.json", "bounties_reasons")
+	add_bounty(H.real_name, amount, FALSE, bounty_reason, employer)
+	to_chat(H, span_notice("Whether I done it or not, I have been accused of [bounty_reason], and a [employer] put a bounty on my head!"))
 
 /datum/quirk/outlaw
 	name = "Outlaw (WANTED BY GROVE)"
@@ -744,3 +731,35 @@
 /datum/quirk/ambidextrous/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_AMBIDEXTROUS, QUIRK_TRAIT)
+
+/datum/quirk/linguist
+	name = "Linguist"
+	desc = "I've spent a while studying a foreign language, and can speak and understand it fluently"
+	value = 1
+
+/datum/quirk/linguist/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/list/selectable_languages = list(/datum/language/elvish, /datum/language/dwarvish, /datum/language/orcish, /datum/language/hellspeak, /datum/language/draconic, /datum/language/celestial, /datum/language/canilunzt, /datum/language/grenzelhoftian, /datum/language/thievescant, /datum/language/faexin)
+	var/list/choices = list()
+	for(var/i = 1, i <= selectable_languages.len, i++)
+		if(H.has_language(selectable_languages[i]))
+			continue
+		var/datum/language/a_language = selectable_languages[i]
+		choices["[a_language.name]"] = a_language
+	if(!LAZYLEN(choices))
+		return // no new languages to learn, Polyglot or something.
+	var/chosen_language = input(H, "Choose your extra spoken language.", "LANGUAGE") as null|anything in choices
+
+	if(chosen_language)
+		var/datum/language/new_language = choices[chosen_language]
+		H.grant_language(new_language)
+		to_chat(H, span_info("I recall my knowledge of [new_language.name]..."))
+
+/datum/quirk/doggo
+	name = "Strong Bite"
+	desc = "Biting peoples have never been so much easier."
+	value = 3 //It is literally strong.
+
+/datum/quirk/doggo/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_STRONGBITE, QUIRK_TRAIT)

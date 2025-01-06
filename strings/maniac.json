@@ -169,9 +169,9 @@
 	],
 	"dreamer_ooc": [
 		"My ANUS is <span style='color: #DC143C'>BLEEDING!</span>",
-		"%OWNER is the dreamer!",
+		"%OWNER, STOP KILLING PEOPLES",
 		"I'm reporting %OWNER for murderbone",
-		"Lmao %OWNER is such a terrible antagonist",
+		"Lmao %OWNER, are you a antagonist",
 		"LMFAO %OWNER is such a dogshit dreamer",
 		"I'm fragging %OWNER",
 		"Please ban %OWNER",
@@ -190,5 +190,31 @@
 		"this shit is so retarded",
 		"i'm adminhelping",
 		"%OWNER come over here and kiss me on my hot mouth... i'm feeling romantic"
+	],
+	"dreamer_ahelp": [
+		"You need to wake up.",
+		"Are you scared of being banned?",
+		"What the fuck are you doing?",
+		"Have you read the rules?",
+		"You got a moment?",
+		"You and I are gonna have a talk.",
+		"Wake up. This is not real.",
+		"You’re playing a dangerous game.",
+		"What were you thinking?"
+
+	],
+	"dreamer_ban": [
+		"I hate you.",
+		"You are not real.",
+		"None of this matters.",
+		"Murderbone.",
+		"Bad roleplay.",
+		"Extremely toxic behavior.",
+		"Does not listen to admins.",
+		"Ignoring repeated admin warnings.",
+		"Metagaming",
+		"Skill Issue",
+		"Why?",
+		"Wake up"
 	]
 }

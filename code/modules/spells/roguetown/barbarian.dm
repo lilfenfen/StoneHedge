@@ -82,7 +82,7 @@
 
 /atom/movable/screen/alert/status_effect/debuff/barbfalter
 	name = "Faltering"
-	desc = "I've pushed myself to my limit. I must rest to restore my strenght
+	desc = "I've pushed myself to my limit. I must rest to restore my strenght."
 	icon_state = "muscles"
 
 //claws for the ravager
