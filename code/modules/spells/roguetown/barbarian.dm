@@ -1,5 +1,5 @@
 // Barbarian
-/obj/effect/proc_holder/spell/invoked/barbarian_rage
+/obj/effect/proc_holder/spell/self/barbarian_rage
 	name = "Rage"
 	desc = "Fly into a rage increasing your physical stats."
 	range = 1
@@ -15,13 +15,13 @@
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	requires_arms = FALSE
 
-/obj/effect/proc_holder/spell/invoked/barbarian_rage/cast(list/targets, mob/user)
-	if(user && user.mind)
-		var/mob/living/target = user
+/obj/effect/proc_holder/spell/self/barbarian_rage/cast(list/targets, mob/user)
+	. = ..()
+	var/mob/living/target = user
+	if(!target.has_status_effect(/datum/status_effect/debuff/barbfalter))
 		user.visible_message("<span class='info'>[user]'s muscles tense up beyond imagination.</span>", "<span class='notice'>My muscles tense up beyond imagination.</span>")
 		user.add_stress(/datum/stressevent/barbarian_rage)
 		target.apply_status_effect(/datum/status_effect/buff/barbarian_rage)
-		ADD_TRAIT(target, TRAIT_NOPAIN, TRAIT_GENERIC)
 		return TRUE
 	return FALSE
 
@@ -37,10 +37,11 @@
 	desc = "Rage fills my heart and my muscles."
 	icon_state = "buff"
 
-/datum/status_effect/buff/barbrage/nextmove_modifier()
+/datum/status_effect/buff/barbarian_rage/nextmove_modifier()
 	return 0.75
 
 /datum/status_effect/buff/barbarian_rage/on_apply()
+	. = ..()
 	if(iscarbon(owner))
 		var/mob/living/carbon/C = owner
 		ADD_TRAIT(C, TRAIT_NOPAIN, TRAIT_GENERIC)

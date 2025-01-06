@@ -194,7 +194,7 @@
 	var/message = ""
 	message = pick_list_replacements("maniac.json", "dreamer_ahelp")
 	to_chat(target, "<font color='red' size='4'><b>-- Administrator private message --</b></font>")
-	to_chat(target, span_danger("Admin PM from-<b><span class='linkify'>[fakemin]</span></b>: <span class='linkify'>[message]</span>"))
+	to_chat(target, span_danger("Admin PM from-<b><span style='color: #0099cc;'>[fakemin]</span></b>: <span style='color: #0099cc;'>[message]</span>"))
 	to_chat(target, span_danger("<i>Click on the administrator's name to reply, or see all of your tickets in the admin column.</i>"))
 	SEND_SOUND(target, sound('sound/adminhelp.ogg'))
 
@@ -208,8 +208,8 @@
 	var/ban_appeal = "your grave"
 	message = pick_list_replacements("maniac.json", "dreamer_ban")
 	to_chat(target, span_boldwarning("<BIG>You have been banned by [fakemin] from the server.\nReason: [message]</BIG>"))
-	to_chat(target, span_danger("This is a permanent ban. The round ID is [GLOB.round_id]."))
-	to_chat(target, span_danger("To appeal this ban go to <span class='linkify'>[ban_appeal]</span>"))
+	to_chat(target, span_danger("This is a permanent ban. The round ID is [GLOB.rogue_round_id]."))
+	to_chat(target, span_danger("To appeal this ban go to <span style='color: #0099cc;'>[ban_appeal]</span>"))
 	to_chat(target, "<div class='connectionClosed internal'>You are either AFK, experiencing lag or the connection has closed.</div>")
 
 /proc/handle_waking_up(mob/living/target)

@@ -98,7 +98,7 @@
 
 /datum/quirk/fence
 	name = "Fencer"
-	desc = "I have trained in agile sword fighting. I dodge more easily and have stashed my rapier nearby"
+	desc = "I have trained in agile sword fighting. I dodge more easily without wearing anything and have stashed my rapier nearby"
 	value = 4
 
 /datum/quirk/fence/on_spawn()
@@ -106,6 +106,7 @@
 	ADD_TRAIT(H, TRAIT_DODGEADEPT, QUIRK_TRAIT)
 	H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.special_items["Rapier"] = /obj/item/rogueweapon/sword/rapier
+	H.verbs += list(/mob/living/carbon/human/proc/declare_duel)
 
 /datum/quirk/training2
 	name = "Mace Training"
@@ -518,7 +519,6 @@
 /datum/quirk/sillyvoice/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_COMICSANS, QUIRK_TRAIT)
-	H.dna.add_mutation(WACKY)
 
 /datum/quirk/unlucky
 	name = "Unlucky"
@@ -691,7 +691,7 @@
 /datum/quirk/maniacextra
 	name = "Cursed (Extra)"
 	desc = "..I keep experiencing vivid hallucinations, What is happening here? (Same as Cursed, Except the fourth wonder sequence will start when the round start ending.)"
-	value = -4
+	value = -6
 
 /datum/quirk/maniacextra/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -732,29 +732,6 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_AMBIDEXTROUS, QUIRK_TRAIT)
 
-/datum/quirk/linguist
-	name = "Linguist"
-	desc = "I've spent a while studying a foreign language, and can speak and understand it fluently"
-	value = 1
-
-/datum/quirk/linguist/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
-	var/list/selectable_languages = list(/datum/language/elvish, /datum/language/dwarvish, /datum/language/orcish, /datum/language/hellspeak, /datum/language/draconic, /datum/language/celestial, /datum/language/canilunzt, /datum/language/grenzelhoftian, /datum/language/thievescant, /datum/language/faexin)
-	var/list/choices = list()
-	for(var/i = 1, i <= selectable_languages.len, i++)
-		if(H.has_language(selectable_languages[i]))
-			continue
-		var/datum/language/a_language = selectable_languages[i]
-		choices["[a_language.name]"] = a_language
-	if(!LAZYLEN(choices))
-		return // no new languages to learn, Polyglot or something.
-	var/chosen_language = input(H, "Choose your extra spoken language.", "LANGUAGE") as null|anything in choices
-
-	if(chosen_language)
-		var/datum/language/new_language = choices[chosen_language]
-		H.grant_language(new_language)
-		to_chat(H, span_info("I recall my knowledge of [new_language.name]..."))
-
 /datum/quirk/doggo
 	name = "Strong Bite"
 	desc = "Biting peoples have never been so much easier."
@@ -763,3 +740,13 @@
 /datum/quirk/doggo/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_STRONGBITE, QUIRK_TRAIT)
+
+/datum/quirk/prosopagnosia
+	name = "Face-blind"
+	desc = "I am unable to recognize faces at all."
+	value = -3
+
+/datum/quirk/prosopagnosia/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_PROSOPAGNOSIA, QUIRK_TRAIT)
+

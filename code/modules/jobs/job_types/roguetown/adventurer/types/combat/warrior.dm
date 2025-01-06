@@ -293,7 +293,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 			head = /obj/item/clothing/head/roguetown/paddedcap/combattante
 			armor = /obj/item/clothing/suit/roguetown/armor/combattante
-			pants = /obj/item/clothing/under/roguetown/trou/leather/advanced/combattante
+			pants =  /obj/item/clothing/under/roguetown/trou/leather/advanced/combattante
 			shoes = /obj/item/clothing/shoes/roguetown/nobleboot/combattante
 			gloves = /obj/item/clothing/gloves/roguetown/leather/black
 			cloak = /obj/item/clothing/cloak/combattante
