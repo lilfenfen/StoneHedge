@@ -130,6 +130,8 @@
 					return FALSE
 			if(has_status_effect(/datum/status_effect/debuff/feinted))
 				return FALSE
+			if(has_status_effect(/datum/status_effect/buff/barbarian_rage))
+				return FALSE
 			if(has_status_effect(/datum/status_effect/debuff/riposted))
 				return FALSE
 			last_parry = world.time

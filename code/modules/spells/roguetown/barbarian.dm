@@ -28,23 +28,32 @@
 /datum/status_effect/buff/barbarian_rage
 	id = "barbarian rage"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/barbarian_rage
-	effectedstats = list("speed" = 2, "endurance" = 2, "strength" = 4)
+	effectedstats = list("endurance" = 4, "strength" = 2, "intelligence" = -2, "perception" = -4)
 	duration = 45 SECONDS
+
 
 /atom/movable/screen/alert/status_effect/buff/barbarian_rage
 	name = "Rage"
 	desc = "Rage fills my heart and my muscles."
 	icon_state = "buff"
 
+/datum/status_effect/buff/barbrage/nextmove_modifier()
+	return 0.75
+
+/datum/status_effect/buff/barbarian_rage/on_apply()
+	if(iscarbon(owner))
+		var/mob/living/carbon/C = owner
+		ADD_TRAIT(C, TRAIT_NOPAIN, TRAIT_GENERIC)
+		ADD_TRAIT(C, TRAIT_NOROGSTAM, TRAIT_GENERIC)
+
 /datum/status_effect/buff/barbarian_rage/on_remove()
 	var/mob/living/carbon/M = owner
 	var/mob/living/target = owner
-	M.rogfat_add(100)
-	M.rogstam_add(100)
 	target.adjustOxyLoss(50)
 	target.visible_message("<span class='info'>[owner]'s rage subsides.</span>", "<span class='notice'>My rage subsides.</span>")
-	target.apply_status_effect(/datum/status_effect/debuff/trainsleep)
+	target.apply_status_effect(/datum/status_effect/debuff/barbfalter)
 	REMOVE_TRAIT(target, TRAIT_NOPAIN, TRAIT_GENERIC)
+	REMOVE_TRAIT(target, TRAIT_NOROGSTAM, TRAIT_GENERIC)
 	M.updatehealth()
 	. = ..()
 
@@ -52,6 +61,29 @@
 	timer = 10 MINUTES
 	stressadd = 3 //reduced from 8 since we use less stress caps in stonehedge.
 	max_stacks = 8 //don't rage spam or you WILL have a heart attack
+
+/datum/status_effect/debuff/barbfalter
+	id = "barbfalter"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/barbfalter
+	effectedstats = list("strength" = -2, "speed" = -2, "endurance" = -2, "constitution" = -2, "perception" = -2)
+
+/datum/status_effect/debuff/barbfalter/on_apply()
+	. = ..()
+	if(iscarbon(owner))
+		var/mob/living/carbon/C = owner
+		ADD_TRAIT(C, TRAIT_NORUN, TRAIT_GENERIC)
+
+/datum/status_effect/debuff/barbfalter/on_remove()
+	. = ..()
+	if(iscarbon(owner))
+		var/mob/living/carbon/C = owner
+		REMOVE_TRAIT(C, TRAIT_NORUN, TRAIT_GENERIC)
+
+
+/atom/movable/screen/alert/status_effect/debuff/barbfalter
+	name = "Faltering"
+	desc = "I've pushed myself to my limit. I must rest to restore my strenght
+	icon_state = "muscles"
 
 //claws for the ravager
 /obj/effect/proc_holder/spell/self/rav_claws

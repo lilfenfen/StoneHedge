@@ -47,6 +47,12 @@
 #define TRAIT_COMICSANS "Annoying Face"
 #define TRAIT_WATERBREATHING "Water Breathing"
 #define TRAIT_BLINDFIGHTING "Blind Fighting"
+#define TRAIT_SWIFTRUNNER "Swift Runner"
+#define TRAIT_KICKUP "Kick-Up"
+#define TRAIT_MARTIALEYE "Martial Eye"
+#define TRAIT_SHIELDEXPERT "Shield Expert"
+#define TRAIT_FEINTMASTER "Feint Master"
+#define TRAIT_AMBIDEXTROUS "Ambidestrous"
 
 //Hearthstone change
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //! Will always find any tracks and analyzes them perfectly.
@@ -221,7 +227,13 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_USEMAGIC = span_info("I know my way around magic items by legit means or trickery."),
 	TRAIT_FEINT_IMMUNITY = span_info("Those fools can not feint me."),
 	TRAIT_LEARNMAGIC = span_info("I can memorize spells long as my intellect allow me."),
-	TRAIT_ALCHEMYKNOWLEDGE = span_info("I know how to transmute things.")
+	TRAIT_ALCHEMYKNOWLEDGE = span_info("I know how to transmute things."),
+	TRAIT_FEINTMASTER = span_info("I've learned how to properly feint those fools, and how to avoid theirs."),
+	TRAIT_SWIFTRUNNER = span_info("I can run gracefully, avoiding collisions."),
+	TRAIT_SHIELDEXPERT = span_info("So long as I have a shield in one hand, I can catch arrows with ease."),
+	TRAIT_MARTIALEYE =  span_info("I can gauge an opponent's speed and exertion at a glance."),
+	TRAIT_KICKUP =  span_info("I can quickly get back on my feet."),
+	TRAIT_AMBIDEXTROUS = span_info("I can use both of my hands effectively.")
 ))
 
 // trait accessor defines

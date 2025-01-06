@@ -41,14 +41,13 @@
 
 /datum/quirk/curseofcain
 	name = "Flawed Immortality"
-	desc = "I don't need to eat, drink water, or breathe anymore, but I lack the endless stamina and bloodthirst of a true vampyre"
+	desc = "Some fell magick has rendered me inwardly unliving - I do not hunger, and I do not breathe."
 	value = 4
 
 /datum/quirk/curseofcain/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_NOHUNGER, QUIRK_TRAIT)
 	ADD_TRAIT(H, TRAIT_NOBREATH, QUIRK_TRAIT)
-	H.change_stat("endurance", 1)
 
 /datum/quirk/deadened
 	name = "Deadened"
@@ -390,32 +389,24 @@
 
 /datum/quirk/bleublood
 	name = "Noble Lineage"
-	desc = "I am of noble blood."
+	desc = "I am a Noble, I also happen to have a pouch filled with mammons."
 	value = 1
 
 /datum/quirk/bleublood/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_NOBLE, QUIRK_TRAIT)
-	H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 2, TRUE)
-
-/datum/quirk/richpouch
-	name = "Rich Pouch"
-	desc = "I have a pouch full of mammons."
-	value = 1
-
-/datum/quirk/richpouch/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
 	var/obj/item/pouch = new /obj/item/storage/belt/rogue/pouch/coins/rich(get_turf(H))
 	H.put_in_hands(pouch, forced = TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 2, TRUE)
 
 /datum/quirk/swift
 	name = "Speedster"
-	desc = "I am very athletic and fast. I can also dodge anything as long as I am not weighted down by medium or heavier armor."
+	desc = "I am very athletic and fast. I can also avoid collisions with anything."
 	value = 4
 
 /datum/quirk/swift/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_SWIFTRUNNER, QUIRK_TRAIT)
 	ADD_TRAIT(H, TRAIT_GOODRUNNER, QUIRK_TRAIT)
 	H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 3, TRUE)
 	H.change_stat("speed", 1)
@@ -721,3 +712,35 @@
 	ADD_TRAIT(H, TRAIT_SCHIZO_AMBIENCE, QUIRK_TRAIT)
 	ADD_TRAIT(H, TRAIT_SOONTOWAKEUP, QUIRK_TRAIT)
 	H.cmode_music = 'sound/music/combat_maniac2.ogg'
+
+/datum/quirk/guarded
+	name = "Guarded"
+	desc = "I have long kept my true capabilities a secret. Sometimes being deceptively weak can save one's life. Such a virtue allows me to see and avoid feints easier."
+	value = 3
+
+/datum/quirk/guarded/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_DECEIVING_MEEKNESS, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_FEINTMASTER, QUIRK_TRAIT)
+
+/datum/quirk/rotcured
+	name = "Rot-Cured"
+	desc = "I was once afflicted with the accursed rot, and was cured. It has left me changed: my limbs are weaker, but I feel no pain and have no need to breathe..."
+
+/datum/quirk/rotcured/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_EASYDISMEMBER, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_NOPAIN, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_NOBREATH, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_ROTMAN, QUIRK_TRAIT)
+	ADD_TRAIT(H, TRAIT_TOXIMMUNE, QUIRK_TRAIT)
+	H.update_body()
+
+/datum/quirk/ambidextrous
+	name = "Ambidextrous"
+	desc = "I am able to use my right and left hands equally well."
+	value = 1
+
+/datum/quirk/ambidextrous/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_AMBIDEXTROUS, QUIRK_TRAIT)
