@@ -107,6 +107,7 @@
 	H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.special_items["Rapier"] = /obj/item/rogueweapon/sword/rapier
 	H.verbs += list(/mob/living/carbon/human/proc/declare_duel)
+	H.cmode_music = 'sound/music/combat_combattante.ogg'
 
 /datum/quirk/training2
 	name = "Mace Training"
