@@ -100,11 +100,11 @@
 */
 
 /datum/quirk/freerunning
-	name = "Freerunning"
-	desc = "I can climb things pretty quickly."
-	value = 2
-	mob_trait = TRAIT_FREERUNNING
-	gain_text = span_notice("I feel lithe on your feet!")
+	name = "Kick-up"
+	desc = "I can get up from being knocked down faster."
+	value = 1
+	mob_trait = TRAIT_KICKUP
+	gain_text = span_notice("I feel lithe on my feet!")
 	lose_text = span_danger("I feel clumsy again.")
 	medical_record_text = "Patient scored highly on cardio tests."
 
