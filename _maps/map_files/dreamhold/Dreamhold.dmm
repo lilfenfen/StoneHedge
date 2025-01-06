@@ -7517,17 +7517,9 @@
 	first_time_text = "Stonehedge"
 	})
 "edR" = (
-/obj/structure/flora/grass/jungle/b{
-	pixel_x = 1;
-	pixel_y = 1
-	},
-/turf/closed/wall/mineral/rogue/decostone/long{
-	dir = 1
-	},
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
+/obj/effect/spawner/lootdrop/roguetown/dungeon/spells,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cavewet)
 "edX" = (
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa2"
@@ -11561,6 +11553,10 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
+"gfN" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cavewet)
 "ggh" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/newtree,
@@ -15708,6 +15704,10 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"iyE" = (
+/obj/structure/closet/crate/chest/refilling/treasure,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cavewet)
 "iyR" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/dirt/road,
@@ -16433,6 +16433,11 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
+"iTW" = (
+/obj/structure/bookcase,
+/obj/item/book/granter/spell/spells5e/random,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cavewet)
 "iUg" = (
 /obj/structure/bars/passage/shutter{
 	redstone_id = "baths_shutter"
@@ -17351,6 +17356,7 @@
 "juF" = (
 /obj/structure/bookcase,
 /obj/effect/decal/cleanable/cobweb,
+/obj/item/book/granter/spell/spells5e/random,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "juO" = (
@@ -17497,8 +17503,8 @@
 	name = "Silver Dragon"
 	})
 "jyX" = (
-/obj/item/roguegem/yellow,
-/turf/open/floor/rogue/dirt,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet)
 "jyY" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
@@ -19170,6 +19176,8 @@
 /obj/item/rogueweapon/tongs,
 /obj/item/candle/yellow/lit,
 /obj/item/rogueweapon/hammer,
+/obj/item/roguegem/diamond,
+/obj/item/roguegem/diamond,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/under/cavewet)
 "koq" = (
@@ -21220,6 +21228,7 @@
 /area/rogue/under/cavewet)
 "lrx" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cavewet)
 "lrD" = (
@@ -25572,6 +25581,7 @@
 "nIi" = (
 /obj/structure/bookcase,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/book/granter/spell/spells5e/random,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "nIk" = (
@@ -26380,6 +26390,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/candle/yellow/lit,
+/obj/item/roguegem/diamond,
 /turf/open/floor/carpet/red,
 /area/rogue/under/cavewet)
 "oeR" = (
@@ -30877,6 +30888,16 @@
 /obj/machinery/light/rogue/oven/south,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cavewet)
+"qvl" = (
+/obj/structure/mineral_door/wood/violet{
+	lockid = "church";
+	name = "Temple of Lune"
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "qvo" = (
 /obj/effect/decal/dirt/grass{
 	dir = 4
@@ -35424,7 +35445,7 @@
 /area/rogue/under/cavewet)
 "sQJ" = (
 /obj/structure/stairs/stone,
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
@@ -36495,7 +36516,7 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
@@ -37016,6 +37037,18 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"tKy" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
+/obj/item/reagent_containers/glass/bottle,
+/obj/item/roguegem/diamond,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/under/cavewet)
 "tKG" = (
 /obj/structure/fluff/littlebanners/bluewhite,
 /obj/structure/flora/grass/jungle/b{
@@ -40199,6 +40232,8 @@
 "vqX" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
+/obj/item/ingot/iron,
+/obj/item/ingot/iron,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/under/cavewet)
 "vrp" = (
@@ -44340,6 +44375,7 @@
 /obj/effect/decal/cobbleedge{
 	dir = 5
 	},
+/obj/structure/closet/crate/chest/refilling/food,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cavewet)
 "xIO" = (
@@ -47132,7 +47168,7 @@ nog
 iYu
 iYu
 uMM
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -47334,7 +47370,7 @@ fDV
 hBk
 odU
 uMM
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -47531,12 +47567,12 @@ fDV
 fDV
 fDV
 fDV
+cvE
 jyX
-jxm
 hBk
 uMM
 uMM
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -47732,13 +47768,13 @@ fDV
 fDV
 fDV
 hBk
-hBk
-hBk
+uMM
+uMM
 fDV
 fDV
 hBk
 uMM
-hBk
+uMM
 fDV
 fDV
 fDV
@@ -47933,8 +47969,8 @@ fDV
 fDV
 hBk
 hBk
-hBk
-hBk
+uMM
+fDV
 hBk
 hBk
 fDV
@@ -48134,8 +48170,8 @@ nhM
 fDV
 hBk
 hBk
-hBk
-fDV
+uMM
+uMM
 fDV
 fDV
 fDV
@@ -48336,7 +48372,7 @@ nhM
 hBk
 hBk
 hBk
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -48538,7 +48574,7 @@ nhM
 lxq
 hBk
 hBk
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -48739,8 +48775,8 @@ nhM
 nhM
 hBk
 hBk
-hBk
-hBk
+uMM
+uMM
 hBk
 fDV
 fDV
@@ -48941,7 +48977,7 @@ nhM
 nhM
 fDV
 hBk
-odU
+qyI
 hBk
 lxq
 fDV
@@ -49152,7 +49188,7 @@ fDV
 fDV
 fDV
 hBk
-hBk
+uMM
 uMM
 uMM
 fDV
@@ -49353,8 +49389,8 @@ gTO
 gTO
 fDV
 fDV
-hBk
-hBk
+uMM
+uMM
 hBk
 uMM
 fDV
@@ -49555,8 +49591,8 @@ qMz
 gTO
 fDV
 fDV
-hBk
-hBk
+uMM
+uMM
 uMM
 fDV
 fDV
@@ -49757,8 +49793,8 @@ qMz
 gTO
 fDV
 fDV
-hBk
-hBk
+uMM
+uMM
 uMM
 fDV
 fDV
@@ -49959,7 +49995,7 @@ qMz
 gTO
 fDV
 fDV
-hBk
+uMM
 uMM
 fDV
 fDV
@@ -50161,7 +50197,7 @@ qMz
 gTO
 fDV
 fDV
-hBk
+uMM
 uMM
 hBk
 fDV
@@ -50364,7 +50400,7 @@ qMz
 gTO
 fDV
 fDV
-hBk
+uMM
 odU
 hBk
 fDV
@@ -50566,7 +50602,7 @@ qMz
 gTO
 fDV
 fDV
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -50768,7 +50804,7 @@ qMz
 gTO
 fDV
 fDV
-hBk
+uMM
 uMM
 nog
 fDV
@@ -50970,7 +51006,7 @@ qMz
 gTO
 fDV
 uMM
-hBk
+uMM
 uMM
 nog
 nog
@@ -51172,8 +51208,8 @@ gTO
 gTO
 hBk
 uMM
-hBk
-hBk
+uMM
+uMM
 foG
 vuv
 vuv
@@ -51375,7 +51411,7 @@ fDV
 uMM
 uMM
 uMM
-hBk
+uMM
 nog
 yaU
 vuv
@@ -51576,7 +51612,7 @@ gTO
 hBk
 uMM
 uMM
-hBk
+uMM
 uMM
 nog
 nog
@@ -51776,8 +51812,8 @@ gTO
 gTO
 fDV
 hBk
-hBk
-qyI
+uMM
+uMM
 fDV
 uMM
 fDV
@@ -51977,8 +52013,8 @@ gTO
 fDV
 fDV
 fDV
-hBk
-hBk
+uMM
+uMM
 uMM
 fDV
 uMM
@@ -52179,7 +52215,7 @@ fDV
 fDV
 fDV
 hBk
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -52381,7 +52417,7 @@ fDV
 fDV
 fDV
 hBk
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -52392,7 +52428,7 @@ fDV
 nog
 ptZ
 sCe
-mjO
+sCe
 nzR
 fFs
 fFs
@@ -52583,7 +52619,7 @@ nog
 fDV
 fDV
 hBk
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -52593,7 +52629,7 @@ fDV
 fDV
 nog
 uQp
-sCe
+mjO
 sCe
 sCe
 sCe
@@ -52980,14 +53016,14 @@ nhM
 nhM
 fqL
 uMM
-uMM
+qyI
 uMM
 sXD
 nog
 fDV
 hBk
 uMM
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -53188,7 +53224,7 @@ xEg
 nog
 hBk
 uMM
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -53216,7 +53252,7 @@ vuv
 vuv
 vuv
 vuv
-vuv
+aHb
 nog
 qMz
 qMz
@@ -53389,7 +53425,7 @@ uMM
 uMM
 hBk
 hBk
-hBk
+uMM
 hBk
 fDV
 fDV
@@ -53469,7 +53505,7 @@ nhM
 nhM
 kOs
 eEI
-hHU
+tKy
 ybd
 wUY
 kOs
@@ -53590,8 +53626,8 @@ nog
 uMM
 hBk
 hBk
+uMM
 hBk
-hBk
 fDV
 fDV
 fDV
@@ -53616,7 +53652,7 @@ nog
 qMz
 nog
 nog
-vuv
+csX
 vuv
 vuv
 vuv
@@ -53792,8 +53828,8 @@ fDV
 fDV
 hBk
 hBk
-hBk
-hBk
+uMM
+uMM
 fDV
 fDV
 fDV
@@ -53995,7 +54031,7 @@ hBk
 hBk
 hBk
 fDV
-hBk
+uMM
 fDV
 fDV
 fDV
@@ -54197,8 +54233,8 @@ hBk
 hBk
 uMM
 uMM
-hBk
-hBk
+uMM
+uMM
 uMM
 kuk
 uMM
@@ -54399,9 +54435,9 @@ hBk
 hBk
 fDV
 hBk
-hBk
-hBk
-hBk
+uMM
+uMM
+uMM
 fDV
 uMM
 uMM
@@ -54601,9 +54637,9 @@ hBk
 hBk
 hBk
 hBk
-hBk
-hBk
-hBk
+uMM
+uMM
+uMM
 fDV
 fDV
 fDV
@@ -55089,7 +55125,7 @@ pzJ
 pzJ
 kOs
 gXR
-hNy
+tVw
 tVw
 xMw
 xMw
@@ -55206,7 +55242,7 @@ hBk
 fDV
 uMM
 hBk
-odU
+hBk
 hBk
 fDV
 fDV
@@ -57174,7 +57210,7 @@ vuv
 nog
 vuv
 nog
-xxh
+iTW
 vuv
 jKz
 vuv
@@ -57382,8 +57418,8 @@ vuv
 rlc
 rlc
 juF
-xxh
-xxh
+iTW
+iTW
 dCu
 czC
 vuv
@@ -57581,12 +57617,12 @@ nog
 vuv
 vuv
 vuv
-xxh
+iTW
 vuv
-xxh
+iTW
 dCu
 nIi
-xxh
+iTW
 vuv
 vuv
 nog
@@ -57988,8 +58024,8 @@ jKz
 vuv
 vuv
 pKG
-xxh
-xxh
+iTW
+iTW
 dCu
 jxj
 vuv
@@ -58823,7 +58859,7 @@ pug
 paf
 gRp
 pfz
-bYl
+iyE
 gRp
 lyd
 oPL
@@ -59432,7 +59468,7 @@ bli
 wkS
 bYl
 xjF
-bYl
+gfN
 nog
 nhM
 xfc
@@ -59634,7 +59670,7 @@ bYl
 wkS
 mPP
 paf
-bYl
+gfN
 nog
 nhM
 xfc
@@ -60441,7 +60477,7 @@ bli
 paf
 bYl
 lOq
-bYl
+edR
 xus
 nog
 nhM
@@ -133854,7 +133890,7 @@ tFv
 kVf
 kan
 emy
-wkB
+qvl
 guW
 dNW
 guW
@@ -134042,7 +134078,7 @@ uRb
 guW
 guW
 ldZ
-edR
+obn
 rrR
 xkt
 xkt
@@ -134054,9 +134090,9 @@ xAN
 kan
 guW
 kan
-mpx
+kan
 emy
-wkB
+qvl
 guW
 guW
 guW
@@ -134244,7 +134280,7 @@ jtK
 jja
 guW
 ldZ
-edR
+obn
 rrR
 gUd
 xUU
@@ -134446,7 +134482,7 @@ uRb
 kan
 guW
 ldZ
-edR
+obn
 rrR
 xkt
 xkt
@@ -134455,12 +134491,12 @@ xkt
 xkt
 oTG
 ksK
-mpx
+kan
 kan
 kan
 kan
 emy
-wkB
+qvl
 guW
 cVO
 cVO
@@ -134662,7 +134698,7 @@ kan
 kan
 apO
 emy
-wkB
+qvl
 guW
 cVO
 cVO
@@ -135058,7 +135094,7 @@ xkt
 xkt
 xkt
 xkt
-mpx
+kan
 kan
 guW
 kan
@@ -168391,7 +168427,7 @@ fTn
 ghn
 guW
 guW
-wUB
+guW
 guW
 jIc
 pJt
@@ -169598,7 +169634,7 @@ jtK
 jtK
 pJt
 jtK
-dRJ
+cCV
 urx
 ovd
 mPW
@@ -202930,7 +202966,7 @@ guW
 xDZ
 cCV
 xDZ
-wUB
+guW
 xDZ
 cCV
 mfc
@@ -203336,7 +203372,7 @@ cCV
 xDZ
 guW
 guW
-sej
+xDZ
 xDZ
 guW
 guW
@@ -203535,7 +203571,7 @@ prY
 xDZ
 pfb
 xDy
-sej
+xDZ
 guW
 xDZ
 guW
@@ -203943,7 +203979,7 @@ xDZ
 xDZ
 bAC
 uyF
-sej
+xDZ
 xDZ
 mat
 mat
@@ -204545,7 +204581,7 @@ xDZ
 guW
 pjP
 jue
-sej
+xDZ
 xDZ
 guW
 xDZ
@@ -204754,7 +204790,7 @@ guW
 guW
 bQz
 xDZ
-sej
+xDZ
 xDZ
 xDZ
 xDZ
@@ -205154,7 +205190,7 @@ prY
 mNz
 xDZ
 guW
-sej
+xDZ
 guW
 xDZ
 guW
