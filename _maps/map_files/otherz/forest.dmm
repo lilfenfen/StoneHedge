@@ -706,6 +706,8 @@
 	aportalgoesto = "ffout7";
 	aportalid = "ffin7"
 	},
+/obj/structure/spacevine,
+/obj/effect/mist,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -1179,6 +1181,8 @@
 	aportalgoesto = "ffout6";
 	aportalid = "ffin6"
 	},
+/obj/structure/spacevine,
+/obj/effect/mist,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -1472,6 +1476,12 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/wisp,
 /turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Deepwoods"
+	})
+"il" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
@@ -1930,6 +1940,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"kN" = (
+/mob/living/carbon/human/species/skeleton/dead,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cavewet)
 "kO" = (
 /obj/structure/spider/stickyweb{
 	dir = 8;
@@ -2331,7 +2345,6 @@
 /area/rogue/under/cavewet)
 "mQ" = (
 /obj/structure/spawner/invisible/ghost/wraiths,
-/mob/living/carbon/human/species/skeleton/dead,
 /obj/effect/decal/cleanable/blood/gibs/down,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet)
@@ -3414,7 +3427,6 @@
 	first_time_text = "The Deepwoods"
 	})
 "te" = (
-/mob/living/carbon/human/species/skeleton/npc/dungeon/lich,
 /obj/effect/decal/remains/wolf,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
@@ -3429,6 +3441,7 @@
 	aportalgoesto = "ffin9";
 	aportalid = "ffout9"
 	},
+/obj/effect/mist,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -3867,6 +3880,13 @@
 /obj/item/natural/rock/coal,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
+"vI" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Deepwoods"
+	})
 "vJ" = (
 /obj/structure/chair/wood/rogue/throne,
 /obj/item/clothing/head/roguetown/helmet/winged,
@@ -6649,7 +6669,6 @@
 	icon_state = "stickyweb2"
 	},
 /obj/structure/spawner/invisible/ghost/wraiths,
-/mob/living/carbon/human/species/skeleton/dead,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
 "Lm" = (
@@ -6806,6 +6825,7 @@
 	layer = 2.8;
 	pixel_x = 8
 	},
+/obj/structure/spacevine,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -8084,6 +8104,8 @@
 	aportalgoesto = "ffout4";
 	aportalid = "ffin4"
 	},
+/obj/structure/spacevine,
+/obj/effect/mist,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -8170,6 +8192,7 @@
 	dir = 8;
 	pixel_x = -8
 	},
+/obj/structure/spacevine,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -8182,6 +8205,10 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/river)
+"TI" = (
+/mob/living/carbon/human/species/skeleton/npc/dungeon/lich,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cavewet)
 "TK" = (
 /obj/structure/fluff/railing/fence,
 /obj/structure/flora/roguegrass/bush{
@@ -8361,6 +8388,7 @@
 	aportalgoesto = "ffin8";
 	aportalid = "ffout8"
 	},
+/obj/effect/mist,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -8682,6 +8710,12 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/corpses,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/cave/minotaurcave)
+"WG" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Deepwoods"
+	})
 "WJ" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/fluff/statue/femalestatue{
@@ -8763,6 +8797,8 @@
 	aportalgoesto = "ffout5";
 	aportalid = "ffin5"
 	},
+/obj/structure/spacevine,
+/obj/effect/mist,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -9135,6 +9171,7 @@
 	aportalgoesto = "ffin10";
 	aportalid = "ffout10"
 	},
+/obj/effect/mist,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
@@ -22520,7 +22557,7 @@ wO
 Ly
 uQ
 mP
-iY
+TI
 Ly
 SP
 iY
@@ -22928,7 +22965,7 @@ uQ
 SP
 Ly
 FN
-SP
+kN
 SP
 SP
 Ly
@@ -24513,7 +24550,7 @@ Ly
 HH
 iY
 SP
-SP
+kN
 SP
 SP
 SP
@@ -55138,7 +55175,7 @@ NI
 NI
 NI
 NI
-Hr
+BB
 yE
 Ng
 Ng
@@ -55271,7 +55308,7 @@ SY
 Tx
 Tx
 Tx
-Ng
+dF
 Ng
 Ng
 Lu
@@ -55401,9 +55438,9 @@ nk
 nk
 nk
 Xe
-Nt
-Nt
-Nt
+WG
+WG
+WG
 Ng
 Lu
 Lu
@@ -55534,8 +55571,8 @@ nk
 nk
 nk
 gC
-Nt
-Nt
+WG
+WG
 Nt
 Ng
 hF
@@ -55670,7 +55707,7 @@ dW
 Md
 Md
 Md
-uB
+eo
 IN
 IN
 IN
@@ -55803,7 +55840,7 @@ NI
 NI
 NI
 AN
-xn
+vI
 IN
 IN
 IN
@@ -57453,7 +57490,7 @@ Ng
 tS
 NI
 NI
-NI
+Ng
 NI
 iC
 cW
@@ -59699,7 +59736,7 @@ NI
 NI
 NI
 hF
-Zs
+AN
 Zs
 Br
 Zs
@@ -59831,11 +59868,11 @@ NI
 NI
 NI
 NI
+AN
 Zs
-Zs
+il
 AK
-AK
-AK
+il
 XM
 Ng
 Ng
@@ -60097,7 +60134,7 @@ NI
 NI
 NI
 NI
-Zs
+AN
 th
 AK
 AK
@@ -60230,12 +60267,12 @@ NI
 NI
 NI
 NI
-Zs
+AN
 Zm
 AK
 AK
 AK
-AK
+il
 Ng
 Ng
 Ng
@@ -60365,8 +60402,8 @@ NI
 NI
 NI
 Zs
-Zs
-Zs
+AN
+AN
 Br
 Zs
 Kl
@@ -77656,9 +77693,9 @@ Rv
 Pc
 Zs
 Zs
-Pc
-Pc
-Pc
+AN
+AN
+AN
 Pc
 Pc
 Pc
@@ -77787,8 +77824,8 @@ Rv
 Rv
 Rv
 Zs
-Pc
-Pc
+AN
+AN
 Pc
 Pc
 Pc
@@ -77920,9 +77957,9 @@ Rv
 Rv
 Rv
 Zs
-Pc
-Pc
-Pc
+AN
+AN
+AN
 Pc
 Pc
 Pc
@@ -78053,9 +78090,9 @@ Rv
 NV
 Pc
 Zs
-Pc
-Pc
-Pc
+AN
+AN
+AN
 Pc
 Pc
 Pc
@@ -78186,9 +78223,9 @@ Rv
 Rv
 Rv
 Zs
-Pc
-Pc
-Pc
+AN
+AN
+AN
 Pc
 Pc
 Pc
@@ -78321,10 +78358,10 @@ NV
 Rv
 Zs
 Zs
-Pc
-Pc
-Pc
-Pc
+AN
+AN
+AN
+AN
 Pc
 Pc
 Pc
