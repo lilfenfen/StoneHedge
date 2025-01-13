@@ -17,17 +17,17 @@
 
 /datum/supply_pack/rogue/luxury/ozium
 	name = "Ozium"
-	cost = 200
+	cost = 20
 	contains = list(/obj/item/reagent_containers/powder/ozium)
 
 /datum/supply_pack/rogue/luxury/moondust
 	name = "Moon Dust"
-	cost = 500
+	cost = 50
 	contains = list(/obj/item/reagent_containers/powder/moondust)
 
 /datum/supply_pack/rogue/luxury/sublimate // Far cheaper to make your own.
 	name = "Arcyne Sublimate"
-	cost = 800
+	cost = 120
 	contains = list(
 		/obj/item/reagent_containers/powder/sublimate,
 		/obj/item/reagent_containers/powder/sublimate,

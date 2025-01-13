@@ -479,12 +479,9 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/woods/overgrownfort)
 "cB" = (
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "tablewood1"
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/shelter/woods/overgrownfort)
+/obj/structure/closet/crate/chest/refilling/treasure,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/cave/minotaurcave)
 "cE" = (
 /obj/structure/bars/grille,
 /turf/open/transparent/openspace,
@@ -3801,7 +3798,7 @@
 	})
 "vh" = (
 /obj/structure/flora/grass/jungle/b,
-/obj/effect/spawner/lootdrop/roguetown/refilling_chest/randomspawner,
+/obj/structure/closet/crate/chest/refilling/treasure,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/woods/overgrownfort)
 "vi" = (
@@ -4349,8 +4346,8 @@
 	first_time_text = "The Deepwoods"
 	})
 "yz" = (
-/obj/effect/mob_spawner/goblin,
-/turf/open/floor/rogue/ruinedwood/spiral,
+/obj/structure/closet/crate/chest/refilling/treasure,
+/turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/woods/overgrownfort)
 "yA" = (
 /obj/structure/spider/stickyweb,
@@ -4551,7 +4548,7 @@
 	})
 "zG" = (
 /obj/effect/mob_spawner/goblin,
-/turf/open/floor/rogue/dirt/road,
+/turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/shelter/woods/overgrownfort)
 "zI" = (
 /obj/effect/decal/cleanable/food/salt{
@@ -7126,10 +7123,8 @@
 /area/rogue/under/cavewet)
 "Np" = (
 /obj/effect/mob_spawner/goblin,
-/turf/open/water/cleanshallow,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Deepwoods"
-	})
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/woods/overgrownfort)
 "Ns" = (
 /turf/closed/wall/shroud,
 /area/rogue/outdoors/woods{
@@ -7275,16 +7270,16 @@
 "Og" = (
 /obj/structure/rack/rogue/shelf/big,
 /obj/item/storage/roguebag{
-	pixel_y = 10;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 10
 	},
 /obj/item/storage/roguebag{
 	pixel_x = -4;
 	pixel_y = 10
 	},
 /obj/item/seeds/wheat{
-	pixel_y = 10;
-	pixel_x = -2
+	pixel_x = -2;
+	pixel_y = 10
 	},
 /obj/item/seeds/shroom{
 	pixel_y = 10
@@ -8479,8 +8474,8 @@
 /area/rogue/indoors/cave/minotaurcave)
 "Vc" = (
 /obj/structure/chair/stool/rogue{
-	pixel_y = -7;
-	pixel_x = 1
+	pixel_x = 1;
+	pixel_y = -7
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/tribalfort{
@@ -41086,7 +41081,7 @@ Ly
 Ly
 Ly
 BP
-BJ
+mm
 bK
 BJ
 WP
@@ -41241,7 +41236,7 @@ wO
 wO
 Xh
 Xh
-zS
+pn
 ut
 ut
 ut
@@ -41373,7 +41368,7 @@ wO
 wO
 wO
 wO
-IR
+cB
 jJ
 pn
 ut
@@ -42703,7 +42698,7 @@ wO
 fZ
 Vb
 pn
-zS
+SS
 fZ
 fZ
 fZ
@@ -59313,7 +59308,7 @@ ew
 ew
 ew
 ew
-sD
+yz
 BP
 Cr
 vB
@@ -59446,12 +59441,12 @@ Cg
 Cg
 ew
 ew
-PL
+yz
 BP
 Cu
 RX
 RX
-cB
+Cu
 AP
 AL
 El
@@ -59717,7 +59712,7 @@ BP
 Cu
 RX
 RX
-cB
+Cu
 AP
 af
 Gn
@@ -59846,7 +59841,7 @@ Cg
 ew
 Or
 iF
-BP
+zG
 pI
 RX
 RX
@@ -59977,16 +59972,16 @@ Ir
 wA
 hp
 Cg
-yz
+ew
 sO
 BP
 IP
-RX
+Np
 Lm
 sQ
 AP
 Wf
-zG
+bK
 RX
 gW
 gW
@@ -61977,7 +61972,7 @@ Lu
 NI
 ve
 NI
-Np
+Hr
 Ng
 Lu
 mw
