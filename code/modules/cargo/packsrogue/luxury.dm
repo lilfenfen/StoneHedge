@@ -39,7 +39,7 @@
 
 /datum/supply_pack/rogue/luxury/spice
 	name = "Spice"
-	cost = 200
+	cost = 50
 	contains = list(/obj/item/reagent_containers/powder/spice)
 
 /datum/supply_pack/rogue/luxury/mbox
@@ -79,7 +79,7 @@
 
 /datum/supply_pack/rogue/luxury/nomag
 	name = "Ring of Null Magic"
-	cost = 1000
+	cost = 500
 	contains = list(/obj/item/clothing/ring/active/nomag)
 
 /datum/supply_pack/rogue/luxury/scrying
@@ -94,7 +94,7 @@
 
 /datum/supply_pack/rogue/luxury/riddleofsteel
 	name = "Riddle of Steel"
-	cost = 800
+	cost = 500
 	contains = list(/obj/item/riddleofsteel)
 
 /datum/supply_pack/rogue/luxury/succubus
