@@ -478,4 +478,4 @@ Will require a group to kill, recommend 5+ people.
 
 /obj/item/paper/quest/lich
 	name = "paper- 'Quest - Challenging'"
-	info = "<strong><center>Group Quest - 5+</center></strong><BR><BR>Scouts have reported large numbers of hostile skeletons excavating a recently uncovered ruin beneath the town. This area can be accessed below the abandoned mines west of town, in the mushroom caves. It is strongly recommended to bring no less than five people to investigate this area."
+	info = "<strong><center>Group Quest - 5+</center></strong><BR><BR>The Church has recently discovered an old abandoned passage underneath the Temple of Lune has been excavated, and graves in the graveyard looted. Scouts have reported numerous skeletons in the passages below the graveyard. A group of atleast five has been requested to investigate the area and eliminate any threats to the town."

@@ -2266,6 +2266,10 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
+"bBr" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "bBE" = (
 /obj/item/bedsheet/rogue/wool,
 /obj/structure/bed/rogue/inn/hay,
@@ -2327,6 +2331,20 @@
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
+	})
+"bCT" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
 	})
 "bCX" = (
 /turf/closed/mineral/random/rogue,
@@ -3034,6 +3052,10 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"ccp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "ccv" = (
 /obj/structure/spacevine,
 /mob/living/carbon/human/species/goblin/npc/cave{
@@ -3394,6 +3416,11 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
+"cpY" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/long{
+	dir = 1
+	},
+/area/rogue/under/cavewet)
 "cqm" = (
 /obj/structure/rack/rogue/shelf/big{
 	pixel_y = 0
@@ -3896,6 +3923,9 @@
 /obj/structure/chair/bench/ultimacouch,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/bath)
+"cJn" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/long,
+/area/rogue/under/cavewet)
 "cJG" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush2"
@@ -19967,6 +19997,10 @@
 /obj/structure/fluff/walldeco/masonflag,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/shelter/town)
+"ndK" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "ndU" = (
 /obj/structure/bars{
 	icon_state = "barsbent";
@@ -20795,6 +20829,17 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
+	})
+"nCA" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
 	})
 "nCT" = (
 /obj/structure/fluff/railing/wood{
@@ -27177,6 +27222,10 @@
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/cave)
+"ryk" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "ryA" = (
 /obj/structure/spawner/invisible/ghost/wraiths,
 /turf/open/floor/rogue/naturalstone,
@@ -52168,7 +52217,7 @@ fjS
 fjS
 fjS
 fjS
-fjS
+sbE
 fjS
 fjS
 fjS
@@ -52368,11 +52417,11 @@ fDV
 fDV
 fDV
 fDV
-fDV
-fDV
-fDV
-gTO
-fDV
+fjS
+xfc
+xfc
+xfc
+fjS
 fDV
 fDV
 fDV
@@ -52570,11 +52619,11 @@ gTO
 fDV
 fDV
 fDV
-qMz
-qMz
-fDV
-qMz
-fDV
+fjS
+xfc
+xfc
+xfc
+fjS
 fDV
 fDV
 fDV
@@ -52772,11 +52821,11 @@ fDV
 qMz
 qMz
 qMz
-fDV
-gTO
-fDV
-qMz
-fDV
+fjS
+xfc
+xfc
+xfc
+fjS
 fDV
 fDV
 gTO
@@ -52974,11 +53023,11 @@ fDV
 qMz
 qMz
 qMz
-qMz
-gTO
-qMz
-fDV
-fDV
+fjS
+xfc
+xfc
+xfc
+fjS
 fDV
 fDV
 gTO
@@ -53176,11 +53225,11 @@ qMz
 fDV
 qMz
 qMz
-fDV
-fDV
-gTO
-qMz
-gTO
+fjS
+xfc
+xfc
+xfc
+fjS
 fDV
 fDV
 fDV
@@ -53378,11 +53427,11 @@ qMz
 gTO
 qMz
 qMz
-qMz
-fDV
-fDV
-qMz
-gTO
+fjS
+xfc
+xfc
+xfc
+fjS
 fDV
 gTO
 fDV
@@ -53580,11 +53629,11 @@ gTO
 qMz
 gTO
 qMz
-fDV
-gTO
-fDV
-qMz
-gTO
+fjS
+xfc
+xfc
+xfc
+fjS
 gTO
 fDV
 gTO
@@ -53782,11 +53831,11 @@ qMz
 qMz
 gTO
 gTO
-qMz
-qMz
-fDV
-qMz
-gTO
+fjS
+xfc
+xfc
+xfc
+fjS
 gTO
 gTO
 fDV
@@ -53984,11 +54033,11 @@ gTO
 qMz
 qMz
 gTO
-qMz
-fDV
-qMz
-gTO
-qMz
+fjS
+xfc
+xfc
+xfc
+fjS
 gTO
 fDV
 fDV
@@ -54186,11 +54235,11 @@ gTO
 gTO
 gTO
 qMz
-qMz
-fDV
-fDV
-qMz
-gTO
+fjS
+xfc
+xfc
+xfc
+fjS
 gTO
 qMz
 gTO
@@ -54388,11 +54437,11 @@ qMz
 gTO
 gTO
 qMz
-gTO
-gTO
-qMz
-fDV
-gTO
+fjS
+xfc
+xfc
+xfc
+fjS
 gTO
 qMz
 qMz
@@ -54590,11 +54639,11 @@ qMz
 gTO
 gTO
 gTO
-fDV
-fDV
-qMz
-gTO
-fDV
+fjS
+xfc
+xfc
+xfc
+fjS
 gTO
 fDV
 fDV
@@ -54792,11 +54841,11 @@ fDV
 fDV
 fDV
 gTO
-fDV
-fDV
-qMz
-fDV
-fDV
+fjS
+ndK
+xfc
+ndK
+fjS
 fDV
 gTO
 fDV
@@ -54994,11 +55043,11 @@ fDV
 qMz
 fDV
 qMz
-qMz
-fDV
-qMz
-fDV
-fDV
+fjS
+ccp
+xfc
+xfc
+fjS
 fDV
 gTO
 fDV
@@ -55197,9 +55246,9 @@ qMz
 gTO
 gTO
 fDV
-qMz
-fDV
-fDV
+xfc
+bBr
+xfc
 gTO
 gTO
 fDV
@@ -55399,9 +55448,9 @@ qMz
 fDV
 qMz
 gTO
-gTO
-gTO
-gTO
+ccp
+ccp
+ccp
 gTO
 fDV
 qMz
@@ -55601,9 +55650,9 @@ qMz
 qMz
 fDV
 fDV
-qMz
-gTO
-gTO
+ccp
+ccp
+ccp
 gTO
 qMz
 qMz
@@ -55803,9 +55852,9 @@ qMz
 fDV
 fDV
 gTO
-fDV
-qMz
-gTO
+xfc
+ryk
+ndK
 gTO
 gTO
 gTO
@@ -56004,10 +56053,10 @@ qMz
 fDV
 gTO
 fDV
-gTO
-qMz
-qMz
-fDV
+cpY
+ndK
+xfc
+hBk
 gTO
 qMz
 fDV
@@ -56206,10 +56255,10 @@ qMz
 fDV
 fDV
 qMz
-qMz
-qMz
-fDV
-gTO
+cpY
+hBk
+xfc
+ryk
 gTO
 fDV
 fDV
@@ -56408,10 +56457,10 @@ gTO
 fDV
 qMz
 qMz
-qMz
-qMz
-fDV
-gTO
+cpY
+xfc
+xfc
+ndK
 fDV
 fDV
 fDV
@@ -56609,12 +56658,12 @@ gTO
 gTO
 fDV
 gTO
-fDV
-qMz
-gTO
-gTO
-qMz
-gTO
+gJl
+dlk
+xfc
+xfc
+xfc
+cpY
 qMz
 qMz
 qMz
@@ -56811,12 +56860,12 @@ gTO
 gTO
 gTO
 qMz
-fDV
-qMz
-gTO
-qMz
-qMz
-qMz
+eHD
+kvz
+xfc
+xfc
+xfc
+cpY
 qMz
 qMz
 qMz
@@ -57013,12 +57062,12 @@ gTO
 gTO
 qMz
 gTO
-fDV
-qMz
-gTO
-gTO
-gTO
-qMz
+eHD
+kvz
+xfc
+xfc
+xfc
+cpY
 fDV
 qMz
 qMz
@@ -57215,12 +57264,12 @@ gTO
 gTO
 qMz
 fDV
-gTO
-qMz
-gTO
-qMz
-gTO
-qMz
+fCT
+dlk
+cJn
+cJn
+cJn
+wvy
 qMz
 qMz
 fDV
@@ -91758,8 +91807,8 @@ cVO
 cVO
 acz
 ebT
-owh
-xFq
+sCq
+qgd
 rrR
 obn
 nVt
@@ -91960,8 +92009,8 @@ qeG
 acz
 ebT
 ebT
-acz
-acz
+bCT
+nCA
 rrR
 fCT
 nVt
