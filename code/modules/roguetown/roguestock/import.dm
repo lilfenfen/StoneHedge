@@ -215,6 +215,50 @@
 	new /obj/item/perfume/random(src)
 	new /obj/item/perfume/random(src)
 
+/datum/roguestock/import/mediumarmor
+	name = "Fragment of the Old Guard"
+	desc = "A magic crystal that gifts the skills needed to wear medium armor."
+	item_type = /obj/structure/closet/crate/chest/steward/mediumarmor
+	export_price = 150
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/mediumarmor/Initialize()
+	. = ..()
+	new /obj/item/book/granter/trait/defense/mediumarmor(src)
+
+/datum/roguestock/import/heavyarmor
+	name = "Fragment of the Forgotten Knight"
+	desc = "A magic crystal that gifts the skills needed to wear heavy armor."
+	item_type = /obj/structure/closet/crate/chest/steward/heavyarmor
+	export_price = 250
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/heavyarmor/Initialize()
+	. = ..()
+	new /obj/item/book/granter/trait/defense/heavyarmor(src)
+
+/datum/roguestock/import/acrobat
+	name = "Fragment of the Acrobat"
+	desc = "A magic crystal that makes one more nimble."
+	item_type = /obj/structure/closet/crate/chest/steward/acrobat
+	export_price = 200
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/acrobat/Initialize()
+	. = ..()
+	new /obj/item/book/granter/trait/acrobat(src)
+
+/datum/roguestock/import/bogtrek
+	name = "Fragment of the Swamp"
+	desc = "A magic crystal that helps in quickly navigating muddy terrain."
+	item_type = /obj/structure/closet/crate/chest/steward/bogtrek
+	export_price = 150
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/bogtrek/Initialize()
+	. = ..()
+	new /obj/item/book/granter/trait/mobility/bogtrek(src)
+
 /datum/roguestock/import/knight
 	name = "Knight Equipment Crate"
 	desc = "Kit for a Knight."
