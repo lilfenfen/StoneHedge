@@ -27,50 +27,163 @@
 	locked = TRUE
 	masterkey = TRUE
 
-/datum/roguestock/import/bogguard
-	name = "Bog Guard Equipment Crate"
-	desc = "Starting kit for a new Bog Guard."
-	item_type = /obj/structure/closet/crate/chest/steward/bogguard
-	export_price = 50
-	importexport_amt = 1
-
-/obj/structure/closet/crate/chest/steward/bogguard/Initialize()
-	. = ..()
-	new /obj/item/clothing/cloak/stabard/bog(src)
-	new /obj/item/storage/keyring/guard(src)
-	new /obj/item/clothing/suit/roguetown/armor/gambeson(src)
-	new /obj/item/rogueweapon/mace/cudgel(src)
-	new /obj/item/rope/chain(src)
-
-/datum/roguestock/import/townguard
-	name = "Watchman Equipment Crate"
-	desc = "Starting kit for a new Watchman."
-	item_type = /obj/structure/closet/crate/chest/steward/townguard
-	export_price = 50
-	importexport_amt = 1
-
-/obj/structure/closet/crate/chest/steward/townguard/Initialize()
-	. = ..()
-	new /obj/item/clothing/cloak/stabard/guard(src)
-	new /obj/item/storage/keyring/guard(src)
-	new /obj/item/clothing/suit/roguetown/armor/gambeson(src)
-	new /obj/item/rogueweapon/mace/cudgel(src)
-	new /obj/item/rope/chain(src)
-
-/datum/roguestock/import/redpotion
+/datum/roguestock/import/potion/health
 	name = "Crate of Health Potions"
 	desc = "Red that keeps men alive."
-	item_type = /obj/structure/closet/crate/chest/steward/redpotion
+	item_type = /obj/structure/closet/crate/chest/steward/potion/health
 	export_price = 100
 	importexport_amt = 1
 
-/obj/structure/closet/crate/chest/steward/redpotion/Initialize()
+/obj/structure/closet/crate/chest/steward/potion/health/Initialize()
 	. = ..()
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/healthpot(src)
+
+/datum/roguestock/import/potion/majorhealth
+	name = "Crate of Major Health Potions"
+	desc = "Red that keeps men alive."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/majorhealth
+	export_price = 200
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/majorhealth/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/majorhealthpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/majorhealthpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/majorhealthpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/majorhealthpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/majorhealthpot(src)
+
+/datum/roguestock/import/potion/ambrosia
+	name = "Crate of Sublime Ambrosia"
+	desc = "Red that brings men back to life."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/ambrosia
+	export_price = 500
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/ambrosia/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/sublimeambrosia(src)
+
+/datum/roguestock/import/potion/fortitude
+	name = "Crate of fortitude potions."
+	desc = "A potion to enhance strength."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/fortitude
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/fortitude/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/fortitudepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/fortitudepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/fortitudepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/fortitudepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/fortitudepot(src)
+
+/datum/roguestock/import/potion/swiftness
+	name = "Crate of swiftness potions."
+	desc = "A potion to enhance speed."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/swiftness
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/swiftness/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/swiftnesspot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/swiftnesspot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/swiftnesspot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/swiftnesspot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/swiftnesspot(src)
+
+/datum/roguestock/import/potion/alacrity
+	name = "Crate of alacrity potions."
+	desc = "A potion to enhance perception."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/alacrity
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/alacrity/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/alacritypot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/alacritypot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/alacritypot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/alacritypot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/alacritypot(src)
+
+/datum/roguestock/import/potion/luck
+	name = "Crate of luck potions."
+	desc = "A potion to enhance fortune."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/luck
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/luck/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/luckpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/luckpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/luckpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/luckpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/luckpot(src)
+
+/datum/roguestock/import/potion/endurance
+	name = "Crate of endurance potions."
+	desc = "A potion to enhance endurance."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/endurance
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/endurance/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/endurancepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/endurancepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/endurancepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/endurancepot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/endurancepot(src)
+
+/datum/roguestock/import/potion/constitution
+	name = "Crate of constitution potions."
+	desc = "A potion to enhance constitution."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/constitution
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/constitution/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/constitutionpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/constitutionpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/constitutionpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/constitutionpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/constitutionpot(src)
+
+/datum/roguestock/import/potion/intellect
+	name = "Crate of intellect potions."
+	desc = "A potion to enhance intelligence."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/intellect
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/intellect/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/intellectpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/intellectpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/intellectpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/intellectpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/intellectpot(src)
+
+/datum/roguestock/import/potion/nullmagic
+	name = "Crate of nullmagic potions."
+	desc = "A potion to protect against magic."
+	item_type = /obj/structure/closet/crate/chest/steward/potion/nullmagic
+	export_price = 100
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/potion/nullmagic/Initialize()
+	. = ..()
+	new /obj/item/reagent_containers/glass/bottle/rogue/nullmagicpot(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/nullmagicpot(src)
 
 /datum/roguestock/import/antipregger
 	name = "Crate of Anti Pregnancy Potions"
@@ -106,7 +219,7 @@
 	name = "Knight Equipment Crate"
 	desc = "Kit for a Knight."
 	item_type = /obj/structure/closet/crate/chest/steward/knight
-	export_price = 490
+	export_price = 400
 	importexport_amt = 1
 
 /obj/structure/closet/crate/chest/steward/knight/Initialize()
@@ -119,16 +232,25 @@
 	new /obj/item/clothing/suit/roguetown/armor/chainmail(src)
 	new /obj/item/clothing/suit/roguetown/armor/plate/full(src)
 	new /obj/item/clothing/shoes/roguetown/boots/armor(src)
-	new /obj/item/storage/keyring/guardcastle(src)
 	new /obj/item/storage/belt/rogue/leather/hand(src)
 	new /obj/item/rogueweapon/sword/long(src)
 
+/datum/roguestock/import/dragonring
+	name = "Dragonring Equipment Crate"
+	desc = "A powerful artifact ring to enhance strength, constitution, and endurance."
+	item_type = /obj/structure/closet/crate/chest/steward/knight
+	export_price = 1000
+	importexport_amt = 1
+
+/obj/structure/closet/crate/chest/steward/knight/Initialize()
+	. = ..()
+	new /obj/item/clothing/ring/dragon_ring(src)
 
 /datum/roguestock/import/manatarms
 	name = "Man at Arms Equipment Crate"
 	desc = "Kit for a Man at Arms."
 	item_type = /obj/structure/closet/crate/chest/steward/manatarms
-	export_price = 250
+	export_price = 150
 	importexport_amt = 1
 
 /obj/structure/closet/crate/chest/steward/manatarms/Initialize()
@@ -141,7 +263,6 @@
 	new /obj/item/clothing/suit/roguetown/armor/chainmail(src)
 	new /obj/item/clothing/suit/roguetown/armor/plate/half(src)
 	new /obj/item/clothing/shoes/roguetown/boots/armor(src)
-	new /obj/item/storage/keyring/guardcastle(src)
 	new /obj/item/storage/belt/rogue/leather/hand(src)
 	new /obj/item/rogueweapon/spear(src)
 
