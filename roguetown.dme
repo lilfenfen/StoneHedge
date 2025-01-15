@@ -715,6 +715,7 @@
 #include "code\datums\sexcon\sex_actions\deviant\nipple_sex.dm"
 #include "code\datums\sexcon\sex_actions\deviant\rub_body.dm"
 #include "code\datums\sexcon\sex_actions\deviant\scissoring.dm"
+#include "code\datums\sexcon\sex_actions\deviant\spanking.dm"
 #include "code\datums\sexcon\sex_actions\deviant\tailpegging_anal.dm"
 #include "code\datums\sexcon\sex_actions\deviant\tailpegging_vaginal.dm"
 #include "code\datums\sexcon\sex_actions\deviant\thighjob.dm"
