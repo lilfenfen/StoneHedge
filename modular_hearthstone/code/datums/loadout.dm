@@ -235,6 +235,10 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Iron Gorget"
 	path = /obj/item/clothing/neck/roguetown/gorget
 
+/datum/loadout_item/cursed_collar
+	name = "Cursed Collar"
+	path = /obj/item/clothing/neck/roguetown/cursed_collar
+
 //ARMS
 /datum/loadout_item/lbracers
 	name = "Leather Bracers"
@@ -283,4 +287,5 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/iboots
 	name = "Iron Boots"
 	path =	/obj/item/clothing/shoes/roguetown/boots/armoriron
+
 
