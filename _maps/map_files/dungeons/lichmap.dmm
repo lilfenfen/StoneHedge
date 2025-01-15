@@ -186,8 +186,8 @@
 "bT" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/reagent_containers/glass/cup/golden{
-	pixel_y = 13;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 13
 	},
 /obj/item/roguekey/lord{
 	pixel_x = 4;
@@ -264,17 +264,17 @@
 /area/rogue/under/cavewet)
 "cG" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 5
+	dir = 5;
+	icon_state = "largetable"
 	},
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "cK" = (
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of wisdom";
-	redstone_id = "mazedungeonwisdom";
-	max_integrity = 3000
+	redstone_id = "mazedungeonwisdom"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -341,8 +341,8 @@
 /area/rogue/under/cavewet)
 "dm" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 10
+	dir = 10;
+	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/cup/steel,
 /turf/open/floor/rogue/cobble,
@@ -378,8 +378,8 @@
 /area/rogue/outdoors)
 "dE" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 5
+	dir = 5;
+	icon_state = "largetable"
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
 /turf/open/floor/rogue/wood,
@@ -421,9 +421,9 @@
 "dV" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of diligence";
-	redstone_id = "mazedungeondiligence";
-	max_integrity = 3000
+	redstone_id = "mazedungeondiligence"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -630,8 +630,8 @@
 /area/rogue/outdoors)
 "fV" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 5
+	dir = 5;
+	icon_state = "largetable"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet)
@@ -1100,13 +1100,6 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cavewet)
-"kJ" = (
-/obj/structure/fluff/traveltile{
-	aportalid = "lichdungeon";
-	aportalgoesto = "lichdungeonout"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "kK" = (
 /obj/structure/table/wood,
 /obj/item/paper/scroll,
@@ -1431,8 +1424,8 @@
 "oy" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/grown/apple{
-	pixel_y = 4;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 4
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/outdoors)
@@ -1529,9 +1522,9 @@
 /area/rogue/outdoors)
 "pD" = (
 /obj/structure/stationary_bell{
-	pixel_y = -20;
+	name = "Keep Bell";
 	pixel_x = -32;
-	name = "Keep Bell"
+	pixel_y = -20
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
@@ -1675,9 +1668,9 @@
 /area/rogue/under/cavewet)
 "rj" = (
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of mercy";
-	redstone_id = "mazedungeonmercy";
-	max_integrity = 3000
+	redstone_id = "mazedungeonmercy"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -1738,8 +1731,8 @@
 /area/rogue/under/cavewet)
 "rx" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 5
+	dir = 5;
+	icon_state = "largetable"
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/spells,
 /turf/open/floor/rogue/wood,
@@ -1806,8 +1799,8 @@
 /area/rogue/under/cavewet)
 "sm" = (
 /obj/effect/decal/cobbleedge{
-	icon_state = "borderfall";
-	dir = 1
+	dir = 1;
+	icon_state = "borderfall"
 	},
 /obj/structure/fluff/statue/knight/interior,
 /turf/open/floor/rogue/church,
@@ -2418,8 +2411,8 @@
 /area/rogue/under/cavewet)
 "xY" = (
 /obj/effect/decal/cobbleedge{
-	icon_state = "borderfall";
-	dir = 1
+	dir = 1;
+	icon_state = "borderfall"
 	},
 /obj/item/roguegem/violet,
 /turf/open/floor/rogue/church,
@@ -2586,9 +2579,9 @@
 /area/rogue/outdoors)
 "zC" = (
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of rest";
-	redstone_id = "mazedungeonrest";
-	max_integrity = 3000
+	redstone_id = "mazedungeonrest"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -2648,8 +2641,8 @@
 /area/rogue/under/cavewet)
 "Ah" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 10
+	dir = 10;
+	icon_state = "largetable"
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
 /turf/open/floor/rogue/wood,
@@ -2717,8 +2710,8 @@
 "AV" = (
 /obj/structure/plasticflaps,
 /turf/open/water/river{
-	icon_state = "rockwd";
-	dir = 8
+	dir = 8;
+	icon_state = "rockwd"
 	},
 /area/rogue/under/cavewet)
 "AX" = (
@@ -2783,8 +2776,8 @@
 /area/rogue/outdoors)
 "BE" = (
 /turf/open/water/river{
-	icon_state = "rockwd";
-	dir = 8
+	dir = 8;
+	icon_state = "rockwd"
 	},
 /area/rogue/under/cavewet)
 "BF" = (
@@ -2835,15 +2828,15 @@
 "Cj" = (
 /obj/structure/gate{
 	gid = "dungeondoor";
-	redstone_id = "mazedoor1";
-	max_integrity = 50000
+	max_integrity = 50000;
+	redstone_id = "mazedoor1"
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
 "Ck" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 1
+	dir = 1;
+	icon_state = "largetable"
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
 /turf/open/floor/rogue/wood,
@@ -2921,8 +2914,8 @@
 /area/rogue/under/cavewet)
 "Db" = (
 /obj/effect/decal/cobbleedge{
-	icon_state = "borderfall";
-	dir = 1
+	dir = 1;
+	icon_state = "borderfall"
 	},
 /obj/structure/fluff/statue/knight/interior/r,
 /turf/open/floor/rogue/church,
@@ -2979,8 +2972,8 @@
 /area/rogue/under/cavewet)
 "DE" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 1
+	dir = 1;
+	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/food/snacks/rogue/meat/salami,
 /turf/open/floor/rogue/cobble,
@@ -3022,8 +3015,8 @@
 "DY" = (
 /obj/effect/mist,
 /obj/structure/fluff/traveltile{
-	aportalid = "lichbossout";
-	aportalgoesto = "lichboss"
+	aportalgoesto = "lichboss";
+	aportalid = "lichbossout"
 	},
 /obj/structure/stairs/fancy,
 /turf/open/floor/rogue/church,
@@ -3378,8 +3371,8 @@
 /area/rogue/under/cavewet)
 "Hm" = (
 /obj/structure/bookcase/random/archive{
-	opacity = 0;
 	density = 0;
+	opacity = 0;
 	pixel_x = -25
 	},
 /turf/open/floor/rogue/herringbone,
@@ -3460,8 +3453,8 @@
 "Ih" = (
 /obj/structure/stairs/fancy,
 /obj/structure/fluff/traveltile{
-	aportalid = "lichbossout";
-	aportalgoesto = "lichboss"
+	aportalgoesto = "lichboss";
+	aportalid = "lichbossout"
 	},
 /obj/effect/mist,
 /turf/open/floor/rogue/carpet/lord/center/no_teleport,
@@ -3543,13 +3536,6 @@
 "Jb" = (
 /obj/structure/fermenting_barrel/beer,
 /turf/open/floor/rogue/woodturned,
-/area/rogue/under/cavewet)
-"Jc" = (
-/obj/effect/decal/cobbleedge{
-	icon_state = "borderfall";
-	dir = 1
-	},
-/turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cavewet)
 "Jg" = (
 /obj/machinery/light/rogue/hearth,
@@ -3821,8 +3807,8 @@
 /area/rogue/under/cavewet)
 "LJ" = (
 /turf/open/water/river{
-	icon_state = "rockwd";
-	dir = 8
+	dir = 8;
+	icon_state = "rockwd"
 	},
 /area/rogue/outdoors)
 "LK" = (
@@ -3989,8 +3975,8 @@
 /area/rogue/outdoors)
 "Ny" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 9
+	dir = 9;
+	icon_state = "largetable"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet)
@@ -4168,8 +4154,8 @@
 /area/rogue/under/cavewet)
 "Pr" = (
 /obj/structure/bookcase/random/archive{
-	opacity = 0;
 	density = 0;
+	opacity = 0;
 	pixel_x = 25
 	},
 /turf/open/floor/rogue/herringbone,
@@ -4242,9 +4228,9 @@
 /area/rogue/outdoors)
 "Qd" = (
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of beauty";
-	redstone_id = "mazedungeonbeauty";
-	max_integrity = 3000
+	redstone_id = "mazedungeonbeauty"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -4310,14 +4296,14 @@
 /area/rogue/under/cavewet)
 "QF" = (
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of life";
-	redstone_id = "mazedungeonlife";
-	max_integrity = 3000
+	redstone_id = "mazedungeonlife"
 	},
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of glory";
-	redstone_id = "mazedungeonglory";
-	max_integrity = 3000
+	redstone_id = "mazedungeonglory"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -4367,8 +4353,8 @@
 /area/rogue/under/cavewet)
 "Rl" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 5
+	dir = 5;
+	icon_state = "largetable"
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/wood,
@@ -4435,8 +4421,8 @@
 /area/rogue/under/cavewet)
 "Sa" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 5
+	dir = 5;
+	icon_state = "largetable"
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
@@ -4503,8 +4489,8 @@
 /area/rogue/outdoors)
 "Sz" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 6
+	dir = 6;
+	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/bucket/pot,
 /turf/open/floor/rogue/cobble,
@@ -4524,8 +4510,8 @@
 /area/rogue/outdoors)
 "SH" = (
 /obj/structure/table/wood{
-	icon_state = "largetable";
-	dir = 1
+	dir = 1;
+	icon_state = "largetable"
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
@@ -4575,16 +4561,16 @@
 /area/rogue/under/cavewet)
 "Tt" = (
 /obj/structure/bars/passage{
+	max_integrity = 10000;
 	name = "gate of escape";
-	redstone_id = "mazedungeonescape";
-	max_integrity = 10000
+	redstone_id = "mazedungeonescape"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "TF" = (
 /obj/effect/decal/cobbleedge{
-	icon_state = "borderfall";
-	dir = 1
+	dir = 1;
+	icon_state = "borderfall"
 	},
 /obj/item/roguegem/blue,
 /turf/open/floor/rogue/church,
@@ -4617,8 +4603,8 @@
 /area/rogue/under/cavewet)
 "TT" = (
 /obj/structure/table/wood{
-	icon_state = "tablewood2";
-	dir = 10
+	dir = 10;
+	icon_state = "tablewood2"
 	},
 /obj/item/candle/skull/lit,
 /turf/open/floor/rogue/ruinedwood{
@@ -5063,9 +5049,9 @@
 "Yn" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/bars/passage{
+	max_integrity = 3000;
 	name = "gate of glory";
-	redstone_id = "mazedungeonglory";
-	max_integrity = 3000
+	redstone_id = "mazedungeonglory"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
@@ -19652,7 +19638,7 @@ LD
 Vc
 Ho
 vw
-Jc
+vP
 yw
 cw
 cw
@@ -19888,7 +19874,7 @@ LD
 Vc
 wV
 ru
-Jc
+vP
 cw
 cw
 cw
@@ -27442,7 +27428,7 @@ qx
 qx
 Nl
 bJ
-kJ
+XW
 XW
 XW
 Ep
@@ -27501,7 +27487,7 @@ qx
 qx
 Nl
 bJ
-kJ
+XW
 XW
 XW
 Ep
@@ -27560,7 +27546,7 @@ qx
 qx
 Nl
 bJ
-kJ
+XW
 hN
 XW
 Ep

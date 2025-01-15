@@ -379,7 +379,7 @@
 /obj/effect/mob_spawner/goblin
 	max_spawned_mobs = 8
 	mobs_to_spawn = 4
-	spawn_interval = 4500 //7.5 minutes
+	spawn_interval = 3000 //5 minutes. Do not touch this, it needs to be low enough to spawn in mobs before players get to the dungeon.
 	spawn_range = 9
 	player_range = 13
 	ambush_mobs = list(
