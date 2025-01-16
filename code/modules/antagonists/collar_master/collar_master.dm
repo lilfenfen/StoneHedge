@@ -1,8 +1,7 @@
 /datum/antagonist/collar_master
     name = "Collar Master"
-    antagpanel_category = "Other"
-    show_in_antagpanel = FALSE
-    show_name_in_check_antagonists = FALSE
+    roundend_category = "collar masters"
+    antagpanel_category = "Collar Master"
     var/obj/item/clothing/neck/roguetown/cursed_collar/my_collar
     var/static/list/animal_sounds = list(
         "lets out a whimper!",
@@ -15,6 +14,8 @@
 
 /datum/antagonist/collar_master/on_gain()
     . = ..()
+    if(my_collar)
+        RegisterSignal(my_collar.victim, COMSIG_MOB_CLICKON, PROC_REF(check_pet_attack))
     owner.current.verbs += list(
         /mob/proc/collar_scry,
         /mob/proc/collar_listen,
@@ -26,7 +27,18 @@
         /mob/proc/collar_toggle_silence,
         /mob/proc/collar_force_emote,
     )
-    to_chat(owner.current, span_notice("You can now control your pet through the Collar menu."))
+
+/datum/antagonist/collar_master/proc/check_pet_attack(mob/living/carbon/human/pet, atom/target)
+    SIGNAL_HANDLER
+    if(!my_collar || !my_collar.victim || pet != my_collar.victim)
+        return NONE
+
+    if(target == owner.current && pet.a_intent == INTENT_HARM)
+        pet.electrocute_act(25, my_collar, flags = SHOCK_NOGLOVES)
+        pet.Paralyze(600)
+        to_chat(pet, span_warning("The collar sends painful shocks through your body as you try to attack your master!"))
+        playsound(pet, 'sound/blank.ogg', 50, TRUE)
+        return COMPONENT_CANCEL_ATTACK
 
 /datum/antagonist/collar_master/on_removal()
     owner.current.verbs -= list(
@@ -96,6 +108,7 @@
     if(!CM || !CM.my_collar || !CM.my_collar.victim)
         return
 
+    to_chat(src, span_warning("You cruelly shock your disobedient pet into submission."))
     to_chat(CM.my_collar.victim, span_danger("The collar sends painful shocks through your body!"))
     CM.my_collar.victim.electrocute_act(15, CM.my_collar, flags = SHOCK_NOGLOVES)
     CM.my_collar.victim.Knockdown(20)
@@ -109,9 +122,13 @@
     if(!CM || !CM.my_collar || !CM.my_collar.victim)
         return
 
-    var/msg = input(src, "Enter a message to send to your pet:", "Collar Message") as text|null
-    if(msg)
-        to_chat(CM.my_collar.victim, span_warning("Your collar tingles as you hear your master's voice: [msg]"))
+    var/message = input("What message do you want to send to your pet?", "Collar Message") as text|null
+    if(!message)
+        return
+
+    to_chat(CM.my_collar.victim, span_warning("Your collar tingles as you hear your master's voice: [message]"))
+    to_chat(src, span_notice("You send a message to your pet: \"[message]\""))
+    playsound(CM.my_collar.victim, 'sound/blank.ogg', 50, TRUE)
 
 /mob/proc/collar_force_surrender()
     set name = "Force Surrender"
@@ -121,9 +138,9 @@
     if(!CM || !CM.my_collar || !CM.my_collar.victim)
         return
 
+    to_chat(src, span_warning("You force your pet to their knees, reminding them of their place."))
     to_chat(CM.my_collar.victim, span_userdanger("The collar forces you to your knees!"))
-    CM.my_collar.victim.Paralyze(600) // 1 minute stun
-    new /obj/effect/temp_visual/surrender(get_turf(CM.my_collar.victim))
+    CM.my_collar.victim.Paralyze(600)
     playsound(CM.my_collar.victim, 'sound/blank.ogg', 50, TRUE)
 
 /mob/proc/collar_force_naked()
@@ -134,8 +151,9 @@
     if(!CM || !CM.my_collar || !CM.my_collar.victim)
         return
 
+    to_chat(src, span_warning("You command your pet to strip, leaving them vulnerable and exposed."))
+    to_chat(CM.my_collar.victim, span_userdanger("The collar's magic forces you to remove all your clothing!"))
     var/mob/living/victim = CM.my_collar.victim
-    to_chat(victim, span_userdanger("The collar's magic forces you to remove all your clothing!"))
     if(ishuman(victim))
         var/mob/living/carbon/human/H = victim
         for(var/obj/item/I in H.get_equipped_items())
@@ -169,6 +187,10 @@
         return
 
     CM.my_collar.silenced = !CM.my_collar.silenced
+    if(CM.my_collar.silenced)
+        to_chat(src, span_warning("You silence your pet, reducing them to animal noises only."))
+    else
+        to_chat(src, span_warning("You allow your pet to speak again, for now."))
     to_chat(CM.my_collar.victim, span_userdanger("The collar [CM.my_collar.silenced ? "forces you to speak like an animal!" : "allows you to speak normally again."]"))
     playsound(CM.my_collar.victim, 'sound/blank.ogg', 50, TRUE)
 
@@ -200,5 +222,6 @@
     if(!emote)
         return
 
+    to_chat(src, span_warning("You force your pet to [emote]."))
     CM.my_collar.victim.say(emote, forced = TRUE)
     playsound(CM.my_collar.victim, 'sound/blank.ogg', 50, TRUE)

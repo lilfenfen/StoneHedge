@@ -1,3 +1,5 @@
+#include "../../__DEFINES/dcs/signals.dm"
+
 //predominantly negative traits
 /datum/quirk/monochromatic
 	name = "Monochromacy"
@@ -624,3 +626,103 @@
 	lose_text = span_notice("My mind finally feels calm.")
 	medical_record_text = "Patient's mind is in a vulnerable state, and cannot recover from traumatic events."
 */
+
+/datum/quirk/slavebourne
+	name = "Slavebourne"
+	desc = "You are magically bound to servitude. Without a master controlling you through a cursed collar, your abilities are severely diminished. A cursed collar appears near you."
+	value = -6
+	mob_trait = TRAIT_SLAVEBOURNE
+	gain_text = span_danger("You feel purposeless without a master to serve...")
+	lose_text = span_notice("You feel free from the need for a master.")
+	medical_record_text = "They exhibit a magical dependency on being controlled."
+	var/debuff_active = FALSE  // Start false, will be set after initial check
+	var/obj/item/clothing/neck/roguetown/cursed_collar/my_collar
+
+/datum/quirk/slavebourne/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	ADD_TRAIT(H, TRAIT_SLAVEBOURNE, QUIRK_TRAIT)
+	RegisterSignal(H, COMSIG_CARBON_GAIN_COLLAR, .proc/on_collared)
+	RegisterSignal(H, COMSIG_CARBON_LOSE_COLLAR, .proc/on_uncollared)
+
+	// Add a delayed check for collar status
+	addtimer(CALLBACK(src, .proc/check_initial_collar_status), 5 SECONDS)
+
+/datum/quirk/slavebourne/proc/check_initial_collar_status()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	var/obj/item/clothing/neck/collar = H.get_item_by_slot(SLOT_NECK)
+	if(!istype(collar, /obj/item/clothing/neck/roguetown/cursed_collar))
+		debuff_active = TRUE
+		apply_debuff()
+		to_chat(H, span_warning("Without a master to serve, your abilities are diminished..."))
+		return
+
+	var/obj/item/clothing/neck/roguetown/cursed_collar/cursed = collar
+	if(!cursed.collar_master || cursed.collar_master == H)
+		debuff_active = TRUE
+		apply_debuff()
+		to_chat(H, span_warning("Without a master to serve, your abilities are diminished..."))
+
+/datum/quirk/slavebourne/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	my_collar = new /obj/item/clothing/neck/roguetown/cursed_collar(get_turf(H))
+	to_chat(H, span_notice("A cursed collar materializes on the ground near you..."))
+
+/datum/quirk/slavebourne/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	REMOVE_TRAIT(H, TRAIT_SLAVEBOURNE, QUIRK_TRAIT)
+	remove_debuff()
+	UnregisterSignal(H, COMSIG_CARBON_GAIN_COLLAR)
+	UnregisterSignal(H, COMSIG_CARBON_LOSE_COLLAR)
+	if(my_collar)
+		qdel(my_collar)
+
+/datum/quirk/slavebourne/proc/apply_debuff()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H || !debuff_active)
+		return
+
+	H.change_stat("strength", -4)
+	H.change_stat("dexterity", -4)
+	H.change_stat("intelligence", -4)
+	H.change_stat("constitution", -4)
+	H.change_stat("speed", -4)
+	H.change_stat("endurance", -4)
+	H.change_stat("fortune", -4)
+
+/datum/quirk/slavebourne/proc/remove_debuff()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	H.change_stat("strength", 4)
+	H.change_stat("dexterity", 4)
+	H.change_stat("intelligence", 4)
+	H.change_stat("constitution", 4)
+	H.change_stat("speed", 4)
+	H.change_stat("endurance", 4)
+	H.change_stat("fortune", 4)
+
+/datum/quirk/slavebourne/proc/on_collared(mob/living/carbon/human/source, obj/item/clothing/neck/roguetown/cursed_collar/collar)
+	SIGNAL_HANDLER
+	if(istype(collar) && collar.collar_master && collar.collar_master != source)
+		debuff_active = FALSE
+		remove_debuff()
+		to_chat(source, span_notice("Your master's control strengthens you!"))
+
+/datum/quirk/slavebourne/proc/on_uncollared(mob/living/carbon/human/source)
+	SIGNAL_HANDLER
+	debuff_active = TRUE
+	apply_debuff()
+	to_chat(source, span_warning("Without a master, you feel purposeless again..."))
