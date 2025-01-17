@@ -367,7 +367,7 @@
 
 /datum/quirk/mastersmith
 	name = "Practiced Smith"
-	desc = "I am a metalworker by trade, and I have the tools for my practice stashed away." //play a proper smith if you want starting smith gear.
+	desc = "I am a metalworker by trade, and I have the tools for my practice stashed away." // Needs looking at after the smithing rework goes through.
 	value = 1 // Armor-making. Weapon-making. Everyone wants the gamer gear.
 
 /datum/quirk/mastersmith/on_spawn()
@@ -393,6 +393,7 @@
 	H.mind.special_items["Scissors"] = /obj/item/rogueweapon/huntingknife/scissors/steel
 	H.mind.special_items["Needle"] = /obj/item/needle
 	H.mind.special_items["Thread"] = /obj/item/natural/bundle/fibers/full
+	ADD_TRAIT(H, TRAIT_TAILOR, TRAIT_GENERIC)
 
 /datum/quirk/bleublood
 	name = "Noble Lineage"
