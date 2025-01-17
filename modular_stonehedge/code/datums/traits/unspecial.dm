@@ -417,7 +417,7 @@
 
 /datum/quirk/swift
 	name = "Speedster"
-	desc = "I am very athletic and fast. Not only avoid collisions while sprinting, but I can also better dodge hits coming in my way if I'm not wearing any armor."
+	desc = "I am very athletic and fast. Not only can I avoid collisions while sprinting, but I can also better dodge hits coming my way if I'm not wearing any armor."
 	value = 4
 
 /datum/quirk/swift/on_spawn()
