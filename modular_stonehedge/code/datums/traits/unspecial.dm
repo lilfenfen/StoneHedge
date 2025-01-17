@@ -70,7 +70,7 @@
 
 /datum/quirk/night_owl
 	name = "Night Owl"
-	desc = "I've always preferred Noc over her sister"
+	desc = "I've always preferred Lune over Elysius. I am no longer fatigued by being tired."
 	value = 1
 
 /datum/quirk/night_owl/on_spawn()
@@ -99,7 +99,7 @@
 
 /datum/quirk/fence
 	name = "Fencer"
-	desc = "I have trained in agile sword fighting. I dodge more easily without wearing anything and have stashed my rapier nearby"
+	desc = "I have trained in agile sword fighting. I dodge more easily without wearing anything and have stashed my rapier nearby."
 	value = 4
 
 /datum/quirk/fence/on_spawn()
@@ -142,7 +142,7 @@
 
 /datum/quirk/training6
 	name = "Axe Training"
-	desc = "I have axe training, including woodcutting. and have stashed a hatchet"
+	desc = "I have training with axes and am a capable jumberjack. I've also stashed an iron axe."
 	value = 2
 
 /datum/quirk/training6/on_spawn()
