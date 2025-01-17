@@ -251,6 +251,7 @@
 	resistance_flags = INDESTRUCTIBLE
 	armor = list("blunt" = 0, "slash" = 0, "stab" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	var/locked = FALSE
+	var/being_removed = FALSE
 
 /obj/item/clothing/neck/roguetown/cursed_collar/proc/handle_speech(datum/source, list/speech_args)
 	SIGNAL_HANDLER
@@ -286,38 +287,28 @@
 /obj/item/clothing/neck/roguetown/cursed_collar/proc/prevent_removal(datum/source, mob/living/carbon/human/user)
 	SIGNAL_HANDLER
 
-	// Get the user if not provided
+	if(being_removed)
+		return NONE
+
 	if(!user)
 		user = usr
 
-	// CRITICAL: Master check first, before anything else
 	if(user && (user == collar_master))
-		// Explicitly remove everything that could block removal
-		locked = FALSE
+		being_removed = TRUE
 		REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
-
-		// Clean up all signals
+		UnregisterSignal(src, COMSIG_ITEM_PRE_UNEQUIP)
 		if(victim)
 			UnregisterSignal(victim, list(
 				COMSIG_MOB_CLICKON,
 				COMSIG_MOB_ATTACK,
 				COMSIG_MOB_SAY
 			))
-		UnregisterSignal(src, COMSIG_ITEM_PRE_UNEQUIP)
-
-		// Clear victim reference
-		victim = null
-
-		// Allow removal
 		return NONE
 
-	// Everyone else gets blocked
 	if(user && user == victim)
 		to_chat(user, span_userdanger("The collar's magic holds it firmly in place! You can't remove it!"))
 		playsound(user, 'sound/blank.ogg', 50, TRUE)
 
-	locked = TRUE
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 	return COMPONENT_ITEM_BLOCK_UNEQUIP
 
 /obj/item/clothing/neck/roguetown/cursed_collar/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
@@ -369,6 +360,7 @@
 		SEND_SIGNAL(user, COMSIG_CARBON_GAIN_COLLAR, src)
 
 /obj/item/clothing/neck/roguetown/cursed_collar/dropped(mob/user)
+	being_removed = FALSE
 	. = ..()
 	if(user == victim)
 		UnregisterSignal(user, list(

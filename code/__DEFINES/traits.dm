@@ -518,3 +518,4 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define ADVENTURER_TRAIT "adventurer"
 
 #define TRAIT_SLAVEBOURNE "slavebourne"
+#define TRAIT_SLAVEBOURNE_EXAMINE "trait_slavebourne_examine"

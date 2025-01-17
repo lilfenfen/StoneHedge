@@ -1,4 +1,4 @@
- // Mob signals
+// Mob signals
 #define COMSIG_MOB_ATTACK "mob_attack"
 #define COMSIG_MOB_SAY "mob_say"
 #define COMSIG_MOB_CLICKON "mob_clickon"
@@ -14,3 +14,9 @@
 // Collar signals
 #define COMSIG_CARBON_GAIN_COLLAR "carbon_gain_collar"
 #define COMSIG_CARBON_LOSE_COLLAR "carbon_lose_collar"
+
+// Living death signal
+#define COMSIG_LIVING_DEATH "mob_death"
+
+// Living revive signal
+#define COMSIG_LIVING_REVIVE "mob_revive"
