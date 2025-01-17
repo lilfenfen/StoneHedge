@@ -132,7 +132,7 @@
 
 /datum/quirk/training5
 	name = "Knife Training"
-	desc = "I have knife training and stashed a cleaver."
+	desc = "I have knife training and stashed a parrying dagger."
 	value = 2
 
 /datum/quirk/training5/on_spawn()
@@ -142,7 +142,7 @@
 
 /datum/quirk/training6
 	name = "Axe Training"
-	desc = "I have axe training, including woodchopping. and stashed a hatchet"
+	desc = "I have axe training, including woodcutting. and have stashed a hatchet"
 	value = 2
 
 /datum/quirk/training6/on_spawn()
@@ -162,7 +162,7 @@
 
 /datum/quirk/training8
 	name = "Shield Training"
-	desc = "I have shield training and stashed a shield and as long as I have a shield in one hand, I can catch arrows with ease"
+	desc = "I have shield training and stashed a shield. As long as I have a shield in one hand I can catch arrows with ease."
 	value = 2
 
 /datum/quirk/training8/on_spawn()
@@ -200,7 +200,7 @@
 
 /datum/quirk/mtraining1/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.adjust_skillrank_up_to(/datum/skill/misc/medicine, 3, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/misc/medicine, 4, TRUE)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
 	H.mind.special_items["Patch Kit"] = /obj/item/storage/fancy/ifak
 	H.mind.special_items["Surgery Kit"] = /obj/item/storage/fancy/skit
@@ -212,7 +212,7 @@
 
 /datum/quirk/greenthumb/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.adjust_skillrank_up_to(/datum/skill/labor/farming, 3, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/labor/farming, 4, TRUE)
 	H.mind.special_items["Fertilizer 1"] = /obj/item/fertilizer
 	H.mind.special_items["Fertilizer 2"] = /obj/item/fertilizer
 	H.mind.special_items["Fertilizer 3"] = /obj/item/fertilizer
@@ -220,7 +220,7 @@
 
 /datum/quirk/eagle_eyed
 	name = "Eagle Eyed"
-	desc = "I was always goot at spotting distant things.."
+	desc = "I was always good at spotting distant things."
 	value = 2
 
 /datum/quirk/eagle_eyed/on_spawn()
@@ -252,7 +252,7 @@
 
 /datum/quirk/bookworm
 	name = "Bookworm"
-	desc = "I love books and I became quite skillfull at reading and writing. What's more, my mind is much sharper for the experience."
+	desc = "I love books and I became quite skilled at reading and writing. What's more, my mind is much sharper for the experience."
 	value = 2
 
 /datum/quirk/bookworm/on_spawn()
@@ -262,7 +262,7 @@
 
 /datum/quirk/arsonist
 	name = "Arsonist"
-	desc = "I like seeing things combust and burn. I have hidden around two firebombs.."
+	desc = "I like seeing things combust and burn. I have stashed two firebombs."
 	value = 3
 
 /datum/quirk/arsonist/on_spawn()
@@ -293,7 +293,7 @@
 
 /datum/quirk/thief
 	name = "Thief"
-	desc = "Life's not easy around here, but I've made mine a little easier by taking things of others. I am a great at picking pockets and locks. Istashed some picks nearby."
+	desc = "Life's not easy around here, but I've made mine a little easier by taking things of others. I am a great at picking pockets and locks. I've stashed some picks nearby."
 	value = 3
 
 /datum/quirk/thief/on_spawn()
@@ -357,10 +357,10 @@
 
 /datum/quirk/masterbuilder/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 3, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/masonry, 3, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/engineering, 3, TRUE) // Needed to install things like levers in a house. This unfortunately means construction workers can make illegal firearms.
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 2, TRUE) // Pretty sure some crafting stations use this. Also stone axes and whatever other basic tools they need.
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/masonry, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/engineering, 4, TRUE) // Needed to install things like levers in a house. This unfortunately means construction workers can make illegal firearms.
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 3, TRUE) // Pretty sure some crafting stations use this. Also stone axes and whatever other basic tools they need.
 	H.mind.special_items["Handcart"] = /obj/structure/handcart //TO-DO: Implement sawmill and the trait to use it. Giving them a handcart to move materials with.
 	H.mind.special_items["Sack 1"] = /obj/item/storage/roguebag
 	H.mind.special_items["Sack 2"] = /obj/item/storage/roguebag
@@ -372,23 +372,23 @@
 
 /datum/quirk/mastersmith/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/blacksmithing, 3, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/engineering, 3, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/smelting, 3, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 2, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/blacksmithing, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/engineering, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/smelting, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 3, TRUE)
 	H.mind.special_items["Hammer"] = /obj/item/rogueweapon/hammer/claw // works same as normal hammer.
 	H.mind.special_items["Tongs"] = /obj/item/rogueweapon/tongs
 	H.mind.special_items["Coal"] = /obj/item/rogueore/coal
 
 /datum/quirk/mastertailor
 	name = "Practiced Tailor"
-	desc = "I'm particularly skilled in working with needle, thread, and loom, and I've got needle, thread, and scissors hidden away."
+	desc = "I'm particularly skilled in working with needle, thread, and loom. I also have a needle, thread, and scissors hidden away."
 	value = 1
 
 /datum/quirk/mastertailor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.adjust_skillrank_up_to(/datum/skill/misc/sewing, 3, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 3, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/misc/sewing, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 4, TRUE)
 	H.mind.adjust_skillrank_up_to(/datum/skill/misc/medicine, 3, TRUE)//Being skilled with a needle offers some overlap with stitching up peoples' wounds. Also, weaving isn't a skill anymore so...
 	H.mind.special_items["Scissors"] = /obj/item/rogueweapon/huntingknife/scissors/steel
 	H.mind.special_items["Needle"] = /obj/item/needle
@@ -417,7 +417,7 @@
 
 /datum/quirk/swift
 	name = "Speedster"
-	desc = "I am very athletic and fast, I can not only avoid collisions with anything but I can also dodge hits coming in my way if i'm not wearing any armor."
+	desc = "I am very athletic and fast. Not only avoid collisions while sprinting, but I can also better dodge hits coming in my way if I'm not wearing any armor."
 	value = 4
 
 /datum/quirk/swift/on_spawn()
@@ -564,7 +564,7 @@
 
 /datum/quirk/atrophy
 	name = "Atrophy"
-	desc = "When growing up I could barely feed myself... this left me weak and fragile"
+	desc = "When growing up I could barely feed myself. This has left my body weak and fragile."
 	value = -6
 
 /datum/quirk/atrophy/on_spawn()
@@ -692,7 +692,7 @@
 
 /datum/quirk/maniac
 	name = "Cursed"
-	desc = "...I keep experiencing vivid hallucinations, What is happening here?"
+	desc = "I keep experiencing vivid hallucinations. What is happening here?!"
 	value = -4 //it can stun you and knock you down if you get hit by a certain hallucination and make your screen shake in combat.
 
 /datum/quirk/maniac/on_spawn()
@@ -703,7 +703,7 @@
 
 /datum/quirk/maniacextra
 	name = "Cursed (Extra)"
-	desc = "..I keep experiencing vivid hallucinations, What is happening here? (Same as Cursed, Except the fourth wonder sequence will start when the round start ending.)"
+	desc = "I keep experiencing vivid hallucinations. What is happening here?! (Same as Cursed, except the fourth wonder sequence will start when the round starts ending.)"
 	value = -6
 
 /datum/quirk/maniacextra/on_spawn()
@@ -747,7 +747,7 @@
 
 /datum/quirk/doggo
 	name = "Strong Bite"
-	desc = "Biting peoples have never been so much easier."
+	desc = "Biting people has never been so easy."
 	value = 3 //It is literally strong.
 
 /datum/quirk/doggo/on_spawn()
@@ -765,7 +765,7 @@
 
 /datum/quirk/martialeye
 	name = "Martial Eye"
-	desc = "Unlike others, I can gauge someone's speed and exertion at a glance"
+	desc = "Unlike others, I can gauge someone's speed and exertion at a glance."
 	value = 3
 
 /datum/quirk/martialeye/on_spawn()
@@ -774,7 +774,7 @@
 
 /datum/quirk/sloppysleeper
 	name = "Sloppy Sleeper"
-	desc = "I can sleep a bit faster and I can easily sleep in my armor if i have one.."
+	desc = "I fall asleep quickly, and can even sleep in some armor if I'm wearing any."
 	value = 3
 
 /datum/quirk/sloppysleeper/on_spawn()

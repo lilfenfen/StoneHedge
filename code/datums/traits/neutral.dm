@@ -74,12 +74,12 @@
 
 /datum/quirk/monsterhuntermale
 	name = "Monster \"Hunter\" (Males)"
-	desc = "llows targeting by specific monsters (such as werewolves, goblins and minotaurs etc.) for something very lewd. May be unfair to you in combat. Male monsters lust for me..."
+	desc = "Allows targeting by specific monsters (such as werewolves, goblins and minotaurs etc.) for something very lewd. May be unfair to you in combat. Male monsters lust for me..."
 	value = 0
 
 /datum/quirk/monsterhunterfemale
 	name = "Monster \"Hunter\" (Females)"
-	desc = "llows targeting by specific monsters (such as werewolves, goblins and minotaurs etc.) for something very lewd. May be unfair to you in combat.Female monsters lust for me... "
+	desc = "Allows targeting by specific monsters (such as werewolves, goblins and minotaurs etc.) for something very lewd. May be unfair to you in combat. Female monsters lust for me... "
 	value = 0
 
 /datum/quirk/selfawaregeni
