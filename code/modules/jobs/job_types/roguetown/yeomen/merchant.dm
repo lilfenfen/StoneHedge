@@ -23,7 +23,7 @@
 	..()
 	if(H.gender == FEMALE)
 		H.virginity = TRUE
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gen
 		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	else
