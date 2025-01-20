@@ -366,6 +366,14 @@
 			user.put_in_hands(sammich)
 			qdel(I)
 			qdel(src)
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/meat/bacon/fried))
+		playsound(get_turf(user), 'sound/foley/dropsound/food_drop.ogg', 50, TRUE, -1)
+		if(do_after(user,short_cooktime, target = src))
+			user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+			var/obj/item/reagent_containers/food/snacks/rogue/sandwich/bacon/sammich= new(get_turf(user))
+			user.put_in_hands(sammich)
+			qdel(I)
+			qdel(src)
 	else
 		return ..()
 
@@ -417,6 +425,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/sandwich/egg
 	tastes = list("cheese" = 1,"cackleberry" = 1)
 	name = "cackleberry bread"
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
 	icon_state = "bread_egg"
 	foodtype = GRAIN | MEAT
 /obj/item/reagent_containers/food/snacks/rogue/sandwich/salo
@@ -424,7 +433,12 @@
 	name = "salo bread"
 	icon_state = "bread_salo"
 	foodtype = GRAIN | MEAT
-
+/obj/item/reagent_containers/food/snacks/rogue/sandwich/bacon
+	tastes = list("bacon" = 1)
+	name = "bacon bread"
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "bread_bacon"
+	foodtype = GRAIN | MEAT
 
 
 /*	.................   Bread bun   ................... */
@@ -448,6 +462,14 @@
 			user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
 			var/obj/item/reagent_containers/food/snacks/rogue/bun_grenz/hotdog= new(get_turf(user))
 			user.put_in_hands(hotdog)
+			qdel(I)
+			qdel(src)
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/cheddarwedge))
+		playsound(get_turf(user), 'sound/foley/dropsound/food_drop.ogg', 100, TRUE, -1)
+		to_chat(user, "<span class='notice'>Stuffing the bun with cheese...</span>")
+		if(do_after(user,short_cooktime, target = src))
+			user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+			new /obj/item/reagent_containers/food/snacks/rogue/bun_raston(loc)
 			qdel(I)
 			qdel(src)
 	else
@@ -550,7 +572,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/plaincake
 	name = "plain cake"
 	desc = ""
-	icon = 'modular_hearthstone/icons/obj/items/food/food.dmi'
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
 	icon_state = "plaincake"
 	slices_num = 6
 	slice_path = /obj/item/reagent_containers/food/snacks/rogue/plaincakeslice
@@ -565,7 +587,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/plaincakeslice
 	name = "plain cake slice"
 	desc = ""
-	icon = 'icons/roguetown/items/food.dmi'
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
 	icon_state = "plaincakeslice"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 7)
 	w_class = WEIGHT_CLASS_NORMAL
@@ -681,8 +703,26 @@
 				qdel(src)
 		else
 			to_chat(user, "<span class='warning'>You need to put [src] on a table to work it.</span>")
+	if(istype(I, /obj/item/reagent_containers/powder/rocknut))
+		if(isturf(loc)&& (found_table))
+			playsound(get_turf(user), 'modular/Neu_Food/sound/kneading.ogg', 100, TRUE, -1)
+			to_chat(user, "<span class='notice'>Adding the rocknut powder...</span>")
+			if(do_after(user,short_cooktime, target = src))
+				user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+				new /obj/item/reagent_containers/food/snacks/rogue/cookie(loc)
+				qdel(I)
+				qdel(src)
 	else
 		return ..()
+
+/*	.................   Biscuit   ................... */
+/obj/item/reagent_containers/food/snacks/rogue/cookie
+	name = "cookie of smiles"
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "cookie"
+	color = "#ecce61"
+	w_class = WEIGHT_CLASS_NORMAL
+	eat_effect = null
 
 /*	.................   Biscuit   ................... */
 /obj/item/reagent_containers/food/snacks/rogue/foodbase/biscuit_raw

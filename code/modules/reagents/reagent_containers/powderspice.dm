@@ -153,6 +153,15 @@
 	volume = 1
 	sellprice = 0
 
+/obj/item/reagent_containers/powder/rocknut
+	name = "rocknut powder"
+	desc = ""
+	gender = PLURAL
+	icon = 'modular_stonehedge/icons/roguetown/items/produce.dmi'
+	icon_state = "rocknut"
+	volume = 1
+	sellprice = 0
+
 /datum/reagent/floure
 	name = "flour"
 	description = ""

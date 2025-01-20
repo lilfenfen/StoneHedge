@@ -43,6 +43,20 @@
 	rotprocess = SHELFLIFE_DECENT
 	eat_effect = /datum/status_effect/buff/foodbuff
 	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+/obj/item/reagent_containers/food/snacks/rogue/onionsteak/attackby(obj/item/I, mob/living/user, params)
+	var/found_table = locate(/obj/structure/table) in (loc)
+	if(!experimental_inhand)
+		return
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/preserved/carrot_baked))
+		if(isturf(loc)&& (found_table))
+			playsound(get_turf(user), 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
+			if(do_after(user,3 SECONDS, target = src))
+				user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+				new /obj/item/reagent_containers/food/snacks/rogue/steakcarrotonion(loc)
+				qdel(I)
+				qdel(src)
+	else
+		return ..()
 /obj/item/reagent_containers/food/snacks/rogue/onionsteak/plated
 	icon_state = "onionsteak_plated"
 	item_state = "plate_food"
@@ -54,6 +68,48 @@
 	trash = /obj/item/cooking/platter
 	rotprocess =  SHELFLIFE_LONG
 
+
+/*	..................   Carrot Steak   ................... */
+/obj/item/reagent_containers/food/snacks/rogue/carrotsteak
+	name = "carrot steak"
+	desc = "Roasted flesh paired with savory baked carrot. Fragrant and slathered with juices of both ingredients to a perfect mouth-watering sauce."
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "carrotsteak"
+	tastes = list("steak" = 1, "carrot" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = SNACK_DECENT+3)
+	foodtype = MEAT
+	warming = 5 MINUTES
+	rotprocess = SHELFLIFE_DECENT
+	eat_effect = /datum/status_effect/buff/foodbuff
+	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+/obj/item/reagent_containers/food/snacks/rogue/carrotsteak/attackby(obj/item/I, mob/living/user, params)
+	var/found_table = locate(/obj/structure/table) in (loc)
+	if(!experimental_inhand)
+		return
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/preserved/onion_fried))
+		if(isturf(loc)&& (found_table))
+			playsound(get_turf(user), 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
+			if(do_after(user,3 SECONDS, target = src))
+				user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+				new /obj/item/reagent_containers/food/snacks/rogue/steakcarrotonion(loc)
+				qdel(I)
+				qdel(src)
+	else
+		return ..()
+
+/*	.................   Steak & carrot & onion   ................... */
+/obj/item/reagent_containers/food/snacks/rogue/steakcarrotonion
+	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
+	tastes = list("steak" = 1, "onion" = 1, "carrots" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = SNACK_DECENT+3)
+	name = "steak meal"
+	desc = ""
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "steakmeal"
+	foodtype = VEGETABLES | MEAT
+	warming = 3 MINUTES
+	rotprocess = SHELFLIFE_DECENT
+	eat_effect = /datum/status_effect/buff/foodbuff
 
 /*	.................   Wiener Cabbage   ................... */
 /obj/item/reagent_containers/food/snacks/rogue/wienercabbage
@@ -244,6 +300,16 @@
 	trash = /obj/item/cooking/platter
 	rotprocess = SHELFLIFE_LONG
 
+/*	.................   Bacon & Eggs   ................... */
+/obj/item/reagent_containers/food/snacks/rogue/friedegg/bacon
+	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
+	tastes = list("fried cackleberries" = 1, "bacon" = 1)
+	name = "bacon and cackleberries"
+	desc = ""
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "baconegg"
+	eat_effect = /datum/status_effect/buff/foodbuff
+	rotprocess = SHELFLIFE_DECENT
 /*	.................   Plated fryfish   ................... */
 /obj/item/reagent_containers/food/snacks/rogue/fryfish/carp/plated
 	desc = "Abyssor's bounty, make sure to eat the eyes!"
@@ -431,4 +497,76 @@
 	trash = /obj/item/cooking/platter
 	rotprocess = SHELFLIFE_LONG
 
+/*	.................   Rice & pork  ................... */
+/obj/item/reagent_containers/food/snacks/rogue/ricepork
+	name = "rice and pork"
+	tastes = list("rice" = 1, "pork" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
+	desc = ""
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "ricepork"
+	rotprocess = SHELFLIFE_LONG
+	eat_effect = /datum/status_effect/buff/foodbuff
 
+/obj/item/reagent_containers/food/snacks/rogue/ricepork/attackby(obj/item/I, mob/living/user, params)
+	var/found_table = locate(/obj/structure/table) in (loc)
+	if(!experimental_inhand)
+		return
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/veg/cucumber_sliced))
+		if(isturf(loc)&& (found_table))
+			playsound(get_turf(user), 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
+			if(do_after(user,3 SECONDS, target = src))
+				user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+				new /obj/item/reagent_containers/food/snacks/rogue/riceporkcuc(loc)
+				qdel(I)
+				qdel(src)
+	else
+		return ..()
+
+/*	.................   Rice & pork & cucumbers ................... */
+/obj/item/reagent_containers/food/snacks/rogue/riceporkcuc
+	name = "rice and pork meal"
+	tastes = list("rice" = 1, "pork" = 1, "fresh cucumber")
+	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
+	desc = ""
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "riceporkmeal"
+	rotprocess = SHELFLIFE_LONG
+	eat_effect = /datum/status_effect/buff/foodbuff
+
+/*	.................   Rice & beef ................... */
+/obj/item/reagent_containers/food/snacks/rogue/ricebeef
+	name = "rice and beef"
+	tastes = list("rice" = 1, "steak" = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
+	desc = ""
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "ricebeef"
+	rotprocess = SHELFLIFE_LONG
+	eat_effect = /datum/status_effect/buff/foodbuff
+
+/obj/item/reagent_containers/food/snacks/rogue/ricebeef/attackby(obj/item/I, mob/living/user, params)
+	var/found_table = locate(/obj/structure/table) in (loc)
+	if(!experimental_inhand)
+		return
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/preserved/carrot_baked))
+		if(isturf(loc)&& (found_table))
+			playsound(get_turf(user), 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
+			if(do_after(user,3 SECONDS, target = src))
+				user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+				new /obj/item/reagent_containers/food/snacks/rogue/ricebeefcar(loc)
+				qdel(I)
+				qdel(src)
+	else
+		return ..()
+
+/*	.................   Rice & beef & carrots ................... */
+/obj/item/reagent_containers/food/snacks/rogue/ricebeefcar
+	name = "rice and beef meal"
+	tastes = list("rice" = 1, "steak" = 1, "carrot")
+	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
+	desc = ""
+	icon = 'modular_stonehedge/icons/roguetown/items/food.dmi'
+	icon_state = "ricebeefmeal"
+	rotprocess = SHELFLIFE_LONG
+	eat_effect = /datum/status_effect/buff/foodbuff
