@@ -263,7 +263,7 @@
 	blend_mode = BLEND_ADD
 	show_when_dead = TRUE
 
-/atom/movable/screen/fullscreen/maniac 
+/atom/movable/screen/fullscreen/maniac
 	icon = 'icons/roguetown/maniac/fullscreen.dmi'
 	icon_state = "hall0"
 	alpha = 0
@@ -289,3 +289,8 @@
 
 /atom/movable/screen/fullscreen/dreaming/waking_up
 	icon_state = "wake_up"
+
+/atom/movable/screen/fullscreen/arousal
+	icon = 'icons/mob/screen_full.dmi'
+	icon_state = "love"
+	layer = FULLSCREEN_LAYER

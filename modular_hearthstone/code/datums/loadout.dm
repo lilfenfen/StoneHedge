@@ -338,4 +338,8 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Onderite Tabard"
 	path = /obj/item/clothing/cloak/templar/xylix
 
+/datum/loadout_item/lantern
+	name = "Lamptern"
+	path = /obj/item/flashlight/flare/torch/lantern
+
 

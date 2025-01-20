@@ -4,6 +4,8 @@
 /// Arguments given here are packaged in a list and given to _SendSignal
 #define SEND_SIGNAL(target, sigtype, arguments...) ( !target.comp_lookup || !target.comp_lookup[sigtype] ? NONE : target._SendSignal(sigtype, list(target, ##arguments)) )
 
+#define SIGNAL_HANDLER SHOULD_NOT_SLEEP(TRUE); SHOULD_NOT_OVERRIDE(TRUE)
+
 #define SEND_GLOBAL_SIGNAL(sigtype, arguments...) ( SEND_SIGNAL(SSdcs, sigtype, ##arguments) )
 
 /// Return this from `/datum/component/Initialize` or `datum/component/OnTransfer` to have the component be deleted if it's applied to an incorrect type.

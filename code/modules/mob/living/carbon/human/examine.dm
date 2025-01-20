@@ -81,7 +81,6 @@
 		else if(used_title)
 			. = list("<span class='info'>ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][custom_race_name ? "[custom_race_name] ([race_name])" : "[race_name]"] [used_title].")
 
-			// Add slavebourne text right after introduction
 			if(HAS_TRAIT(src, TRAIT_SLAVEBOURNE_EXAMINE))
 				. += span_notice("[p_they(TRUE)] carries [p_them()]self with a submissive demeanor as if seeking direction.")
 		else
@@ -626,7 +625,7 @@
 			if(!(mobility_flags & MOBILITY_STAND) && user != src && (user.zone_selected == BODY_ZONE_CHEST))
 				. += "<a href='?src=[REF(src)];check_hb=1'>Listen to Heartbeat</a>"
 
-	var/list/lines = build_cool_description(get_mob_descriptors(obscure_name, user), src) //vardefine for descriptors
+	var/list/lines = build_cool_description(get_mob_descriptors(obscure_name, user), src)
 	var/trait_exam = common_trait_examine()
 	if(!isnull(trait_exam))
 		. += trait_exam

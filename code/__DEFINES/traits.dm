@@ -519,3 +519,5 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 #define TRAIT_SLAVEBOURNE "slavebourne"
 #define TRAIT_SLAVEBOURNE_EXAMINE "trait_slavebourne_examine"
+
+#define TRAIT_LOVESTRUCK "lovestruck" // For collar master's force love effect
