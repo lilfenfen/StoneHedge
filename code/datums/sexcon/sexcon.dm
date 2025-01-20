@@ -374,7 +374,7 @@
 	if(HAS_TRAIT(user, TRAIT_GOODLOVER))
 		arousal_amt *= 1.5
 		if(prob(10)) //10 perc chance each action to emit the message so they know who the fuckin' wituser.
-			var/lovermessage = pick("This feels so good!","I am in heaven!","This is too good to be possible!","By the ten!","I can't stop, too good!")
+			var/lovermessage = pick("This feels so good!","I am in nirvana!","This is too good to be possible!","By the Gods!","I can't stop, too good!~")
 			to_chat(action_target, span_love(lovermessage))
 	if(HAS_TRAIT(user, TRAIT_DEATHBYSNOOSNOO))
 		if(istype(user.rmb_intent, /datum/rmb_intent/strong))
