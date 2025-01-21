@@ -36,7 +36,7 @@
         "Pass Wounds" = /mob/proc/collar_master_pass_wounds,
         "Dominate Pet" = /mob/proc/collar_master_dominate,
         "Force Love" = /mob/proc/collar_master_force_love,
-        "Force Arousal" = /mob/proc/collar_master_force_arousal,
+        "Toggle Arousal" = /mob/proc/collar_master_force_arousal,
         "Toggle Orgasm Denial" = /mob/proc/collar_master_toggle_denial,
         "Toggle Pet Hallucinations" = /mob/proc/collar_master_toggle_hallucinate,
         "Impose Will" = /mob/proc/collar_master_illusion,
@@ -76,7 +76,7 @@
 
     reset_perspective(pet)
     playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
-    addtimer(CALLBACK(src, PROC_REF(end_scrying)), 30 SECONDS)
+    addtimer(CALLBACK(src, PROC_REF(end_scrying)), 05 SECONDS)
 
     CM.last_command_time = world.time
 
@@ -96,14 +96,20 @@
         to_chat(src, span_warning("The collar is still cooling down!"))
         return
 
+    var/mob/living/carbon/human/pet = CM.temp_selected_pets[1]  // Use first selected pet
+    if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
+        to_chat(src, span_warning("Invalid pet selected!"))
+        return
+
+    if(pet.stat >= UNCONSCIOUS)
+        to_chat(src, span_warning("[pet] must be conscious to establish a listening link!"))
+        return
+
+    to_chat(src, span_notice("You establish a listening link through [pet]'s collar..."))
+    to_chat(pet, span_warning("Your collar tingles as your master listens through your ears!"))
+
+    CM.toggle_listening(pet)
     CM.last_command_time = world.time
-
-    for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
-        if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
-            continue
-        CM.toggle_listening(pet)
-
-    to_chat(src, span_notice("You [CM.listening ? "start" : "stop"] listening to [length(CM.temp_selected_pets)] pets."))
 
 /mob/proc/collar_master_shock()
     set name = "Shock Pet"
@@ -430,7 +436,7 @@
     to_chat(src, span_notice("You toggle love status for [length(CM.temp_selected_pets)] pets."))
 
 /mob/proc/collar_master_force_arousal()
-    set name = "Force Arousal"
+    set name = "Toggle Arousal"
     set category = "Collar Tab"
 
     var/datum/antagonist/collar_master/CM = mind?.has_antag_datum(/datum/antagonist/collar_master)
@@ -441,43 +447,17 @@
         to_chat(src, span_warning("The collar is still cooling down!"))
         return
 
-    var/arousal_amount = input(src, "Set arousal level (0-100):", "Force Arousal", 50) as num|null
-    if(arousal_amount == null || !CM || !length(CM.temp_selected_pets))
-        return
-
-    arousal_amount = clamp(arousal_amount, 0, 100)
     CM.last_command_time = world.time
-
     var/affected_pets = 0
+
     for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
         if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
             continue
 
-        affected_pets++
+        if(CM.toggle_arousal(pet))
+            affected_pets++
 
-        // Initialize sex_controller if needed
-        if(!pet.sexcon)
-            pet.sexcon = new /datum/sex_controller(pet)
-
-        // Apply arousal through sexcon system
-        pet.sexcon.adjust_arousal_manual(arousal_amount)
-
-        // Visual feedback
-        to_chat(pet, span_userdanger("Your collar sends waves of arousal through your body!"))
-        pet.do_jitter_animation(20)
-        playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
-
-        // Add screen effects based on arousal level
-        if(arousal_amount >= 80)
-            pet.overlay_fullscreen("arousal", /atom/movable/screen/fullscreen/arousal, 3)
-        else if(arousal_amount >= 50)
-            pet.overlay_fullscreen("arousal", /atom/movable/screen/fullscreen/arousal, 2)
-        else if(arousal_amount >= 20)
-            pet.overlay_fullscreen("arousal", /atom/movable/screen/fullscreen/arousal, 1)
-        else
-            pet.clear_fullscreen("arousal")
-
-    to_chat(src, span_notice("You force arousal upon [affected_pets] pets."))
+    to_chat(src, span_notice("Toggled arousal for [affected_pets] pets."))
 
 /mob/proc/collar_master_toggle_denial()
     set name = "Toggle Orgasm Denial"
@@ -493,18 +473,16 @@
 
     CM.last_command_time = world.time
     CM.deny_orgasm = !CM.deny_orgasm
+    var/toggle_count = 0
 
     for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
         if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
             continue
 
-        if(CM.deny_orgasm)
-            to_chat(pet, span_warning("Your collar tightens - you feel like you won't be able to finish!"))
-        else
-            to_chat(pet, span_notice("Your collar loosens - you feel like you can finish again!"))
-        playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
+        if(CM.toggle_denial(pet))
+            toggle_count++
 
-    to_chat(src, span_notice("You [CM.deny_orgasm ? "prevent" : "allow"] [length(CM.temp_selected_pets)] pets from reaching climax."))
+    to_chat(src, span_notice("Toggled orgasm restriction for [toggle_count] pets."))
 
 /mob/proc/collar_master_toggle_hallucinate()
     set name = "Toggle Pet Hallucinations"
@@ -542,7 +520,7 @@
     if(!CM || !length(CM.temp_selected_pets))
         return
 
-    var/message = input(src, "What illusion should your pets see?", "Create Illusion") as message|null
+    var/message = input(src, "What should your pet, see, or feel?", "Impose will") as message|null
     if(!message || !CM || !length(CM.temp_selected_pets))
         return
 
@@ -665,7 +643,7 @@
     to_chat(src, span_notice("Selected [length(CM.temp_selected_pets)] pets."))
 
 /mob/proc/collar_master_toggle_orgasm()
-    set name = "Toggle Orgasm"
+    set name = "Toggle Orgasm Denial"
     set category = "Collar Tab"
 
     var/datum/antagonist/collar_master/CM = mind?.has_antag_datum(/datum/antagonist/collar_master)
@@ -684,11 +662,8 @@
         if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
             continue
 
-        if(CM.deny_orgasm)
-            to_chat(pet, span_warning("Your collar prevents you from reaching climax!"))
-        else
-            to_chat(pet, span_notice("Your collar no longer restricts your pleasure."))
-        toggle_count++
+        if(CM.toggle_denial(pet))
+            toggle_count++
 
     to_chat(src, span_notice("Toggled orgasm restriction for [toggle_count] pets."))
 
@@ -744,14 +719,25 @@
     var/help_text = {"<span class='notice'><b>Collar Master Commands:</b>
     - Select Pets: Choose which pets to affect with commands
     - Send Message: Send a message through the collar
-    - Toggle Speech: Enable/disable pet speech
     - Force Surrender: Force pets to submit
     - Shock Pet: Punish pets with varying intensity
     - Share Damage: Transfer your injuries to pets
     - Scry on Pet: See through your pets' eyes
     - Dominate Pet: Take direct control of a pet
-    - Toggle Restrictions: Control various pet behaviors
     - Release Pet: Free pets from your control
+    - Listen to pet: Hear what your pet hears
+    - Shock Pets: To punish your pet
+    - Force Strip: Strip your pet and forbid them from wearing clothes
+    - Permit Clothing: Remove nudist
+    - Toggle Pet Speech: Shuts the pet up, they can only make animal noises
+    - Force Action: They are forced to say or emote what you type
+    - Pass Wounds: Tranfer your injuries to your pet
+    - Force Love: They are forced to love you
+    - Toggle Arousal: Toggles their arousal
+    - Toggle Orgasm Denial: Deny orgasms
+    - Toggle Pet Hallucinations: They will hear things that are not there
+    - Impose Will: Send an unfiltered message to your pet, this could be something they see, feel, etc
+    - Free Pet: Collar will fall to the ground
 
     Note: Most commands have a [CM.command_cooldown/10] second cooldown.
     Currently controlling [length(CM.my_pets)] pets with [length(CM.temp_selected_pets)] selected.</span>"}

@@ -444,17 +444,17 @@
 /obj/item/flashlight/flare/torch/lantern
 	name = "lamptern"
 	icon_state = "lamp"
-	desc = ""
+	desc = "A decorative lantern that can be worn around the neck. It provides soft, ambient lighting when lit."
 	light_range = 7
 	on = FALSE
 	flags_1 = CONDUCT_1
-	slot_flags = ITEM_SLOT_HIP
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP
 	force = 15
 	on_damage = 15
 	fuel = 9999 MINUTES
 	var/open = TRUE
 	var/list/occupants = list()
-	var/max_occupants = 1 //Hard-cap so you can't have multiple seelie in one carrier
+	var/max_occupants = 1
 
 /obj/item/flashlight/flare/torch/lantern/process()
 	open_flame(heat)

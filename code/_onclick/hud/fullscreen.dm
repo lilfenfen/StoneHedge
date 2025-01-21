@@ -289,8 +289,3 @@
 
 /atom/movable/screen/fullscreen/dreaming/waking_up
 	icon_state = "wake_up"
-
-/atom/movable/screen/fullscreen/arousal
-	icon = 'icons/mob/screen_full.dmi'
-	icon_state = "love"
-	layer = FULLSCREEN_LAYER

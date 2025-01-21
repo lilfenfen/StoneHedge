@@ -238,7 +238,7 @@
 	var/silenced = FALSE
 	var/applying = FALSE
 
-/obj/item/clothing/neck/roguetown/cursed_collar/attack(mob/living/carbon/C, mob/living/user)
+/obj/item/clothing/neck/roguetown/cursed_collar/attack(mob/living/carbon/human/C, mob/living/user)
 	if(!istype(C))
 		return ..()
 
@@ -267,29 +267,26 @@
 	playsound(loc, 'sound/foley/equip/equip_armor_plate.ogg', 30, TRUE, -2)
 
 	if(do_mob(user, C, 50 * surrender_mod))
-		if(!user.mind)
-			to_chat(user, span_warning("You need a mind to control the collar!"))
-			applying = FALSE
-			return
-
-		// Try to equip first
-		if(!C.equip_to_slot_if_possible(src, SLOT_NECK, TRUE, TRUE))
-			to_chat(user, span_warning("You fail to lock the collar around [C]'s neck!"))
-			applying = FALSE
-			return
-
-		// Get or create collar master datum
+		// Get or create collar master datum first
 		var/datum/antagonist/collar_master/CM = user.mind.has_antag_datum(/datum/antagonist/collar_master)
 		if(!CM)
 			CM = new()
 			user.mind.add_antag_datum(CM)
 
-		// Add pet to the master's list
+		// Try to equip
+		if(!C.equip_to_slot_if_possible(src, SLOT_NECK, TRUE, TRUE))
+			to_chat(user, span_warning("You fail to lock the collar around [C]'s neck!"))
+			applying = FALSE
+			return
+
+		// Add pet to the master's list before sending collar signals
 		CM.add_pet(C)
+
+		// Now send the collar gain signal
+		SEND_SIGNAL(C, COMSIG_CARBON_GAIN_COLLAR, src)
 
 		log_combat(user, C, "collared", addition="with [src]")
 		ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
-		SEND_SIGNAL(C, COMSIG_CARBON_GAIN_COLLAR, src)
 
 		C.visible_message(span_warning("[user] locks the cursed collar around [C]'s neck!"), \
 							 span_userdanger("[user] locks the cursed collar around your neck!"))
@@ -304,6 +301,7 @@
 		user.visible_message(span_warning("[user] is bound by the collar's dark magic."), \
 			span_warning("The collar's magic binds you to your new master's will!"))
 		to_chat(user, span_alert("You must now obey your master's commands."))
+		SEND_SIGNAL(user, COMSIG_CARBON_GAIN_COLLAR)
 
 /obj/item/clothing/neck/roguetown/cursed_collar/dropped(mob/living/carbon/human/user)
 	. = ..()

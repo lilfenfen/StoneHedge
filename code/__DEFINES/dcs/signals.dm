@@ -24,12 +24,14 @@
 // Living revive signal
 #define COMSIG_LIVING_REVIVE "mob_revive"
 
-// Sex Controller Signals
-#define COMSIG_SEXCONTROLLER_CLIMAX "sex_controller_climax"
-#define COMSIG_SEXCONTROLLER_AROUSAL_CHANGE "sex_controller_arousal_change"
+// Collar Mastersignal
+#define COMSIG_LIVING_TOGGLE_LISTEN "living_toggle_listen"
 
 // Sex Controller Return Values
 #define COMPONENT_CANCEL_CLIMAX (1<<0)
 
 // Emote return values
 #define COMPONENT_EMOTE_MESSAGE_CHANGED (1<<0)
+
+// Living signals
+#define COMSIG_LIVING_ATTACKED_BY "living_attacked_by"
