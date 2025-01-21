@@ -631,26 +631,25 @@
 	name = "Slavebourne"
 	desc = "You are naturally weak without a master's control. Being collared strengthens you."
 	value = -6
-	mob_trait = TRAIT_SLAVEBOURNE
+	mob_trait = list(TRAIT_SLAVEBOURNE, TRAIT_SLAVEBOURNE_EXAMINE)
 	gain_text = span_danger("You feel weak and directionless...")
 	lose_text = span_notice("You feel more self-reliant.")
 	medical_record_text = "Patient exhibits signs of dependency and weakness without proper guidance."
 	var/debuff_active = FALSE
 	var/master_dead = FALSE
 	var/static/DEBUFF_AMOUNT = 4
-	var/obj/item/clothing/neck/roguetown/cursed_collar/special_collar
 
 /datum/quirk/slavebourne/add()
 	var/mob/living/carbon/human/H = quirk_holder
 	if(!H)
 		return
 
+	// Apply initial debuff
+	apply_debuff()
+
+	// Register signals
 	RegisterSignal(H, COMSIG_CARBON_GAIN_COLLAR, PROC_REF(on_collared))
 	RegisterSignal(H, COMSIG_CARBON_LOSE_COLLAR, PROC_REF(on_uncollared))
-
-	// Start with debuff active
-	debuff_active = TRUE
-	apply_debuff()
 
 /datum/quirk/slavebourne/on_spawn()
 	. = ..()
@@ -660,79 +659,13 @@
 
 	H.mind.special_items["Cursed Collar"] = /obj/item/clothing/neck/roguetown/cursed_collar
 
-	// Apply initial debuff
-	debuff_active = TRUE
-	apply_debuff()
-	stack_trace("Applied initial slavebourne debuff to [H]")
-
-	// Register for collar signals
-	RegisterSignal(H, COMSIG_CARBON_GAIN_COLLAR, PROC_REF(on_collared))
-	RegisterSignal(H, COMSIG_CARBON_LOSE_COLLAR, PROC_REF(on_uncollared))
-
-/datum/quirk/slavebourne/proc/on_collared(mob/living/carbon/human/source)
-	SIGNAL_HANDLER
-	var/obj/item/clothing/neck/roguetown/cursed_collar/collar = source.get_item_by_slot(SLOT_NECK)
-
-	if(!collar || !collar.collar_master)
-		return
-
-	if(master_dead)
-		to_chat(source, span_warning("The death of your previous master has left you permanently weakened..."))
-		return
-
-	// Remove the debuff when properly collared with a master
-	if(debuff_active)
-		remove_debuff()
-		to_chat(source, span_notice("Your master's control flows through the collar, strengthening you!"))
-		playsound(source, 'sound/misc/vampirespell.ogg', 50, TRUE)
-
-	// Register death signals after successful collaring
-	RegisterSignal(collar.collar_master, COMSIG_LIVING_DEATH, PROC_REF(on_master_death))
-	RegisterSignal(collar.collar_master, COMSIG_LIVING_REVIVE, PROC_REF(on_master_revive))
-
-/datum/quirk/slavebourne/proc/on_uncollared(mob/living/carbon/human/source)
-	SIGNAL_HANDLER
-	if(master_dead)  // If master died, keep debuff permanent
-		return
-
-	// Only apply debuff if it's not already active
-	if(!debuff_active)
-		apply_debuff()
-		to_chat(source, span_warning("Without a master, you feel purposeless again..."))
-
-/datum/quirk/slavebourne/proc/on_master_death(mob/living/carbon/human/master)
-	SIGNAL_HANDLER
-	var/mob/living/carbon/human/H = quirk_holder
-	if(!H || master_dead)
-		return
-
-	master_dead = TRUE
-	debuff_active = TRUE
-	apply_debuff()
-	to_chat(H, span_userdanger("You feel your master's death tear through your very being! Your abilities are permanently diminished..."))
-	playsound(H, 'sound/misc/astratascream.ogg', 50, TRUE)
-
-/datum/quirk/slavebourne/proc/on_master_revive(mob/living/carbon/human/master)
-	SIGNAL_HANDLER
-	var/mob/living/carbon/human/H = quirk_holder
-	if(!H || !master_dead)
-		return
-
-	// Add debug message
-	stack_trace("Master [master] has been revived!")
-	master_dead = FALSE
-	debuff_active = FALSE
-	remove_debuff()
-	to_chat(H, span_notice("You feel your master's life force return! Your abilities are restored!"))
-	UnregisterSignal(master, COMSIG_LIVING_REVIVE)
-
 /datum/quirk/slavebourne/proc/apply_debuff()
 	var/mob/living/carbon/human/H = quirk_holder
-	if(!H)
+	if(!H || debuff_active)
 		return
 
-	stack_trace("Applying slavebourne debuff to [H]")
 	H.change_stat("strength", -DEBUFF_AMOUNT)
+	H.change_stat("perception", -DEBUFF_AMOUNT)
 	H.change_stat("speed", -DEBUFF_AMOUNT)
 	H.change_stat("endurance", -DEBUFF_AMOUNT)
 	H.change_stat("perception", -DEBUFF_AMOUNT)
@@ -742,18 +675,81 @@
 
 /datum/quirk/slavebourne/proc/remove_debuff()
 	var/mob/living/carbon/human/H = quirk_holder
-	if(!H)
+	if(!H || !debuff_active)
 		return
 
-	if(!debuff_active)  // Don't remove if not active
-		return
-
-	stack_trace("Removing slavebourne debuff from [H]")
 	H.change_stat("strength", DEBUFF_AMOUNT)
+	H.change_stat("perception", DEBUFF_AMOUNT)
 	H.change_stat("speed", DEBUFF_AMOUNT)
 	H.change_stat("endurance", DEBUFF_AMOUNT)
 	H.change_stat("perception", DEBUFF_AMOUNT)
 	H.change_stat("constitution", DEBUFF_AMOUNT)
 	H.change_stat("fortune", DEBUFF_AMOUNT)
 	debuff_active = FALSE
+
+/datum/quirk/slavebourne/proc/on_collared(mob/living/carbon/human/source, obj/item/clothing/neck/roguetown/cursed_collar/collar)
+	SIGNAL_HANDLER
+	if(!collar || !collar.collar_master || master_dead)
+		return
+
+	remove_debuff()
+	RegisterSignal(collar.collar_master, COMSIG_LIVING_DEATH, PROC_REF(on_master_death))
+	RegisterSignal(collar.collar_master, COMSIG_LIVING_REVIVE, PROC_REF(on_master_revive))
+	to_chat(source, span_notice("Your master's control flows through the collar, strengthening you!"))
+
+/datum/quirk/slavebourne/proc/on_uncollared()
+	SIGNAL_HANDLER
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	// Unregister master death signals if they exist
+	var/obj/item/clothing/neck/roguetown/cursed_collar/collar = H.get_item_by_slot(SLOT_NECK)
+	if(collar?.collar_master)
+		UnregisterSignal(collar.collar_master, list(
+			COMSIG_LIVING_DEATH,
+			COMSIG_LIVING_REVIVE
+		))
+
+	apply_debuff()
+	to_chat(H, span_warning("Without a master, you feel purposeless again..."))
+
+/datum/quirk/slavebourne/proc/on_master_death(mob/living/carbon/human/master)
+	SIGNAL_HANDLER
+	if(master_dead)
+		return
+
+	master_dead = TRUE
+	apply_debuff()
+	to_chat(quirk_holder, span_userdanger("You feel your master's death tear through your very being! Your abilities are permanently diminished..."))
+
+/datum/quirk/slavebourne/proc/on_master_revive(mob/living/carbon/human/master)
+	SIGNAL_HANDLER
+	if(!master_dead)
+		return
+
+	master_dead = FALSE
+	remove_debuff()
+	to_chat(quirk_holder, span_notice("You feel your master's life force return! Your abilities are restored!"))
+
+/datum/quirk/slavebourne/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(!H)
+		return
+
+	// Clean up all signals
+	UnregisterSignal(H, list(
+		COMSIG_CARBON_GAIN_COLLAR,
+		COMSIG_CARBON_LOSE_COLLAR
+	))
+
+	// Clean up any master signals if collared
+	var/obj/item/clothing/neck/roguetown/cursed_collar/collar = H.get_item_by_slot(SLOT_NECK)
+	if(collar?.collar_master)
+		UnregisterSignal(collar.collar_master, list(
+			COMSIG_LIVING_DEATH,
+			COMSIG_LIVING_REVIVE
+		))
+
+	remove_debuff()
 
