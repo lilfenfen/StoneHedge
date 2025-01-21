@@ -72,7 +72,6 @@
         return
 
     to_chat(src, span_notice("You establish a scrying link through [pet]'s collar..."))
-    to_chat(pet, span_warning("Your collar tingles as your master peers through your eyes!"))
 
     reset_perspective(pet)
     playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
