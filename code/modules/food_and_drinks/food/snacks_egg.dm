@@ -36,6 +36,23 @@
 	rotprocess = 15 MINUTES
 	var/fertile = FALSE
 
+/obj/item/reagent_containers/food/snacks/egg/attackby(obj/item/I, mob/living/user, params)
+	var/found_table = locate(/obj/structure/table) in (loc)
+	if(user.mind)
+		short_cooktime = (60 - ((user.mind.get_skill_level(/datum/skill/craft/cooking))*5))
+		long_cooktime = (100 - ((user.mind.get_skill_level(/datum/skill/craft/cooking))*10))
+	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/cheese))
+		if(isturf(loc)&& (found_table))
+			playsound(get_turf(user), 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
+			if(do_after(user,long_cooktime, target = src))
+				user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+				new /obj/item/reagent_containers/food/snacks/rogue/stuffeggraw(loc)
+				qdel(I)
+				qdel(src)
+	else
+		return ..()
+
+
 /obj/item/reagent_containers/food/snacks/egg/become_rotten()
 	. = ..()
 	if(.)

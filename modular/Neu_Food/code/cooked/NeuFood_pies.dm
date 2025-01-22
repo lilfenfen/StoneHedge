@@ -20,7 +20,7 @@
 	var/meaty
 	var/potpie
 	var/berrypie
-	var/poisoning	
+	var/poisoning
 
 /obj/item/reagent_containers/food/snacks/rogue/foodbase/piebottom/update_icon()
 	. = ..()
@@ -283,7 +283,7 @@
 			name = "unfinished berrypie"
 			process_step += 1
 			berrypie = TRUE
-			poisoning = TRUE	
+			poisoning = TRUE
 			update_icon()
 			qdel(I)
 			return
@@ -291,7 +291,7 @@
 			user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
 			to_chat(user, "<span class='notice'>Adding filling to the applepie. Needs more.</span>")
 			process_step += 1
-			poisoning = TRUE	
+			poisoning = TRUE
 			update_icon()
 			qdel(I)
 			return
@@ -299,11 +299,11 @@
 			user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
 			to_chat(user, "<span class='notice'>Filling the applepie to the brim. Still lacks a pie roof.</span>")
 			process_step += 1
-			poisoning = TRUE	
+			poisoning = TRUE
 			update_icon()
 			qdel(I)
-			return	
-	
+			return
+
 	else if(istype(I, /obj/item/reagent_containers/food/snacks/grown/berries/rogue))
 		if (process_step > 4)
 			return
@@ -330,7 +330,7 @@
 			process_step += 1
 			update_icon()
 			qdel(I)
-			return	
+			return
 
 	if(istype(I, /obj/item/reagent_containers/food/snacks/rogue/piedough))
 		playsound(get_turf(user), 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
@@ -398,7 +398,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/pie
 	name = "pie"
 	desc = ""
-	color = "#e7e2df"	
+	color = "#e7e2df"
 	dropshrink = 0.8
 	var/stunning = FALSE
 
@@ -532,12 +532,12 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = SNACK_POOR)
 	w_class = WEIGHT_CLASS_NORMAL
 	foodtype = GRAIN | VEGETABLES
-	tastes = list("meat" = 1)
+	tastes = list("mushrooms" = 1)
 
 /obj/item/reagent_containers/food/snacks/rogue/foodbase/handpieraw/mince
 	w_class = WEIGHT_CLASS_NORMAL
 	foodtype = GRAIN | MEAT
-	tastes = list("mushrooms" = 1)
+	tastes = list("meat" = 1)
 
 /obj/item/reagent_containers/food/snacks/rogue/foodbase/handpieraw/berry
 	w_class = WEIGHT_CLASS_NORMAL
@@ -566,4 +566,4 @@
 	icon_state = "handpie[bitecount]"
 	if(bitecount == 1)
 		rotprocess = SHELFLIFE_DECENT
-		addtimer(CALLBACK(src, PROC_REF(begin_rotting)), 20, TIMER_CLIENT_TIME) // 
+		addtimer(CALLBACK(src, PROC_REF(begin_rotting)), 20, TIMER_CLIENT_TIME) //

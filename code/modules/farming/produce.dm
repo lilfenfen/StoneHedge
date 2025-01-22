@@ -76,7 +76,7 @@
 	seed = /obj/item/seeds/rice
 	name = "rice grain"
 	desc = ""
-	icon = 'icons/roguetown/items/produce.dmi'
+	icon = 'modular_stonehedge/icons/roguetown/items/produce.dmi'
 	icon_state = "rice"
 	gender = PLURAL
 	filling_color = "#f0f0f0"
@@ -455,6 +455,7 @@
 	foodtype = FRUIT
 	list_reagents = list(/datum/reagent/consumable/nutriment = 4, /datum/reagent/consumable/acorn_powder = 4, /datum/reagent/drug/nicotine = 1)
 	grind_results = list(/datum/reagent/consumable/acorn_powder = 4)
+	mill_result = /obj/item/reagent_containers/powder/rocknut
 
 /obj/item/reagent_containers/food/snacks/grown/tomato
 	name = "tomato"
@@ -572,6 +573,7 @@
 	seed = /obj/item/seeds/bellpepper
 	name = "tiefling's egg"
 	desc = "Ay ay ay!! Muy caliente!!"
+	icon = 'modular_stonehedge/icons/roguetown/items/produce.dmi'
 	icon_state = "bellpepper"
 	filling_color = "#d13f05"
 	bitesize = 3

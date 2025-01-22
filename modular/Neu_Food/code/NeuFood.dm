@@ -474,6 +474,59 @@
 	..()
 	qdel(src)
 
+/* -------------- RICE ----------------- */
+/obj/item/reagent_containers/food/snacks/grown/rice
+	desc = ""
+	gender = PLURAL
+	list_reagents = list(/datum/reagent/floure = 1)
+	volume = 1
+	sellprice = 0
+	var/water_added
+
+/obj/item/reagent_containers/food/snacks/grown/rice/attackby(obj/item/I, mob/living/user, params)
+	var/found_table = locate(/obj/structure/table) in (loc)
+	var/obj/item/reagent_containers/R = I
+	if(user.mind)
+		short_cooktime = (60 - ((user.mind.get_skill_level(/datum/skill/craft/cooking))*5))
+		long_cooktime = (100 - ((user.mind.get_skill_level(/datum/skill/craft/cooking))*10))
+	if(!istype(R) || (water_added))
+		return ..()
+	if(isturf(loc)&& (!found_table))
+		to_chat(user, "<span class='notice'>Need a table...</span>")
+		return ..()
+	if(!R.reagents.has_reagent(/datum/reagent/water, 10))
+		to_chat(user, "<span class='notice'>Needs more water to work it.</span>")
+		return TRUE
+	to_chat(user, "<span class='notice'>Adding water, now its time to hand wash it...</span>")
+	playsound(get_turf(user), 'modular/Neu_Food/sound/splishy.ogg', 100, TRUE, -1)
+	if(do_after(user,2 SECONDS, target = src))
+		user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+		name = "wet rice"
+		R.reagents.remove_reagent(/datum/reagent/water, 10)
+		water_added = TRUE
+		color = "#d9d0cb"
+	return TRUE
+
+/obj/item/reagent_containers/food/snacks/grown/rice/attack_hand(mob/living/user)
+	if(water_added)
+		playsound(get_turf(user), 'modular/Neu_Food/sound/kneading_alt.ogg', 90, TRUE, -1)
+		if(do_after(user,3 SECONDS, target = src))
+			user.mind.adjust_experience(/datum/skill/craft/cooking, user.STAINT * 0.8)
+			new /obj/item/reagent_containers/food/snacks/rogue/ricewet(loc)
+			qdel(src)
+	else ..()
+
+/* -------------- WET RICE ----------------- */
+/obj/item/reagent_containers/food/snacks/rogue/ricewet
+	name = "washed rice"
+	desc = ""
+	gender = PLURAL
+	icon = 'icons/roguetown/items/produce.dmi'
+	icon_state = "rice"
+	list_reagents = list(/datum/reagent/floure = 1)
+	cooked_type = /obj/item/reagent_containers/food/snacks/rogue/preserved/rice_cooked
+	volume = 1
+	sellprice = 0
 /*	..................   Food platter   ................... */
 /obj/item/cooking/platter/attackby(obj/item/I, mob/living/user, params)
 	var/found_table = locate(/obj/structure/table) in (loc)
