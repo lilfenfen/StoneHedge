@@ -1,5 +1,5 @@
 /datum/job/roguetown/merchant
-	title = "Merchant Prince"
+	title = "Merchant Prince" // "merged" with Appraiser now, apparently, so they've been overhauled to both not be an utter mess AND be able to actually do that job.
 	flag = MERCHANT
 	department_flag = YEOMEN
 	faction = "Station"
@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = RACES_ALL_KINDSPLUS
-	tutorial = "You have reached a high standing on the merchant guild's sultanate, and you were granted the title of Prince or princess. You may not be actual royalty, but anyone who dares not treat you like such may find an increase on taxes, or become subject to your prodigious arcane talents. Hire adventurers and mercenaries to protect you and bring you riches from the forsaken ruins that plague this place to grow your wealth."
+	tutorial = "You have curried enough favor, or perhaps disfavor, with the council of the merchant's guild to earn a posting in these lands. Rich in treasure and danger in equal measure, it's your job to make sure the coin never stops flowing -- and the local Adventurer's Guild doesn't go broke. As a numermancer, you have access to arcanye magicks to help defend your treasures. You should probably hire a bodyguard anyway, though. "
 
 	display_order = JDO_MERCHANT
 
@@ -21,52 +21,49 @@
 
 /datum/outfit/job/roguetown/merchant/pre_equip(mob/living/carbon/human/H)
 	..()
+	if(H.gender == FEMALE)
+		H.virginity = TRUE
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gen
+		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
+		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+	else
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
+		pants = /obj/item/clothing/under/roguetown/tights/random
+		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+	ADD_TRAIT(H, TRAIT_SEEPRICES, type)
+	ADD_TRAIT(H, TRAIT_LEARNMAGIC, TRAIT_GENERIC)
+	neck = /obj/item/clothing/neck/roguetown/horus
+	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltl = /obj/item/rogueweapon/huntingknife/idagger/silver
+	backl = /obj/item/storage/backpack/rogue/satchel
+	backpack_contents = list(/obj/item/roguekey/vault =1, /obj/item/storage/keyring/steward =1, /obj/item/storage/keyring/merchant =1, )
+
 	if(H.mind)
 		H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/bows, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/knives, 5, TRUE) //stab those hoes
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/combat/bows, 3, TRUE)
+		H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 2, TRUE)
+		H.mind.adjust_skillrank_up_to(/datum/skill/combat/knives, 5, TRUE)
+		H.mind.adjust_skillrank_up_to(/datum/skill/labor/mathematics, 4, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 5, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/misc/alchemy, 4, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/misc/sneaking, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/misc/stealing, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/misc/medicine, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/misc/sneaking, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/labor/mathematics, 5, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/craft/cooking, 3, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/misc/riding, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/misc/alchemy, 3, TRUE)
-		H.mind.adjust_skillrank_up_to(/datum/skill/magic/arcane, 4, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/misc/medicine, 3, TRUE)
+		H.mind.adjust_skillrank_up_to(/datum/skill/magic/arcane, 4, TRUE)
+		H.mind.adjust_spellpoints(2) // you're rich, buy some scrolls if you want more
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fireball)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/projectile/magic_missile)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+		H.change_stat("strength", -1)
+		H.change_stat("intelligence", 4)
+		H.change_stat("perception", 2)
+		H.change_stat("endurance", 1) // Pity point for being enduring bullying by other nerds for studying the nerdiest magic.
+		H.verbs += list(/mob/living/carbon/human/proc/magicreport, /mob/living/carbon/human/proc/magiclearn)
 
-	ADD_TRAIT(H, TRAIT_SEEPRICES, type)
-	head = /obj/item/clothing/head/roguetown/chaperon
-	neck = /obj/item/clothing/neck/roguetown/horus
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
-	pants = /obj/item/clothing/under/roguetown/tights/sailor
-	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/storage/keyring/merchant
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	id = /obj/item/clothing/ring/gold
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow = 1)
-	if(H.gender == MALE)
-		shoes = /obj/item/clothing/shoes/roguetown/boots/armor/leather
-		H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
-	else
-		shoes = /obj/item/clothing/shoes/roguetown/gladiator
-	H.change_stat("intelligence", 3)
-	H.change_stat("perception", 4)
 	if(isseelie(H))
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/seelie_dust)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/summon_rat)
