@@ -347,6 +347,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 
 
-/datum/crafting_recipe/roguetown/hunting/bikini
+/datum/loadout_item/bikini
 	name = "leatherkini"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/bikini
