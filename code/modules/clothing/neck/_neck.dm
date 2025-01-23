@@ -227,8 +227,10 @@
 /obj/item/clothing/neck/roguetown/cursed_collar
 	name = "cursed collar"
 	desc = "A sinister looking collar with ruby studs. It seems to radiate a dark energy."
-	icon_state = "listenstone"
-	item_state = "listenstone"
+	icon = 'modular_stonehedge/icons/armor/neck.dmi'
+	mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/neck.dmi'
+	icon_state = "cursed_collar"
+	item_state = "cursed_collar"
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK
