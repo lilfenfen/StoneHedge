@@ -288,4 +288,58 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Iron Boots"
 	path =	/obj/item/clothing/shoes/roguetown/boots/armoriron
 
+/datum/loadout_item/pipe
+	name = "Westman Pipe"
+	desc = "A fancy smoking pipe."
+	path = /obj/item/clothing/mask/cigarette/pipe
+
+// Tabards/Cloaks
+/datum/loadout_item/psydon_tabard
+	name = "Seraph-iros Tabard"
+	path = /obj/item/clothing/cloak/templar/psydon
+
+/datum/loadout_item/astrata_tabard
+	name = "Elysian Tabard"
+	path = /obj/item/clothing/cloak/templar/astrata
+
+/datum/loadout_item/noc_tabard
+	name = "Lunite Tabard"
+	path = /obj/item/clothing/cloak/templar/noc
+
+/datum/loadout_item/dendor_tabard
+	name = "Sylvan Tabard"
+	path = /obj/item/clothing/cloak/templar/dendor
+
+/datum/loadout_item/necra_tabard
+	name = "Yamain Tabard"
+	path = /obj/item/clothing/cloak/templar/necra
+
+/datum/loadout_item/abyssor_tabard
+	name = "Abyssian Tabard"
+	path = /obj/item/clothing/cloak/templar/abyssor
+
+/datum/loadout_item/malum_tabard
+	name = "Svaeryonite Tabard"
+	path = /obj/item/clothing/cloak/templar/malum
+
+/datum/loadout_item/eora_tabard
+	name = "Viriitran Tabard"
+	path = /obj/item/clothing/cloak/templar/eora
+
+/datum/loadout_item/pestra_tabard
+	name = "Hermeian Tabard"
+	path = /obj/item/clothing/cloak/templar/pestra
+
+/datum/loadout_item/ravox_tabard
+	name = "Minhurite Tabard"
+	path = /obj/item/clothing/cloak/templar/ravox
+
+/datum/loadout_item/xylix_tabard
+	name = "Onderite Tabard"
+	path = /obj/item/clothing/cloak/templar/xylix
+
+/datum/loadout_item/lantern
+	name = "Lamptern"
+	path = /obj/item/flashlight/flare/torch/lantern
+
 

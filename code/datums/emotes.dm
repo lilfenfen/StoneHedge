@@ -240,3 +240,85 @@
 
 	if(intentional && HAS_TRAIT(user, TRAIT_EMOTEMUTE))
 		return FALSE
+
+/datum/emote/living/headpat
+	key = "headpat"
+	key_third_person = "headpats"
+	message = "gives %t a gentle pat on the head."
+	restraint_check = TRUE
+	emote_type = EMOTE_VISIBLE
+	mob_type_allowed_typecache = list(/mob/living)
+
+/datum/emote/living/headpat/run_emote(mob/user, params, type_override, intentional)
+	if(!can_run_emote(user, TRUE, intentional))
+		return FALSE
+
+	var/list/targets = list()
+	for(var/mob/living/L in oview(1, user))
+		targets += L
+
+	if(!targets.len)
+		return FALSE  // Fail silently if no valid targets
+
+	var/mob/living/target
+	if(targets.len == 1)
+		target = targets[1]
+	else
+		target = input("Who do you want to headpat?","Select Target") as null|anything in targets
+		if(!target || !user.Adjacent(target))
+			return FALSE
+
+	var/msg = message
+	msg = replacetext(msg, "%t", target.name)
+	user.visible_message("[user] [msg]")
+	playsound(get_turf(user), 'modular_causticcove/sound/effects/rustle1.ogg', 50, TRUE)
+	return TRUE
+
+/mob/living/carbon/human/verb/emote_headpat()
+	set name = "Headpat"
+	set category = "Emotes"
+
+	emote("headpat", intentional = TRUE)
+
+/datum/emote/living/sexymoan
+	key = "sexymoan"
+	key_third_person = "moans"
+	message = "lets out a lewd moan..."
+	message_mime = "appears to moan!"
+	message_muffled = "makes a muffled moan!"
+	emote_type = EMOTE_AUDIBLE
+	mob_type_allowed_typecache = list(/mob/living/carbon/human)
+	vary = TRUE
+
+/datum/emote/living/sexymoan/run_emote(mob/user, params, type_override, intentional)
+	. = ..()
+	if(!.)
+		return FALSE
+
+	if(!ishuman(user))
+		return FALSE
+
+	var/mob/living/carbon/human/H = user
+	if(H.voice_pitch < 1) // Check if voice pitch is high enough
+		to_chat(H, span_warning("Your voice isn't high enough to make that sound!"))
+		return FALSE
+
+	var/list/moans = list(
+		'sound/vo/female/gen/se/sex (1).ogg',
+		'sound/vo/female/gen/se/sex (2).ogg',
+		'sound/vo/female/gen/se/sex (3).ogg',
+		'sound/vo/female/gen/se/sex (4).ogg',
+		'sound/vo/female/gen/se/sex (5).ogg',
+		'sound/vo/female/gen/se/sex (6).ogg',
+		'sound/vo/female/gen/se/sex (7).ogg',
+		'sound/vo/female/gen/se/sex (8).ogg'
+	)
+
+	playsound(get_turf(user), pick(moans), 50, TRUE, vary = TRUE)
+	return TRUE
+
+/mob/living/carbon/human/verb/emote_sexymoan()
+	set name = "Sexy Moan"
+	set category = "Emotes"
+
+	emote("sexymoan", intentional = TRUE)

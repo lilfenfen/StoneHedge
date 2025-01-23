@@ -263,7 +263,7 @@
 	blend_mode = BLEND_ADD
 	show_when_dead = TRUE
 
-/atom/movable/screen/fullscreen/maniac 
+/atom/movable/screen/fullscreen/maniac
 	icon = 'icons/roguetown/maniac/fullscreen.dmi'
 	icon_state = "hall0"
 	alpha = 0

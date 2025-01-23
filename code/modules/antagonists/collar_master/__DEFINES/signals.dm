@@ -1,0 +1,1 @@
+#define COMSIG_LIVING_TOGGLE_LISTEN "living_toggle_listen"
