@@ -631,13 +631,13 @@
 	name = "Slavebourne"
 	desc = "You are naturally weak without a master's control. Being collared strengthens you."
 	value = -6
-	mob_trait = list(TRAIT_SLAVEBOURNE, TRAIT_SLAVEBOURNE_EXAMINE)
 	gain_text = span_danger("You feel weak and directionless...")
 	lose_text = span_notice("You feel more self-reliant.")
 	medical_record_text = "Patient exhibits signs of dependency and weakness without proper guidance."
 	var/debuff_active = FALSE
 	var/master_dead = FALSE
 	var/static/DEBUFF_AMOUNT = 4
+	var/examine_text = "They have a vacant, submissive look in their eyes."
 
 /datum/quirk/slavebourne/add()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -650,6 +650,10 @@
 	// Register signals
 	RegisterSignal(H, COMSIG_CARBON_GAIN_COLLAR, PROC_REF(on_collared))
 	RegisterSignal(H, COMSIG_CARBON_LOSE_COLLAR, PROC_REF(on_uncollared))
+	RegisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE, PROC_REF(on_examine))
+
+	ADD_TRAIT(quirk_holder, TRAIT_SLAVEBOURNE, QUIRK_TRAIT)
+	ADD_TRAIT(quirk_holder, TRAIT_SLAVEBOURNE_EXAMINE, QUIRK_TRAIT)
 
 /datum/quirk/slavebourne/on_spawn()
 	. = ..()
@@ -752,4 +756,12 @@
 		))
 
 	remove_debuff()
+	UnregisterSignal(quirk_holder, COMSIG_PARENT_EXAMINE)
+
+	REMOVE_TRAIT(quirk_holder, TRAIT_SLAVEBOURNE, QUIRK_TRAIT)
+	REMOVE_TRAIT(quirk_holder, TRAIT_SLAVEBOURNE_EXAMINE, QUIRK_TRAIT)
+
+/datum/quirk/slavebourne/proc/on_examine(datum/source, mob/user, list/examine_list)
+	SIGNAL_HANDLER
+	examine_list += span_info("\nThey have a submissive aura about them.")
 

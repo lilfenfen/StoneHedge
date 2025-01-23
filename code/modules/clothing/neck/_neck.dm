@@ -226,7 +226,7 @@
 
 /obj/item/clothing/neck/roguetown/cursed_collar
 	name = "cursed collar"
-	desc = "A sinister looking collar with emerald studs. It seems to radiate a dark energy."
+	desc = "A sinister looking collar with ruby studs. It seems to radiate a dark energy."
 	icon_state = "listenstone"
 	item_state = "listenstone"
 	w_class = WEIGHT_CLASS_SMALL
@@ -297,11 +297,17 @@
 
 /obj/item/clothing/neck/roguetown/cursed_collar/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
-	if(slot == SLOT_NECK && victim == user)
-		user.visible_message(span_warning("[user] is bound by the collar's dark magic."), \
-			span_warning("The collar's magic binds you to your new master's will!"))
-		to_chat(user, span_alert("You must now obey your master's commands."))
-		SEND_SIGNAL(user, COMSIG_CARBON_GAIN_COLLAR)
+	if(slot != SLOT_NECK)
+		return
+
+	// Check for defiant preference
+	if(user.client?.prefs?.defiant)
+		to_chat(user, span_warning("Your defiant nature prevents the collar from binding to you!"))
+		user.dropItemToGround(src, force = TRUE)
+		return
+
+	// Only send the gain signal once master is set
+	addtimer(CALLBACK(src, PROC_REF(send_collar_signal), user), 2)
 
 /obj/item/clothing/neck/roguetown/cursed_collar/dropped(mob/living/carbon/human/user)
 	. = ..()

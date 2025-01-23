@@ -82,7 +82,7 @@
 			. = list("<span class='info'>ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][custom_race_name ? "[custom_race_name] ([race_name])" : "[race_name]"] [used_title].")
 
 			if(HAS_TRAIT(src, TRAIT_SLAVEBOURNE_EXAMINE))
-				. += span_notice("[p_they(TRUE)] carries [p_them()]self with a submissive demeanor as if seeking direction.")
+				. += span_notice("[p_they(TRUE)] [p_have()] a vacant, submissive look in [p_their()] eyes.")
 		else
 			. = list("<span class='info'>ø ------------ ø\nThis is the <EM>[used_name]</EM>, the [custom_race_name ? "[custom_race_name] ([race_name])" : "[race_name]"].")
 		if(dna.species.use_skintones)

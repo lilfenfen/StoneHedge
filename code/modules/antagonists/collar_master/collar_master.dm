@@ -54,6 +54,11 @@
     if(!pet || (pet in my_pets))
         return FALSE
 
+    // Check for defiant preference
+    if(pet.client?.prefs?.defiant)
+        to_chat(owner.current, span_warning("[pet] is too defiant to be collared!"))
+        return FALSE
+
     // Add to lists
     my_pets += pet
     registered_pets += pet
@@ -96,6 +101,12 @@
 /datum/antagonist/collar_master/proc/verify_collar_binding(mob/living/carbon/human/pet, obj/item/clothing/neck/roguetown/cursed_collar/collar)
     if(!pet || !collar || !collar.collar_master)
         return
+
+    // Prevent self-collaring for slavebourne
+    if(pet == collar.collar_master && pet.has_quirk(/datum/quirk/slavebourne))
+        to_chat(pet, span_warning("No, I want someone else to collar me!"))
+        pet.dropItemToGround(collar, force = TRUE)
+        return FALSE
 
     // If still showing purposeless message, try sending signal again
     if(pet.has_quirk(/datum/quirk/slavebourne))
@@ -300,71 +311,42 @@
     if(!pet || !(pet in my_pets))
         return FALSE
 
-    if(!pet.mind)
-        to_chat(owner.current, span_warning("[pet] must have a mind to establish a listening link!"))
-        return FALSE
+    listening = !listening
+    listening_pet = listening ? pet : null
 
     if(listening)
-        if(listening_pet)
-            UnregisterSignal(listening_pet, list(
-                COMSIG_MOVABLE_HEAR,
-                COMSIG_MOB_EMOTE,
-                COMSIG_MOB_SAY
-            ))
-            listening_pet = null
-        listening = FALSE
-        to_chat(owner.current, span_notice("You stop listening through [pet]'s collar."))
-    else
-        if(listening_pet)  // If we were listening to another pet, stop that first
-            UnregisterSignal(listening_pet, list(
-                COMSIG_MOVABLE_HEAR,
-                COMSIG_MOB_EMOTE,
-                COMSIG_MOB_SAY
-            ))
-
-        // Store and register the new pet
-        listening_pet = pet
-        RegisterSignal(pet, COMSIG_MOVABLE_HEAR, PROC_REF(relay_heard_message))
+        // Add master to pet's message viewers
+        RegisterSignal(pet, COMSIG_MOVABLE_HEAR, PROC_REF(relay_heard))
         RegisterSignal(pet, COMSIG_MOB_EMOTE, PROC_REF(relay_emote))
-        RegisterSignal(pet, COMSIG_MOB_SAY, PROC_REF(relay_say))
-        listening = TRUE
         to_chat(owner.current, span_notice("You start listening through [pet]'s collar."))
+        to_chat(pet, span_warning("Your collar tingles as your master listens through your ears!"))
+    else
+        // Remove master from pet's message viewers
+        UnregisterSignal(pet, list(COMSIG_MOVABLE_HEAR, COMSIG_MOB_EMOTE))
+        listening_pet = null
+        to_chat(owner.current, span_notice("You stop listening through [pet]'s collar."))
+        to_chat(pet, span_notice("Your collar relaxes as your master stops listening."))
+
     return TRUE
 
-/datum/antagonist/collar_master/proc/relay_heard_message(datum/source, list/hearing_args)
+/datum/antagonist/collar_master/proc/relay_heard(datum/source, list/hearing_args)
     SIGNAL_HANDLER
     var/mob/living/carbon/human/pet = source
-    var/mob/living/carbon/human/master = owner?.current
-    if(!master || !pet || !(pet in my_pets) || !listening || pet != listening_pet)
+    if(!pet || !(pet in my_pets) || !listening || pet != listening_pet)
         return
 
-    var/message = hearing_args[HEARING_RAW_MESSAGE] || hearing_args[HEARING_MESSAGE]
-    var/speaker = hearing_args[HEARING_SPEAKER]
-    if(message && speaker && speaker != pet)
-        to_chat(master, span_notice("<i>Through [pet]'s collar, you hear [speaker]: [message]</i>"))
+    var/message = hearing_args[HEARING_MESSAGE]
+    if(message)
+        to_chat(owner.current, span_notice("<i>Through [pet]'s collar: [message]</i>"))
 
-/datum/antagonist/collar_master/proc/relay_emote(datum/source, datum/emote/emote, emote_type, emote_message)
+/datum/antagonist/collar_master/proc/relay_emote(datum/source, emote_key, emote_message)
     SIGNAL_HANDLER
     var/mob/living/carbon/human/pet = source
-    var/mob/living/carbon/human/master = owner?.current
-    if(!master || !pet || !(pet in my_pets) || !listening || pet != listening_pet)
+    if(!pet || !(pet in my_pets) || !listening || pet != listening_pet)
         return
 
     if(emote_message)
-        emote_message = replacetext(emote_message, "/me ", "")
-        emote_message = replacetext(emote_message, "* ", "")
-        to_chat(master, span_notice("<i>Through [pet]'s collar, you see: [pet] [emote_message]</i>"))
-
-/datum/antagonist/collar_master/proc/relay_say(datum/source, list/speech_args)
-    SIGNAL_HANDLER
-    var/mob/living/carbon/human/pet = source
-    var/mob/living/carbon/human/master = owner?.current
-    if(!master || !pet || !(pet in my_pets) || !listening || pet != listening_pet)
-        return
-
-    var/message = speech_args[SPEECH_MESSAGE]
-    if(message)
-        to_chat(master, span_notice("<i>Through [pet]'s collar, you hear [pet] say: [message]</i>"))
+        to_chat(owner.current, span_notice("<i>Through [pet]'s collar: [pet] [emote_message]</i>"))
 
 /datum/antagonist/collar_master/proc/force_strip(mob/living/carbon/human/pet)
     if(!pet || !(pet in my_pets))
@@ -749,6 +731,12 @@
 /obj/item/clothing/neck/roguetown/cursed_collar/equipped(mob/living/carbon/human/user, slot)
     . = ..()
     if(slot != SLOT_NECK)
+        return
+
+    // Check for defiant preference
+    if(user.client?.prefs?.defiant)
+        to_chat(user, span_warning("Your defiant nature prevents the collar from binding to you!"))
+        user.dropItemToGround(src, force = TRUE)
         return
 
     // Only send the gain signal once master is set
