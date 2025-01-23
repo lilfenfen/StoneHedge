@@ -846,8 +846,15 @@
 
 //Target = what was clicked on, User = thing doing the clicking
 /mob/living/carbon/human/MouseDrop_T(mob/living/target, mob/living/user)
-	if(isseelie(target) && !(HAS_TRAIT(src, TRAIT_TINY)) && istype(user.rmb_intent, /datum/rmb_intent/weak))
+	// Seelies can sit on anyone's shoulders
+	if(isseelie(target) && !(HAS_TRAIT(src, TRAIT_TINY)))
 		if(can_piggyback(target))
+			shoulder_ride(target)
+			return TRUE
+
+	// Anyone can sit on anthromorphbig's shoulders
+	if(istype(src.dna?.species, /datum/species/anthromorphbig))
+		if(user == target && can_piggyback(target))  // Make sure the person dragging is the one trying to sit
 			shoulder_ride(target)
 			return TRUE
 
@@ -875,9 +882,9 @@
 /mob/living/carbon/human/proc/shoulder_ride(mob/living/carbon/target)
 	buckle_mob(target, TRUE, TRUE, FALSE, 0, 0)
 	visible_message(span_notice("[target] gently sits on [src]'s shoulder."))
-	//target.set_mob_offsets("shoulder_ride", _x = 5, _y = 10)
+	if(istype(target.dna?.species, /datum/species/anthromorphbig))
+		target.pixel_y += 6  // Adjust this value as needed for proper visual alignment
 
-//src is the user that will be carrying, target is the mob to be carried
 /mob/living/carbon/human/proc/can_piggyback(mob/living/carbon/target)
 	return (istype(target) && target.stat == CONSCIOUS)
 
@@ -1207,3 +1214,35 @@
 /mob/living/carbon/human/proc/has_butt()
 	RETURN_TYPE(/obj/item/organ/butt)
 	return getorganslot(ORGAN_SLOT_BUTT)
+
+/mob/living/carbon/human/proc/shoulder_perch()
+	set name = "Perch on Shoulders"
+	set category = "IC"
+	set desc = "Sit on someone's shoulders."
+
+	if(stat != CONSCIOUS)
+		return
+
+	if(!istype(dna?.species, /datum/species/anthromorphbig))
+		to_chat(src, span_warning("You're not the right size to perch on shoulders!"))
+		return
+
+	var/list/possible_targets = list()
+	for(var/mob/living/carbon/human/H in range(1, src))
+		if(H != src && !H.buckled && !H.lying)
+			possible_targets += H
+
+	if(!length(possible_targets))
+		to_chat(src, span_warning("No valid targets to perch on!"))
+		return
+
+	var/mob/living/carbon/human/target = input(src, "Who do you want to perch on?", "Shoulder Perch") as null|anything in possible_targets
+	if(!target || target.buckled || target.lying || !Adjacent(target))
+		return
+
+	target.visible_message(span_notice("[src] starts climbing onto [target]'s shoulders..."))
+	if(do_after(src, 20, target))
+		if(target.buckled || target.lying || !Adjacent(target))
+			return
+		target.shoulder_ride(src)
+

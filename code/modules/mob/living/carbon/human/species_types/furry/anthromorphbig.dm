@@ -192,3 +192,10 @@
 	returned["mcolor3"] = third_color
 	return returned
 
+/datum/species/anthromorphbig/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+    . = ..()
+    C.verbs |= /mob/living/carbon/human/proc/shoulder_perch
+
+/datum/species/anthromorphbig/on_species_loss(mob/living/carbon/C)
+    . = ..()
+    C.verbs -= /mob/living/carbon/human/proc/shoulder_perch
