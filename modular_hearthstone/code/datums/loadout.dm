@@ -342,4 +342,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Lamptern"
 	path = /obj/item/flashlight/flare/torch/lantern
 
+/datum/loadout_item/chainkini
+	name = "chainkini"
+	path = /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 
+
+/datum/crafting_recipe/roguetown/hunting/bikini
+	name = "leatherkini"
+	path = /obj/item/clothing/suit/roguetown/armor/leather/bikini
