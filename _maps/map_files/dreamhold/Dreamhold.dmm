@@ -575,10 +575,7 @@
 /obj/item/powderflask,
 /obj/item/powderflask,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "auO" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/dirt/road,
@@ -1267,10 +1264,7 @@
 "aQv" = (
 /obj/structure/globe,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "aQA" = (
 /obj/structure/flora/newleaf{
 	icon_state = "center-leaf2"
@@ -2182,10 +2176,7 @@
 /obj/effect/landmark/start/mercenary,
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "bxo" = (
 /obj/structure/bars/steel,
 /obj/structure/academyward/perm,
@@ -2412,10 +2403,7 @@
 	},
 /obj/item/candle/skull,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "bGK" = (
 /obj/structure/roguewindow/openclose{
 	dir = 1
@@ -2711,10 +2699,7 @@
 "bQb" = (
 /obj/structure/table/vtable/v2,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "bQi" = (
 /obj/structure/flora/roguegrass/maneater/real{
 	aggroed = 1
@@ -4205,10 +4190,7 @@
 	icon_state = "grassa1"
 	},
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "cTx" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/wildplant/wild_herbs,
@@ -4500,10 +4482,7 @@
 	},
 /obj/structure/fermenting_barrel/beer,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "dcc" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/closet/crate/roguecloset,
@@ -5076,7 +5055,7 @@
 "dvr" = (
 /obj/structure/handcart,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "dvv" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/brflowers,
@@ -5781,10 +5760,7 @@
 	icon_state = "longtable"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "dUW" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -6137,7 +6113,7 @@
 /obj/item/seeds/random,
 /obj/item/seeds/random,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "ecS" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/grass/jungle,
@@ -6172,10 +6148,7 @@
 	icon_state = "grassa2"
 	},
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "edY" = (
 /obj/structure/flora/roguegrass/maneater/real{
 	aggroed = 1
@@ -6334,10 +6307,7 @@
 "ejf" = (
 /obj/structure/chair/bench/couchablack/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "ejZ" = (
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/open/floor/rogue/grass,
@@ -6577,10 +6547,12 @@
 	name = "Shores of the Emerald Coast"
 	})
 "etP" = (
-/obj/item/reagent_containers/glass/bucket/wooden/spell_water,
-/obj/item/natural/worms/leech,
-/obj/item/natural/worms/leech/cheele,
-/turf/open/floor/rogue/herringbone,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
@@ -6679,10 +6651,7 @@
 	name = "The Abyss Eye"
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "eyt" = (
 /obj/structure/roguewindow/openclose{
 	dir = 1
@@ -8330,10 +8299,7 @@
 "fuU" = (
 /obj/structure/closet/crate/roguecloset/dark,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "fvp" = (
 /obj/structure/closet/crate/chest/dungeon,
 /obj/item/grown/log/tree,
@@ -8371,7 +8337,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "fwK" = (
 /obj/structure/bearpelt,
 /turf/open/floor/rogue/dirt/nrich{
@@ -8522,12 +8488,16 @@
 	name = "Shrine of Lune"
 	})
 "fCW" = (
-/obj/structure/roguewindow/openclose{
-	dir = 1
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
+/obj/item/reagent_containers/glass/bucket/wooden/spell_water,
+/obj/item/natural/worms/leech,
+/obj/item/natural/worms/leech/cheele,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/town/garrison{
+	first_time_text = "Adventurers Guild";
+	name = "Adventurers Guild"
 	})
 "fDe" = (
 /obj/effect/landmark/townpatrol,
@@ -8600,7 +8570,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "fFq" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/newtree,
@@ -8781,13 +8751,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
 "fKB" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
+/obj/structure/mineral_door/wood/fancywood,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -9264,7 +9228,7 @@
 "gaR" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "gaZ" = (
 /obj/structure/fluff/alch,
 /obj/item/candle/magic/lit,
@@ -9289,18 +9253,12 @@
 "gbJ" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "gbM" = (
 /obj/machinery/light/rogue/torchholder/c,
 /obj/structure/fermenting_barrel/beer,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "gbY" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck/tame,
 /obj/effect/decal/dirt/grass,
@@ -9742,10 +9700,7 @@
 /obj/item/clothing/head/roguetown/helmet/tricorn,
 /obj/item/clothing/head/roguetown/helmet/tricorn,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "gqt" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/item/reagent_containers/food/snacks/grown/shroom,
@@ -9958,9 +9913,7 @@
 "gzK" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "gzL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
@@ -10086,10 +10039,7 @@
 "gHw" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "gHx" = (
 /obj/structure/chair/stool/rogue,
 /obj/effect/landmark/start/templar,
@@ -10274,9 +10224,12 @@
 /turf/open/water/river,
 /area/rogue/outdoors/caves)
 "gOi" = (
-/obj/effect/landmark/start/farmer,
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/obj/structure/flora/roguegrass/bush/wall/tall,
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "gPq" = (
 /turf/closed/mineral/random/rogue/high,
 /area/rogue/indoors/cave)
@@ -10291,10 +10244,7 @@
 /obj/structure/roguemachine/scomm/r,
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "gRg" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/naturalstone,
@@ -10720,10 +10670,7 @@
 	icon_state = "longtable"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "hgJ" = (
 /turf/open/water{
 	desc = "Salty and deep, this water leads to the open coast.";
@@ -10955,10 +10902,7 @@
 /obj/item/roguegem,
 /obj/item/roguecoin/gold/pile,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "hnT" = (
 /obj/item/natural/rock,
 /turf/open/water/river{
@@ -11210,10 +11154,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "hwr" = (
 /obj/item/gun/ballistic/arquebus,
 /obj/item/gun/ballistic/arquebus,
@@ -11221,10 +11162,7 @@
 /obj/item/powderflask,
 /obj/item/powderflask,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "hwE" = (
 /obj/effect/spawner/roguemap/tree,
 /obj/structure/flora/roguegrass,
@@ -11733,10 +11671,7 @@
 "hPQ" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "hQp" = (
 /obj/structure/roguemachine/vendor{
 	keycontrol = "blacksmith"
@@ -11778,10 +11713,7 @@
 	name = "The Abyss Eye"
 	},
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "hRs" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/grass,
@@ -11936,9 +11868,7 @@
 /obj/machinery/light/rogue/hearth,
 /obj/item/reagent_containers/glass/bucket/pot,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "hVB" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/fluff/railing/wood{
@@ -12020,9 +11950,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "hYa" = (
 /obj/structure/mineral_door/swing_door,
 /turf/open/floor/rogue/blocks,
@@ -12267,8 +12195,8 @@
 	name = "Silver Dragon"
 	})
 "ifI" = (
-/turf/closed/wall/mineral/rogue/decowood,
-/area/rogue/outdoors/river)
+/turf/closed/wall/mineral/rogue/wooddark/slitted,
+/area/rogue/indoors/town)
 "ifJ" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/spacevine/dendor,
@@ -12325,10 +12253,7 @@
 /area/rogue/outdoors/caves)
 "ihQ" = (
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "iia" = (
 /obj/structure/flora/roguegrass/bush/wall,
 /obj/structure/fluff/railing/wood{
@@ -12923,9 +12848,7 @@
 	},
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "iBM" = (
 /obj/structure/table/vtable,
 /obj/effect/decal/stone/hex{
@@ -13128,7 +13051,7 @@
 /obj/item/seeds/sugarcane,
 /obj/item/seeds/tea,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "iIq" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -13306,10 +13229,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/effect/landmark/start/mercenary,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "iQi" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -15020,10 +14940,7 @@
 	},
 /obj/item/candle/skull/lit,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "jWr" = (
 /obj/structure/chair/wood/rogue/fancy{
 	dir = 1
@@ -15110,10 +15027,7 @@
 	lockid = "merc"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "jZN" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -15323,10 +15237,7 @@
 "kfX" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "kgb" = (
 /obj/structure/flora/grass/jungle,
 /turf/closed/wall/shroud,
@@ -16048,10 +15959,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "kCU" = (
 /obj/structure/flora/grass/jungle,
 /obj/machinery/light/rogue/firebowl,
@@ -16243,10 +16151,7 @@
 	icon_state = "medposter3"
 	},
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "kHF" = (
 /turf/open/floor/rogue/grass,
 /turf/closed/wall/mineral/rogue/stone/moss,
@@ -16393,6 +16298,12 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"kNd" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "kNk" = (
 /obj/structure/flora/newtree,
 /obj/structure/flora/newtree,
@@ -16817,10 +16728,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "laG" = (
 /obj/effect/landmark/start/bogguardlate,
 /turf/open/floor/rogue/blocks/green,
@@ -16933,6 +16841,15 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
+"ldJ" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/town/garrison{
+	first_time_text = "Adventurers Guild";
+	name = "Adventurers Guild"
+	})
 "ldZ" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -17249,10 +17166,7 @@
 "lpe" = (
 /obj/structure/closet/crate/roguecloset/dark,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "lpm" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/wildplant/wild_herbs,
@@ -18061,10 +17975,7 @@
 "lUP" = (
 /obj/structure/chair/bench/couchablack,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "lVs" = (
 /obj/structure/flora/newleaf,
 /obj/structure/flora/newleaf,
@@ -18463,10 +18374,7 @@
 "mjk" = (
 /obj/structure/fermenting_barrel/beer,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "mjm" = (
 /obj/structure/flora/roguegrass,
 /obj/machinery/light/rogue/firebowl/stump,
@@ -19131,10 +19039,7 @@
 /area/rogue/outdoors/exposed/tavern)
 "mBh" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "mBE" = (
 /obj/machinery/light/rogue/campfire/densefire,
 /turf/open/floor/rogue/dirt,
@@ -19211,7 +19116,7 @@
 /obj/item/flashlight/flare/torch,
 /obj/item/flashlight/flare/torch,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "mDA" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4
@@ -19264,10 +19169,7 @@
 "mEw" = (
 /obj/structure/fermenting_barrel/water,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "mEG" = (
 /obj/structure/flora/roguegrass/bush,
 /obj/machinery/light/rogue/wallfire/candle/blue,
@@ -19522,11 +19424,9 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town)
 "mMo" = (
-/obj/structure/fluff/railing/border{
-	dir = 6
-	},
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/river)
+/obj/structure/ladder,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "mMv" = (
 /obj/item/storage/backpack/rogue/backpack/surgery,
 /obj/item/storage/backpack/rogue/backpack/surgery,
@@ -20241,7 +20141,7 @@
 /obj/item/seeds/wheat,
 /obj/item/seeds/wheat/oat,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "nlx" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/river{
@@ -20495,6 +20395,14 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
+"nsC" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "ntj" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/brflowers,
@@ -20583,7 +20491,7 @@
 	name = "Farmer's Bedroom"
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "nuI" = (
 /obj/machinery/light/rogue/firebowl/church,
 /turf/open/floor/rogue/naturalstone,
@@ -21556,10 +21464,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "nZx" = (
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/hexstone,
@@ -21814,9 +21719,7 @@
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/wool,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "ojp" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
@@ -21831,6 +21734,10 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"ojF" = (
+/obj/structure/bars/steel,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/river)
 "ojO" = (
 /obj/effect/decal/dirt/grass{
 	dir = 4
@@ -22359,12 +22266,15 @@
 "oDW" = (
 /obj/structure/fluff/walldeco/rpainting,
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "oEb" = (
 /obj/structure/composter/full,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -22413,9 +22323,16 @@
 	first_time_text = "The Twilight Woods"
 	})
 "oFN" = (
-/turf/closed/wall/mineral/rogue/decowood,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/town/garrison{
+	first_time_text = "Adventurers Guild";
+	name = "Adventurers Guild"
 	})
 "oGb" = (
 /obj/structure/flora/newbranch/connector{
@@ -23212,10 +23129,7 @@
 	},
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "peo" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/dirt/nrich{
@@ -23401,10 +23315,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "piH" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -23478,6 +23389,8 @@
 /area/rogue/indoors/town)
 "plk" = (
 /obj/structure/closet/crate/chest,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -23537,24 +23450,16 @@
 	},
 /obj/structure/ladder,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "pnv" = (
 /turf/open/floor/rogue/rooftop,
 /area/rogue/outdoors/exposed/tavern{
 	name = "Tavern Stables"
 	})
 "pnw" = (
-/obj/structure/roguewindow/openclose{
-	dir = 4
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/obj/machinery/light/rogue/lanternpost,
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/town)
 "pnL" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -23582,13 +23487,13 @@
 	},
 /obj/structure/fluff/millstone,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "poN" = (
-/obj/structure/ladder,
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town)
 "poT" = (
 /obj/effect/decal/dirt/grass{
 	dir = 4
@@ -23623,11 +23528,8 @@
 	name = "Ravenloft Academy"
 	})
 "pqo" = (
-/obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "prj" = (
 /obj/effect/decal/dirt/grass,
 /obj/effect/decal/dirt/grass{
@@ -23714,10 +23616,7 @@
 	dir = 1
 	},
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "puf" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water/swamp,
@@ -23979,6 +23878,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"pEs" = (
+/obj/structure/flora/roguegrass/bush{
+	icon_state = "bush4"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/river)
 "pEz" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -24112,10 +24017,7 @@
 	},
 /mob/living/simple_animal/parrot,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "pHO" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt,
@@ -24203,10 +24105,7 @@
 "pKY" = (
 /obj/structure/fermenting_barrel/beer,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "pLo" = (
 /obj/machinery/light/rogue/lanternpost,
 /obj/structure/flora/grass/jungle/b,
@@ -24395,10 +24294,17 @@
 	first_time_text = "The Twilight Woods"
 	})
 "pPD" = (
-/obj/structure/fluff/railing/border,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/river)
+/obj/structure/stairs{
+	dir = 8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "pQb" = (
 /obj/structure/rack/rogue,
 /obj/item/ingot/steel,
@@ -24440,7 +24346,7 @@
 	})
 "pQO" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/flora/roguegrass/bush/wall,
+/obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -24584,10 +24490,7 @@
 "pWb" = (
 /obj/structure/closet/crate/drawer,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "pWc" = (
 /obj/structure/table/church{
 	icon_state = "churchtable_mid"
@@ -24972,10 +24875,7 @@
 "qfL" = (
 /obj/structure/roguemachine/scomm/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "qfO" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom2"
@@ -25332,10 +25232,7 @@
 /obj/structure/bed/rogue/inn/hay,
 /obj/item/clothing/head/roguetown/helmet/tricorn/skull,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "qqZ" = (
 /obj/structure/flora/newleaf{
 	icon_state = "center-leaf2"
@@ -25895,7 +25792,7 @@
 "qIO" = (
 /obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "qIX" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /obj/structure/flora/roguegrass/maneater/real,
@@ -26064,7 +25961,7 @@
 /obj/item/storage/roguebag,
 /obj/item/storage/roguebag,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "qNL" = (
 /obj/structure/flora/newleaf{
 	icon_state = "center-leaf2"
@@ -26438,10 +26335,7 @@
 /obj/machinery/light/rogue/hearth,
 /obj/item/reagent_containers/glass/bucket/pot,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "qYt" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
@@ -26528,10 +26422,7 @@
 /obj/structure/closet/crate/chest,
 /obj/item/rogueweapon/sword/rapier,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "rcK" = (
 /obj/structure/chair/bench/church/smallbench{
 	dir = 4
@@ -27382,6 +27273,7 @@
 /area/rogue/outdoors/river)
 "rEe" = (
 /obj/structure/closet/crate/chest/refilling/spells,
+/obj/effect/mist,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
 "rEA" = (
@@ -27612,10 +27504,7 @@
 "rMH" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "rMN" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/effect/spawner/roguemap/tree,
@@ -27821,10 +27710,7 @@
 	},
 /obj/item/candle/skull/lit,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "rTM" = (
 /obj/structure/fluff/walldeco/steward,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -28157,10 +28043,7 @@
 /obj/item/ammopouch/bullets,
 /obj/item/ammopouch/bullets,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "sfX" = (
 /obj/structure/chair/wood/rogue/fancy{
 	dir = 4
@@ -28497,10 +28380,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "stu" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/river{
@@ -28536,10 +28416,7 @@
 "swA" = (
 /obj/structure/bed/rogue/inn/wool,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "swR" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -29279,10 +29156,7 @@
 "sVM" = (
 /obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "sWi" = (
 /turf/open/water/river{
 	dir = 4;
@@ -29812,10 +29686,7 @@
 /obj/item/paper/scroll,
 /obj/item/paper/scroll,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "tmU" = (
 /obj/structure/fluff/statue/gargoyle/moss/candles,
 /turf/open/floor/rogue/blocks/green,
@@ -30278,12 +30149,8 @@
 	name = "far stonehedge"
 	})
 "tEa" = (
-/obj/structure/roguewindow/openclose,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town)
 "tEj" = (
 /obj/structure/roguemachine/scomm/l,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -30354,10 +30221,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/fluff/walldeco/rpainting/crown,
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "tHV" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/grass,
@@ -31092,7 +30956,6 @@
 	first_time_text = "The Twilight Woods"
 	})
 "udB" = (
-/obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
@@ -31277,10 +31140,7 @@
 	icon_state = "grassa1"
 	},
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "uia" = (
 /obj/structure/flora/newbranch/connector{
 	icon_state = "center-leaf1"
@@ -32156,10 +32016,7 @@
 	icon_state = "longtable_mid"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "uIK" = (
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/rogue/churchmarble,
@@ -32241,18 +32098,13 @@
 	lockid = "merc"
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "uLO" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
 	},
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "uMu" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider,
 /turf/open/floor/rogue/cobble/mossy,
@@ -32327,10 +32179,7 @@
 	dir = 4
 	},
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "uNW" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
@@ -33597,10 +33446,7 @@
 	dir = 1
 	},
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "vKN" = (
 /obj/structure/spacevine/dendor,
 /obj/structure/flora/grass/jungle/b,
@@ -33755,10 +33601,7 @@
 "vPB" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "vQb" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/mountains)
@@ -33975,10 +33818,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "vXN" = (
 /obj/structure/fluff/statue/knight/interior/r,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
@@ -34522,13 +34362,19 @@
 	name = "Silver Dragon"
 	})
 "wvu" = (
-/obj/structure/roguewindow/openclose{
-	dir = 4
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
 	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town)
 "wvy" = (
 /turf/closed/wall/mineral/rogue/decostone/center,
 /area/rogue/under/cavewet)
@@ -34830,7 +34676,7 @@
 "wHU" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/river)
+/area/rogue/indoors/town)
 "wHV" = (
 /obj/structure/bed/rogue/bedroll,
 /turf/open/floor/rogue/herringbone,
@@ -34867,10 +34713,7 @@
 	pixel_y = 7
 	},
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "wJl" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -35094,9 +34937,7 @@
 "wRO" = (
 /obj/effect/landmark/start/farmer,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/area/rogue/indoors/town)
 "wSb" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
@@ -35391,10 +35232,7 @@
 /obj/item/reagent_containers/glass/cup/wooden,
 /obj/item/reagent_containers/glass/cup/wooden,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "xbi" = (
 /obj/effect/landmark/start/grandtemplar,
 /turf/open/floor/rogue/blocks/platform,
@@ -35442,11 +35280,14 @@
 	name = "Grove"
 	})
 "xcq" = (
-/obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "feyvillageout";
+	aportalid = "feyvillagein";
+	name = "fairy mist"
+	},
+/obj/effect/mist,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/caves)
 "xcs" = (
 /obj/structure/lever/wall{
 	dir = 4;
@@ -35675,10 +35516,7 @@
 "xiT" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/twig,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "xjn" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -35926,15 +35764,14 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cavewet)
 "xre" = (
-/obj/structure/mineral_door/wood{
-	locked = 1;
-	lockid = "farm";
-	name = "Farmer's Bedroom"
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
 	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "xrt" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp,
@@ -36103,10 +35940,7 @@
 /obj/machinery/light/rogue/torchholder/c,
 /obj/structure/mineral_door/swing_door,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "xyc" = (
 /obj/structure/stairs{
 	dir = 8
@@ -36535,10 +36369,7 @@
 "xLz" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "xLP" = (
 /obj/effect/overlay/water{
 	icon_state = "top3"
@@ -36965,14 +36796,17 @@
 	first_time_text = "The Twilight Woods"
 	})
 "xZn" = (
-/obj/machinery/light/rogue/lanternpost{
-	dir = 1
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
 	},
-/obj/structure/fluff/railing/border,
-/obj/structure/fluff/railing/border{
-	dir = 4
+/turf/open/water/river{
+	dir = 8;
+	icon_state = "rockwd"
 	},
-/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/river)
 "xZt" = (
 /obj/effect/landmark/start/acadapp,
@@ -37202,10 +37036,7 @@
 /obj/item/ammopouch/bullets,
 /obj/item/rogueweapon/sword/cutlass,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/outdoors/beach{
-	first_time_text = "Emerald Shores";
-	name = "Shores of the Emerald Coast"
-	})
+/area/rogue/indoors/town)
 "ygS" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/water/swamp,
@@ -90206,8 +90037,8 @@ xDh
 bFf
 vxU
 plk
-qgp
-qgp
+eAD
+mAH
 qgp
 vxU
 rPi
@@ -90221,7 +90052,7 @@ lyF
 lyF
 lyF
 rxm
-cXr
+pCx
 pHO
 nVt
 pym
@@ -90407,9 +90238,9 @@ xDh
 xDh
 bFf
 vxU
-vxU
 uxq
-mAH
+qgp
+qgp
 qgp
 vxU
 rPi
@@ -90609,9 +90440,9 @@ lzV
 xDh
 xDh
 xDh
-xDh
-cNu
-eAD
+ojF
+qgp
+qgp
 qgp
 vxU
 rPi
@@ -90623,7 +90454,7 @@ rxm
 seI
 nVt
 nVt
-ifi
+seI
 ifi
 ifi
 fQN
@@ -90811,8 +90642,8 @@ bFf
 bFf
 xDh
 xDh
-xDh
-cNu
+ojF
+qgp
 qgp
 qgp
 vxU
@@ -91013,7 +90844,7 @@ vxU
 vxU
 vxU
 vxU
-vxU
+uxq
 qgp
 qgp
 qgp
@@ -91024,7 +90855,7 @@ vVw
 vVw
 prw
 lyF
-ifi
+seI
 ifi
 ifi
 ifi
@@ -91225,12 +91056,12 @@ cDz
 vVw
 vVw
 prw
-nVt
+xcq
 rvh
 ifi
 ifi
-nBO
 ifi
+nBO
 ifi
 nVt
 jlJ
@@ -91414,11 +91245,11 @@ txe
 dYB
 dYB
 dYB
-wpF
+oFN
 wpF
 wpF
 vxU
-qgp
+npR
 qgp
 qgp
 qfv
@@ -91427,7 +91258,7 @@ ayy
 vVw
 vVw
 prw
-nVt
+xcq
 ifi
 ifi
 ifi
@@ -91617,12 +91448,12 @@ dYB
 dYB
 dYB
 wpF
-wpF
-wpF
+etP
+etP
 vxU
-npR
 qgp
 qgp
+eAD
 xpu
 ayy
 rps
@@ -91637,7 +91468,7 @@ ifi
 ifi
 ifi
 ifi
-ifi
+seI
 ifi
 ifi
 pHO
@@ -91824,7 +91655,7 @@ dYB
 vxU
 szZ
 qgp
-qgp
+ldJ
 xpu
 rps
 rps
@@ -92026,7 +91857,7 @@ dYB
 vxU
 qgp
 qgp
-qgp
+fCW
 xpu
 rps
 rps
@@ -92228,7 +92059,7 @@ riK
 vxU
 jqT
 qgp
-qgp
+eAD
 vxU
 rps
 rps
@@ -92631,7 +92462,7 @@ dYB
 dYB
 pRH
 qgp
-etP
+qgp
 vxU
 vxU
 prw
@@ -93434,8 +93265,8 @@ vxU
 vxU
 vxU
 vxU
-gfu
-gfu
+vxU
+vxU
 gfu
 vxU
 vxU
@@ -103706,13 +103537,13 @@ bkK
 eXr
 eXr
 sfu
-tym
+ifI
 mBh
-pnw
-pnw
+nVU
+nVU
 mBh
-tym
-tym
+ifI
+ifI
 dwI
 dQI
 dQI
@@ -103908,7 +103739,7 @@ bkK
 bkK
 bkK
 mBh
-fVN
+wco
 pec
 gHw
 mEw
@@ -104110,12 +103941,12 @@ bkK
 bkK
 bkK
 mBh
-jQU
-azR
-fVN
-fVN
-fVN
-fVN
+kNd
+xre
+wco
+wco
+wco
+wco
 eyp
 dQI
 iKA
@@ -104312,8 +104143,8 @@ bkK
 jlY
 bkK
 sVM
-tym
-fVN
+ifI
+wco
 bwF
 bwF
 bwF
@@ -104323,7 +104154,7 @@ dQI
 iKA
 bkK
 bkK
-tym
+ifI
 bkK
 bkK
 qGT
@@ -104514,7 +104345,7 @@ bkK
 bkK
 gho
 sVM
-fVN
+wco
 gHw
 hgA
 uIC
@@ -104524,9 +104355,9 @@ hvP
 dRE
 iKA
 bkK
-tym
-tym
-tym
+ifI
+ifI
+ifI
 bkK
 pOB
 dRE
@@ -104725,11 +104556,11 @@ bGC
 mBh
 aFE
 iKA
-tym
+ifI
 hPQ
-fVN
-fVN
-tym
+wco
+wco
+ifI
 dQI
 dQI
 bkK
@@ -104917,20 +104748,20 @@ bkK
 bkK
 bkK
 ylQ
-tym
+ifI
 gbJ
 ihQ
 ihQ
 pKY
 ihQ
 gQR
-tym
+ifI
 bkK
 bkK
 mBh
-fVN
-fVN
-jQU
+wco
+wco
+kNd
 mBh
 dQI
 dQI
@@ -105132,7 +104963,7 @@ bkK
 mBh
 rMH
 hPQ
-tym
+ifI
 mBh
 fte
 pOB
@@ -105323,16 +105154,16 @@ jlY
 ylQ
 gho
 gho
-tym
+ifI
 lau
 qXO
-tym
+ifI
 woW
 dQl
 bkK
 bkK
 mBh
-fVN
+wco
 hwr
 hPQ
 mBh
@@ -105525,17 +105356,17 @@ bkK
 dQl
 woW
 gho
-tym
+ifI
 hRq
-tym
-tym
+ifI
+ifI
 tVC
 dQl
 dQl
 bkK
 mBh
-fVN
-fVN
+wco
+wco
 auI
 mBh
 dQI
@@ -105737,7 +105568,7 @@ bkK
 bkK
 mBh
 hPQ
-fVN
+wco
 sfO
 mBh
 dQI
@@ -105937,11 +105768,11 @@ dQl
 bkK
 bkK
 bkK
-tym
+ifI
 qqP
 kCN
 gpL
-tym
+ifI
 nbr
 iQZ
 iKA
@@ -106140,9 +105971,9 @@ bkK
 bkK
 bkK
 bkK
-tym
-tym
-tym
+ifI
+ifI
+ifI
 bkK
 bkK
 bkK
@@ -106343,7 +106174,7 @@ bkK
 bkK
 bkK
 bkK
-tym
+ifI
 bkK
 bkK
 bkK
@@ -118260,7 +118091,7 @@ qMs
 qMs
 qJZ
 qJZ
-jdO
+pnw
 kbK
 ijB
 ijB
@@ -123921,7 +123752,7 @@ xDh
 xDh
 xcU
 oKu
-aBk
+pEs
 lwK
 tGM
 tHV
@@ -124896,11 +124727,11 @@ kqH
 aBk
 xDh
 aBk
-ifI
-ifI
-ifI
-ifI
-ifI
+hRw
+hRw
+hRw
+hRw
+hRw
 tNb
 hLN
 hiB
@@ -125098,11 +124929,11 @@ tNb
 aBk
 xDh
 kqH
-ifI
+hRw
 gaR
 qIO
 poM
-ifI
+hRw
 tNb
 lZf
 tNb
@@ -125300,10 +125131,10 @@ kqH
 xDh
 xcU
 aBk
-ifI
+hRw
 mDg
-buM
-buM
+pqo
+pqo
 fEU
 tNb
 gZI
@@ -125502,11 +125333,11 @@ rps
 xDh
 xDh
 aBk
-ifI
+hRw
 qNB
-buM
+pqo
 fwx
-ifI
+hRw
 bjQ
 tlm
 liu
@@ -125543,7 +125374,7 @@ guW
 guW
 guW
 guW
-hYX
+gOi
 qJZ
 vmN
 qJZ
@@ -125704,10 +125535,10 @@ aBk
 xcU
 kqH
 kqH
-ifI
+hRw
 dvr
-gOi
-buM
+wRO
+pqo
 nuF
 aBk
 aBk
@@ -125906,11 +125737,11 @@ kqH
 xDh
 aBk
 lwK
-ifI
+hRw
 wHU
-buM
-buM
-ifI
+pqo
+pqo
+hRw
 lnp
 aBk
 aBk
@@ -126108,11 +125939,11 @@ hXM
 xDh
 kqH
 vpj
-ifI
+hRw
 nlp
 iIm
 ecR
-ifI
+hRw
 yah
 aBk
 aBk
@@ -126310,11 +126141,11 @@ xcU
 xDh
 xcU
 aBk
-ifI
-ifI
-ifI
-ifI
-ifI
+hRw
+hRw
+hRw
+hRw
+hRw
 sxX
 aBk
 aBk
@@ -127561,7 +127392,7 @@ aVD
 bjQ
 bjQ
 bjQ
-qJZ
+doa
 tNG
 qJZ
 qJZ
@@ -127762,7 +127593,7 @@ tNb
 bjQ
 tNb
 tNb
-tNb
+cJG
 qMs
 qMs
 qJZ
@@ -127969,7 +127800,7 @@ qMs
 tNG
 qJZ
 qJZ
-qJZ
+sLP
 qJZ
 qJZ
 beK
@@ -128170,7 +128001,7 @@ gTl
 tNG
 qJZ
 qJZ
-qJZ
+doa
 qMs
 vmN
 qJZ
@@ -129554,7 +129385,7 @@ jsd
 jsd
 mRI
 yhI
-vVw
+pir
 vVw
 xDh
 xDh
@@ -129756,7 +129587,7 @@ cns
 mRI
 mRI
 yhI
-vVw
+pir
 vVw
 xDh
 xDh
@@ -130160,8 +129991,8 @@ vUx
 jsd
 jsd
 wSd
-buM
-pir
+vVw
+vVw
 nlx
 reQ
 xDh
@@ -130362,8 +130193,8 @@ fot
 jsd
 nXV
 nMO
-buM
-pir
+vVw
+vVw
 vVw
 rps
 rps
@@ -130564,8 +130395,8 @@ naI
 jsd
 jsd
 uyD
-idh
-pir
+tNw
+vVw
 vVw
 rps
 rps
@@ -130766,8 +130597,8 @@ jsd
 wPt
 wLq
 wSd
-idh
-pir
+xZn
+vVw
 vVw
 xDh
 xDh
@@ -130968,8 +130799,8 @@ jsd
 nON
 qnW
 wSd
-buM
 pir
+vVw
 vVw
 xcU
 xcU
@@ -131170,8 +131001,8 @@ jsd
 cPr
 sPO
 vjB
-buM
 pir
+vVw
 vVw
 xDh
 xcU
@@ -131372,7 +131203,7 @@ mtQ
 mtQ
 kVJ
 dKA
-pPD
+tNw
 vVw
 vVw
 rps
@@ -131574,7 +131405,7 @@ pTt
 bSG
 oea
 fqz
-pPD
+tNw
 vVw
 vVw
 rps
@@ -131776,7 +131607,7 @@ cCd
 nuQ
 llI
 jEl
-vil
+vVw
 vVw
 xbK
 oKu
@@ -131978,7 +131809,7 @@ sqJ
 cCd
 oea
 fqz
-vil
+vVw
 vVw
 xbK
 xcU
@@ -132179,8 +132010,8 @@ mtQ
 bNE
 mtQ
 fqz
-mMo
-xZn
+pbG
+pir
 vVw
 vVw
 aBk
@@ -132381,8 +132212,8 @@ fqz
 nhG
 fqz
 dKA
-vil
-rps
+pbG
+pir
 vVw
 vVw
 aBk
@@ -132584,7 +132415,7 @@ fqz
 fqz
 mfo
 udB
-vVw
+pir
 vVw
 xzF
 tNb
@@ -138652,14 +138483,14 @@ wco
 del
 hRw
 daX
-tym
-tym
+ifI
+ifI
 mBh
 mBh
 nZa
 mBh
-tym
-tym
+ifI
+ifI
 daX
 daX
 daX
@@ -138855,11 +138686,11 @@ hRw
 otT
 daX
 mBh
-daX
+tEa
 wIo
 mBh
 xiT
-dQI
+pqo
 swA
 mBh
 daX
@@ -139057,11 +138888,11 @@ daX
 daX
 daX
 mBh
-knj
+poN
 wIo
 mBh
 jVK
-dQI
+pqo
 pWb
 mBh
 daX
@@ -139258,19 +139089,19 @@ daX
 daX
 daX
 daX
-tEa
+gjY
 vXD
 sto
-tym
+ifI
 xiT
-dQI
+pqo
 swA
 hvP
 daX
 daX
 daX
 daX
-tym
+ifI
 daX
 daX
 daX
@@ -139460,20 +139291,20 @@ daX
 daX
 daX
 daX
-tEa
+gjY
 ihQ
 ihQ
 uLN
-dQI
-dQI
+pqo
+pqo
 pWb
 hvP
 daX
 daX
 daX
-tym
-tym
-tym
+ifI
+ifI
+ifI
 daX
 daX
 daX
@@ -139666,17 +139497,17 @@ mBh
 uhZ
 ihQ
 ptO
-dQI
-dQI
+pqo
+pqo
 swA
 mBh
 daX
 daX
-tym
-tym
+ifI
+ifI
 vPB
-tym
-tym
+ifI
+ifI
 daX
 daX
 jlY
@@ -139864,20 +139695,20 @@ daX
 daX
 daX
 daX
-tym
-tym
+ifI
+ifI
 cSx
 mBh
-dQI
+pqo
 lpe
-tym
-tym
+ifI
+ifI
 daX
 daX
 mBh
 piv
-fVN
-daX
+wco
+tEa
 mBh
 daX
 daX
@@ -140067,19 +139898,19 @@ daX
 daX
 daX
 daX
-tym
-tym
+ifI
+ifI
 mBh
 png
-tym
-tym
-daX
-daX
-daX
+ifI
+ifI
 tEa
-fVN
-fVN
-jQU
+daX
+daX
+gjY
+wco
+wco
+kNd
 hvP
 knj
 wzS
@@ -140270,18 +140101,18 @@ daX
 daX
 daX
 daX
-tym
+ifI
 edX
-tym
-tym
+ifI
+ifI
 daX
 daX
 daX
 daX
 mBh
-fVN
-fVN
-fVN
+wco
+wco
+wco
 mBh
 jQU
 wzS
@@ -140472,17 +140303,17 @@ daX
 daX
 daX
 daX
-tym
-tym
-tym
-tym
+ifI
+ifI
+ifI
+ifI
 daX
 daX
 daX
 daX
-tEa
-fVN
-fVN
+gjY
+wco
+wco
 yfW
 hvP
 knj
@@ -140684,7 +140515,7 @@ daX
 daX
 oDW
 gHw
-fVN
+wco
 yfW
 mBh
 daX
@@ -140884,11 +140715,11 @@ daX
 daX
 daX
 daX
-tym
+ifI
 rTC
 gHw
 aQv
-tym
+ifI
 daX
 daX
 daX
@@ -141087,9 +140918,9 @@ daX
 daX
 daX
 daX
-tym
-tym
-tym
+ifI
+ifI
+ifI
 daX
 daX
 daX
@@ -159843,11 +159674,11 @@ bcc
 bcc
 bcc
 bcc
-oFN
-oFN
-wvu
-oFN
-oFN
+hRw
+hRw
+nZa
+hRw
+hRw
 bcc
 bcc
 bcc
@@ -160045,11 +159876,11 @@ bcc
 bcc
 bcc
 bcc
-oFN
-poN
+hRw
+gaR
 gzK
-xcq
-oFN
+xiT
+hRw
 bcc
 bcc
 bcc
@@ -160247,11 +160078,11 @@ bcc
 bcc
 bcc
 bcc
+sVM
 pqo
-vjB
-vjB
+pqo
 hXT
-fCW
+fEU
 bcc
 bcc
 bcc
@@ -160449,11 +160280,11 @@ bcc
 bcc
 bcc
 bcc
-oFN
+hRw
 hVj
-vjB
-xcq
-oFN
+pqo
+xiT
+hRw
 bcc
 bcc
 bcc
@@ -160651,11 +160482,11 @@ bcc
 bcc
 bcc
 bcc
-oFN
-oFN
-xre
-oFN
-oFN
+hRw
+hRw
+nuF
+hRw
+hRw
 bcc
 bcc
 bcc
@@ -160853,11 +160684,11 @@ bcc
 bcc
 bcc
 bcc
+sVM
+wRO
 pqo
 wRO
-vjB
-wRO
-fCW
+fEU
 bcc
 bcc
 bcc
@@ -161055,11 +160886,11 @@ bcc
 bcc
 bcc
 bcc
-oFN
+hRw
 oiX
 iBK
 oiX
-oFN
+hRw
 bcc
 bcc
 bcc
@@ -161257,11 +161088,11 @@ bcc
 bcc
 bcc
 bcc
-oFN
-oFN
+hRw
+hRw
 uLO
-oFN
-oFN
+hRw
+hRw
 bcc
 bcc
 bcc
@@ -173599,14 +173430,14 @@ fYe
 hRw
 myz
 daX
-tym
+ifI
 mBh
 mBh
 uNO
 uNO
 mBh
 mBh
-tym
+ifI
 daX
 daX
 daX
@@ -173802,11 +173633,11 @@ myz
 myz
 daX
 mBh
-fVN
-fVN
-fVN
-fVN
-fVN
+wco
+wco
+wco
+wco
+wco
 fuU
 mBh
 daX
@@ -174005,11 +173836,11 @@ daX
 daX
 mBh
 gbM
-phx
-azR
-fVN
-fVN
-fVN
+pPD
+xre
+wco
+wco
+wco
 vKK
 daX
 daX
@@ -174205,13 +174036,13 @@ daX
 daX
 daX
 daX
-tEa
+gjY
 mjk
-jDo
-azR
+wvu
+xre
 lUP
 tmI
-fVN
+wco
 hvP
 daX
 daX
@@ -174407,10 +174238,10 @@ daX
 daX
 daX
 daX
-tEa
-fVN
-fVN
-fVN
+gjY
+wco
+wco
+wco
 ejf
 bQb
 pHG
@@ -174611,10 +174442,10 @@ daX
 daX
 mBh
 hnG
-fVN
-fVN
+wco
+wco
 mjk
-fVN
+wco
 qfL
 vKK
 daX
@@ -174814,8 +174645,8 @@ daX
 mBh
 oDW
 rcr
-fVN
-fVN
+wco
+wco
 aQv
 mBh
 mBh
@@ -175016,9 +174847,9 @@ daX
 daX
 mBh
 kHz
-fVN
-vJj
-tym
+wco
+mMo
+ifI
 mBh
 daX
 daX
@@ -175217,10 +175048,10 @@ daX
 daX
 daX
 daX
-tym
+ifI
 jZo
 mBh
-tym
+ifI
 daX
 daX
 daX
@@ -175419,10 +175250,10 @@ daX
 daX
 daX
 daX
-tym
-uvi
+ifI
+nsC
 dbJ
-tym
+ifI
 daX
 daX
 daX

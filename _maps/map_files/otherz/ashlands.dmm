@@ -214,7 +214,10 @@
 	icon_state = "1,2"
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "bX" = (
 /obj/item/roguecoin/gold/pile,
 /obj/item/dildo/plug/gold,
@@ -599,7 +602,10 @@
 	icon_state = "longtable"
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "gZ" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 4
@@ -728,7 +734,10 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "ih" = (
 /obj/effect/decal/remains/human/grave{
 	icon_state = "remainslarva"
@@ -1158,7 +1167,10 @@
 	icon_state = "1,0"
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "nc" = (
 /obj/structure/table/wood{
 	dir = 4;
@@ -1464,7 +1476,10 @@
 /obj/item/storage/backpack/rogue/backpack/surgery,
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "pO" = (
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/dirt,
@@ -1493,7 +1508,10 @@
 	icon_state = "saint"
 	},
 /turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "qb" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/grass,
@@ -1971,7 +1989,10 @@
 "uH" = (
 /obj/structure/roguewindow/stained/zizo,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "uL" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -2042,7 +2063,10 @@
 "vG" = (
 /obj/structure/fluff/statue/gargoyle/candles,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "vI" = (
 /obj/structure/fluff/statue/gargoyle/moss,
 /turf/open/floor/rogue/naturalstone,
@@ -2280,7 +2304,10 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "xG" = (
 /obj/machinery/light/roguestreet/midlamp,
 /turf/open/floor/rogue/dirt/road,
@@ -2406,7 +2433,10 @@
 	icon_state = "longtable_mid"
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "zg" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 4
@@ -2420,7 +2450,10 @@
 	icon_state = "longtable"
 	},
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "zl" = (
 /turf/open/floor/rogue/rooftop,
 /area/rogue/under/cavewet)
@@ -2469,7 +2502,10 @@
 	})
 "zM" = (
 /turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "zN" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/goatmale,
 /turf/open/floor/rogue/dirt/road,
@@ -2985,7 +3021,10 @@
 "Fs" = (
 /obj/structure/chair/bench/coucha,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "Fv" = (
 /obj/structure/fluff/statue/knight,
 /turf/open/floor/rogue/blocks/stone,
@@ -3175,7 +3214,10 @@
 /obj/structure/table/wood,
 /obj/item/candle/skull/lit,
 /turf/open/floor/carpet/inn,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "HP" = (
 /mob/living/simple_animal/hostile/rogue/ghost/wraith,
 /turf/open/floor/rogue/dirt/road,
@@ -3211,7 +3253,10 @@
 "Ij" = (
 /obj/structure/healingfountain,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "Il" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/blocks/stone/stonepattern2,
@@ -3291,7 +3336,10 @@
 /obj/item/rogueweapon/sickle/scythe,
 /obj/item/rogueweapon/sickle/scythe,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "Jj" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4;
@@ -3549,6 +3597,11 @@
 	first_time_text = "Underkeep";
 	name = "Underkeep"
 	})
+"LE" = (
+/obj/structure/fluff/statue/gargoyle/moss,
+/obj/effect/mob_spawner/skeleton,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cavewet)
 "LG" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush3"
@@ -3663,7 +3716,10 @@
 /obj/structure/chair/bench/coucha/r,
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "MN" = (
 /obj/structure/roguewindow/stained/zizo,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -4163,7 +4219,10 @@
 "SP" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "SS" = (
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 1
@@ -4724,7 +4783,10 @@
 	dir = 8
 	},
 /turf/closed/wall/mineral/rogue/stone/red_moss,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "YO" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8
@@ -4821,7 +4883,10 @@
 /area/rogue/under/cavewet)
 "ZL" = (
 /turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/church/chapel)
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Church of the Bloodsnayke";
+	name = "Vampchurch"
+	})
 "ZM" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -7012,7 +7077,7 @@ BM
 yR
 yR
 Oq
-BM
+cr
 BM
 BM
 aU
@@ -7420,7 +7485,7 @@ aU
 aU
 yR
 LC
-HQ
+LE
 vM
 ox
 Gr
@@ -8212,7 +8277,7 @@ yR
 dY
 yR
 LC
-HQ
+LE
 vM
 ox
 Gr
@@ -8437,7 +8502,7 @@ yR
 EW
 EW
 EW
-BM
+cr
 EW
 vV
 EW
@@ -10437,7 +10502,7 @@ Ud
 EW
 EW
 BM
-BM
+cr
 EW
 EW
 EW
