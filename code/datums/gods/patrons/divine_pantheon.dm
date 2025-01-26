@@ -182,10 +182,11 @@
 	name = "Ar-Shatra"
 	domain = "Love, Passion, Revenge, Penance, Retribution and Righteous Wrath."
 	desc = "Ar-Shatra, known as the Thorned-Rose, Insatiable Hunter and Eternal Lover. The Wolf/Fox-like Deity promotes the righteous quarry against the defilement of oaths and vowels; their followers passionate and emblazoned to both protect and punish those who would cause suffering to lovers entwined in contractual and spiritual obligation."
+	worshippers = " Lovers, Betrothed, Engaged, H
 	mob_traits = list(TRAIT_SEXDEVO, TRAIT_NUTCRACKER)
 	t1 = /obj/effect/proc_holder/spell/invoked/heal
 	t2 = /obj/effect/proc_holder/spell/invoked/eoracurse
-	t3 = /obj/effect/proc_holder/spell/invoked/guidance5e
+	t3 = /obj/effect/proc_holder/spell/invoked/invisibility
 	t4 = /obj/effect/proc_holder/spell/invoked/torsion
 	confess_lines = list(
 		"THORNS OF PENANCE!!!",
