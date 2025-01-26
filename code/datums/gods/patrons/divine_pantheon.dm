@@ -177,3 +177,18 @@
 		"IN HIS FLAMES I AM REBORN!",
 		"JAYX, LET THE TWILIGHT BE RECKONED!",
 	)
+
+/datum/patron/divine/arshatra
+	name = "Ar-Shatra"
+	domain = "Love, Passion, Revenge, Penance, Retribution and Righteous Wrath."
+	desc = "Ar-Shatra, known as the Thorned-Rose, Insatiable Hunter and Eternal Lover. The Wolf/Fox-like Deity promotes the righteous quarry against the defilement of oaths and vowels; their followers passionate and emblazoned to both protect and punish those who would cause suffering to lovers entwined in contractual and spiritual obligation."
+	mob_traits = list(TRAIT_SEXDEVO, TRAIT_NUTCRACKER)
+	t1 = /obj/effect/proc_holder/spell/invoked/heal
+	t2 = /obj/effect/proc_holder/spell/invoked/eoracurse
+	t3 = /obj/effect/proc_holder/spell/invoked/guidance5e
+	t4 = /obj/effect/proc_holder/spell/invoked/torsion
+	confess_lines = list(
+		"THORNS OF PENANCE!!!",
+		"THEIR EYES SEE ALL TRUTH!!",
+		"THEY KNOW THE OATHS AND VOWELS!!",
+	)
