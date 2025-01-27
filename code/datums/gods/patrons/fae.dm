@@ -34,8 +34,8 @@
 	desc = "Autumn and its personifications flow through them. Those that follow autumn are known for their delight in fear, and their ties to the other side. They are steeled against evils and nightmares more than most."
 	worshippers = "Autumn-Affiliated Fae, Elves, Fey-Pact Warlocks. Those who follow the court of Autumn."
 	associated_faith = /datumn/faith/fae
-	most_traits = list(TRAIT_EMPATH)
-	undead_Hater = FALSE
+	mob_traits = list(TRAIT_EMPATH)
+	undead_hater = FALSE
 	confess_lines = list(
 		"Autumn courts oath, I serve the The Autumn Monarch!",
 		"I am UNSHACKLED from the terrors of DEATH!",
