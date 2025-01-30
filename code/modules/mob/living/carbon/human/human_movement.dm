@@ -131,13 +131,13 @@
 	// Transfer damage from rider to ponygirl using Roguetown's damage system
 	if(rider.getBruteLoss() > 0)
 		var/damage = rider.getBruteLoss()
-		apply_damage(damage, BRUTE, null, 0)  // Apply to random zone
-		rider.heal_overall_damage(damage, 0)   // Heal brute damage on rider
+		apply_damage(damage, BRUTE, null, 0)
+		rider.heal_overall_damage(damage, 0)
 
 	if(rider.getFireLoss() > 0)
 		var/damage = rider.getFireLoss()
-		apply_damage(damage, BURN, null, 0)    // Apply to random zone
-		rider.heal_overall_damage(0, damage)    // Heal burn damage on rider
+		apply_damage(damage, BURN, null, 0)
+		rider.heal_overall_damage(0, damage)
 
 	// Handle bleeding transfer
 	if(rider.bleed_rate > 0)
@@ -151,18 +151,24 @@
 	if(pony_sprint_cooldown && world.timeofday > pony_sprint_cooldown)
 		pony_sprint = initial(pony_sprint)
 		spurred = FALSE
+		change_stat("speed", -pony_sprint * 0.1)  // Remove speed boost
 		ADD_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
 
 	// Handle spanking speed boost
 	if(rider.a_intent == INTENT_HARM && rider.zone_selected == "groin")
 		pony_sprint = min(pony_sprint + 5, pony_max_sprint)
-		change_stat("speed", pony_sprint * 0.1)
+		change_stat("speed", pony_sprint * 0.1)  // Apply speed boost
 		spurred = TRUE
 		REMOVE_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
 		visible_message(span_notice("[rider] spurs [src], increasing their pace!"), \
 					span_notice("The sharp sting drives you to move faster!"), \
 					span_notice("You hear a sharp slap!"))
 		pony_sprint_cooldown = world.timeofday + 50
+
+	// Maintain speed boost while spurred
+	if(spurred)
+		change_stat("speed", pony_sprint * 0.1)  // Maintain speed boost
+		REMOVE_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
 
 	return TRUE
 
@@ -232,22 +238,57 @@
 			return riding_datum.handle_ride(user, direction)
 	return ..()
 
+/mob/living/carbon/human/Life()
+	. = ..()
+	if(HAS_TRAIT(src, TRAIT_PONYGIRL_RIDEABLE))
+		handle_pony_riding()
+
 /mob/living/carbon/human/attack_hand(mob/living/carbon/human/M)
-	// Check if attacker is riding a ponygirl
-	if(M.a_intent == INTENT_HARM)
-		var/mob/living/carbon/human/mount = M.buckled
-		if(istype(mount) && HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
-			visible_message(span_warning("[M]'s attack is redirected to [mount]!"))
-			M.attack_hand(mount)
-			return TRUE
+	// Check if target is riding a ponygirl
+	if(buckled && istype(buckled, /mob/living/carbon/human))
+		var/mob/living/carbon/human/mount = buckled
+		if(HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
+			visible_message(span_warning("[M]'s attack is redirected to [mount]'s chest!"))
+			// Redirect the attack to the mount's chest
+			M.zone_selected = BODY_ZONE_CHEST  // Force target chest
+			return mount.attack_hand(M)  // Use normal attack_hand instead of secondary
 	return ..()
 
 /mob/living/carbon/human/attackby(obj/item/I, mob/living/user, params)
-	// Check if attacker is riding a ponygirl
-	if(user.a_intent == INTENT_HARM)
-		var/mob/living/carbon/human/mount = user.buckled
-		if(istype(mount) && HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
-			visible_message(span_warning("[user]'s attack is redirected to [mount]!"))
-			mount.attackby(I, user, params)
+	// Check if target is riding a ponygirl
+	if(buckled && istype(buckled, /mob/living/carbon/human))
+		var/mob/living/carbon/human/mount = buckled
+		if(HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
+			visible_message(span_warning("[user]'s attack is redirected to [mount]'s chest!"))
+			// Redirect the attack to the mount's chest
+			user.zone_selected = BODY_ZONE_CHEST  // Force target chest
+			return mount.attackby(I, user, params)  // Use normal attackby instead of secondary
+	return ..()
+
+// Add these helper procs to handle the redirected attacks
+/mob/living/carbon/human/proc/attack_hand_secondary(mob/living/carbon/human/M)
+	return ..() // Call parent attack_hand without redirection checks
+
+/mob/living/carbon/human/proc/attackby_secondary(obj/item/I, mob/living/user, params)
+	return ..() // Call parent attackby without redirection checks
+
+// Add these new procs to handle other attack types
+/mob/living/carbon/human/attack_animal(mob/living/simple_animal/M)
+	if(buckled && istype(buckled, /mob/living/carbon/human))
+		var/mob/living/carbon/human/mount = buckled
+		if(HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
+			visible_message(span_warning("[M]'s attack is redirected to [mount]!"))
+			mount.attack_animal(M)
+			mount.handle_pony_riding()
 			return TRUE
+	return ..()
+
+/mob/living/carbon/human/bullet_act(obj/projectile/P)
+	if(buckled && istype(buckled, /mob/living/carbon/human))
+		var/mob/living/carbon/human/mount = buckled
+		if(HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
+			visible_message(span_warning("The [P] is redirected to [mount]!"))
+			mount.bullet_act(P)
+			mount.handle_pony_riding()
+			return BULLET_ACT_HIT
 	return ..()

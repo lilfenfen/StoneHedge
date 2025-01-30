@@ -51,7 +51,7 @@
 	tutorial = "Trained to serve as a mount and beast of burden, you are equipped with special gear and training."
 	outfit = /datum/outfit/job/roguetown/prisonerd/ponygirl
 	category_tags = list(CTAG_SERVANT)
-	allowed_sexes = list(FEMALE)
+	allowed_sexes = list(MALE, FEMALE)
 	pickprob = 100
 	traits_applied = list(TRAIT_PONYGIRL_RIDEABLE, TRAIT_CRITICAL_RESISTANCE, TRAIT_EMPATH,
 						 TRAIT_NOPAIN, TRAIT_NOPAINSTUN, TRAIT_STABLELIVER, TRAIT_PACIFISM,
@@ -101,7 +101,7 @@
 	mask = /obj/item/clothing/head/hbit
 	head = /obj/item/clothing/head/hblinders
 	armor = /obj/item/clothing/suit/roguetown/armor/hcorset
-	gloves = /obj/item/clothing/suit/roguetown/armor/harms
+	gloves = /obj/item/clothing/gloves/roguetown/armor/harms
 	pants = /obj/item/clothing/under/roguetown/armor/hlegs
 	H.change_stat("constitution", 10)
 	H.change_stat("speed", 10)
