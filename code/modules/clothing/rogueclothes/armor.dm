@@ -986,6 +986,8 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	max_integrity = 100
 	armor_class = ARMOR_CLASS_LIGHT
+	flags_inv = 0  // Remove HIDEBOOB flag
+	boobed = TRUE  // Add this to ensure breast sprites show
 
 /obj/item/clothing/suit/roguetown/armor/hlegs
 	name = "leg harness"
@@ -1003,16 +1005,16 @@
 	blocksound = SOFTHIT
 
 /obj/item/clothing/suit/roguetown/armor/harms
-    name = "arm harness"
-    desc = "A set of straps and bindings for the arms."
-    icon = 'modular_stonehedge/icons/armor/arms.dmi'
-    mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/arms.dmi'
-    icon_state = "harms"
-    item_state = "harms"
-    body_parts_covered = HANDS
-    slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_GLOVES
-    max_integrity = 100
-    armor_class = ARMOR_CLASS_LIGHT
-    armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-    blocksound = SOFTHIT
-    sleeved = FALSE
+	name = "arm harness"
+	desc = "A set of straps and bindings for the arms."
+	icon = 'modular_stonehedge/icons/armor/arms.dmi'
+	mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/arms.dmi'
+	icon_state = "harms"
+	item_state = "harms"
+	body_parts_covered = HANDS
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_GLOVES
+	max_integrity = 100
+	armor_class = ARMOR_CLASS_LIGHT
+	armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	blocksound = SOFTHIT
+	sleeved = FALSE
