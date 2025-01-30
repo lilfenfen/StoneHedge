@@ -102,7 +102,7 @@
 	head = /obj/item/clothing/head/hblinders
 	armor = /obj/item/clothing/suit/roguetown/armor/hcorset
 	gloves = /obj/item/clothing/suit/roguetown/armor/harms
-	pants = /obj/item/clothing/suit/roguetown/armor/hlegs
+	pants = /obj/item/clothing/under/roguetown/armor/hlegs
 	H.change_stat("constitution", 10)
 	H.change_stat("speed", 10)
 	if(H.mind)

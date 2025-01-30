@@ -128,32 +128,37 @@
 	if(!rider)
 		return FALSE
 
-	// Transfer damage from rider to ponygirl
+	// Transfer damage from rider to ponygirl using Roguetown's damage system
 	if(rider.getBruteLoss() > 0)
 		var/damage = rider.getBruteLoss()
-		adjustBruteLoss(damage)
-		rider.adjustBruteLoss(-damage)
+		apply_damage(damage, BRUTE, null, 0)  // Apply to random zone
+		rider.heal_overall_damage(damage, 0)   // Heal brute damage on rider
 
-	// Also transfer burn damage
 	if(rider.getFireLoss() > 0)
 		var/damage = rider.getFireLoss()
-		adjustFireLoss(damage)
-		rider.adjustFireLoss(-damage)
+		apply_damage(damage, BURN, null, 0)    // Apply to random zone
+		rider.heal_overall_damage(0, damage)    // Heal burn damage on rider
+
+	// Handle bleeding transfer
+	if(rider.bleed_rate > 0)
+		var/old_bleed = rider.bleed_rate
+		rider.bleed_rate = 0
+		bleed_rate += old_bleed
+		to_chat(src, span_warning("You feel [rider]'s wounds transfer to you!"))
+		to_chat(rider, span_notice("Your wounds seem to transfer to [src]!"))
 
 	// Reset sprint if cooldown passed
-	if(pony_sprint_cooldown && pony_sprint_cooldown < world.timeofday)
+	if(pony_sprint_cooldown && world.timeofday > pony_sprint_cooldown)
 		pony_sprint = initial(pony_sprint)
 		spurred = FALSE
 		ADD_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
 
 	// Handle spanking speed boost
-	if(rider.a_intent == INTENT_HARM && rider.zone_selected == "groin" && !rider.incapacitated())
-		rider.emote("slap", intentional = TRUE, targetted = TRUE)
+	if(rider.a_intent == INTENT_HARM && rider.zone_selected == "groin")
 		pony_sprint = min(pony_sprint + 5, pony_max_sprint)
 		change_stat("speed", pony_sprint * 0.1)
-		if(!spurred)
-			spurred = TRUE
-			REMOVE_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
+		spurred = TRUE
+		REMOVE_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
 		visible_message(span_notice("[rider] spurs [src], increasing their pace!"), \
 					span_notice("The sharp sting drives you to move faster!"), \
 					span_notice("You hear a sharp slap!"))
@@ -225,4 +230,24 @@
 		var/datum/component/riding/riding_datum = GetComponent(/datum/component/riding)
 		if(riding_datum)
 			return riding_datum.handle_ride(user, direction)
+	return ..()
+
+/mob/living/carbon/human/attack_hand(mob/living/carbon/human/M)
+	// Check if attacker is riding a ponygirl
+	if(M.a_intent == INTENT_HARM)
+		var/mob/living/carbon/human/mount = M.buckled
+		if(istype(mount) && HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
+			visible_message(span_warning("[M]'s attack is redirected to [mount]!"))
+			M.attack_hand(mount)
+			return TRUE
+	return ..()
+
+/mob/living/carbon/human/attackby(obj/item/I, mob/living/user, params)
+	// Check if attacker is riding a ponygirl
+	if(user.a_intent == INTENT_HARM)
+		var/mob/living/carbon/human/mount = user.buckled
+		if(istype(mount) && HAS_TRAIT(mount, TRAIT_PONYGIRL_RIDEABLE))
+			visible_message(span_warning("[user]'s attack is redirected to [mount]!"))
+			mount.attackby(I, user, params)
+			return TRUE
 	return ..()
