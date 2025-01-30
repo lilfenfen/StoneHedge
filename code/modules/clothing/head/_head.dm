@@ -76,3 +76,22 @@
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_head()
+
+/obj/item/clothing/head/hblinders
+	name = "head blinders"
+	desc = "Keeps the wearer focused ahead."
+	icon = 'modular_stonehedge/icons/armor/head.dmi'
+	mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/head.dmi'
+	icon_state = "hblinders"
+	item_state = "hblinders"
+	body_parts_covered = HEAD
+
+/obj/item/clothing/head/hbit
+    name = "head bit"
+    desc = "A restraining head piece."
+    icon = 'modular_stonehedge/icons/armor/face.dmi'
+    mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/face.dmi'
+    icon_state = "hbit"
+    item_state = "hbit"
+    body_parts_covered = HEAD|FACE
+    slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK

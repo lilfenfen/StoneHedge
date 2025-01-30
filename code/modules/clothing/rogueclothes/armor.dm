@@ -1,4 +1,3 @@
-
 /obj/item/clothing/proc/step_action() //this was made to rewrite clown shoes squeaking
 	SEND_SIGNAL(src, COMSIG_CLOTHING_STEP_ACTION)
 
@@ -976,3 +975,44 @@
 	item_state = "bearfur"
 	max_integrity = 200
 	smeltresult = /obj/item/ash
+
+/obj/item/clothing/suit/roguetown/armor/hcorset
+	name = "hcorset"
+	desc = "A tight-fitting bodice."
+	icon = 'modular_stonehedge/icons/armor/armor.dmi'
+	mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/armor.dmi'
+	icon_state = "hcorset"
+	item_state = "hcorset"
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	max_integrity = 100
+	armor_class = ARMOR_CLASS_LIGHT
+
+/obj/item/clothing/suit/roguetown/armor/hlegs
+	name = "leg harness"
+	desc = "A set of straps and bindings for the legs."
+	icon = 'modular_stonehedge/icons/armor/pants.dmi'
+	mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/pants.dmi'
+	icon_state = "hlegs"
+	item_state = "hlegs"
+	body_parts_covered = LEGS
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_PANTS
+	max_integrity = 100
+	armor_class = ARMOR_CLASS_LIGHT
+	genitalaccess = TRUE
+	armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	blocksound = SOFTHIT
+
+/obj/item/clothing/suit/roguetown/armor/harms
+    name = "arm harness"
+    desc = "A set of straps and bindings for the arms."
+    icon = 'modular_stonehedge/icons/armor/arms.dmi'
+    mob_overlay_icon = 'modular_stonehedge/icons/armor/onmob/arms.dmi'
+    icon_state = "harms"
+    item_state = "harms"
+    body_parts_covered = HANDS
+    slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_GLOVES
+    max_integrity = 100
+    armor_class = ARMOR_CLASS_LIGHT
+    armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+    blocksound = SOFTHIT
+    sleeved = FALSE
