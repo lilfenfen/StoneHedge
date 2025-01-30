@@ -601,6 +601,8 @@
 				handle_xp(user, fatigue_used, TRUE) // cleaning ignores the xp cooldown because it awards comparatively little
 		if (INTENT_DISARM) // Snap your fingers and produce a spark
 			fatigue_used = handle_cost(user, PRESTI_SPARK)
+			if (!ismob(target)) // Set objects ablaze.
+				target.fire_act(3,3)
 			if (create_spark(user))
 				handle_xp(user, fatigue_used)
 		if (/datum/intent/use) // Summon an orbiting arcane mote for light
