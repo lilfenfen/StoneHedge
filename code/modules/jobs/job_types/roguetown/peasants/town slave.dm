@@ -117,7 +117,9 @@
 		ADD_TRAIT(H, TRAIT_NASTY_EATER, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_BLOODLOSS_IMMUNE, TRAIT_GENERIC)
-		H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 9)
+		H.mind.adjust_skillrank_up_to(/datum/skill/misc/athletics, 6)
+		H.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 6)
+		H.mind.adjust_skillrank_up_to(/datum/skill/misc/swimming, 6)
 
 /datum/job/roguetown/prisonerd/New()
 	. = ..()
