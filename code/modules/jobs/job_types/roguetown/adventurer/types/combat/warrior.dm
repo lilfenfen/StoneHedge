@@ -6,6 +6,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDSPLUS
 	outfit = /datum/outfit/job/roguetown/adventurer/sfighter
+	traits_applied = list(TRAIT_BREADY) //you live for the fight
 
 	category_tags = list(CTAG_ADVENTURER)
 
@@ -38,43 +39,35 @@
 
 		switch(weaponschoice)
 			if("Swords")
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 3, TRUE)
-				if(H.age == AGE_OLD)
-					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
 				r_hand = /obj/item/rogueweapon/sword/long
 				if(classchoice == "Duelist")
 					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					r_hand =  /obj/item/rogueweapon/sword/rapier
 			if("Axes")
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
-				if(H.age == AGE_OLD)
-					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 5, TRUE)
 				r_hand = /obj/item/rogueweapon/stoneaxe/battle
 				if(classchoice == "Duelist")
 					H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 			if("Maces")
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
-				if(H.age == AGE_OLD)
-					H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
 				r_hand = /obj/item/rogueweapon/mace
 				if(classchoice == "Duelist")
 					H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 			if("Polearms")
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
-				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 3, TRUE)
-				if(H.age == AGE_OLD)
-					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
+				H.mind.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
 				r_hand = /obj/item/rogueweapon/spear/billhook
 				if(classchoice == "Duelist")
 					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
@@ -299,7 +292,7 @@
 			cloak = /obj/item/clothing/cloak/combattante
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/parrying, /obj/item/storage/belt/rogue/pouch/coins/poor)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_BREADY, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_FEINTMASTER, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/combat_combattante.ogg'
 			H.verbs -= list(/mob/living/carbon/human/proc/mark_target)
