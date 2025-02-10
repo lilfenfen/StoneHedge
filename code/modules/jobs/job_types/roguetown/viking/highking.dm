@@ -34,8 +34,10 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/dwarffull
 	shoes = /obj/item/clothing/shoes/roguetown/boots/dwarfboots
 	cloak = /obj/item/clothing/cloak/templar/malum
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_ARMORSMITH, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_ARTIFICER, TRAIT_WEAPONSMITH, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_ARTIFICER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_ARMORSMITH, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_WEAPONSMITH, TRAIT_GENERIC)
 	if(H.mind)
 		H.mind.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
 		H.mind.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 3, TRUE)

@@ -137,8 +137,8 @@
 #define TRAIT_FEINT_IMMUNITY "Unfeintable"
 #define TRAIT_SOONTOWAKEUP "Soon to WAKE up"
 #define TRAIT_ALCHEMYKNOWLEDGE "Alchemy Knowledge"
-#define TRAIT_WEAPONSMITH "I have mastered smithing weapons."
-#define TRAIT_ARMORSMITH "I have mastered smithing protection."
+#define TRAIT_WEAPONSMITH "Master Weaponsmith"
+#define TRAIT_ARMORSMITH "Master Armorsmith"
 #define TRAIT_TAILOR "Expert Tailor."
 
 GLOBAL_LIST_INIT(roguetraits, list(
