@@ -19,7 +19,7 @@
 /datum/customizer_choice/organ/penis/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/penis/penis_entry = entry
-	penis_entry.organ_size = sanitize_integer(penis_entry.organ_size, MIN_PENIS_SIZE, TOTAL_PENIS_SIZE, DEFAULT_PENIS_SIZE) //change MAX to TOTAL to let players use large genitals but not human npcs
+	penis_entry.organ_size = sanitize_integer(penis_entry.organ_size, MIN_PENIS_SIZE, MAX_PENIS_SIZE, DEFAULT_PENIS_SIZE)
 
 /datum/customizer_choice/organ/penis/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -41,7 +41,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_penis_sizes[named_size]
-			penis_entry.organ_size = sanitize_integer(new_size, MIN_PENIS_SIZE, TOTAL_PENIS_SIZE, DEFAULT_PENIS_SIZE)
+			penis_entry.organ_size = sanitize_integer(new_size, MIN_PENIS_SIZE, MAX_PENIS_SIZE, DEFAULT_PENIS_SIZE)
 
 /datum/customizer_entry/organ/penis
 	var/organ_size = DEFAULT_PENIS_SIZE
@@ -185,7 +185,7 @@
 /datum/customizer_choice/organ/testicles/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/testicles/testicles_entry = entry
-	testicles_entry.organ_size = sanitize_integer(testicles_entry.organ_size, MIN_TESTICLES_SIZE, TOTAL_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
+	testicles_entry.organ_size = sanitize_integer(testicles_entry.organ_size, MIN_TESTICLES_SIZE, MAX_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
 
 /datum/customizer_choice/organ/testicles/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -212,7 +212,7 @@
 				if(isnull(named_size))
 					return
 				var/new_size = GLOB.named_ball_sizes[named_size]
-				testicles_entry.organ_size = sanitize_integer(new_size, MIN_TESTICLES_SIZE, TOTAL_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
+				testicles_entry.organ_size = sanitize_integer(new_size, MIN_TESTICLES_SIZE, MAX_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
 			if("virile")
 				testicles_entry.virility = !testicles_entry.virility
 /datum/customizer/organ/testicles/external
@@ -270,7 +270,7 @@
 /datum/customizer_choice/organ/breasts/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/breasts/breasts_entry = entry
-	breasts_entry.organ_size = sanitize_integer(breasts_entry.organ_size, MIN_BREASTS_SIZE, TOTAL_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
+	breasts_entry.organ_size = sanitize_integer(breasts_entry.organ_size, MIN_BREASTS_SIZE, MAX_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
 
 /datum/customizer_choice/organ/breasts/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -294,7 +294,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_breast_sizes[named_size]
-			breasts_entry.organ_size = sanitize_integer(new_size, MIN_BREASTS_SIZE, TOTAL_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
+			breasts_entry.organ_size = sanitize_integer(new_size, MIN_BREASTS_SIZE, MAX_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
 		if("refilling")
 			breasts_entry.refilling = !breasts_entry.refilling
 
@@ -342,7 +342,7 @@
 /datum/customizer_choice/organ/belly/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/belly/belly_entry = entry
-	belly_entry.organ_size = sanitize_integer(belly_entry.organ_size, MIN_BELLY_SIZE, MAX_BELLY_SIZE, DEFAULT_BELLY_SIZE) //TOTAL_BELLY_SIZE doesn't exist; just use this
+	belly_entry.organ_size = sanitize_integer(belly_entry.organ_size, MIN_BELLY_SIZE, MAX_BELLY_SIZE, DEFAULT_BELLY_SIZE)
 
 /datum/customizer_choice/organ/belly/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -502,7 +502,7 @@
 /datum/customizer_choice/organ/butt/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/butt/butt_entry = entry
-	butt_entry.organ_size = sanitize_integer(butt_entry.organ_size, MIN_BUTT_SIZE, TOTAL_BUTT_SIZE, DEFAULT_BUTT_SIZE)
+	butt_entry.organ_size = sanitize_integer(butt_entry.organ_size, MIN_BUTT_SIZE, MAX_BUTT_SIZE, DEFAULT_BUTT_SIZE)
 
 /datum/customizer_choice/organ/butt/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -524,7 +524,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_butt_sizes[named_size]
-			butt_entry.organ_size = sanitize_integer(new_size, MIN_BUTT_SIZE, TOTAL_BUTT_SIZE, DEFAULT_BUTT_SIZE)
+			butt_entry.organ_size = sanitize_integer(new_size, MIN_BUTT_SIZE, MAX_BUTT_SIZE, DEFAULT_BUTT_SIZE)
 
 /datum/customizer/organ/butt/human
 	customizer_choices = list(/datum/customizer_choice/organ/butt/human)
