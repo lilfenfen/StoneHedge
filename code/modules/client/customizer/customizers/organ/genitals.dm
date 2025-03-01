@@ -19,7 +19,7 @@
 /datum/customizer_choice/organ/penis/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/penis/penis_entry = entry
-	penis_entry.organ_size = sanitize_integer(penis_entry.organ_size, MIN_PENIS_SIZE, MAX_PENIS_SIZE, DEFAULT_PENIS_SIZE)
+	penis_entry.organ_size = sanitize_integer(penis_entry.organ_size, MIN_PENIS_SIZE, TOTAL_PENIS_SIZE, DEFAULT_PENIS_SIZE) //change MAX to TOTAL to let players use large genitals but not human npcs
 
 /datum/customizer_choice/organ/penis/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -41,7 +41,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_penis_sizes[named_size]
-			penis_entry.organ_size = sanitize_integer(new_size, MIN_PENIS_SIZE, MAX_PENIS_SIZE, DEFAULT_PENIS_SIZE)
+			penis_entry.organ_size = sanitize_integer(new_size, MIN_PENIS_SIZE, TOTAL_PENIS_SIZE, DEFAULT_PENIS_SIZE)
 
 /datum/customizer_entry/organ/penis
 	var/organ_size = DEFAULT_PENIS_SIZE
@@ -65,35 +65,35 @@
 
 /datum/customizer/organ/penis/canine
 	customizer_choices = list(
-		/datum/customizer_choice/organ/penis/human_anthro,
 		/datum/customizer_choice/organ/penis/knotted,
+		/datum/customizer_choice/organ/penis/human_anthro,
 		)
 
 /datum/customizer/organ/penis/feline
 	customizer_choices = list(
-		/datum/customizer_choice/organ/penis/human_anthro,
 		/datum/customizer_choice/organ/penis/barbed,
 		/datum/customizer_choice/organ/penis/barbed_knotted,
+		/datum/customizer_choice/organ/penis/human_anthro,
 		)
 
 /datum/customizer/organ/penis/lizard
 	customizer_choices = list(
-		/datum/customizer_choice/organ/penis/human_anthro,
 		/datum/customizer_choice/organ/penis/tapered,
 		/datum/customizer_choice/organ/penis/tapered_double,
 		/datum/customizer_choice/organ/penis/tapered_double_knot,
+		/datum/customizer_choice/organ/penis/human_anthro,
 		)
 
 /datum/customizer/organ/penis/equine
 	customizer_choices = list(
-		/datum/customizer_choice/organ/penis/human_anthro,
 		/datum/customizer_choice/organ/penis/equine,
+		/datum/customizer_choice/organ/penis/human_anthro,
 		)
 
 /datum/customizer/organ/penis/knotted
 	customizer_choices = list(
-		/datum/customizer_choice/organ/penis/human_anthro,
 		/datum/customizer_choice/organ/penis/knotted,
+		/datum/customizer_choice/organ/penis/human_anthro,
 		)
 
 /datum/customizer_choice/organ/penis/human
@@ -111,129 +111,57 @@
 /datum/customizer_choice/organ/penis/knotted
 	name = "Knotted Penis"
 	organ_type = /obj/item/organ/penis/knotted
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/human,
-		/datum/sprite_accessory/penis/thick,
-		/datum/sprite_accessory/penis/knotted,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/knotted)
 
 /datum/customizer_choice/organ/penis/equine
 	name = "Equine Penis"
 	organ_type = /obj/item/organ/penis/equine
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/flared,
-		/datum/sprite_accessory/penis/barbknot,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/flared)
 
 /datum/customizer_choice/organ/penis/tapered_mammal
 	name = "Tapered Penis (Mammal)"
 	organ_type = /obj/item/organ/penis/tapered_mammal
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/tapered_mammal,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/tapered_mammal)
 
 /datum/customizer_choice/organ/penis/tapered
 	name = "Tapered Penis"
 	organ_type = /obj/item/organ/penis/tapered
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/tapered,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/tapered)
 
 /datum/customizer_choice/organ/penis/tapered_double
 	name = "Hemi Tapered Penis"
 	organ_type = /obj/item/organ/penis/tapered
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/hemi,
-		/datum/sprite_accessory/penis/hemiknot,
-		/datum/sprite_accessory/penis/tentacle,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/hemi)
 
 /datum/customizer_choice/organ/penis/tapered_double_knot
 	name = "Knotted Hemi Tapered Penis"
 	organ_type = /obj/item/organ/penis/tapered
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/hemiknot,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/hemiknot)
 
 /datum/customizer_choice/organ/penis/barbed
 	name = "Barbed Penis"
 	organ_type = /obj/item/organ/penis/barbed
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/human,
-		/datum/sprite_accessory/penis/knotted,
-		/datum/sprite_accessory/penis/barbknot,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/thick)
 
 /datum/customizer_choice/organ/penis/barbed_knotted
 	name = "Barbed Knotted Penis"
 	organ_type = /obj/item/organ/penis/barbed_knotted
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/barbknot,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/barbknot)
 
 /datum/customizer_choice/organ/penis/tentacle
 	name = "Tentacle Penis"
 	organ_type = /obj/item/organ/penis/tentacle
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/tapered,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/tapered)
 
 /datum/customizer_choice/organ/penis/tapered_double
 	name = "Hemi Tapered Penis"
 	organ_type = /obj/item/organ/penis/tapered
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/hemi,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/hemi)
 
 /datum/customizer_choice/organ/penis/tapered_double_knot
 	name = "Knotted Hemi Tapered Penis"
 	organ_type = /obj/item/organ/penis/tapered
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/hemiknot,
-		/datum/sprite_accessory/penis/tentacle,
-		)
-
-/datum/customizer_choice/organ/penis/barbed
-	name = "Barbed Penis"
-	organ_type = /obj/item/organ/penis/barbed
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/barbknot,
-		)
-
-/datum/customizer_choice/organ/penis/barbed_knotted
-	name = "Barbed Knotted Penis"
-	organ_type = /obj/item/organ/penis/barbed_knotted
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/barbknot,
-		)
-
-/datum/customizer_choice/organ/penis/tentacle
-	name = "Tentacle Penis"
-	organ_type = /obj/item/organ/penis/tentacle
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/tentacle,
-		)
-
-/datum/customizer_choice/organ/penis/barbed
-	name = "Barbed Penis"
-	organ_type = /obj/item/organ/penis/barbed
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/barbknot,
-		)
-
-/datum/customizer_choice/organ/penis/barbed_knotted
-	name = "Barbed Knotted Penis"
-	organ_type = /obj/item/organ/penis/barbed_knotted
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/barbknot,
-		)
-
-/datum/customizer_choice/organ/penis/tentacle
-	name = "Tentacle Penis"
-	organ_type = /obj/item/organ/penis/tentacle
-	sprite_accessories = list(
-		/datum/sprite_accessory/penis/tentacle,
-		)
+	sprite_accessories = list(/datum/sprite_accessory/penis/hemiknot)
 
 /datum/customizer/organ/testicles
 	abstract_type = /datum/customizer/organ/testicles
@@ -257,7 +185,7 @@
 /datum/customizer_choice/organ/testicles/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/testicles/testicles_entry = entry
-	testicles_entry.organ_size = sanitize_integer(testicles_entry.organ_size, MIN_TESTICLES_SIZE, MAX_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
+	testicles_entry.organ_size = sanitize_integer(testicles_entry.organ_size, MIN_TESTICLES_SIZE, TOTAL_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
 
 /datum/customizer_choice/organ/testicles/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -284,7 +212,7 @@
 				if(isnull(named_size))
 					return
 				var/new_size = GLOB.named_ball_sizes[named_size]
-				testicles_entry.organ_size = sanitize_integer(new_size, MIN_TESTICLES_SIZE, MAX_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
+				testicles_entry.organ_size = sanitize_integer(new_size, MIN_TESTICLES_SIZE, TOTAL_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
 			if("virile")
 				testicles_entry.virility = !testicles_entry.virility
 /datum/customizer/organ/testicles/external
@@ -342,7 +270,7 @@
 /datum/customizer_choice/organ/breasts/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/breasts/breasts_entry = entry
-	breasts_entry.organ_size = sanitize_integer(breasts_entry.organ_size, MIN_BREASTS_SIZE, MAX_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
+	breasts_entry.organ_size = sanitize_integer(breasts_entry.organ_size, MIN_BREASTS_SIZE, TOTAL_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
 
 /datum/customizer_choice/organ/breasts/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -366,7 +294,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_breast_sizes[named_size]
-			breasts_entry.organ_size = sanitize_integer(new_size, MIN_BREASTS_SIZE, MAX_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
+			breasts_entry.organ_size = sanitize_integer(new_size, MIN_BREASTS_SIZE, TOTAL_BREASTS_SIZE, DEFAULT_BREASTS_SIZE)
 		if("refilling")
 			breasts_entry.refilling = !breasts_entry.refilling
 
@@ -414,7 +342,7 @@
 /datum/customizer_choice/organ/belly/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/belly/belly_entry = entry
-	belly_entry.organ_size = sanitize_integer(belly_entry.organ_size, MIN_BELLY_SIZE, MAX_BELLY_SIZE, DEFAULT_BELLY_SIZE)
+	belly_entry.organ_size = sanitize_integer(belly_entry.organ_size, MIN_BELLY_SIZE, MAX_BELLY_SIZE, DEFAULT_BELLY_SIZE) //TOTAL_BELLY_SIZE doesn't exist; just use this
 
 /datum/customizer_choice/organ/belly/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -574,7 +502,7 @@
 /datum/customizer_choice/organ/butt/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/butt/butt_entry = entry
-	butt_entry.organ_size = sanitize_integer(butt_entry.organ_size, MIN_BUTT_SIZE, MAX_BUTT_SIZE, DEFAULT_BUTT_SIZE)
+	butt_entry.organ_size = sanitize_integer(butt_entry.organ_size, MIN_BUTT_SIZE, TOTAL_BUTT_SIZE, DEFAULT_BUTT_SIZE)
 
 /datum/customizer_choice/organ/butt/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -596,7 +524,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = GLOB.named_butt_sizes[named_size]
-			butt_entry.organ_size = sanitize_integer(new_size, MIN_BUTT_SIZE, MAX_BUTT_SIZE, DEFAULT_BUTT_SIZE)
+			butt_entry.organ_size = sanitize_integer(new_size, MIN_BUTT_SIZE, TOTAL_BUTT_SIZE, DEFAULT_BUTT_SIZE)
 
 /datum/customizer/organ/butt/human
 	customizer_choices = list(/datum/customizer_choice/organ/butt/human)
