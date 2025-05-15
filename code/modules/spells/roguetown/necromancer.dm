@@ -397,8 +397,8 @@
 			if(minion.mastermob != user) //if you are not lich and you are not master of this mob, skip.
 				continue
 			commanded ++
-			if(commanded >= max(1,user.mind.get_skill_level(/datum/skill/magic/blood))) // Makes your army size dependant on your blood magic skill, with a minimum of one.
-				to_chat(user, span_necrosis("I can't easily control more than [1 + user.mind.get_skill_level(/datum/skill/magic/blood)] undead at once."))
+			if(commanded > max(1,user.mind.get_skill_level(/datum/skill/magic/blood))) // Makes your army size dependant on your blood magic skill, with a minimum of one.
+				to_chat(user, span_necrosis("I can't easily control more than [user.mind.get_skill_level(/datum/skill/magic/blood)] undead at once."))
 				return
 		if(minion == targets[1] && minion.mastermob == user)
 			minion.aggressive = !minion.aggressive
