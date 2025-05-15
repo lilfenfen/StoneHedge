@@ -1286,7 +1286,7 @@
 	alternate_worn_layer = TABARD_LAYER
 	body_parts_covered = LEGS|GROIN
 	slot_flags = ITEM_SLOT_CLOAK|ITEM_SLOT_PANTS
-	flags_inv = HIDECROTCH
+	// flags_inv = HIDECROTCH
 	detail_tag = "_belt"
 
 /obj/item/clothing/cloak/fauld/update_icon()

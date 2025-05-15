@@ -11177,7 +11177,7 @@
 /obj/structure/table/wood{
 	icon_state = "longtable"
 	},
-/obj/item/reagent_containers/food/snacks/store/cheesewheel,
+/obj/item/reagent_containers/food/snacks/rogue/cheddar,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -16111,13 +16111,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"jUO" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
 "jUS" = (
 /turf/open/floor/rogue/blocks/stone,
 /area/rogue/indoors/town/bath)
@@ -17360,15 +17353,15 @@
 	})
 "kFR" = (
 /obj/structure/closet/crate/chest,
-/obj/item/reagent_containers/food/snacks/rogue/fryfish/carp,
-/obj/item/reagent_containers/food/snacks/rogue/fryfish/carp,
-/obj/item/reagent_containers/food/snacks/rogue/fryfishfresh/ratfish,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/fishfresh/ratfish,
+/obj/item/reagent_containers/food/snacks/fish/carp,
+/obj/item/reagent_containers/food/snacks/fish/carp,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -19201,15 +19194,6 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/shroud,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
-"lNo" = (
-/obj/structure/flora/grass/jungle{
-	icon_state = "grassa1"
-	},
-/turf/open/transparent/openspace,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -160476,7 +160460,7 @@ aZy
 aZy
 aZy
 aZy
-jUO
+aZy
 aZy
 aZy
 aZy
@@ -160678,8 +160662,8 @@ aZy
 aZy
 aZy
 aZy
-lNo
-jUO
+aZy
+aZy
 aZy
 aZy
 aZy
@@ -160880,8 +160864,8 @@ aZy
 aZy
 aZy
 aZy
-jUO
-phP
+aZy
+aZy
 aZy
 aZy
 aZy
@@ -161086,7 +161070,7 @@ aZy
 aZy
 aZy
 aZy
-fxj
+aZy
 aZy
 aZy
 oZz
@@ -161284,7 +161268,7 @@ bcc
 aZy
 aZy
 aZy
-jUO
+aZy
 aZy
 aZy
 aZy
@@ -161480,14 +161464,14 @@ bcc
 bcc
 bcc
 bcc
-deL
 bcc
 bcc
+bcc
 aZy
 aZy
 aZy
 aZy
-jUO
+aZy
 aZy
 aZy
 aZy
@@ -161890,7 +161874,7 @@ bcc
 aZy
 aZy
 aZy
-jUO
+aZy
 aZy
 aZy
 aZy
