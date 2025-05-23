@@ -230,12 +230,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"ahH" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet)
 "aij" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -259,12 +253,6 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
-"ajv" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/water/river{
-	icon_state = "rockwd"
-	},
-/area/rogue/under/cavewet)
 "ajE" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/grass/jungle,
@@ -437,6 +425,12 @@
 "aoy" = (
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/caves)
+"aoA" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
 "aoF" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/cobblerock,
@@ -497,6 +491,13 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
+	})
+"aqX" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
 	})
 "ard" = (
 /obj/structure/closet/crate/roguecloset,
@@ -569,12 +570,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"atl" = (
-/obj/structure/bars/pipe{
-	dir = 4
-	},
-/turf/open/transparent/openspace,
-/area/rogue)
 "atN" = (
 /obj/structure/flora/newtree,
 /obj/structure/fluff/railing/wood{
@@ -621,6 +616,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"aui" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
 "auy" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue)
@@ -716,10 +720,6 @@
 /obj/structure/glowshroom,
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/river)
-"awp" = (
-/obj/structure/spacevine/dendor,
-/turf/open/floor/bronze,
-/area/rogue/indoors/shelter/mountains)
 "awD" = (
 /obj/structure/fluff/walldeco/maidensigil,
 /obj/item/roguebin/water/gross,
@@ -746,10 +746,11 @@
 	},
 /area/rogue/outdoors/river)
 "ayC" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet)
+/obj/structure/flora/grass/jungle{
+	icon_state = "grassa1"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "ayN" = (
 /obj/structure/flora/newtree,
 /obj/structure/flora/grass/jungle/b,
@@ -1262,6 +1263,10 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"aMt" = (
+/obj/structure/bookcase/random/archive,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "aMy" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -1276,12 +1281,6 @@
 /area/rogue/outdoors/exposed/tavern{
 	name = "Tavern Stables"
 	})
-"aMB" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "Rosehedge2"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/cave)
 "aMY" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -1318,10 +1317,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
-"aOb" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet)
 "aOq" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/grove{
@@ -1352,15 +1347,6 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/river)
-"aOW" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_x = 2;
-	pixel_y = 7
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/mountains)
 "aPc" = (
 /obj/structure/roguewindow/openclose{
 	dir = 4
@@ -1518,6 +1504,11 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"aTd" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
 "aTe" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/flora/roguegrass,
@@ -1582,10 +1573,6 @@
 	first_time_text = "Shrine of Natures";
 	name = "Shrine of Natures"
 	})
-"aVa" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/mountains)
 "aVf" = (
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/decostone/mossy,
@@ -1628,13 +1615,6 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/river)
-"aWx" = (
-/obj/structure/spider/stickyweb{
-	dir = 4;
-	icon_state = "stickyweb2"
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
 "aWE" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/carpet,
@@ -1794,6 +1774,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"baM" = (
+/obj/effect/decal/stone/mossy/big{
+	dir = 4;
+	pixel_x = -2
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "baY" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 4
@@ -1862,12 +1851,6 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue)
-"bcL" = (
-/obj/structure/flora/roguegrass/water,
-/turf/open/water/cleanshallow,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "bcZ" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/hexstone,
@@ -1950,15 +1933,6 @@
 /area/rogue/outdoors/exposed/tavern{
 	name = "Tavern Stables"
 	})
-"bfn" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/rtfield{
-	first_time_text = null
-	})
 "bgc" = (
 /obj/structure/stairs,
 /obj/structure/fluff/railing/wood{
@@ -2014,24 +1988,12 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"bhg" = (
-/obj/effect/decal/stone/mossy,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "bhj" = (
 /obj/structure/spacevine/dendor,
 /turf/open/water/swamp,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"bho" = (
-/obj/structure/fluff/walldeco/chains{
-	icon_state = "chains5"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "bht" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -2128,14 +2090,6 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
-"blc" = (
-/obj/structure/flora/roguetree/happy{
-	icon_state = "t14"
-	},
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "blj" = (
 /obj/structure/spacevine,
 /obj/machinery/light/rogue/firebowl/stump,
@@ -2144,6 +2098,12 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"blm" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "Rosehedge2"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/cave)
 "blr" = (
 /obj/structure/spacevine/dendor,
 /turf/closed/wall/shroud,
@@ -2157,12 +2117,6 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/blocks/stone/stonepattern2,
 /area/rogue/indoors/shelter/town)
-"bmb" = (
-/obj/structure/flora/tree/pine,
-/turf/open/floor/rogue/snow,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "bmm" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -2370,10 +2324,6 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"bsC" = (
-/obj/structure/spacevine/dendor,
-/turf/closed/wall/mineral/rogue/wooddark/window,
-/area/rogue/indoors/shelter/mountains)
 "bsN" = (
 /obj/item/rogueweapon/woodstaff/wise,
 /turf/open/floor/rogue/grass,
@@ -2394,11 +2344,6 @@
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
-"bsQ" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet)
 "bsW" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -2420,11 +2365,6 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/caves)
-"btt" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/fluff/statue/gargoyle/candles,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/under/cavewet)
 "btv" = (
 /obj/effect/decal/dirt/grass{
 	dir = 8
@@ -2473,13 +2413,6 @@
 /obj/item/reagent_containers/glass/bottle/rogue/manapot,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/bath)
-"bvo" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/chair/wood/rogue,
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/rtfield{
-	first_time_text = null
-	})
 "bvs" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/water/swamp,
@@ -2503,10 +2436,6 @@
 	icon_state = "road"
 	},
 /area/rogue/indoors/shelter/bog)
-"bwh" = (
-/obj/structure/telescope,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "bwr" = (
 /obj/effect/decal/cobbleedge{
 	dir = 5;
@@ -2591,12 +2520,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"bzK" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/cave)
 "bzY" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -2646,6 +2569,14 @@
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
+"bBl" = (
+/obj/item/natural/stone,
+/obj/structure/spider/stickyweb{
+	dir = 4;
+	icon_state = "stickyweb2"
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "bBr" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/dirt,
@@ -2884,6 +2815,11 @@
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
+"bHS" = (
+/obj/structure/spacevine/dendor,
+/obj/item/candle/magicpink/lit,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "bIi" = (
 /obj/structure/fluff/statue/dragonr{
 	icon_state = "3"
@@ -2956,13 +2892,10 @@
 /obj/effect/spawner/lootdrop/minor/kittyears_or_rabbitears,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
-"bKL" = (
-/obj/structure/spider/stickyweb{
-	dir = 8;
-	icon_state = "stickyweb2"
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
+"bLl" = (
+/obj/structure/flora/wildplant/wild_poppy,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "bLr" = (
 /obj/effect/landmark/start/nightmaiden{
 	dir = 4
@@ -3021,9 +2954,6 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/caves)
-"bML" = (
-/turf/open/floor/rogue/carpet,
-/area/rogue/indoors/shelter/mountains)
 "bMP" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/naturalstone,
@@ -3094,13 +3024,6 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/closed/wall/shroud,
 /area/rogue/outdoors/caves)
-"bOx" = (
-/obj/structure/statue/bone/rib{
-	dir = 1
-	},
-/obj/item/candle/magic/lit,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "bOB" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 8
@@ -3467,12 +3390,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
-"cbt" = (
-/obj/structure/glowshroom,
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "cbK" = (
 /turf/closed/wall/mineral/rogue/stone/window/moss,
 /area/rogue/indoors/town/vault)
@@ -3601,11 +3518,6 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
 	})
-"cfw" = (
-/obj/item/natural/stone,
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/under/cavewet)
 "cfH" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/grassred,
@@ -3649,6 +3561,14 @@
 /obj/structure/glowshroom,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/cavewet)
+"chK" = (
+/obj/effect/wisp,
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/grass,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "chL" = (
 /obj/item/natural/stone,
 /turf/open/water/swamp/deep,
@@ -3783,7 +3703,8 @@
 	first_time_text = "The Dreamers Demesne.."
 	})
 "clD" = (
-/turf/open/floor/rogue/blocks/stonered,
+/obj/structure/roguewindow/stained/yellow,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "clG" = (
 /obj/structure/flora/roguetree/happyrandom{
@@ -4197,14 +4118,9 @@
 /turf/open/water,
 /area/rogue/outdoors/caves)
 "cAp" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/exposed/church{
-	first_time_text = "Shrine of Elysius";
-	name = "Shrine of Elysius"
-	})
+/obj/structure/rack/rogue,
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "cAu" = (
 /obj/structure/spacevine,
 /obj/structure/spacevine,
@@ -4227,6 +4143,13 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
+"cBh" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "cBr" = (
 /obj/machinery/light/rogue/firebowl/stump{
 	icon_state = "stumpfire0"
@@ -4262,8 +4185,14 @@
 	first_time_text = "Stonehedge"
 	})
 "cBH" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors{
@@ -4295,6 +4224,11 @@
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
+	})
+"cDm" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "cDz" = (
 /turf/open/floor/rogue/dirt/ambush,
@@ -4336,6 +4270,10 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"cEW" = (
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "cEY" = (
 /obj/structure/rack/rogue/shelf/big{
 	pixel_y = 0
@@ -4386,6 +4324,12 @@
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/river)
+"cGw" = (
+/obj/structure/bars/pipe{
+	dir = 5
+	},
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "cGx" = (
 /obj/effect/decal/dirt{
 	dir = 1
@@ -4674,12 +4618,6 @@
 /obj/item/clothing/cloak/apron/blacksmith,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter/town)
-"cQQ" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "cQS" = (
 /obj/structure/glowshroom,
 /obj/structure/spider/stickyweb,
@@ -4749,6 +4687,11 @@
 	},
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/indoors/town)
+"cSA" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/fluff/statue/gargoyle/candles,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "cTx" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/wildplant/wild_herbs,
@@ -4934,11 +4877,6 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
 	})
-"cXq" = (
-/obj/item/natural/rock,
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
 "cXr" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/floor/rogue/dirt,
@@ -5080,6 +5018,11 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
+"dcG" = (
+/obj/structure/table/vtable,
+/obj/item/paper/scroll,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "dcK" = (
 /obj/structure/flora/grass/jungle/b,
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga,
@@ -5114,6 +5057,11 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"deu" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
 "dev" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/rogueflora/wormwood,
@@ -5363,6 +5311,11 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"dkp" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "dkq" = (
 /obj/structure/closet/crate/roguecloset/dark,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -5399,6 +5352,10 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"dlw" = (
+/obj/structure/fluff/statue/knight/interior,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "dlN" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/cave)
@@ -5472,10 +5429,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"dnz" = (
-/obj/structure/bookcase/random/archive,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "dnV" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors{
@@ -5663,12 +5616,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
-"dvg" = (
-/turf/closed/wall/mineral/rogue/pipe{
-	dir = 4;
-	icon_state = "iron_line"
-	},
-/area/rogue/indoors/shelter/mountains)
 "dvo" = (
 /obj/structure/flora/rogueshroom/happyrandom{
 	icon_state = "mush4"
@@ -5823,13 +5770,6 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
-"dym" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
 "dyo" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/churchmarble,
@@ -5856,6 +5796,16 @@
 /area/rogue/indoors/town/magician{
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
+	})
+"dyU" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
 	})
 "dzU" = (
 /turf/open/floor/rogue/cobble/mossy,
@@ -6020,16 +5970,10 @@
 /turf/open/water,
 /area/rogue/outdoors/caves)
 "dEu" = (
-/obj/structure/stairs/stone{
-	dir = 1
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
 	},
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/turf/open/floor/grass,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
@@ -6188,6 +6132,12 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
+	})
+"dMP" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "dNl" = (
 /obj/structure/closet/crate/chest/reward/lich,
@@ -6547,6 +6497,10 @@
 "dVE" = (
 /turf/closed/wall/shroud,
 /area/rogue/indoors/shelter/bog)
+"dWa" = (
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "dWh" = (
 /obj/structure/flora/newbranch/connector{
 	icon_state = "center-leaf1"
@@ -6622,6 +6576,14 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"dXI" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "dXM" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/flora/ausbushes/ppflowers,
@@ -6671,10 +6633,6 @@
 /obj/structure/flora/newtree,
 /turf/open/transparent/openspace,
 /area/rogue)
-"dYM" = (
-/obj/structure/mineral_door/wood/red,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "dYQ" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/newtree,
@@ -7079,6 +7037,12 @@
 /obj/structure/chair/bench/couchablack/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"ejX" = (
+/obj/effect/wisp,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "ejZ" = (
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/open/floor/rogue/grass,
@@ -7140,10 +7104,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"emK" = (
-/obj/structure/bars/cemetery,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "emL" = (
 /obj/structure/flora/newleaf,
 /obj/structure/flora/newleaf{
@@ -7195,13 +7155,9 @@
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
 "enK" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/grass,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "enU" = (
 /obj/structure/chair/stool/rogue,
@@ -7226,6 +7182,14 @@
 	},
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
+	})
+"eop" = (
+/obj/structure/fluff/statue/knight/interior,
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/blocks/stone,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
 	})
 "eoq" = (
 /turf/closed/mineral/rogue/gold,
@@ -7376,10 +7340,6 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"evn" = (
-/obj/effect/decal/remains/wolf,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "evw" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/town/bath)
@@ -7465,15 +7425,6 @@
 	},
 /turf/open/floor/rogue/twig/platform,
 /area/rogue/indoors/shelter/rtfield)
-"ezb" = (
-/obj/structure/table/church/m{
-	icon_state = "churchtable_end_alt"
-	},
-/obj/item/candle/magic/lit,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "ezj" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -8314,17 +8265,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"eUY" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/table/wood{
-	icon_state = "longtable_mid"
-	},
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/turf/open/floor/rogue/carpet,
-/area/rogue/indoors/shelter/mountains)
 "eVj" = (
 /obj/machinery/light/rogue/torchholder/l{
 	dir = 8
@@ -8525,6 +8465,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"eZu" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/table/vtable/v2,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "eZD" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -8680,14 +8625,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"few" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/closed/wall/mineral/rogue/wooddark,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "feK" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -8724,6 +8661,15 @@
 /turf/open/floor/rogue/rooftop,
 /area/rogue/outdoors/exposed/tavern{
 	name = "Tavern Stables"
+	})
+"ffS" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/exposed/church{
+	first_time_text = "Shrine of Elysius";
+	name = "Shrine of Elysius"
 	})
 "ffU" = (
 /turf/open/water/cleanshallow,
@@ -8907,6 +8853,15 @@
 	})
 "fkX" = (
 /obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
+"fle" = (
+/obj/structure/stairs{
+	dir = 1
+	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
@@ -9362,9 +9317,6 @@
 "fxW" = (
 /turf/closed/wall/shroud,
 /area/rogue)
-"fyx" = (
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/mountains)
 "fyB" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
@@ -9388,17 +9340,17 @@
 	},
 /turf/open/floor/rogue/twig/platform,
 /area/rogue/indoors/shelter/rtfield)
+"fAh" = (
+/obj/machinery/light/rogue/firebowl/church,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "fAp" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
-	})
-"fAF" = (
-/obj/structure/flora/roguegrass/bush/wall,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "fAW" = (
 /obj/item/natural/stone,
@@ -9601,9 +9553,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"fFu" = (
-/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
-/area/rogue/indoors/shelter/mountains)
 "fFE" = (
 /obj/item/natural/stone,
 /turf/open/water/river{
@@ -9733,14 +9682,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"fIM" = (
-/obj/structure/spacevine,
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/cave)
 "fJm" = (
 /obj/structure/stairs{
 	dir = 8
@@ -9811,6 +9752,11 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"fLw" = (
+/obj/item/natural/stone,
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "fLK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/rogue/grassred,
@@ -9909,9 +9855,15 @@
 /obj/structure/flora/roguetree/underworld,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
-"fOW" = (
-/turf/open/floor/carpet/red/airless,
-/area/rogue/indoors/shelter/mountains)
+"fOL" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "fPf" = (
 /obj/effect/mob_spawner/wilderness/hostile,
 /turf/open/floor/rogue/grass,
@@ -10061,10 +10013,6 @@
 	icon_state = "wooddark-k"
 	},
 /area/rogue/outdoors/exposed/bath)
-"fTJ" = (
-/obj/structure/spacevine/dendor,
-/turf/closed/wall/shroud,
-/area/rogue/indoors/shelter/mountains)
 "fUh" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/roguegrass/bush,
@@ -10150,16 +10098,10 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
-"fVS" = (
-/obj/structure/spacevine,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
+"fVQ" = (
+/obj/structure/spacevine/dendor,
+/turf/closed/wall/shroud,
+/area/rogue/indoors/shelter/mountains)
 "fVU" = (
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/outdoors/exposed/bath)
@@ -10235,6 +10177,17 @@
 /area/rogue/outdoors/exposed/magiciantower{
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
+	})
+"fXZ" = (
+/obj/effect/decal/stone/mossy{
+	dir = 8
+	},
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
 	})
 "fYb" = (
 /obj/structure/ladder,
@@ -10374,11 +10327,6 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/river)
-"gbj" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/bookcase/random/archive,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "gbC" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods{
@@ -10517,6 +10465,14 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
+"geT" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "gfe" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/glowshroom,
@@ -10631,6 +10587,10 @@
 /obj/item/natural/rock,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
+"giC" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "giH" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/rooftop,
@@ -10881,14 +10841,6 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
-"gsr" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	opacity = 0
-	},
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
 "gsy" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush2"
@@ -11051,6 +11003,9 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"gyO" = (
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "gzu" = (
 /obj/item/reagent_containers/glass/bottle/rogue/minorhealthpot,
 /obj/item/reagent_containers/glass/bottle/rogue/minorhealthpot,
@@ -11152,6 +11107,14 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"gDO" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "gEU" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/shroud,
@@ -11202,6 +11165,10 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"gGJ" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cavewet)
 "gGS" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom2"
@@ -11262,6 +11229,13 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"gIf" = (
+/obj/structure/statue/bone/rib{
+	dir = 1
+	},
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "gIi" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -11370,6 +11344,11 @@
 /obj/structure/well/fountain,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
+"gLr" = (
+/obj/structure/statue/bone/rib,
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "gLu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/stool/rogue,
@@ -11567,14 +11546,12 @@
 "gUG" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/caves)
-"gVe" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
+"gUN" = (
+/obj/effect/decal/stone/mossy{
+	dir = 8;
+	pixel_x = 27
 	},
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/river)
 "gVp" = (
 /obj/structure/fluff/railing/wood{
@@ -11586,6 +11563,11 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"gVL" = (
+/obj/structure/fluff/walldeco/chains,
+/obj/effect/mist,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cavewet)
 "gWg" = (
 /obj/structure/fluff/walldeco/chains{
 	icon_state = "chains2"
@@ -11600,9 +11582,11 @@
 /turf/open/water/cleanshallow,
 /area/rogue/under/cavewet)
 "gWI" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/cave)
 "gWL" = (
 /obj/structure/stairs{
 	dir = 1
@@ -11777,15 +11761,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"hbk" = (
-/obj/effect/decal/stone/mossy/big{
-	dir = 4;
-	pixel_x = -2
-	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "hbz" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /obj/structure/table/wood{
@@ -11828,10 +11803,6 @@
 "hcX" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/shelter/bog)
-"hdt" = (
-/obj/machinery/light/rogue/smelter/great,
-/turf/open/floor/bronze,
-/area/rogue/indoors/shelter/mountains)
 "hdw" = (
 /obj/structure/glowshroom,
 /turf/open/floor/rogue/dirt,
@@ -11985,8 +11956,13 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/caves)
 "hif" = (
-/turf/closed/wall/mineral/rogue/stone/red_moss,
-/area/rogue/indoors/shelter/mountains)
+/obj/structure/flora/roguegrass/bush/wall{
+	opacity = 0
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "his" = (
 /turf/closed/wall/mineral/rogue/decostone/long,
 /area/rogue/outdoors/caves)
@@ -12053,7 +12029,9 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/river)
 "hkN" = (
-/obj/structure/rack/rogue,
+/obj/structure/bars/pipe{
+	dir = 10
+	},
 /turf/open/floor/bronze,
 /area/rogue/indoors/shelter/mountains)
 "hkP" = (
@@ -12203,9 +12181,8 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town)
 "hoq" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/under/cavewet)
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "hot" = (
 /turf/closed/wall/shroud,
 /area/rogue/outdoors/exposed/bath)
@@ -12384,7 +12361,7 @@
 	},
 /area/rogue/under/cavewet)
 "huN" = (
-/turf/open/floor/grass,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
@@ -12439,18 +12416,6 @@
 /obj/item/powderflask,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
-"hwB" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/stairs{
-	dir = 1
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet)
 "hwE" = (
 /obj/effect/spawner/roguemap/tree,
 /obj/structure/flora/roguegrass,
@@ -12524,6 +12489,11 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"hyV" = (
+/obj/structure/fluff/statue/knight,
+/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "hze" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/dirt,
@@ -12744,10 +12714,10 @@
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
 "hGp" = (
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
+/obj/structure/fluff/statue/knight,
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "hGB" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
 	dir = 1
@@ -12838,9 +12808,9 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/town)
-"hIW" = (
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/carpet,
+"hIV" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/closed/wall/shroud,
 /area/rogue/indoors/shelter/mountains)
 "hJN" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy,
@@ -12977,16 +12947,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"hOl" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
 "hOq" = (
 /obj/structure/bed/rogue/inn/hay,
 /turf/open/floor/rogue/twig,
@@ -13236,15 +13196,6 @@
 /obj/item/reagent_containers/glass/bucket/pot,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
-"hVs" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/cave)
 "hVB" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/fluff/railing/wood{
@@ -13413,6 +13364,12 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"hZA" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "hZF" = (
 /obj/structure/bed/rogue/inn,
 /obj/machinery/light/rogue/wallfire/candle/blue,
@@ -13455,13 +13412,6 @@
 	},
 /area/rogue/outdoors/exposed/tavern{
 	name = "Tavern Stables"
-	})
-"ibI" = (
-/obj/structure/flora/ausbushes/brflowers,
-/obj/effect/wisp,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "ibU" = (
 /obj/structure/bookcase/random,
@@ -13628,6 +13578,15 @@
 /obj/structure/flora/grass/jungle,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/outdoors/caves)
+"ifO" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "igh" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors{
@@ -13745,6 +13704,10 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
+"ijW" = (
+/obj/item/candle/yellow/lit,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "ijZ" = (
 /obj/structure/gravemarker,
 /turf/open/floor/grass,
@@ -13780,12 +13743,6 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
-	})
-"ikP" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "ikT" = (
 /obj/structure/fluff/railing/wood{
@@ -14017,13 +13974,6 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/cleanshallow,
 /area/rogue/under/cavewet)
-"irB" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/grass,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
 "irK" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/stairs/stone,
@@ -14042,6 +13992,10 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"isR" = (
+/obj/structure/telescope,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "itq" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -14053,10 +14007,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"itx" = (
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "ity" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/rogue/grass,
@@ -14587,12 +14537,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
-"iJd" = (
-/obj/effect/wisp,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "iJn" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
@@ -14672,6 +14616,10 @@
 /obj/structure/table/vtable,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/bath)
+"iLa" = (
+/obj/effect/decal/remains/bigrat,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "iLq" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/dirt/road,
@@ -14713,11 +14661,26 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/river)
+"iNR" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/fluff/statue/dragonl{
+	icon_state = "4"
+	},
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "iOF" = (
 /obj/structure/spacevine,
 /obj/structure/spacevine,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/minotaurcave)
+"iOX" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/outdoors/rtfield{
+	first_time_text = null
+	})
 "iOZ" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -14818,6 +14781,13 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"iRC" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/grass,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "iRF" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom3"
@@ -14879,7 +14849,7 @@
 /area/rogue/under/cavewet)
 "iUy" = (
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/grass,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/shelter/mountains)
 "iUE" = (
 /obj/structure/rack/rogue,
@@ -14936,14 +14906,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"iWc" = (
-/obj/structure/fluff/statue/knight/interior/r,
-/obj/item/candle/magic/lit,
-/turf/open/floor/rogue/blocks/stone,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
 "iWf" = (
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
@@ -14964,6 +14926,12 @@
 /area/rogue/indoors/town/magician{
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
+	})
+"iWB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "iWW" = (
 /obj/machinery/light/rogue/lanternpost,
@@ -15006,15 +14974,6 @@
 "iYu" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cavewet)
-"iYy" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
 "iYC" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -15090,6 +15049,11 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"jak" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/fluff/statue/knight/r,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/under/cavewet)
 "jav" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/roguetree/happyrandom{
@@ -15219,6 +15183,16 @@
 	first_time_text = "Shrine of Natures";
 	name = "Shrine of Natures"
 	})
+"jeo" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "jeV" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -15289,6 +15263,12 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"jgc" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "jgq" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -15332,12 +15312,6 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/caves)
-"jip" = (
-/obj/structure/fluff/walldeco/chains{
-	icon_state = "chains4"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "jiz" = (
 /obj/structure/table/wood{
 	dir = 6;
@@ -15515,10 +15489,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"jod" = (
-/obj/structure/spacevine/dendor,
-/turf/closed/wall/mineral/rogue/stone/red_moss,
-/area/rogue/indoors/shelter/mountains)
 "jpn" = (
 /obj/structure/flora/newleaf{
 	dir = 8;
@@ -15766,11 +15736,6 @@
 /obj/item/natural/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
-"jxw" = (
-/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
-	dir = 1
-	},
-/area/rogue/indoors/shelter/mountains)
 "jxO" = (
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/indoors/shelter/town)
@@ -15867,15 +15832,6 @@
 	},
 /turf/open/floor/rogue/shroud,
 /area/rogue)
-"jBG" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/item/flashlight/flare/torch/lantern/bronzelamptern,
-/obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable"
-	},
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "jBM" = (
 /obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -16071,6 +16027,12 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
+"jFi" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "jFr" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/rogue/grass,
@@ -16326,10 +16288,6 @@
 /obj/item/clothing/suit/roguetown/shirt/belldress,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/bath)
-"jNf" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/closed/wall/mineral/rogue/stone/moss,
-/area/rogue/under/cavewet)
 "jNE" = (
 /turf/open/water{
 	desc = "Salty and deep, this water leads to the open coast.";
@@ -16509,10 +16467,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
-"jTu" = (
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
 "jTP" = (
 /obj/structure/flora/roguegrass/water,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -16662,14 +16616,6 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
-"jXp" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
 "jXx" = (
 /obj/structure/fluff/statue/pillar{
 	name = "Wooden Support"
@@ -16679,10 +16625,6 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
-"jYB" = (
-/obj/structure/fluff/statue/knight/interior,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "jYU" = (
 /obj/effect/mob_spawner/mossback,
 /turf/open/water/cleanshallow,
@@ -16736,13 +16678,6 @@
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
-"kaM" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/fluff/statue/dragonl{
-	icon_state = "4"
-	},
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "kaT" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -16777,9 +16712,7 @@
 	name = "Silver Dragon"
 	})
 "kbB" = (
-/obj/structure/spacevine/dendor,
-/obj/item/candle/magicpink/lit,
-/turf/open/floor/rogue/cobble/mossy,
+/turf/open/floor/grass,
 /area/rogue/indoors/shelter/mountains)
 "kbF" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
@@ -16905,6 +16838,13 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"kfo" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "kft" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/grass,
@@ -16950,8 +16890,8 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
-"kgj" = (
-/obj/item/candle/magic/lit,
+"kgf" = (
+/obj/structure/bars/cemetery,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
 "kgp" = (
@@ -17117,18 +17057,20 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"kjQ" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "kjY" = (
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
-"kjZ" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
 "kkc" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/pelt,
@@ -17199,10 +17141,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/caves)
-"kmo" = (
-/obj/structure/fluff/alch,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "kmp" = (
 /obj/structure/fluff/railing/wood{
 	pixel_y = -8
@@ -17449,12 +17387,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"ktq" = (
-/obj/structure/fluff/walldeco/chains{
-	icon_state = "chains3"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "ktI" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/grassred,
@@ -17595,18 +17527,16 @@
 /obj/effect/spawner/trap,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/town/vault)
+"kxu" = (
+/obj/effect/wisp,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "kxD" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/closed/mineral/rogue/salt,
 /area/rogue/outdoors/river)
-"kyc" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/closed/wall/shroud,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "kyt" = (
 /obj/structure/glowshroom,
 /obj/structure/spider/stickyweb{
@@ -17640,13 +17570,6 @@
 /area/rogue/indoors/town/magician{
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
-	})
-"kzK" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/obj/structure/ladder,
-/turf/open/water/cleanshallow,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "kzN" = (
 /obj/effect/landmark/start/hedgewarden,
@@ -17849,6 +17772,15 @@
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
+"kFJ" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/exposed/church{
+	first_time_text = "Shrine of Elysius";
+	name = "Shrine of Elysius"
+	})
 "kFO" = (
 /obj/structure/glowshroom,
 /turf/open/water/cleanshallow,
@@ -18035,6 +17967,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"kJJ" = (
+/obj/effect/decal/stone/mossy{
+	dir = 4;
+	pixel_y = 17
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/river)
 "kKb" = (
 /turf/closed/mineral/rogue,
 /area/rogue)
@@ -18057,10 +17996,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
-"kLQ" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "kMk" = (
 /obj/structure/fluff/walldeco/medposter6{
 	name = "sign";
@@ -18071,6 +18006,10 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
+"kMI" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/mountains)
 "kMP" = (
 /obj/structure/grove_shrine,
 /turf/open/floor/rogue/grassyel,
@@ -18097,8 +18036,8 @@
 /obj/effect/decal/stone/mossy{
 	dir = 8
 	},
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
+/obj/machinery/light/rogue/lanternpost{
+	dir = 1
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors{
@@ -18168,6 +18107,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town)
+"kPh" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "kPl" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -18232,12 +18178,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"kQy" = (
-/obj/structure/bars/pipe{
-	dir = 8
-	},
-/turf/open/transparent/openspace,
-/area/rogue)
 "kQB" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/cobblerock,
@@ -18450,6 +18390,15 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
+"kVH" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/exposed/church{
+	first_time_text = "Shrine of Elysius";
+	name = "Shrine of Elysius"
+	})
 "kVJ" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt/road,
@@ -18476,6 +18425,12 @@
 	},
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/town)
+"kWY" = (
+/obj/effect/wisp,
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "kXa" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -18562,8 +18517,11 @@
 	},
 /area/rogue/indoors/shelter/rtfield)
 "kZC" = (
-/obj/machinery/light/rogue/campfire/densefire,
-/turf/open/floor/rogue/cobble/mossy,
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/grass,
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
@@ -18697,6 +18655,9 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"ldm" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/cand,
+/area/rogue/indoors/shelter/mountains)
 "ldo" = (
 /obj/structure/flora/roguegrass/maneater/real{
 	aggroed = 1
@@ -18718,6 +18679,12 @@
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
+	})
+"leg" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "leL" = (
 /turf/closed/wall/mineral/rogue/decowood,
@@ -18747,8 +18714,14 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/tavern)
 "lgz" = (
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
 "lgO" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/grassred,
@@ -18842,16 +18815,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"liY" = (
-/obj/structure/table/wood{
-	icon_state = "longtable_mid"
-	},
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/turf/open/floor/rogue/carpet,
-/area/rogue/indoors/shelter/mountains)
 "lja" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/closed/mineral/rogue/bedrock,
@@ -18955,6 +18918,14 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
+	})
+"lli" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "llj" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -19170,12 +19141,6 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
-"lsN" = (
-/obj/item/natural/stone,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "lsW" = (
 /obj/structure/flora/roguegrass,
 /obj/item/natural/stone,
@@ -19210,6 +19175,12 @@
 /obj/effect/landmark/start/nightmaiden,
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/bath)
+"ltO" = (
+/obj/structure/bars/pipe{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue)
 "ltR" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -19246,11 +19217,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"luR" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/wildplant/wild_poppy,
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "lva" = (
 /obj/structure/glowshroom,
 /obj/structure/flora/roguegrass/maneater/real,
@@ -19443,6 +19409,12 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"lBJ" = (
+/obj/structure/glowshroom,
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "lCr" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /obj/structure/spacevine,
@@ -19505,6 +19477,14 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"lFQ" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/closed/wall/shroud,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "lFW" = (
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/woods/grove{
@@ -19535,10 +19515,12 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
-"lGB" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/closed/wall/shroud,
-/area/rogue/indoors/shelter/mountains)
+"lGu" = (
+/turf/open/floor/grass,
+/area/rogue/outdoors/exposed/church{
+	first_time_text = "Shrine of Elysius";
+	name = "Shrine of Elysius"
+	})
 "lGY" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -19555,6 +19537,14 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
 	})
+"lHn" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/mountains)
 "lHv" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/grass/jungle/b,
@@ -19644,10 +19634,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
-"lJF" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/carpet/lord/left,
-/area/rogue/under/cavewet)
 "lJQ" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -19731,12 +19717,6 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/shelter/town)
-"lMQ" = (
-/obj/item/natural/rock,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "lMW" = (
 /obj/structure/flora/newbranch{
 	dir = 4
@@ -19746,6 +19726,10 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"lNk" = (
+/obj/machinery/light/rogue/smelter/great,
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "lNo" = (
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa1"
@@ -20031,14 +20015,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"lYm" = (
-/obj/effect/wisp,
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/grass,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
 "lYq" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -20132,13 +20108,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"mau" = (
-/obj/structure/flora/grass/jungle{
-	icon_state = "grassa1"
-	},
-/obj/structure/fluff/statue/gargoyle/candles,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "may" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/flail,
@@ -20160,11 +20129,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"maF" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "maN" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/naturalstone,
@@ -20239,6 +20203,12 @@
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
+	})
+"meh" = (
+/obj/effect/wisp,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "mel" = (
 /obj/structure/bed/rogue/inn/wool,
@@ -20318,14 +20288,6 @@
 	icon_state = "road"
 	},
 /area/rogue/indoors/shelter/bog)
-"mhA" = (
-/obj/structure/flora/roguetree/happyrandom{
-	desc = "An old, beloved tree that even elves could love."
-	},
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "mhU" = (
 /obj/structure/flora/newtree,
 /turf/open/water/river{
@@ -20430,9 +20392,10 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"mku" = (
-/obj/structure/roguewindow/stained/yellow,
-/turf/open/floor/rogue/cobble/mossy,
+"mkv" = (
+/turf/closed/wall/mineral/rogue/pipe{
+	icon_state = "iron_corner"
+	},
 /area/rogue/indoors/shelter/mountains)
 "mkx" = (
 /turf/closed/mineral/rogue/coal,
@@ -20661,10 +20624,6 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/cave/minotaurcave)
-"mqo" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "mqD" = (
 /obj/structure/closet/crate/chest,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
@@ -20833,11 +20792,11 @@
 	name = "Grove"
 	})
 "muW" = (
-/obj/effect/wisp,
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
+/obj/structure/flora/roguegrass/bush/wall{
+	opacity = 0
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/river)
 "muY" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -20934,6 +20893,14 @@
 "mwL" = (
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
 /area/rogue)
+"mwM" = (
+/obj/structure/fluff/statue/knight/interior/r,
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/blocks/stone,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
 "mwZ" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/closed/wall/shroud,
@@ -21251,6 +21218,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"mEZ" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
 "mFn" = (
 /obj/effect/spawner/roguemap/treeorstump,
 /turf/open/floor/rogue/dirt,
@@ -21272,8 +21243,8 @@
 	name = "Shrine of Lune"
 	})
 "mFu" = (
-/obj/structure/flora/roguetree/wise,
-/turf/open/floor/rogue/grasscold,
+/obj/structure/flora/tree/pine,
+/turf/open/floor/rogue/snow,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
@@ -21307,12 +21278,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"mHz" = (
-/obj/structure/bars/pipe{
-	dir = 5
-	},
-/turf/open/floor/bronze,
-/area/rogue/indoors/shelter/mountains)
 "mHJ" = (
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/grass,
@@ -21445,6 +21410,15 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
+	})
+"mLD" = (
+/obj/effect/decal/stone/mossy/big{
+	dir = 4;
+	pixel_x = -2
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
 	})
 "mLG" = (
 /obj/structure/spacevine,
@@ -21674,6 +21648,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"mQB" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/closed/wall/shroud,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "mQD" = (
 /obj/structure/table/wood{
 	icon_state = "map4"
@@ -21780,10 +21763,14 @@
 	name = "Adventurers Guild"
 	})
 "mSN" = (
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"mSO" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/bookcase/random/archive,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "mTz" = (
 /mob/living/simple_animal/hostile/rogue/ghost/wraith/wraith2,
 /turf/open/floor/rogue/cobble/mossy,
@@ -21905,6 +21892,15 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
 	})
+"mYI" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/item/flashlight/flare/torch/lantern/bronzelamptern,
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "mZn" = (
 /obj/structure/flora/roguegrass/maneater/real{
 	aggroed = 1
@@ -21973,11 +21969,6 @@
 "nbz" = (
 /turf/open/transparent/openspace,
 /area/rogue/indoors/shelter/bog)
-"ncp" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/table/vtable/v2,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "ncJ" = (
 /turf/open/floor/rogue/metal,
 /area/rogue/under/cavewet)
@@ -22045,6 +22036,15 @@
 /obj/structure/flora/rogueshroom/happyrandom,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
+"neC" = (
+/obj/structure/flora/newleaf,
+/obj/structure/flora/roguegrass/bush/wall{
+	opacity = 0
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "neX" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/cloth,
@@ -22056,6 +22056,10 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"neY" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
 "nfn" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/blocks,
@@ -22101,10 +22105,6 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/tavern)
-"ngy" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/carpet,
-/area/rogue/indoors/shelter/mountains)
 "ngC" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -22163,6 +22163,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Mountain Passe"
 	})
+"niu" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/cave)
 "niv" = (
 /obj/structure/flora/roguegrass/bush/wall,
 /obj/structure/flora/newleaf{
@@ -22214,6 +22223,11 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
+"njX" = (
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "nke" = (
 /obj/structure/flora/roguegrass/water,
 /obj/structure/glowshroom{
@@ -22389,6 +22403,12 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
+"noQ" = (
+/obj/structure/spacevine/dendor,
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/mountains)
 "npg" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/rtfield{
@@ -22456,6 +22476,10 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
+"nqG" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/carpet/lord/right,
+/area/rogue/under/cavewet)
 "nqU" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -22511,6 +22535,10 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"nsf" = (
+/obj/effect/decal/remains/wolf,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "nsi" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/cleanshallow,
@@ -22533,15 +22561,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
-"nsN" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/closet/crate/chest,
-/obj/item/natural/worms/leech/cheele,
-/obj/item/reagent_containers/lux,
-/obj/item/reagent_containers/lux,
-/obj/item/reagent_containers/lux,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "ntj" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/brflowers,
@@ -22633,11 +22652,14 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
 "nuI" = (
-/obj/machinery/light/rogue/firebowl/church,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/exposed/church{
-	first_time_text = "Shrine of Elysius";
-	name = "Shrine of Elysius"
+/obj/item/candle/magic/lit,
+/obj/structure/fluff/statue/knight/interior{
+	icon_state = "mgargoyle"
+	},
+/turf/open/floor/rogue/blocks/stone,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
 	})
 "nuQ" = (
 /obj/structure/chair/stool/rogue{
@@ -22714,15 +22736,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
-	})
-"nwO" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/exposed/church{
-	first_time_text = "Shrine of Elysius";
-	name = "Shrine of Elysius"
 	})
 "nxj" = (
 /obj/structure/flora/roguegrass,
@@ -22840,14 +22853,6 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
-"nzW" = (
-/obj/item/natural/stone,
-/obj/structure/spider/stickyweb{
-	dir = 4;
-	icon_state = "stickyweb2"
-	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/under/cavewet)
 "nAt" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -22904,6 +22909,14 @@
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter/town)
+"nCe" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "nCy" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
@@ -23103,11 +23116,26 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
+"nHm" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/machinery/light/rogue/firebowl/church,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "nHL" = (
 /obj/structure/ladder,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
+"nHW" = (
+/obj/structure/spacevine,
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/cave)
 "nIi" = (
 /obj/effect/mob_spawner/skeleton/lich,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -23306,11 +23334,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"nNy" = (
-/turf/closed/wall/mineral/rogue/pipe{
-	icon_state = "iron_corner"
-	},
-/area/rogue/indoors/shelter/mountains)
 "nNz" = (
 /obj/effect/decal/border/stone/stonepattern1,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -23318,6 +23341,11 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
+"nOa" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "nOk" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -23340,11 +23368,6 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
-	})
-"nOP" = (
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "nOW" = (
 /obj/structure/fluff/psycross{
@@ -23439,16 +23462,6 @@
 	},
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
-	})
-"nRG" = (
-/obj/structure/flora/grass/jungle/b{
-	pixel_x = 1;
-	pixel_y = 1
-	},
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/exposed/church{
-	first_time_text = "Shrine of Elysius";
-	name = "Shrine of Elysius"
 	})
 "nRQ" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -23560,10 +23573,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
-"nVV" = (
-/obj/structure/fluff/statue/gargoyle/candles,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "nVY" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/grassred,
@@ -23619,6 +23628,13 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
+"nXS" = (
+/obj/structure/spider/stickyweb{
+	dir = 4;
+	icon_state = "stickyweb2"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "nXU" = (
 /obj/structure/flora/newbranch{
 	dir = 4
@@ -23801,6 +23817,14 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"ocf" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/river)
+"oci" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/carpet/lord/left,
+/area/rogue/under/cavewet)
 "ocs" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/floor/rogue/dirt,
@@ -24093,6 +24117,12 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"okY" = (
+/obj/effect/wisp,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "oli" = (
 /obj/machinery/loom,
 /obj/item/natural/bundle/fibers/full,
@@ -24167,12 +24197,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"onn" = (
-/obj/structure/bars/pipe{
-	dir = 10
-	},
-/turf/open/floor/bronze,
-/area/rogue/indoors/shelter/mountains)
 "onu" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /obj/structure/flora/grass/jungle,
@@ -24214,11 +24238,6 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"ooQ" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "ope" = (
 /obj/structure/stairs/stone{
 	dir = 8
@@ -24297,6 +24316,12 @@
 /obj/structure/spacevine,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/cavewet)
+"osX" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "otw" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -24607,6 +24632,14 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"oCY" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/closed/wall/shroud,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "oDb" = (
 /obj/effect/wisp/prestidigitation,
 /turf/open/transparent/openspace,
@@ -24696,15 +24729,6 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/bath)
-"oFf" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
 "oFJ" = (
 /obj/structure/flora/roguetree/evil{
 	icon_state = "t3"
@@ -24859,10 +24883,6 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"oIr" = (
-/obj/structure/fluff/statue/knight/interior/r,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "oIC" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -24999,6 +25019,14 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"oMg" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/wisp,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "oMQ" = (
 /obj/structure/fluff/walldeco/rpainting{
 	icon_state = "medposter3"
@@ -25059,12 +25087,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue)
-"oQn" = (
-/obj/effect/wisp,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "oQy" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/newtree,
@@ -25121,6 +25143,9 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
+"oRq" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
+/area/rogue/indoors/shelter/mountains)
 "oRA" = (
 /obj/structure/mineral_door/wood/fancywood{
 	lockid = "physician";
@@ -25439,10 +25464,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"oZi" = (
-/obj/item/candle/yellow/lit,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "oZn" = (
 /obj/item/roguekey/vault,
 /turf/closed/mineral/random/rogue,
@@ -25603,10 +25624,6 @@
 	icon_state = "road"
 	},
 /area/rogue/indoors/shelter/bog)
-"peE" = (
-/obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "peQ" = (
 /obj/machinery/light/rogue/torchholder/c,
 /obj/structure/chair/wood/rogue/throne,
@@ -25757,10 +25774,7 @@
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa2"
 	},
-/obj/structure/bars/pipe{
-	dir = 6
-	},
-/turf/open/floor/bronze,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "pim" = (
 /obj/structure/flora/grass/jungle,
@@ -25945,6 +25959,13 @@
 /obj/structure/ladder,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"pnk" = (
+/obj/machinery/light/rogue/campfire/densefire,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/exposed/church{
+	first_time_text = "Shrine of Elysius";
+	name = "Shrine of Elysius"
+	})
 "pnv" = (
 /turf/open/floor/rogue/rooftop,
 /area/rogue/outdoors/exposed/tavern{
@@ -25961,6 +25982,12 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/river)
+"pol" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "poq" = (
 /obj/machinery/light/rogue/torchholder/l,
 /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck/tame,
@@ -25998,9 +26025,22 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"poX" = (
+/mob/living/carbon/human/species/skeleton/npc/dungeon/lich,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "ppv" = (
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/warehouse)
+"ppx" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "ppJ" = (
 /obj/structure/flora/newtree,
 /obj/structure/flora/newtree,
@@ -26015,6 +26055,13 @@
 /obj/structure/chair/bench/ultimacouch,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/bath)
+"pqc" = (
+/obj/structure/spacevine,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "pqh" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/magician{
@@ -26024,6 +26071,15 @@
 "pqo" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"pqQ" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "prj" = (
 /obj/effect/decal/dirt/grass,
 /obj/effect/decal/dirt/grass{
@@ -26142,10 +26198,6 @@
 /obj/item/natural/feather,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/bath)
-"pvq" = (
-/obj/structure/flora/wildplant/wild_poppy,
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "pvB" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = 1;
@@ -26178,16 +26230,6 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
-"pwQ" = (
-/obj/structure/stairs/stone{
-	dir = 1
-	},
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
 "pwR" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/cand,
 /area/rogue/outdoors{
@@ -26338,13 +26380,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"pCj" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "pCk" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush4"
@@ -26360,6 +26395,12 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
 	})
+"pCq" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "pCt" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/grass,
@@ -26382,6 +26423,19 @@
 /obj/structure/well/fountain,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/shelter/bog)
+"pDe" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
+"pDK" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/chair/wood/rogue,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/rtfield{
+	first_time_text = null
+	})
 "pDN" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grass,
@@ -26603,6 +26657,14 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
+	})
+"pIN" = (
+/obj/structure/flora/roguetree/happyrandom{
+	desc = "An old, beloved tree that even elves could love."
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "pJt" = (
 /obj/structure/flora/grass/jungle/b{
@@ -27016,14 +27078,16 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"pUG" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/effect/wisp,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
+"pUB" = (
+/obj/structure/table/wood{
+	icon_state = "longtable_mid"
 	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/turf/open/floor/rogue/carpet,
+/area/rogue/indoors/shelter/mountains)
 "pUK" = (
 /obj/machinery/light/rogue/torchholder/l{
 	dir = 8
@@ -27043,6 +27107,22 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
+"pVd" = (
+/obj/structure/flora/ausbushes/brflowers,
+/obj/effect/wisp,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
+"pVf" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "pVy" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -27354,6 +27434,12 @@
 /obj/effect/wisp,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
+"qdh" = (
+/turf/closed/wall/mineral/rogue/pipe{
+	dir = 4;
+	icon_state = "iron_line"
+	},
+/area/rogue/indoors/shelter/mountains)
 "qdo" = (
 /obj/structure/fluff/walldeco/chains{
 	icon_state = "chains7"
@@ -27457,9 +27543,6 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
-"qfd" = (
-/turf/closed/mineral/rogue,
-/area/rogue/indoors/shelter/mountains)
 "qfk" = (
 /obj/machinery/tanningrack,
 /turf/open/floor/rogue/hexstone,
@@ -27555,12 +27638,6 @@
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
-	})
-"qhL" = (
-/obj/effect/wisp,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "qhN" = (
 /turf/open/floor/rogue/dirt/road,
@@ -27668,15 +27745,6 @@
 "qlD" = (
 /obj/structure/grove_shrine,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
-"qlI" = (
-/obj/structure/flora/newleaf,
-/obj/structure/flora/roguegrass/bush/wall{
-	opacity = 0
-	},
-/turf/open/floor/rogue/grassred,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
@@ -27795,6 +27863,7 @@
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa1"
 	},
+/obj/structure/fluff/statue/gargoyle/candles,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "qpF" = (
@@ -27921,10 +27990,6 @@
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/shelter/town)
-"qte" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "qtq" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 4;
@@ -28113,10 +28178,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"qyx" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/river)
 "qyC" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water/cleanshallow,
@@ -28305,6 +28366,7 @@
 	name = "far stonehedge"
 	})
 "qEs" = (
+/obj/machinery/light/rogue/firebowl/church,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
@@ -28443,15 +28505,6 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
-"qHa" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/closed/wall/shroud,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
 "qHb" = (
 /obj/effect/wisp,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -28499,14 +28552,6 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town)
-"qJc" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "qJe" = (
 /obj/effect/mist,
 /turf/open/water/bath,
@@ -28547,12 +28592,11 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"qKx" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
+"qKv" = (
+/obj/structure/spacevine,
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
 "qKI" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -28759,6 +28803,17 @@
 /obj/structure/spider/stickyweb,
 /turf/open/water/cleanshallow,
 /area/rogue/under/cave)
+"qPQ" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/table/wood{
+	icon_state = "longtable_mid"
+	},
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/turf/open/floor/rogue/carpet,
+/area/rogue/indoors/shelter/mountains)
 "qQb" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -28844,13 +28899,9 @@
 	first_time_text = "The Twilight Woods"
 	})
 "qSm" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	opacity = 0
-	},
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
+/obj/structure/spacevine/dendor,
+/turf/closed/wall/mineral/rogue/wooddark/window,
+/area/rogue/indoors/shelter/mountains)
 "qSB" = (
 /obj/structure/mineral_door/wood{
 	locked = 1;
@@ -28881,12 +28932,6 @@
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
-"qTC" = (
-/obj/structure/flora/grass/jungle{
-	icon_state = "grassa2"
-	},
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "qTD" = (
 /obj/structure/spacevine,
 /turf/closed/mineral/random/rogue,
@@ -28977,10 +29022,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"qVa" = (
-/obj/structure/mineral_door/wood/red,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "qVg" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -29155,6 +29196,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"raD" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/effect/mist,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/river)
 "rbb" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -29241,6 +29287,16 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/exposed/tavern{
 	name = "Tavern Stables"
+	})
+"rek" = (
+/obj/structure/spacevine,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
 	})
 "req" = (
 /obj/structure/fluff/railing/wood{
@@ -29370,11 +29426,6 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
-"rhb" = (
-/obj/structure/spacevine,
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/river)
 "rhe" = (
 /obj/structure/flora/roguetree/stump/log,
 /turf/open/floor/rogue/grassyel,
@@ -29585,6 +29636,10 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/dirt/ambush,
 /area/rogue/indoors/cave/minotaurcave)
+"rmY" = (
+/obj/structure/spacevine/dendor,
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "rnk" = (
 /obj/structure/flora/newleaf/corner{
 	dir = 5
@@ -29804,18 +29859,6 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/river)
-"rtw" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/candle/skull/lit,
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/river)
 "rtG" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/rogue/dirt,
@@ -29930,10 +29973,6 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
-"rwH" = (
-/obj/item/candle/magic/lit,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/under/cavewet)
 "rxm" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors/caves)
@@ -29964,6 +30003,23 @@
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/cave)
+"ryd" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
+"rye" = (
+/obj/effect/decal/stone/mossy,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "ryk" = (
 /obj/item/natural/rock,
 /obj/structure/spacevine/dendor,
@@ -29975,14 +30031,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
-	})
-"ryv" = (
-/obj/structure/flora/grass/jungle{
-	icon_state = "grassa2"
-	},
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
 	})
 "ryA" = (
 /obj/structure/spawner/invisible/ghost/wraiths,
@@ -30017,6 +30065,9 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"rzW" = (
+/turf/open/floor/rogue/carpet,
+/area/rogue/indoors/shelter/mountains)
 "rAz" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors{
@@ -30156,6 +30207,15 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
+"rEW" = (
+/obj/structure/flora/grass/jungle{
+	icon_state = "grassa2"
+	},
+/obj/structure/bars/pipe{
+	dir = 6
+	},
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/mountains)
 "rFq" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -30305,6 +30365,13 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
+"rJQ" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/obj/structure/ladder,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "rJW" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/grass,
@@ -30319,16 +30386,6 @@
 	pixel_y = 7
 	},
 /turf/open/transparent/openspace,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
-"rKj" = (
-/obj/item/candle/magic/lit,
-/obj/structure/fluff/statue/knight/interior{
-	icon_state = "mgargoyle"
-	},
-/turf/open/floor/rogue/blocks/stone,
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -30363,15 +30420,6 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/town/tavern)
-"rLx" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/exposed/church{
-	first_time_text = "Shrine of Elysius";
-	name = "Shrine of Elysius"
-	})
 "rLF" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/cobblerock,
@@ -30429,6 +30477,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"rMT" = (
+/obj/effect/mist,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/river)
 "rMZ" = (
 /obj/structure/flora/rogueshroom/happyrandom{
 	icon_state = "mush2"
@@ -30533,11 +30585,8 @@
 	first_time_text = "The Twilight Woods"
 	})
 "rQI" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
+/turf/closed/mineral/rogue,
+/area/rogue/indoors/shelter/mountains)
 "rQW" = (
 /obj/structure/flora/roguegrass/water,
 /obj/structure/glowshroom,
@@ -30666,6 +30715,15 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"rTS" = (
+/obj/structure/table/church/m{
+	icon_state = "churchtable_end_alt"
+	},
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "rUd" = (
 /turf/closed/wall/mineral/rogue/roofwall/outercorner,
 /area/rogue/outdoors{
@@ -30713,25 +30771,10 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
-"rVp" = (
-/obj/effect/decal/stone/mossy/big{
-	dir = 4;
-	pixel_x = -2
-	},
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "rVM" = (
 /obj/structure/flora/newtree,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/river)
-"rWn" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "rWq" = (
 /obj/effect/decal/stone/mossy{
 	dir = 4;
@@ -30865,6 +30908,14 @@
 /obj/structure/mineral_door/wood,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/under/cavewet)
+"sbM" = (
+/obj/structure/flora/roguetree/happy{
+	icon_state = "t11"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "sca" = (
 /turf/closed/wall/mineral/rogue/pipe{
 	dir = 1;
@@ -31026,17 +31077,12 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
-"sgQ" = (
-/obj/structure/spacevine,
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/water/cleanshallow,
-/area/rogue/under/cavewet)
 "sgZ" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/grass,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
@@ -31117,17 +31163,6 @@
 "sjb" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
-"sjt" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/obj/structure/chair/wood/rogue{
-	dir = 1
-	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/outdoors/river)
 "sjK" = (
 /obj/structure/mineral_door/wood{
@@ -31310,6 +31345,18 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"spu" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/candle/skull/lit,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/river)
 "spU" = (
 /obj/machinery/light/rogue/campfire/densefire,
 /turf/open/floor/rogue/grass,
@@ -31369,11 +31416,6 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/caves)
-"ssw" = (
-/obj/structure/table/wood,
-/obj/item/candle/magicpink/lit,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "ssI" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt/nrich{
@@ -31439,6 +31481,12 @@
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/water/swamp,
 /area/rogue/outdoors/caves)
+"swa" = (
+/obj/structure/fluff/walldeco/chains{
+	icon_state = "chains4"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "swc" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/glowshroom,
@@ -31465,6 +31513,14 @@
 /obj/structure/bed/rogue/inn/wool,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"swL" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	opacity = 0
+	},
+/turf/open/floor/rogue/grassred,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "swR" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -31618,6 +31674,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"sBQ" = (
+/obj/structure/table/wood,
+/obj/item/candle/magicpink/lit,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "sBS" = (
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa2"
@@ -31794,6 +31855,10 @@
 /obj/structure/mineral_door/wood/fancywood,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/bog)
+"sIL" = (
+/obj/structure/mineral_door/wood/red,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "sIU" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/glowshroom{
@@ -31801,12 +31866,6 @@
 	},
 /turf/open/water/cleanshallow,
 /area/rogue/under/cavewet)
-"sJr" = (
-/obj/item/natural/rock,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "sJC" = (
 /obj/structure/flora/newtree,
 /obj/structure/fluff/railing/wood{
@@ -32126,8 +32185,9 @@
 	name = "Shrine of Lune"
 	})
 "sQM" = (
-/turf/open/floor/bronze,
-/area/rogue/indoors/shelter/mountains)
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "sQR" = (
 /obj/structure/stairs/fancy/l{
 	dir = 1
@@ -32165,6 +32225,11 @@
 /obj/item/reagent_containers/glass/bottle,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/bath)
+"sSa" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "sSk" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
@@ -32213,14 +32278,6 @@
 /obj/effect/decal/stone/mossy{
 	pixel_x = -7;
 	pixel_y = -6
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
-"sTZ" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors{
@@ -32312,6 +32369,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Mountain Passe"
 	})
+"sYp" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains)
+"sYz" = (
+/obj/structure/fluff/walldeco/chains{
+	icon_state = "chains5"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "sZa" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/long{
 	dir = 1
@@ -32409,6 +32475,11 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"tcB" = (
+/obj/item/natural/rock,
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "tcF" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/cobblerock,
@@ -32824,6 +32895,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"tmZ" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
 "tnc" = (
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
@@ -32867,14 +32944,6 @@
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
-	})
-"top" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/closed/wall/shroud,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "toF" = (
 /obj/structure/spider/stickyweb,
@@ -32975,6 +33044,17 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"trk" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/chair/wood/rogue{
+	dir = 1
+	},
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/outdoors/river)
 "trE" = (
 /obj/structure/flora/newbranch{
 	dir = 8
@@ -32984,14 +33064,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"trK" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/mountains)
 "trT" = (
 /obj/machinery/light/rogue/torchholder/c,
 /obj/effect/landmark/start/barkeep,
@@ -33078,10 +33150,6 @@
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
-"tut" = (
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "tuW" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/railing/wood{
@@ -33119,6 +33187,11 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
+	})
+"twR" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "txe" = (
 /obj/structure/table/wood{
@@ -33225,8 +33298,13 @@
 	first_time_text = "The Deepwoods"
 	})
 "tzK" = (
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "tAi" = (
 /obj/structure/roguetent,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -33243,6 +33321,12 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"tAV" = (
+/obj/structure/fluff/walldeco/chains{
+	icon_state = "chains3"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "tAW" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -33252,6 +33336,10 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"tBe" = (
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cavewet)
 "tBf" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /obj/structure/flora/rogueshroom/happyrandom{
@@ -33259,14 +33347,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/under/cavewet)
-"tBk" = (
-/obj/structure/flora/roguetree/happy{
-	icon_state = "t11"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "tBv" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/dirt,
@@ -33289,9 +33369,6 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
-"tCK" = (
-/turf/closed/wall/mineral/rogue/decostone/mossy/red/cand,
-/area/rogue/indoors/shelter/mountains)
 "tCY" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 8
@@ -33616,14 +33693,6 @@
 /obj/structure/roguemachine/camera/left,
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/town/library)
-"tLs" = (
-/obj/structure/fluff/statue/knight/interior,
-/obj/item/candle/magic/lit,
-/turf/open/floor/rogue/blocks/stone,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
 "tLx" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt/nrich,
@@ -33725,6 +33794,13 @@
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/shelter/town)
+"tNv" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "tNw" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water/river{
@@ -33950,13 +34026,6 @@
 	icon_state = "road"
 	},
 /area/rogue/indoors/shelter/bog)
-"tUG" = (
-/obj/structure/spider/stickyweb{
-	dir = 1;
-	icon_state = "stickyweb2"
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
 "tUI" = (
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
@@ -34141,6 +34210,12 @@
 "tZZ" = (
 /turf/open/floor/rogue/shroud,
 /area/rogue/indoors/cave/minotaurcave)
+"ubf" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "ubo" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush4"
@@ -34165,6 +34240,15 @@
 	})
 "ubt" = (
 /turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/rtfield{
+	first_time_text = null
+	})
+"ubD" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/rtfield{
 	first_time_text = null
 	})
@@ -34282,6 +34366,11 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town)
+"uev" = (
+/obj/structure/spacevine,
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/river)
 "ueB" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -34488,11 +34577,6 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"ujt" = (
-/obj/structure/table/vtable,
-/obj/item/paper/scroll,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
 "ujI" = (
 /obj/structure/closet/crate/chest,
 /obj/item/clothing/mask/cigarette/pipe,
@@ -34532,11 +34616,6 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
-"ukT" = (
-/obj/structure/statue/bone/rib,
-/obj/item/candle/magic/lit,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
 "ulr" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/dirt,
@@ -34706,6 +34785,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"url" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "urn" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -34908,11 +34992,6 @@
 "uvs" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains)
-"uvL" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/fluff/statue/knight/r,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/under/cavewet)
 "uwa" = (
 /obj/structure/academyward,
 /turf/open/floor/rogue/grass,
@@ -34939,6 +35018,11 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"uwi" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/mountains)
 "uwo" = (
 /obj/structure/flora/roguegrass/bush{
 	icon_state = "bush3"
@@ -35271,13 +35355,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"uFc" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/machinery/light/rogue/firebowl/church,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "uFg" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -35408,6 +35485,10 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
+"uJA" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "uJV" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/minotaurcave)
@@ -35625,6 +35706,10 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"uQR" = (
+/obj/structure/fluff/statue/gargoyle/candles,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "uQS" = (
 /obj/structure/flora/grass/jungle,
 /obj/structure/glowshroom,
@@ -35727,7 +35812,7 @@
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa1"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
@@ -35821,6 +35906,11 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/indoors/town/bath)
+"uWS" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/mineral_door/wood/red,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
 "uWV" = (
 /obj/effect/spawner/roguemap/shroud,
 /obj/effect/spawner/roguemap/shroud,
@@ -35954,6 +36044,12 @@
 "vaE" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/indoors/cave)
+"vaY" = (
+/obj/structure/bars/pipe{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
+/area/rogue)
 "vbb" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -36041,6 +36137,11 @@
 /obj/item/clothing/cloak/apron/blacksmith,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter/town)
+"vdh" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/wildplant/wild_poppy,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "vdm" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/roguegrass,
@@ -36097,6 +36198,15 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"veT" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/closet/crate/chest,
+/obj/item/natural/worms/leech/cheele,
+/obj/item/reagent_containers/lux,
+/obj/item/reagent_containers/lux,
+/obj/item/reagent_containers/lux,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "vfd" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/newleaf,
@@ -36193,14 +36303,9 @@
 	name = "Schoolgrounds"
 	})
 "vjc" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Shrine of Lune"
-	})
+/obj/structure/flora/grass/jungle/b,
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/under/cavewet)
 "vjl" = (
 /obj/structure/flora/newbranch{
 	dir = 8
@@ -36282,6 +36387,10 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/town/bath)
+"vmd" = (
+/obj/structure/mineral_door/wood/red,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "vmJ" = (
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/rogue/cobblerock,
@@ -36346,14 +36455,6 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
-"vpp" = (
-/obj/structure/chair/wood/rogue{
-	dir = 4
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/rtfield{
-	first_time_text = null
-	})
 "vpC" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -36390,11 +36491,16 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"vql" = (
-/obj/structure/fluff/walldeco/chains,
-/obj/effect/mist,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/under/cavewet)
+"vqj" = (
+/obj/structure/spacevine/dendor,
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/indoors/shelter/mountains)
+"vqu" = (
+/obj/structure/flora/roguegrass/bush/wall,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "vqC" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love."
@@ -36533,10 +36639,6 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
-"vuR" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/carpet/lord/center/no_teleport,
-/area/rogue/under/cavewet)
 "vvf" = (
 /obj/structure/flora/newbranch/connector{
 	dir = 8
@@ -36556,6 +36658,14 @@
 /obj/structure/fermenting_barrel/random/water,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/indoors/town/bath)
+"vvB" = (
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"vvN" = (
+/obj/structure/fluff/alch,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "vwh" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -36680,6 +36790,14 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
+"vAb" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/rtfield{
+	first_time_text = null
+	})
 "vAd" = (
 /obj/structure/spawner/invisible/monster/mossback,
 /turf/open/water{
@@ -36717,6 +36835,9 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"vBt" = (
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "vBN" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /obj/structure/flora/newtree,
@@ -36767,14 +36888,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge"
 	})
-"vEk" = (
-/obj/structure/chair/wood/rogue{
-	dir = 4
-	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/outdoors/rtfield{
-	first_time_text = null
-	})
 "vEo" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
@@ -36817,10 +36930,6 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/town/vault)
-"vFC" = (
-/obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "vFL" = (
 /obj/machinery/light/rogue/torchholder,
 /turf/closed/wall/mineral/rogue/wooddark,
@@ -36915,6 +37024,10 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"vIc" = (
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/carpet,
+/area/rogue/indoors/shelter/mountains)
 "vIW" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/grass/jungle/b,
@@ -36936,13 +37049,10 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
-"vJs" = (
-/obj/structure/spacevine,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/river)
+"vJQ" = (
+/obj/structure/fluff/statue/knight/interior/r,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "vJX" = (
 /obj/structure/flora/newleaf{
 	dir = 10;
@@ -36984,8 +37094,7 @@
 /area/rogue/indoors/town)
 "vKN" = (
 /obj/structure/flora/grass/jungle/b,
-/obj/structure/mineral_door/wood/red,
-/turf/open/floor/rogue/cobble/mossy,
+/turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter/mountains)
 "vKW" = (
 /obj/structure/flora/roguetree/happyrandom{
@@ -37048,6 +37157,21 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"vMf" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Shrine of Lune"
+	})
 "vMt" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/river{
@@ -37077,11 +37201,12 @@
 	first_time_text = "Stonehedge"
 	})
 "vMZ" = (
+/obj/structure/spacevine,
 /obj/structure/flora/roguegrass/bush/wall{
-	opacity = 0
+	icon_state = "bushwall4"
 	},
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/river)
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/cave)
 "vNC" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -37109,11 +37234,6 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/dirt/ambush,
 /area/rogue/under/cave)
-"vOW" = (
-/obj/structure/fluff/statue/knight,
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/under/cavewet)
 "vOY" = (
 /obj/structure/flora/newbranch/connector{
 	dir = 10;
@@ -37152,6 +37272,14 @@
 "vQb" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/mountains)
+"vQt" = (
+/obj/structure/flora/roguetree/happy{
+	icon_state = "t14"
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "vQx" = (
 /turf/open/water/river{
 	icon_state = "rockwd"
@@ -37234,6 +37362,14 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/chicken,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/river)
+"vSB" = (
+/obj/structure/flora/grass/jungle{
+	icon_state = "grassa2"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods{
+	first_time_text = "The Twilight Woods"
+	})
 "vSM" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -37365,10 +37501,6 @@
 	first_time_text = "Druids Grove";
 	name = "Grove"
 	})
-"vXg" = (
-/obj/effect/mist,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/river)
 "vXl" = (
 /obj/machinery/light/rogue/firebowl/church,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -37438,13 +37570,10 @@
 "vZx" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors/mountains)
-"vZG" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/table/wood{
-	icon_state = "longtable"
-	},
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/shelter/mountains)
+"vZQ" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/carpet/lord/center/no_teleport,
+/area/rogue/under/cavewet)
 "vZS" = (
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/outdoors/mountains)
@@ -37473,6 +37602,13 @@
 	},
 /turf/closed/wall/mineral/rogue/decostone/mossy,
 /area/rogue/outdoors/exposed/tavern)
+"waI" = (
+/obj/structure/spider/stickyweb{
+	dir = 1;
+	icon_state = "stickyweb2"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "waV" = (
 /turf/open/floor/rogue/twig/platform,
 /area/rogue/outdoors{
@@ -37545,6 +37681,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"wcF" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "wdl" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/water/cleanshallow,
@@ -37585,16 +37725,6 @@
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
-	})
-"weG" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/mountains)
-"weP" = (
-/obj/effect/wisp,
-/turf/open/floor/rogue/snow,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
 	})
 "wfP" = (
 /turf/closed/wall/shroud,
@@ -37637,6 +37767,10 @@
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
 	})
+"wiX" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/indoors/shelter/mountains)
 "wiZ" = (
 /obj/item/roguegem/blue,
 /obj/item/roguegem/green,
@@ -37660,6 +37794,10 @@
 "wjU" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cave)
+"wke" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "wkB" = (
 /obj/structure/mineral_door/wood/violet,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -38196,11 +38334,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/exposed/tavern)
-"wAL" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/effect/mist,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/river)
 "wAO" = (
 /obj/item/clothing/gloves/roguetown/chain/iron,
 /obj/item/clothing/gloves/roguetown/chain/iron,
@@ -38410,10 +38543,6 @@
 	},
 /turf/closed/wall/mineral/rogue/wooddark/slitted,
 /area/rogue/indoors/town)
-"wIH" = (
-/mob/living/carbon/human/species/skeleton/npc/dungeon/lich,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
 "wJl" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -38448,7 +38577,7 @@
 /obj/structure/flora/grass/jungle{
 	icon_state = "grassa1"
 	},
-/turf/open/floor/rogue/cobble/mossy,
+/turf/open/floor/grass,
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
@@ -38560,10 +38689,6 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
-"wMM" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/bronze,
-/area/rogue/indoors/shelter/mountains)
 "wMZ" = (
 /obj/structure/stairs{
 	dir = 8
@@ -38633,6 +38758,12 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"wQk" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/under/cavewet)
 "wQM" = (
 /obj/effect/decal/stone/hex{
 	dir = 1
@@ -38684,6 +38815,13 @@
 /obj/effect/landmark/start/farmer,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"wRP" = (
+/obj/structure/spider/stickyweb{
+	dir = 8;
+	icon_state = "stickyweb2"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cavewet)
 "wSb" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
@@ -38840,9 +38978,9 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/tavern)
 "wWK" = (
-/obj/effect/decal/remains/bigrat,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cavewet)
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass,
+/area/rogue/indoors/shelter/mountains)
 "wWZ" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom3"
@@ -39277,12 +39415,6 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
-"xjb" = (
-/obj/machinery/light/rogue/firebowl/church,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "xjn" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -39294,7 +39426,7 @@
 "xjR" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/grass,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/river)
 "xjT" = (
 /obj/effect/wisp,
@@ -39586,13 +39718,6 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
-"xsy" = (
-/obj/structure/spacevine,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall4"
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/indoors/cave)
 "xsZ" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -39641,17 +39766,6 @@
 "xus" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
 /area/rogue/under/cavewet)
-"xuB" = (
-/obj/effect/decal/stone/mossy{
-	dir = 8
-	},
-/obj/machinery/light/rogue/lanternpost{
-	dir = 1
-	},
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge"
-	})
 "xuG" = (
 /obj/effect/decal/stone/hex{
 	dir = 8
@@ -39700,11 +39814,6 @@
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
 	})
-"xvT" = (
-/obj/structure/fluff/statue/knight,
-/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/under/cavewet)
 "xwg" = (
 /obj/structure/fermenting_barrel/beer,
 /turf/open/floor/rogue/dirt/nrich{
@@ -39999,11 +40108,6 @@
 "xEb" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/exposed/bath)
-"xEs" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/ausbushes/brflowers,
-/turf/open/floor/grass,
-/area/rogue/indoors/shelter/mountains)
 "xEw" = (
 /obj/structure/flora/roguetree/happyrandom{
 	desc = "An old, beloved tree that even elves could love.";
@@ -40054,12 +40158,6 @@
 	first_time_text = "Shrine of Natures";
 	name = "Shrine of Natures"
 	})
-"xHc" = (
-/obj/structure/flora/roguetree/stump/log,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "xHO" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/cobblerock,
@@ -40089,12 +40187,6 @@
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
-"xIJ" = (
-/obj/effect/wisp,
-/turf/open/water/cleanshallow,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "xIO" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -40187,11 +40279,6 @@
 /obj/item/natural/stone,
 /turf/open/water/swamp,
 /area/rogue/outdoors/caves)
-"xLc" = (
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/woods/grove{
-	first_time_text = "The Great Tree"
-	})
 "xLm" = (
 /obj/structure/flora/roguetree/evil{
 	icon_state = "t2"
@@ -40244,6 +40331,12 @@
 /area/rogue/outdoors/exposed/magiciantower{
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
+	})
+"xMC" = (
+/obj/effect/wisp,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "xNa" = (
 /obj/structure/flora/roguegrass,
@@ -40344,14 +40437,6 @@
 	first_time_text = "Temple of Lune";
 	name = "Shrine of Lune"
 	})
-"xPX" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
-	})
 "xQh" = (
 /obj/structure/closet/crate/chest,
 /obj/item/reagent_containers/powder/flour,
@@ -40419,6 +40504,12 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
+	})
+"xQZ" = (
+/obj/structure/flora/roguetree/wise,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "xRn" = (
 /obj/structure/bed/rogue/inn,
@@ -40534,12 +40625,6 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
-	})
-"xUz" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/outdoors/woods{
-	first_time_text = "The Twilight Woods"
 	})
 "xUE" = (
 /obj/structure/flora/roguetree,
@@ -40753,6 +40838,9 @@
 /area/rogue/indoors/town/bath{
 	first_time_text = "The Dreamers Demesne.."
 	})
+"yba" = (
+/turf/open/floor/carpet/red/airless,
+/area/rogue/indoors/shelter/mountains)
 "ybs" = (
 /obj/item/natural/stone,
 /turf/open/water/river{
@@ -40784,6 +40872,12 @@
 	first_time_text = "Shrine of Natures";
 	name = "Shrine of Natures"
 	})
+"ycE" = (
+/obj/effect/decal/stone/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/river)
 "ycM" = (
 /obj/structure/closet/crate/chest,
 /obj/item/natural/stone,
@@ -40905,12 +40999,6 @@
 /obj/item/cooking/platter,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
-"yfu" = (
-/obj/structure/spacevine/dendor,
-/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
-	dir = 1
-	},
-/area/rogue/indoors/shelter/mountains)
 "yfM" = (
 /turf/open/water/river{
 	dir = 4;
@@ -40944,6 +41032,18 @@
 /obj/item/rogueweapon/sword/cutlass,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"ygs" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/water/cleanshallow,
+/area/rogue/under/cavewet)
 "ygS" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/open/water/swamp,
@@ -41088,9 +41188,8 @@
 	name = "Silver Dragon"
 	})
 "yle" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/carpet/lord/right,
-/area/rogue/under/cavewet)
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/indoors/shelter/mountains)
 "yls" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors{
@@ -46058,7 +46157,7 @@ dyo
 dyo
 gWx
 gWx
-rwH
+tBe
 aij
 eem
 dyo
@@ -46072,7 +46171,7 @@ lRl
 lIh
 gWx
 fck
-hoq
+gGJ
 lIh
 lRl
 lIh
@@ -46258,18 +46357,18 @@ nhM
 fQo
 dyo
 xqO
-hoq
-hoq
+gGJ
+gGJ
 gWx
 aij
-hoq
+gGJ
 gWx
 gWx
 gWx
 fck
 uIK
-hoq
-hoq
+gGJ
+gGJ
 gWx
 gWx
 gWx
@@ -46463,25 +46562,25 @@ gWx
 gWx
 gWx
 gWx
-pCj
-hoq
-hoq
+cBh
+gGJ
+gGJ
 gWx
 gWx
 gWx
 gWx
-hoq
-gWx
-gWx
-gWx
-gWx
-gWx
+gGJ
 gWx
 gWx
 gWx
 gWx
 gWx
-hoq
+gWx
+gWx
+gWx
+gWx
+gWx
+gGJ
 fQo
 nhM
 nhM
@@ -46665,9 +46764,9 @@ gWx
 eUA
 gWx
 gWx
-kgj
+sQM
 gWx
-hoq
+gGJ
 gWx
 eUA
 gWx
@@ -46683,7 +46782,7 @@ gWx
 gWx
 hUU
 gWx
-hoq
+gGJ
 fQo
 nhM
 nhM
@@ -46868,7 +46967,7 @@ wvy
 gWx
 gWx
 jkv
-jip
+swa
 gWx
 gWx
 wvy
@@ -47073,12 +47172,12 @@ jkv
 jkv
 jkv
 jkv
-nVV
+uQR
 jkv
 gWx
 gWx
-hoq
-hoq
+gGJ
+gGJ
 gWx
 eUA
 gWx
@@ -47274,22 +47373,22 @@ gWx
 jkv
 jkv
 jkv
-evn
+nsf
 jkv
 jkv
 jkv
-wWK
+iLa
 gWx
-vql
-gWx
-gWx
+gVL
 gWx
 gWx
 gWx
 gWx
 gWx
 gWx
-hoq
+gWx
+gWx
+gGJ
 fQo
 nhM
 nhM
@@ -47478,8 +47577,8 @@ jkv
 jkv
 jkv
 jkv
-emK
-ktq
+kgf
+tAV
 jkv
 gWx
 gWx
@@ -47488,10 +47587,10 @@ gWx
 fck
 gWx
 gWx
-hoq
+gGJ
 gWx
 gWg
-hoq
+gGJ
 fQo
 nhM
 nhM
@@ -47675,22 +47774,22 @@ gWx
 xpC
 gWx
 gWx
-bOx
+gIf
 jkv
-bOx
+gIf
 jkv
-jYB
+dlw
 fck
 jkv
-bOx
+gIf
 jkv
-bOx
+gIf
 gWx
 xpC
 fck
 gWx
 gWx
-hoq
+gGJ
 fck
 fck
 fck
@@ -47894,8 +47993,8 @@ tmt
 tmt
 tmt
 tmt
-lJF
-lJF
+oci
+oci
 wvy
 fDB
 cPc
@@ -48098,7 +48197,7 @@ urU
 urU
 urU
 urU
-vuR
+vZQ
 aeY
 xdN
 aeY
@@ -48502,7 +48601,7 @@ urU
 urU
 urU
 urU
-vuR
+vZQ
 aeY
 xdN
 aeY
@@ -48702,8 +48801,8 @@ smk
 smk
 smk
 smk
-yle
-yle
+nqG
+nqG
 wvy
 fDB
 cPc
@@ -48887,16 +48986,16 @@ gWx
 mDT
 gWx
 gWx
-ukT
+gLr
 jkv
-ukT
+gLr
 jkv
-oIr
-emK
+vJQ
+kgf
 jkv
-ukT
+gLr
 jkv
-ukT
+gLr
 gWx
 mDT
 fck
@@ -49094,7 +49193,7 @@ jkv
 jkv
 jkv
 jkv
-emK
+kgf
 jkv
 jkv
 gWx
@@ -49107,7 +49206,7 @@ gWx
 gWx
 gWx
 gWx
-hoq
+gGJ
 fQo
 nhM
 nhM
@@ -49292,7 +49391,7 @@ gWx
 gWx
 gWx
 jkv
-evn
+nsf
 jkv
 gWx
 gWx
@@ -49309,7 +49408,7 @@ gWx
 gWx
 gWx
 gWx
-hoq
+gGJ
 fQo
 nhM
 nhM
@@ -49494,7 +49593,7 @@ eUA
 gWx
 gWx
 jkv
-bho
+sYz
 jkv
 gWx
 eUA
@@ -49702,7 +49801,7 @@ gWx
 wvy
 gWx
 gWx
-hoq
+gGJ
 gWx
 gWx
 gWx
@@ -49728,7 +49827,7 @@ nhM
 fQo
 aNJ
 xfc
-btt
+cSA
 fQo
 qMz
 qMz
@@ -49895,18 +49994,18 @@ fQo
 gWx
 gWx
 eUA
-hoq
+gGJ
 gWx
-kgj
+sQM
 gWx
 gWx
 gWx
 eUA
 gWx
-hoq
+gGJ
 gWx
 gWx
-hoq
+gGJ
 gWx
 eUA
 gWx
@@ -49915,7 +50014,7 @@ gWx
 gWx
 gWx
 gWx
-hoq
+gGJ
 fQo
 nhM
 nhM
@@ -50097,18 +50196,18 @@ fQo
 gWx
 gWx
 gWx
-hoq
-hoq
+gGJ
+gGJ
 aij
 gWx
-hoq
+gGJ
 gWx
 gWx
 gWx
 gWx
 gWx
 gWx
-hoq
+gGJ
 gWx
 gWx
 gWx
@@ -50117,7 +50216,7 @@ gWx
 gWx
 gWx
 gWx
-hoq
+gGJ
 fQo
 nhM
 nhM
@@ -50300,10 +50399,10 @@ dyo
 xuj
 gWx
 gWx
-hoq
+gGJ
 aij
 gWx
-hoq
+gGJ
 gWx
 gWx
 jLn
@@ -50502,7 +50601,7 @@ dyo
 dyo
 gWx
 gWx
-rwH
+tBe
 aij
 gWx
 gWx
@@ -50516,11 +50615,11 @@ hmc
 cBt
 gWx
 fck
-hoq
+gGJ
 lIh
 lRl
 lIh
-hoq
+gGJ
 cBt
 fQo
 nhM
@@ -54745,7 +54844,7 @@ xfc
 oPg
 qMz
 qMz
-cXq
+tcB
 qMz
 qMz
 gTO
@@ -54946,7 +55045,7 @@ sPs
 xfc
 sPs
 qMz
-cXq
+tcB
 hBk
 qMz
 fDV
@@ -55148,7 +55247,7 @@ fjS
 sbE
 fjS
 fjS
-jTu
+cEW
 fjS
 fjS
 fjS
@@ -55325,7 +55424,7 @@ xfc
 xfc
 xsZ
 oEB
-jTu
+cEW
 xfc
 xsZ
 xsZ
@@ -55354,10 +55453,10 @@ ccp
 xfc
 xfc
 xsZ
-bKL
+wRP
 xfc
 xfc
-wIH
+poX
 oPg
 xfc
 xfc
@@ -55555,7 +55654,7 @@ ccp
 xfc
 xfc
 xfc
-aWx
+nXS
 xfc
 hBk
 hBk
@@ -55758,10 +55857,10 @@ xfc
 xfc
 hBk
 hBk
-tUG
+waI
 xfc
 xfc
-wIH
+poX
 oPg
 xfc
 xfc
@@ -56360,7 +56459,7 @@ fDV
 fjS
 mLR
 xsZ
-xvT
+hyV
 fjS
 fDV
 fDV
@@ -56762,7 +56861,7 @@ qMz
 qMz
 qMz
 fjS
-xvT
+hyV
 xfc
 mLR
 fjS
@@ -56782,7 +56881,7 @@ xfc
 uMM
 xfc
 xfc
-uvL
+jak
 xsZ
 xfc
 uMM
@@ -57570,9 +57669,9 @@ qMz
 gTO
 gTO
 fjS
-vOW
+hGp
 xfc
-xvT
+hyV
 fjS
 gTO
 gTO
@@ -57976,7 +58075,7 @@ qMz
 fjS
 mLR
 xsZ
-vOW
+hGp
 fjS
 gTO
 qMz
@@ -58378,7 +58477,7 @@ gTO
 gTO
 gTO
 fjS
-xvT
+hyV
 xfc
 mLR
 fjS
@@ -58580,9 +58679,9 @@ fDV
 fDV
 gTO
 fjS
-cfw
+fLw
 xsZ
-nzW
+bBl
 fjS
 fDV
 gTO
@@ -58782,7 +58881,7 @@ qMz
 fDV
 qMz
 fjS
-cXq
+tcB
 xfc
 xfc
 fjS
@@ -59188,7 +59287,7 @@ qMz
 gTO
 ccp
 ccp
-cXq
+tcB
 gTO
 fDV
 qMz
@@ -59389,8 +59488,8 @@ qMz
 fDV
 fDV
 ccp
-cXq
-cXq
+tcB
+tcB
 gTO
 qMz
 qMz
@@ -59592,7 +59691,7 @@ fDV
 gTO
 xsZ
 ryk
-nzW
+bBl
 gTO
 gTO
 gTO
@@ -59994,7 +60093,7 @@ fDV
 fDV
 qMz
 cpY
-aWx
+nXS
 xsZ
 ryk
 gTO
@@ -60599,7 +60698,7 @@ gTO
 gTO
 qMz
 eHD
-pwQ
+dyU
 xfc
 xfc
 xsZ
@@ -93723,7 +93822,7 @@ nVt
 nVt
 lyF
 nVt
-iYy
+ppx
 kan
 kan
 sZa
@@ -94535,8 +94634,8 @@ kan
 kan
 kan
 kan
-vjc
-vjc
+pqQ
+pqQ
 rrR
 obn
 nVt
@@ -94735,7 +94834,7 @@ kan
 kan
 kan
 mLt
-iYy
+ppx
 ebT
 ebT
 cYl
@@ -94937,10 +95036,10 @@ mLt
 kan
 nvL
 kan
-vjc
+pqQ
 utT
 acz
-vjc
+pqQ
 rrR
 fCT
 nVt
@@ -95141,8 +95240,8 @@ kan
 kan
 ebT
 acz
-irB
-vjc
+iRC
+pqQ
 xgR
 fCT
 nVt
@@ -95341,8 +95440,8 @@ kan
 kan
 kan
 cVO
-vjc
-enK
+pqQ
+dEu
 ebT
 xFq
 dlk
@@ -95543,11 +95642,11 @@ jvK
 kan
 cVO
 cVO
-enK
-ebT
 dEu
+ebT
+vMf
 qgd
-qHa
+mQB
 obn
 nVt
 rxm
@@ -95749,7 +95848,7 @@ ebT
 ebT
 bCT
 nCA
-qHa
+mQB
 fCT
 nVt
 rxm
@@ -96143,7 +96242,7 @@ nVt
 nVt
 lyF
 gdU
-irB
+iRC
 ebT
 nFt
 nFt
@@ -96345,7 +96444,7 @@ nVt
 nVt
 eAR
 rrR
-enK
+dEu
 bRi
 ebT
 otA
@@ -96547,7 +96646,7 @@ nVt
 nVt
 lyF
 rrR
-enK
+dEu
 ebT
 ebT
 acz
@@ -96557,7 +96656,7 @@ acz
 acz
 acz
 fpN
-qHa
+mQB
 obn
 nVt
 rxm
@@ -96749,7 +96848,7 @@ nVt
 nVt
 lyF
 rrR
-enK
+dEu
 otA
 ebT
 bRi
@@ -96758,8 +96857,8 @@ ebT
 ktL
 fWY
 lLf
-vjc
-qHa
+pqQ
+mQB
 fCT
 nVt
 rxm
@@ -96953,14 +97052,14 @@ glF
 bjU
 ebT
 ebT
-lYm
+chK
 owh
 cVO
 cVO
 ebT
 ebT
 ebT
-vjc
+pqQ
 rrR
 fCT
 rxm
@@ -97364,7 +97463,7 @@ acz
 ebT
 ebT
 fpN
-vjc
+pqQ
 rrR
 fCT
 rxm
@@ -97557,7 +97656,7 @@ nVt
 nVt
 pTD
 rrR
-vjc
+pqQ
 otA
 acz
 otA
@@ -97566,7 +97665,7 @@ cVO
 dbt
 ijZ
 yfT
-vjc
+pqQ
 rrR
 obn
 rxm
@@ -97768,8 +97867,8 @@ cVO
 ebT
 acz
 xjT
-irB
-qHa
+iRC
+mQB
 fCT
 rxm
 vxU
@@ -97963,7 +98062,7 @@ nVt
 dlk
 ebT
 otA
-irB
+iRC
 otA
 ebT
 cVO
@@ -97971,7 +98070,7 @@ qKK
 knK
 ijZ
 owh
-qHa
+mQB
 fCT
 rxm
 vxU
@@ -98366,7 +98465,7 @@ ifi
 nVt
 rrR
 gdU
-vjc
+pqQ
 ebT
 fpN
 ebT
@@ -98374,7 +98473,7 @@ ebT
 ebT
 acz
 ebT
-qHa
+mQB
 tZW
 fCT
 rxm
@@ -98576,7 +98675,7 @@ ebT
 ebT
 iPM
 dvT
-qHa
+mQB
 fCT
 fCT
 rxm
@@ -99195,8 +99294,8 @@ iYu
 fDV
 iYu
 iYu
-hwB
-ahH
+ygs
+aoA
 cgq
 lyF
 lyF
@@ -99592,10 +99691,10 @@ ehz
 ehz
 gWH
 iYu
-ayC
+deu
 rbd
-jNf
-ajv
+vjc
+wQk
 pZV
 lwG
 fCd
@@ -100184,8 +100283,8 @@ rxm
 rxm
 bOL
 kFw
-top
-top
+lFQ
+lFQ
 rxm
 rxm
 rxm
@@ -100386,9 +100485,9 @@ rxm
 rxm
 kFw
 hou
-iJd
+ejX
 kFw
-top
+lFQ
 kFw
 bOL
 rxm
@@ -100403,7 +100502,7 @@ iYu
 tYu
 pwT
 iYu
-bsQ
+aTd
 rbd
 fCd
 lwG
@@ -100587,11 +100686,11 @@ rxm
 rxm
 rxm
 kFw
-tBk
-hGp
-rWn
-qJc
-hGp
+sbM
+twR
+jgc
+lli
+twR
 bOL
 kFw
 kFw
@@ -100789,13 +100888,13 @@ rxm
 rxm
 rxm
 kFw
-ikP
+dMP
 foz
-hGp
-qKx
-xHc
-hGp
-hGp
+twR
+leg
+hZA
+twR
+twR
 bOL
 bOL
 kFw
@@ -100991,25 +101090,25 @@ rxm
 rxm
 kFw
 kFw
-ibI
+pVd
 itZ
-lsN
-lsN
-hGp
+pol
+pol
+twR
 itZ
 hou
-xIJ
+xMC
 xbq
 xbq
 kFw
 rxm
 cgq
 rbd
-jNf
-sgQ
+vjc
+qKv
 tyR
 iYu
-aOb
+neY
 iYu
 sab
 lwG
@@ -101191,17 +101290,17 @@ eHx
 rxm
 rxm
 kFw
-few
-qJc
-hGp
+tzK
+lli
+twR
 vYZ
-mSN
-mSN
-sJr
+enK
+enK
+pDe
 hdw
 oPy
 oPy
-bcL
+ubf
 rgj
 bOL
 rxm
@@ -101393,14 +101492,14 @@ lyF
 rxm
 nVt
 kFw
-qJc
-hGp
-sJr
+lli
+twR
+pDe
 itZ
 itZ
 itZ
-mSN
-lMQ
+enK
+iWB
 vsO
 oPy
 xbq
@@ -101594,17 +101693,17 @@ eHx
 lyF
 rxm
 nVt
-weP
+meh
 qGr
-kzK
-mFu
+rJQ
+xQZ
 itZ
 hhP
-ezb
+rTS
 itZ
 itZ
-mSN
-bcL
+enK
+ubf
 xbq
 itZ
 kFw
@@ -101799,25 +101898,25 @@ kFw
 uNC
 uNC
 lFW
-lMQ
+iWB
 itZ
-mSN
+enK
 itZ
 itZ
-lMQ
-xLc
+iWB
+njX
 xbq
-xLc
-muW
+njX
+kWY
 kFw
 rxm
 cgq
 lwG
-jNf
-aOb
+vjc
+neY
 lwG
 iYu
-aOb
+neY
 lwG
 lwG
 rbd
@@ -101998,17 +102097,17 @@ ifi
 xRt
 rxm
 kFw
-bmb
+mFu
 uNC
 uNC
 lFW
 vYZ
-mSN
-mSN
-sJr
-mSN
-xLc
-blc
+enK
+enK
+pDe
+enK
+njX
+vQt
 pTL
 bOL
 kFw
@@ -102203,14 +102302,14 @@ kFw
 qGr
 uNC
 lFW
-xLc
-xLc
-lsN
-lsN
-qhL
-mSN
-nOP
-fAF
+njX
+njX
+pol
+pol
+okY
+enK
+cDm
+vqu
 bOL
 bOL
 rxm
@@ -102405,12 +102504,12 @@ rxm
 kFw
 bOL
 bCg
-oQn
-nOP
-xLc
-cbt
-xLc
-fAF
+kxu
+cDm
+njX
+lBJ
+njX
+vqu
 kFw
 kFw
 kFw
@@ -102607,12 +102706,12 @@ ifi
 rxm
 bOL
 bOL
-muW
-nOP
-xLc
+kWY
+cDm
+njX
 hpO
-mhA
-fAF
+pIN
+vqu
 kFw
 rxm
 rxm
@@ -102811,8 +102910,8 @@ rxm
 bOL
 fPM
 pTL
-xLc
-muW
+njX
+kWY
 kFw
 kFw
 kFw
@@ -121549,7 +121648,7 @@ wZG
 wZG
 qvE
 qvE
-bzK
+gWI
 efG
 fNQ
 odu
@@ -121750,8 +121849,8 @@ idf
 wZG
 qvE
 qTD
-bzK
-bzK
+gWI
+gWI
 efG
 fNQ
 fNQ
@@ -121947,7 +122046,7 @@ efG
 rxQ
 slQ
 efG
-xsy
+vMZ
 efG
 efG
 slQ
@@ -122149,11 +122248,11 @@ efG
 efG
 slQ
 slQ
-xsy
-xsy
+vMZ
+vMZ
 efG
 efG
-bzK
+gWI
 slQ
 fNQ
 qvE
@@ -122352,10 +122451,10 @@ efG
 efG
 efG
 efG
-xsy
-xsy
+vMZ
+vMZ
 efG
-bzK
+gWI
 efG
 rxQ
 fNQ
@@ -122550,8 +122649,8 @@ qvE
 qvE
 qvE
 efG
-xsy
-xsy
+vMZ
+vMZ
 efG
 efG
 efG
@@ -122753,17 +122852,17 @@ idf
 idf
 slQ
 efG
-xsy
-xsy
-xsy
-xsy
+vMZ
+vMZ
+vMZ
+vMZ
 efG
 aBl
 slQ
 ajM
 slQ
 efG
-bzK
+gWI
 idf
 wZG
 wZG
@@ -122965,7 +123064,7 @@ efG
 fNQ
 fNQ
 efG
-bzK
+gWI
 idf
 idf
 wZG
@@ -123155,7 +123254,7 @@ wZG
 idf
 idf
 idf
-xsy
+vMZ
 rxQ
 efG
 efG
@@ -123357,7 +123456,7 @@ wZG
 idf
 idf
 qvE
-xsy
+vMZ
 efG
 efG
 efG
@@ -123559,10 +123658,10 @@ wZG
 idf
 idf
 qvE
-fIM
+nHW
 qPo
 efG
-xsy
+vMZ
 efG
 qvE
 idf
@@ -123764,14 +123863,14 @@ qvE
 qPo
 efG
 efG
-xsy
+vMZ
 efG
 qvE
 idf
 idf
 idf
 idf
-bzK
+gWI
 slQ
 efG
 idf
@@ -123965,17 +124064,17 @@ idf
 qvE
 efG
 efG
-xsy
-xsy
+vMZ
+vMZ
 efG
 idf
 idf
 idf
 idf
 idf
-bzK
+gWI
 slQ
-bzK
+gWI
 idf
 wZG
 wZG
@@ -124167,7 +124266,7 @@ idf
 qvE
 efG
 efG
-xsy
+vMZ
 efG
 efG
 efG
@@ -124175,9 +124274,9 @@ idf
 idf
 idf
 qvE
-bzK
+gWI
 efG
-bzK
+gWI
 qvE
 wZG
 wZG
@@ -124369,7 +124468,7 @@ qvE
 qvE
 aBl
 efG
-xsy
+vMZ
 efG
 efG
 qPo
@@ -124573,15 +124672,15 @@ efG
 efG
 efG
 efG
-xsy
+vMZ
 efG
 efG
 efG
 efG
 efG
 efG
-bzK
-bzK
+gWI
+gWI
 qvE
 wZG
 wZG
@@ -124774,13 +124873,13 @@ fNQ
 efG
 efG
 efG
-xsy
-xsy
-hVs
-hVs
+vMZ
+vMZ
+niu
+niu
 fNQ
 efG
-bzK
+gWI
 fNQ
 fNQ
 efG
@@ -124975,16 +125074,16 @@ fNQ
 fNQ
 slQ
 efG
-xsy
-xsy
+vMZ
+vMZ
 efG
 efG
 efG
 slQ
 fNQ
-bzK
-bzK
-bzK
+gWI
+gWI
+gWI
 efG
 qvE
 idf
@@ -125175,9 +125274,9 @@ idf
 idf
 fNQ
 efG
-bzK
+gWI
 efG
-xsy
+vMZ
 efG
 efG
 qvE
@@ -125376,8 +125475,8 @@ kCg
 idf
 idf
 fNQ
-bzK
-bzK
+gWI
+gWI
 efG
 efG
 qvE
@@ -125387,9 +125486,9 @@ qvE
 slQ
 efG
 efG
-bzK
-bzK
-bzK
+gWI
+gWI
+gWI
 qvE
 qvE
 idf
@@ -125579,7 +125678,7 @@ idf
 idf
 slQ
 efG
-bzK
+gWI
 efG
 efG
 qvE
@@ -125591,7 +125690,7 @@ efG
 rxQ
 rxQ
 rxQ
-bzK
+gWI
 qvE
 qvE
 qvE
@@ -125781,7 +125880,7 @@ idf
 idf
 efG
 efG
-bzK
+gWI
 efG
 qvE
 qvE
@@ -126184,11 +126283,11 @@ kCg
 idf
 idf
 efG
-bzK
+gWI
 efG
 efG
 efG
-bzK
+gWI
 idf
 idf
 idf
@@ -126386,19 +126485,19 @@ kCg
 idf
 idf
 efG
-hVs
-bzK
-bzK
+niu
+gWI
+gWI
 efG
-bzK
+gWI
 idf
 idf
 qvE
 qvE
 fNQ
 efG
-bzK
-bzK
+gWI
+gWI
 qvE
 idf
 wZG
@@ -126592,7 +126691,7 @@ efG
 efG
 slQ
 efG
-bzK
+gWI
 qvE
 qvE
 qvE
@@ -127460,7 +127559,7 @@ kqH
 lwK
 jlL
 fge
-fVS
+rek
 gTl
 qEZ
 gTl
@@ -127602,8 +127701,8 @@ idf
 idf
 qvE
 efG
-bzK
-bzK
+gWI
+gWI
 efG
 qvE
 qvE
@@ -128007,7 +128106,7 @@ idf
 idf
 efG
 efG
-aMB
+blm
 efG
 fNQ
 fNQ
@@ -128209,7 +128308,7 @@ idf
 fNQ
 efG
 efG
-bzK
+gWI
 slQ
 efG
 fNQ
@@ -128409,9 +128508,9 @@ wZG
 wZG
 idf
 slQ
-bzK
-aMB
-bzK
+gWI
+blm
+gWI
 efG
 slQ
 slQ
@@ -128616,8 +128715,8 @@ efG
 aBl
 efG
 efG
-bzK
-bzK
+gWI
+gWI
 efG
 aBl
 idf
@@ -128818,7 +128917,7 @@ efG
 efG
 efG
 efG
-bzK
+gWI
 efG
 efG
 efG
@@ -129447,9 +129546,9 @@ dvr
 wRO
 pqo
 nuF
-aBk
-aBk
-aBk
+pbG
+pbG
+kJJ
 cnP
 kqH
 kqH
@@ -129650,8 +129749,8 @@ pqo
 pqo
 hRw
 lnp
-aBk
-aBk
+gUN
+pbG
 tNb
 tNb
 tNb
@@ -129852,8 +129951,8 @@ iIm
 ecR
 hRw
 yah
-aBk
-aBk
+gdc
+pbG
 lwK
 xCu
 kqH
@@ -130054,8 +130153,8 @@ hRw
 hRw
 hRw
 sxX
-aBk
-aBk
+pbG
+pbG
 bjQ
 tlm
 tNb
@@ -130655,10 +130754,10 @@ lwK
 aBk
 bIX
 bQq
-bjQ
-bjQ
-nZO
-oIb
+dkp
+kjQ
+fOL
+ycE
 xjR
 bGw
 pbG
@@ -130855,13 +130954,13 @@ qJZ
 qMs
 qJZ
 ijB
-ijB
-rle
-qJZ
-rle
-qJZ
-pAs
-rle
+aqX
+cns
+cns
+cBH
+fle
+tmZ
+tmZ
 bGw
 pbG
 buM
@@ -133538,7 +133637,7 @@ elJ
 pMv
 pMv
 avu
-vEk
+iOX
 dok
 qcB
 wyc
@@ -133739,8 +133838,8 @@ kXp
 kXp
 kXp
 elJ
-bvo
-bfn
+pDK
+ubD
 oga
 myd
 idV
@@ -133936,7 +134035,7 @@ fbr
 fbr
 fbr
 gpU
-vpp
+vAb
 elJ
 kXp
 elJ
@@ -134138,8 +134237,8 @@ fbr
 hLb
 fbr
 rFq
-rtw
-sjt
+spu
+trk
 gBA
 vbY
 ohK
@@ -134537,12 +134636,12 @@ rps
 gFo
 foY
 rps
-vXg
+rMT
 prw
-qyx
+ocf
 fbr
 prw
-qyx
+ocf
 fbr
 fbr
 rVM
@@ -134739,7 +134838,7 @@ rps
 rps
 rps
 rps
-vXg
+rMT
 fbr
 fbr
 fbr
@@ -134941,7 +135040,7 @@ uTo
 dpN
 xgx
 kHp
-wAL
+raD
 fbr
 fbr
 rVM
@@ -135347,10 +135446,10 @@ vyR
 usN
 usN
 prw
-qyx
+ocf
 fcy
 prw
-qyx
+ocf
 fbr
 rVM
 fbr
@@ -135953,10 +136052,10 @@ khZ
 njB
 uzB
 oPf
-rhb
+uev
 fbr
 prw
-qyx
+ocf
 fbr
 fbr
 fbr
@@ -136761,10 +136860,10 @@ khZ
 hYv
 usN
 prw
-rhb
+uev
 fbr
 prw
-qyx
+ocf
 fbr
 fbr
 fbr
@@ -137959,11 +138058,11 @@ cqG
 cqG
 wLg
 fge
-cBH
+lgz
 tHV
 qJZ
 sDX
-cBH
+lgz
 fge
 rbh
 cKW
@@ -137975,7 +138074,7 @@ beK
 beK
 beK
 rLF
-cBH
+lgz
 qcB
 jgF
 wyc
@@ -138333,7 +138432,7 @@ tNZ
 coX
 xgx
 iAC
-vMZ
+muW
 aaI
 aMb
 hGY
@@ -138535,7 +138634,7 @@ wVy
 tNZ
 xgx
 tNZ
-gsr
+swL
 kQj
 aaI
 rZO
@@ -138939,8 +139038,8 @@ sWi
 kqH
 tNZ
 aMb
-gsr
-qSm
+swL
+hif
 vzP
 xBY
 xBY
@@ -139142,7 +139241,7 @@ wPv
 tNZ
 aaI
 aaI
-qlI
+neC
 vzP
 xBY
 xBY
@@ -139545,7 +139644,7 @@ sWi
 sWi
 aBk
 hMQ
-qSm
+hif
 cMN
 dKA
 ixt
@@ -139747,7 +139846,7 @@ sWi
 sWi
 wPv
 tNZ
-qSm
+hif
 fqz
 aJC
 edm
@@ -139949,7 +140048,7 @@ oRP
 sWi
 wPv
 xEI
-qSm
+hif
 vXq
 mzV
 vEh
@@ -140151,7 +140250,7 @@ gdc
 sWi
 sWi
 tNZ
-vMZ
+muW
 aIo
 vfN
 fDY
@@ -140353,7 +140452,7 @@ gdc
 sWi
 sWi
 hkL
-vMZ
+muW
 fqz
 teC
 otT
@@ -140758,8 +140857,8 @@ lwK
 aBk
 sWi
 tSH
-qSm
-qSm
+hif
+hif
 otT
 hRw
 hNH
@@ -156454,7 +156553,7 @@ jrZ
 jrZ
 jrZ
 uXX
-aVa
+mEZ
 uvs
 icd
 icd
@@ -156641,7 +156740,7 @@ hqK
 hqK
 lxH
 wmG
-tzK
+hoq
 lxH
 hqK
 hqK
@@ -156655,7 +156754,7 @@ jrZ
 jrZ
 jrZ
 uXX
-aOW
+aui
 uvs
 icd
 icd
@@ -156839,13 +156938,13 @@ oCe
 oCe
 oCe
 hqK
-mHz
+cGw
+rEW
+ayC
 phY
+hoq
+mSN
 qpa
-qTC
-tzK
-gWI
-mau
 lxH
 czT
 uXX
@@ -156856,7 +156955,7 @@ uXX
 uXX
 uXX
 uXX
-aOW
+aui
 vlx
 uvs
 icd
@@ -157042,14 +157141,14 @@ oCe
 oCe
 hqK
 ktN
-gWI
-tzK
-gWI
-gWI
-tzK
-gWI
-tzK
-fyx
+mSN
+hoq
+mSN
+mSN
+hoq
+mSN
+hoq
+sYp
 wYp
 wYp
 wYp
@@ -157244,14 +157343,14 @@ oCe
 oCe
 hqK
 ktN
-tzK
-tzK
-tzK
-tzK
-tzK
-qTC
-tzK
-fyx
+hoq
+hoq
+hoq
+hoq
+hoq
+phY
+hoq
+sYp
 uuy
 uuy
 uuy
@@ -157446,11 +157545,11 @@ oCe
 oCe
 hqK
 aPs
-onn
-tzK
-tzK
-tzK
-qpa
+hkN
+hoq
+hoq
+hoq
+ayC
 jnn
 lxH
 vlx
@@ -157462,7 +157561,7 @@ jrZ
 jrZ
 jrZ
 jrZ
-aOW
+aui
 uvs
 vQb
 uvs
@@ -157650,8 +157749,8 @@ wXu
 hqK
 hqK
 lxH
-tzK
-gWI
+hoq
+mSN
 lxH
 hqK
 hqK
@@ -157664,7 +157763,7 @@ jrZ
 jrZ
 jrZ
 jrZ
-aOW
+aui
 vlx
 vZS
 soE
@@ -157852,8 +157951,8 @@ vZx
 vZx
 vZx
 hqK
-hkN
-tzK
+cAp
+hoq
 hqK
 wXu
 vZx
@@ -157866,8 +157965,8 @@ jrZ
 jrZ
 jrZ
 jrZ
-trK
-trK
+lHn
+lHn
 icd
 vQb
 vQb
@@ -158054,8 +158153,8 @@ oCe
 oCe
 oCe
 hqK
-hkN
-tzK
+cAp
+hoq
 hqK
 oCe
 vZx
@@ -158070,7 +158169,7 @@ jrZ
 jrZ
 jrZ
 jrZ
-aVa
+mEZ
 uvs
 vQb
 naz
@@ -158256,8 +158355,8 @@ oCe
 oCe
 oCe
 lxH
-tzK
-tzK
+hoq
+hoq
 lxH
 oCe
 vZx
@@ -158879,7 +158978,7 @@ jrZ
 jrZ
 jrZ
 vlx
-weG
+kMI
 vZS
 vQb
 vZx
@@ -160495,7 +160594,7 @@ jrZ
 jrZ
 jrZ
 uvs
-weG
+kMI
 icd
 icd
 icd
@@ -161342,8 +161441,8 @@ llj
 tNb
 sIo
 tNb
-rQI
-kjZ
+jFi
+tNv
 bjQ
 kEq
 xRH
@@ -161501,7 +161600,7 @@ mQl
 jrZ
 jrZ
 jrZ
-weG
+kMI
 uvs
 icd
 icd
@@ -161547,9 +161646,9 @@ prw
 prw
 prw
 bjQ
-rQI
-rQI
-pUG
+jFi
+jFi
+oMg
 bjQ
 lwK
 tNb
@@ -161749,12 +161848,12 @@ sIo
 tNb
 aBk
 aBk
-rQI
+jFi
 llj
 tNb
 bjQ
 sjb
-rQI
+jFi
 kqH
 fbr
 fbr
@@ -161955,8 +162054,8 @@ qJq
 aBk
 jlL
 lwK
-rQI
-rQI
+jFi
+jFi
 kqH
 fbr
 fbr
@@ -162753,8 +162852,8 @@ bjQ
 bjQ
 jlL
 tNb
-rQI
-dym
+jFi
+kPh
 sIo
 tNb
 rps
@@ -162964,8 +163063,8 @@ vVw
 aBk
 aBk
 tMV
-kjZ
-hOl
+tNv
+jeo
 tNb
 kqH
 kqH
@@ -163162,12 +163261,12 @@ tNb
 sIo
 tNb
 tNb
-rQI
+jFi
 sjb
 bjQ
-rQI
+jFi
 lwK
-kjZ
+tNv
 llj
 tNb
 kqH
@@ -163364,7 +163463,7 @@ sIo
 sIo
 sIo
 bjQ
-kjZ
+tNv
 llj
 izT
 bjQ
@@ -163555,7 +163654,7 @@ oCe
 aBt
 rps
 tNb
-kjZ
+tNv
 jlL
 lwK
 lwK
@@ -163765,9 +163864,9 @@ rps
 sWi
 tNb
 sIo
-rQI
-rQI
-rQI
+jFi
+jFi
+jFi
 tNb
 aBk
 rps
@@ -163962,7 +164061,7 @@ rps
 xbK
 aBk
 aBk
-rQI
+jFi
 xRH
 rps
 rps
@@ -163973,8 +164072,8 @@ rps
 rps
 rps
 rps
-rQI
-rQI
+jFi
+jFi
 tNb
 aBk
 rps
@@ -164163,8 +164262,8 @@ vVw
 tNb
 lwK
 lwK
-rQI
-rQI
+jFi
+jFi
 llj
 tNb
 tNb
@@ -164364,7 +164463,7 @@ aBt
 vVw
 tNb
 ens
-rQI
+jFi
 kEq
 lwK
 tFj
@@ -164379,7 +164478,7 @@ tMV
 bjQ
 bjQ
 lwK
-gVe
+pVf
 sOG
 aBk
 aBk
@@ -164580,8 +164679,8 @@ rps
 sWi
 tNb
 bjQ
-rQI
-rQI
+jFi
+jFi
 lwK
 tNb
 tNb
@@ -164771,8 +164870,8 @@ rps
 sWi
 aBk
 aBk
-vJs
-rQI
+pqc
+jFi
 aBk
 rps
 rps
@@ -164977,7 +165076,7 @@ rps
 rps
 rps
 rps
-rQI
+jFi
 sIo
 lwK
 tNb
@@ -165172,18 +165271,18 @@ oCe
 aBt
 rps
 rps
-rQI
+jFi
 aBk
 aBk
 kEq
 tNb
 lwK
 sIo
-dym
-rQI
+kPh
+jFi
 tNb
 lwK
-rQI
+jFi
 rps
 rps
 rps
@@ -165374,9 +165473,9 @@ oCe
 aBt
 rps
 rps
-rQI
-kjZ
-rQI
+jFi
+tNv
+jFi
 lwK
 jlL
 prw
@@ -165385,7 +165484,7 @@ prw
 oPf
 prw
 xRH
-rQI
+jFi
 rps
 vVw
 lwK
@@ -165591,7 +165690,7 @@ rps
 rps
 tNb
 tNb
-kjZ
+tNv
 bjQ
 lwK
 kqH
@@ -165601,9 +165700,9 @@ bcc
 bcc
 bcc
 bcc
-bcc
-bcc
-bcc
+sPk
+sPk
+sPk
 bcc
 bcc
 bcc
@@ -165792,8 +165891,8 @@ vVw
 aBk
 aBk
 tNb
-rQI
-rQI
+jFi
+jFi
 tNb
 tNb
 kqH
@@ -165803,9 +165902,9 @@ bcc
 bcc
 bcc
 bcc
-bcc
-bcc
-bcc
+ryd
+kms
+geT
 bcc
 bcc
 bcc
@@ -166005,7 +166104,7 @@ mwH
 fSQ
 gvH
 lyn
-fSQ
+uiV
 gvH
 gvH
 fSQ
@@ -169485,10 +169584,10 @@ aZy
 aZy
 aZy
 aZy
-rKj
+nuI
 ehg
 tXc
-rKj
+nuI
 aZy
 aZy
 tGK
@@ -170293,10 +170392,10 @@ qYZ
 tGK
 aZy
 aZy
-iWc
+mwM
 ehg
 tXc
-iWc
+mwM
 tGK
 aZy
 oZz
@@ -170899,10 +170998,10 @@ toK
 toK
 toK
 aZy
-tLs
+eop
 ehg
 tXc
-tLs
+eop
 aZy
 aZy
 aZy
@@ -171439,8 +171538,8 @@ sTW
 fqz
 fqz
 iSd
+fXZ
 kNc
-xuB
 fqz
 fqz
 fqz
@@ -171640,7 +171739,7 @@ lAn
 xBY
 cNM
 sSY
-oFf
+ifO
 uAo
 uAo
 dKA
@@ -171707,10 +171806,10 @@ toK
 kwD
 qYZ
 aZy
-rKj
+nuI
 ehg
 tXc
-rKj
+nuI
 aZy
 aZy
 aZy
@@ -172054,9 +172153,9 @@ goq
 goq
 yjZ
 xBY
-sTZ
-jXp
-jXp
+nCe
+dXI
+dXI
 bcc
 bcc
 bcc
@@ -190756,8 +190855,8 @@ oVq
 oVq
 oVq
 tyj
-xPX
-xPX
+gDO
+gDO
 tyj
 tyj
 tyj
@@ -190957,7 +191056,7 @@ oVq
 oVq
 oVq
 tyj
-xPX
+gDO
 lKC
 eHG
 xUE
@@ -191158,11 +191257,11 @@ oVq
 oVq
 cyN
 fnI
-rLx
+kFJ
 fnI
-nuI
-jyz
 qEs
+jyz
+huN
 lzj
 sDr
 sDr
@@ -191362,10 +191461,10 @@ cyN
 cyN
 fnI
 xSx
-qEs
+huN
 jyz
 jyz
-qEs
+huN
 hSg
 sDr
 sDr
@@ -191380,15 +191479,15 @@ eHG
 sDr
 tyj
 lWm
-qfd
-mku
-fFu
-fFu
-jxw
-mku
-hif
-mku
-nNy
+rQI
+clD
+oRq
+oRq
+uwi
+clD
+yle
+clD
+mkv
 sib
 sib
 sib
@@ -191563,12 +191662,12 @@ oVq
 cyN
 aJr
 aFt
-qEs
+huN
 idI
 idI
 jyz
-nuI
-ryv
+qEs
+vSB
 hSg
 hSg
 hSg
@@ -191579,19 +191678,19 @@ eHG
 tyj
 lWm
 lWm
-hif
-vFC
-pvq
-mqo
-tzK
+yle
+wWK
+bLl
+wcF
+hoq
 lWm
-lGB
-cQQ
-cQQ
-hif
-awp
-fTJ
-nNy
+hIV
+pCq
+pCq
+yle
+rmY
+fVQ
+mkv
 sib
 sib
 sib
@@ -191764,36 +191863,36 @@ oVq
 oVq
 cyN
 ihE
-qEs
-wJT
-wJT
-wJT
+huN
+uSW
+uSW
+uSW
 idI
 idI
 idI
-xUz
+osX
 qPg
-xjb
+fAh
 qPg
-xUz
+osX
 fqd
 tyj
 tyj
 lWm
-hif
-lgz
-pvq
-qte
-lgz
-tzK
-lgz
-iUy
-iUy
-iUy
-jod
-sQM
-hdt
-mku
+yle
+kbB
+bLl
+uJA
+kbB
+hoq
+kbB
+wke
+wke
+wke
+vqj
+gyO
+lNk
+clD
 sib
 sib
 sib
@@ -191965,16 +192064,16 @@ oVq
 oVq
 oVq
 fVK
-qEs
-qEs
-nRG
+huN
+huN
 sgZ
-uSW
-uSW
-qEs
-qEs
+kZC
+wJT
+wJT
+huN
+huN
 qPg
-xUz
+osX
 qPg
 qPg
 qPg
@@ -191982,21 +192081,21 @@ qPg
 tyj
 tyj
 lWm
-hif
-lgz
-kaM
-iUy
-lgz
-lgz
-tzK
-lgz
-lgz
-iUy
-vKN
-tzK
-tzK
-dvg
-atl
+yle
+kbB
+iNR
+wke
+kbB
+kbB
+hoq
+kbB
+kbB
+wke
+uWS
+hoq
+hoq
+qdh
+vaY
 sib
 sib
 sib
@@ -192167,38 +192266,38 @@ oVq
 oVq
 oVq
 fpS
-qEs
-qEs
-qEs
-sgZ
+huN
+huN
+huN
 kZC
-uSW
+pnk
 wJT
-qEs
+uSW
+huN
 qPg
-xUz
-xUz
-rVp
+osX
+osX
+baM
 qPg
 qPg
 qPg
 tyj
 lWm
 lIq
-lgz
-qte
-xEs
-luR
-mqo
-tzK
-lgz
-cQQ
-cQQ
-hif
-gWI
-sQM
-dvg
-kQy
+kbB
+uJA
+sSa
+vdh
+wcF
+hoq
+kbB
+pCq
+pCq
+yle
+mSN
+gyO
+qdh
+ltO
 sib
 sib
 sib
@@ -192369,14 +192468,14 @@ oVq
 oVq
 oVq
 wiF
-qEs
-qEs
-qEs
 huN
+huN
+huN
+lGu
+pnk
 kZC
-sgZ
-qEs
-qEs
+huN
+huN
 qPg
 qPg
 qPg
@@ -192385,21 +192484,21 @@ qPg
 qPg
 qPg
 qPg
-tCK
-hif
-bML
-bML
+ldm
+yle
+rzW
+rzW
 lWm
 lWm
-tzK
+hoq
 lWm
 lWm
-hif
-hif
-jod
-tzK
-wMM
-bsC
+yle
+yle
+vqj
+hoq
+giC
+qSm
 sib
 sib
 sib
@@ -192573,12 +192672,12 @@ oVq
 yhu
 jyz
 jyz
-qEs
+huN
+lGu
+lGu
+lGu
 huN
 huN
-huN
-qEs
-qEs
 qPg
 qPg
 qPg
@@ -192586,22 +192685,22 @@ qPg
 qPg
 qPg
 qPg
-hbk
+mLD
 lIq
-kbB
-tzK
-itx
-itx
-tzK
-tzK
-tzK
-tzK
-tzK
-hif
-fTJ
-itx
-sQM
-hif
+bHS
+hoq
+vvB
+vvB
+hoq
+hoq
+hoq
+hoq
+hoq
+yle
+fVQ
+vvB
+gyO
+yle
 sib
 sib
 sib
@@ -192776,34 +192875,34 @@ cyN
 ulv
 jyz
 jyz
-qEs
-qEs
-qEs
-qEs
+huN
+huN
+huN
+huN
 jyz
 kZb
-xUz
-uFc
-xUz
+osX
+nHm
+osX
 qPg
 qPg
 qPg
 qPg
-itx
-itx
-itx
-hIW
-bML
-ngy
-ngy
-ngy
-bML
-itx
-hif
+vvB
+vvB
+vvB
+vIc
+rzW
+vKN
+vKN
+vKN
+rzW
+vvB
+yle
 lWm
-itx
-sQM
-hif
+vvB
+gyO
+yle
 sib
 sib
 sib
@@ -192976,36 +193075,36 @@ oVq
 oVq
 cyN
 cyN
-qEs
+huN
 jyz
 jyz
+huN
+huN
 qEs
-qEs
-nuI
 qPg
 fqd
 ubr
 ubr
 lpQ
-xUz
+osX
 qPg
 qPg
-bhg
+rye
 lIq
-kbB
-itx
-tzK
-tzK
-tzK
-tzK
-tzK
-gWI
-gWI
-hif
-hif
-dYM
-hif
-qfd
+bHS
+vvB
+hoq
+hoq
+hoq
+hoq
+hoq
+mSN
+mSN
+yle
+yle
+sIL
+yle
+rQI
 sib
 sib
 sib
@@ -193178,36 +193277,36 @@ oVq
 oVq
 cyN
 cyN
-nwO
+kVH
 bIi
-qEs
-qEs
-qEs
-qEs
+huN
+huN
+huN
+huN
 eHG
 ubr
 ubr
 ubr
 lpQ
 fqd
-xUz
+osX
 qPg
 qPg
-tCK
-hif
-eUY
-liY
-hif
-hif
-hif
-oZi
-tzK
-gWI
-tzK
-tzK
-tzK
-tzK
-mku
+ldm
+yle
+qPQ
+pUB
+yle
+yle
+yle
+ijW
+hoq
+mSN
+hoq
+hoq
+hoq
+hoq
+clD
 sib
 sib
 sib
@@ -193380,11 +193479,11 @@ oVq
 oVq
 cyN
 cyN
-cAp
-cAp
-nuI
+ffS
+ffS
 qEs
-qEs
+huN
+huN
 fnI
 xUE
 lpQ
@@ -193396,20 +193495,20 @@ qSW
 tkm
 eHG
 lWm
-qfd
-kmo
-kLQ
-clD
-clD
-dnz
-hif
-oZi
-gWI
+rQI
+vvN
+iUy
+vBt
+vBt
+aMt
+yle
+ijW
+mSN
 aSW
 aSW
-tzK
-tzK
-hif
+hoq
+hoq
+yle
 sib
 sib
 sib
@@ -193584,8 +193683,8 @@ oVq
 oVq
 oVq
 tyj
-kyc
-xPX
+oCY
+gDO
 lKC
 lKC
 lKC
@@ -193599,19 +193698,19 @@ tyj
 tyj
 lWm
 kDu
-ujt
-maF
-vZG
-clD
-dnz
+dcG
+url
+kfo
+vBt
+aMt
 lWm
-tzK
-gWI
+hoq
+mSN
 juj
 juj
-tzK
-tzK
-mku
+hoq
+hoq
+clD
 sib
 sib
 sib
@@ -193801,19 +193900,19 @@ tyj
 tyj
 lWm
 kDu
-ncp
-peE
-jBG
-ooQ
-gbj
-hif
+eZu
+wiX
+mYI
+nOa
+mSO
+yle
 lWm
-gWI
-fOW
-fOW
-tzK
-tzK
-hif
+mSN
+yba
+yba
+hoq
+hoq
+yle
 sib
 sib
 sib
@@ -194002,20 +194101,20 @@ tyj
 tyj
 tyj
 lWm
-qfd
-nsN
+rQI
+veT
+vBt
+vBt
+dWa
+vBt
+yle
+yle
+hoq
+yba
+yba
+hoq
+isR
 clD
-clD
-tut
-clD
-hif
-hif
-tzK
-fOW
-fOW
-tzK
-bwh
-mku
 sib
 sib
 sib
@@ -194204,20 +194303,20 @@ tkm
 tyj
 tyj
 sDr
-qfd
-gbj
-gbj
-gbj
-tut
-clD
-clD
-qVa
-tzK
-fOW
-fOW
-tzK
-ssw
-hif
+rQI
+mSO
+mSO
+mSO
+dWa
+vBt
+vBt
+vmd
+hoq
+yba
+yba
+hoq
+sBQ
+yle
 sib
 sib
 sib
@@ -194407,18 +194506,18 @@ tyj
 sDr
 sDr
 bxE
-qfd
-jod
-hif
-hif
-mku
-fFu
-fFu
-yfu
-mku
-hif
-mku
-hif
+rQI
+vqj
+yle
+yle
+clD
+oRq
+oRq
+noQ
+clD
+yle
+clD
+yle
 sib
 sib
 sib
