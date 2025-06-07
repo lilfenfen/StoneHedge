@@ -47,8 +47,8 @@
 			return
 		if(ishuman(M))
 			var/mob/living/carbon/human/V = M
-			if(H.has_quirk(/datum/quirk/vampire))
-				to_chat(M, span_warning("You are a vampire and have no mortal life to give"))
+			if(V.has_quirk(/datum/quirk/vampire))
+				to_chat(V, span_warning("You are a vampire and have no mortal life to give"))
 				return
 
 		playsound(user, 'sound/misc/deadbell.ogg', 100, FALSE)
