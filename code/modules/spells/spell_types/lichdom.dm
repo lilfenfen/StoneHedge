@@ -85,13 +85,13 @@
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
 			for(var/obj/item/bodypart/B in H.bodyparts)
-				B.skeletonize(FALSE)
+				/*B.skeletonize(FALSE)
 
 			H.hair_color = "bababa"
 			H.facial_hair_color = "bababa"
 			H.update_body()
 			H.update_hair()
-			H.update_body_parts(redraw = TRUE)
+			H.update_body_parts(redraw = TRUE)*/
 
 			ADD_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EASYDISMEMBER, TRAIT_GENERIC)
@@ -101,7 +101,7 @@
 			ADD_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_NOSLEEP, TRAIT_GENERIC)
 			H.mob_biotypes |= MOB_UNDEAD
-			H.faction |= list("lesser_undead")
+			H.faction |= list("lesser_undead", "undead", "lich")
 
 			H.change_stat("strength", -5)
 			H.change_stat("endurance", -5)
@@ -177,13 +177,13 @@
 	lich.revive(TRUE, TRUE)
 
 	for(var/obj/item/bodypart/B in lich.bodyparts)
-		B.skeletonize(FALSE)
+		/*B.skeletonize(FALSE)
 
 	lich.hair_color = "bababa"
 	lich.facial_hair_color = "bababa"
 	lich.update_body()
 	lich.update_hair()
-	lich.update_body_parts(redraw = TRUE)
+	lich.update_body_parts(redraw = TRUE) */
 
 	var/base_health = 75
 	var/new_max_health = max(25, base_health - (25 * resurrections))
@@ -267,4 +267,6 @@
 		var/direction = get_dir(U, T)
 		. += span_warning("The bone pulls [dir2text(direction)].")
 	else
+		. += span_warning("The bone seems inert.")
+
 		. += span_warning("The bone seems inert.")
