@@ -46,6 +46,10 @@
 			to_chat(M, span_warning("None of the items you hold are suitable for emplacement of your fragile soul."))
 			return
 
+		if(H.has_quirk(/datum/quirk/vampire))
+			to_chat(M, span_warning("You are a vampire and have no mortal life to give"))
+			return
+
 		playsound(user, 'sound/misc/deadbell.ogg', 100, FALSE)
 		playsound(user, pick('sound/vo/male/gen/agony (1).ogg','sound/vo/male/gen/agony (2).ogg'), 50, FALSE)
 		new /obj/effect/temp_visual/cult/sparks(get_turf(user))
@@ -110,23 +114,6 @@
 
 			H.setMaxHealth(75)
 			H.health = H.maxHealth
-				if (H.has_quirk(/datum/quirk/vampire))
-					REMOVE_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)
-					REMOVE_TRAIT(H, TRAIT_LIMBATTACHMENT, TRAIT_GENERIC)
-					REMOVE_TRAIT(H, TRAIT_NOHUNGER, TRAIT_GENERIC)
-					REMOVE_TRAIT(H, TRAIT_NOBREATH, TRAIT_GENERIC)
-					REMOVE_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
-					REMOVE_TRAIT(H, TRAIT_NOSLEEP, TRAIT_GENERIC)
-					H.mob_biotypes |= MOB_UNDEAD
-					H.faction |= list()
-
-					H.change_stat("strength", -10)
-					H.change_stat("endurance", -10)
-					H.change_stat("speed", -10)
-					H.change_stat("intelligence", -20)
-
-					H.setMaxHealth(25)
-					H.health = H.maxHealth
 
 			playsound(user, 'sound/misc/deadbell.ogg', 100, FALSE)
 			to_chat(M, span_cultlarge("Your mortal flesh burns away as dark energies suffuse your form! Blood boils to ash, organs crumble to dust, yet you endure. You have transcended death itself - you are now a lich!"))
