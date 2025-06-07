@@ -181,10 +181,10 @@
 	lich.revive(TRUE, TRUE)
 
 	for(var/obj/item/bodypart/B in lich.bodyparts)
-		/*B.skeletonize(FALSE)
+		B.skeletonize(FALSE)
 
 	lich.hair_color = "bababa"
-	lich.facial_hair_color = "bababa"*/
+	lich.facial_hair_color = "bababa"
 	lich.update_body()
 	lich.update_hair()
 	lich.update_body_parts(redraw = TRUE) 
@@ -194,7 +194,7 @@
 	lich.setMaxHealth(new_max_health)
 	lich.health = lich.maxHealth
 	lich.mob_biotypes |= MOB_UNDEAD
-	lich.faction |= list("lesser_undead")
+	lich.faction |= list("lesser_undead", "undead", "lich")
 
 	ADD_TRAIT(lich, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(lich, TRAIT_EASYDISMEMBER, TRAIT_GENERIC)
