@@ -88,10 +88,10 @@
 				/*B.skeletonize(FALSE)
 
 			H.hair_color = "bababa"
-			H.facial_hair_color = "bababa"
+			H.facial_hair_color = "bababa"*/
 			H.update_body()
 			H.update_hair()
-			H.update_body_parts(redraw = TRUE)*/
+			H.update_body_parts(redraw = TRUE)
 
 			ADD_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EASYDISMEMBER, TRAIT_GENERIC)
@@ -180,10 +180,10 @@
 		/*B.skeletonize(FALSE)
 
 	lich.hair_color = "bababa"
-	lich.facial_hair_color = "bababa"
+	lich.facial_hair_color = "bababa"*/
 	lich.update_body()
 	lich.update_hair()
-	lich.update_body_parts(redraw = TRUE) */
+	lich.update_body_parts(redraw = TRUE) 
 
 	var/base_health = 75
 	var/new_max_health = max(25, base_health - (25 * resurrections))
