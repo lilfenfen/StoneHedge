@@ -45,10 +45,11 @@
 		if(!marked_item)
 			to_chat(M, span_warning("None of the items you hold are suitable for emplacement of your fragile soul."))
 			return
-
-		if(H.has_quirk(/datum/quirk/vampire))
-			to_chat(M, span_warning("You are a vampire and have no mortal life to give"))
-			return
+		if(ishuman(M))
+			var/mob/living/carbon/human/V = M
+			if(H.has_quirk(/datum/quirk/vampire))
+				to_chat(M, span_warning("You are a vampire and have no mortal life to give"))
+				return
 
 		playsound(user, 'sound/misc/deadbell.ogg', 100, FALSE)
 		playsound(user, pick('sound/vo/male/gen/agony (1).ogg','sound/vo/male/gen/agony (2).ogg'), 50, FALSE)
