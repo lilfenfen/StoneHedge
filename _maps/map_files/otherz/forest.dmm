@@ -1267,6 +1267,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"gK" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/cow,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/cave/underdark)
 "gN" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/blocks,
@@ -1421,6 +1425,14 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave/minotaurcave)
+"hH" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/town/dwarf)
 "hI" = (
 /obj/structure/spawner/invisible/skeleton,
 /turf/open/floor/rogue/cobblerock,
@@ -2365,6 +2377,15 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"mt" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/floor/bronze,
+/area/rogue/indoors/cave/underdark)
 "mu" = (
 /obj/effect/mist,
 /turf/open/floor/rogue/naturalstone,
@@ -4218,6 +4239,10 @@
 	},
 /turf/open/lava,
 /area/rogue/indoors/shelter/town/dwarf)
+"wl" = (
+/mob/living/simple_animal/cow,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/cave/underdark)
 "wm" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 1
@@ -4796,6 +4821,14 @@
 	first_time_text = "The Woodland Tribe";
 	name = "Wood elf Tribes"
 	})
+"zF" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/town/dwarf)
 "zG" = (
 /obj/effect/mob_spawner/goblin,
 /turf/closed/wall/mineral/rogue/stone/moss,
@@ -17797,8 +17830,8 @@ Aj
 Aj
 JQ
 sJ
-Bx
-Bx
+qy
+qy
 sJ
 sj
 KZ
@@ -18340,7 +18373,7 @@ sJ
 fH
 OE
 Fy
-Fy
+hH
 Fy
 KZ
 EI
@@ -18604,11 +18637,11 @@ EB
 KC
 qy
 KC
-KC
+qy
 wf
 Ve
 Td
-UP
+mt
 KZ
 KZ
 KZ
@@ -18872,7 +18905,7 @@ sJ
 OE
 OE
 ev
-ev
+zF
 ev
 KZ
 KZ
@@ -24712,7 +24745,7 @@ hj
 ZA
 ZA
 ZA
-ZA
+wl
 ZA
 ZA
 ZA
@@ -24844,7 +24877,7 @@ Yv
 ZA
 ZA
 zd
-ZA
+gK
 ZA
 ZA
 hj
@@ -24978,7 +25011,7 @@ ZA
 ZA
 hj
 VZ
-ZA
+gK
 JQ
 wO
 CF
