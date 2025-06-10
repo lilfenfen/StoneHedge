@@ -88,6 +88,15 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/caves)
+"abF" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "acn" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
@@ -281,6 +290,14 @@
 "aiC" = (
 /turf/closed/mineral/rogue,
 /area/rogue/indoors/cave)
+"aiF" = (
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "aiK" = (
 /obj/structure/chair/bench/couchablack/r,
 /turf/open/floor/carpet/stellar,
@@ -533,7 +550,9 @@
 	})
 "apO" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -1397,6 +1416,18 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"aLt" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "aLu" = (
 /obj/effect/spawner/roguemap/treeorbush,
 /obj/structure/flora/roguegrass/maneater/real,
@@ -1721,7 +1752,8 @@
 "aTc" = (
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
@@ -1963,7 +1995,9 @@
 /area/rogue/outdoors/caves)
 "aYX" = (
 /obj/structure/fermenting_barrel/beer,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -2341,7 +2375,8 @@
 	},
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
@@ -3119,10 +3154,12 @@
 	})
 "bFR" = (
 /obj/effect/decal/cleanable/blood/drip,
+/obj/structure/table/wood/crafted,
 /obj/structure/well/fountain{
-	pixel_x = 15;
+	pixel_x = 16;
 	pixel_y = -15
 	},
+/obj/item/candle/magic/lit,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -3432,7 +3469,7 @@
 /area/rogue/outdoors)
 "bOl" = (
 /obj/structure/table/wood,
-/obj/item/candle/yellow/lit,
+/obj/item/candle/magic/lit,
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -3690,7 +3727,9 @@
 	dir = 1;
 	pixel_x = -4
 	},
-/turf/open/floor/rogue/blocks/platform,
+/turf/open/floor/rogue/rooftop{
+	dir = 4
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -3736,9 +3775,8 @@
 "bWG" = (
 /obj/structure/fluff/railing/wood,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -4632,6 +4670,15 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"cxZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "cyf" = (
 /obj/effect/spawner/roguemap/treeorbush,
 /turf/open/floor/rogue/dirt/road,
@@ -4664,7 +4711,7 @@
 	})
 "cys" = (
 /obj/effect/landmark/start/churchling,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -5000,7 +5047,7 @@
 	})
 "cGF" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -5060,11 +5107,11 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
 "cKc" = (
-/obj/structure/flora/wildplant/wild_poppy,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Temple of Lune"
+/turf/open/floor/rogue/rooftop{
+	dir = 1
+	},
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
 	})
 "cKx" = (
 /obj/structure/table/wood{
@@ -5136,7 +5183,7 @@
 "cLA" = (
 /obj/effect/landmark/start/churchling,
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -6690,7 +6737,9 @@
 	})
 "dAL" = (
 /obj/effect/landmark/start/priest,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -7074,6 +7123,15 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"dNN" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/rooftop{
+	dir = 8
+	},
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
 "dNU" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/spacevine,
@@ -7112,6 +7170,17 @@
 /obj/structure/fluff/walldeco/chains,
 /turf/open/water/bath,
 /area/rogue/indoors/town/bath)
+"dPG" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "dPY" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/machinery/light/rogue/firebowl/stump,
@@ -7307,6 +7376,18 @@
 "dTN" = (
 /turf/open/floor/rogue/dirt/ambush,
 /area/rogue/indoors/cave/minotaurcave)
+"dTO" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "dTS" = (
 /obj/structure/flora/newbranch/connector{
 	icon_state = "center-leaf2"
@@ -7747,9 +7828,8 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -8043,7 +8123,9 @@
 /area/rogue/under/cavewet)
 "ejP" = (
 /obj/structure/fluff/railing/border,
-/turf/open/floor/rogue/blocks/platform,
+/turf/open/floor/rogue/rooftop{
+	dir = 4
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -8103,7 +8185,9 @@
 	})
 "emy" = (
 /obj/structure/fluff/littlebanners/bluewhite,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -8411,7 +8495,8 @@
 /obj/structure/fluff/statue/knight/interior/r,
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -8748,12 +8833,12 @@
 /area/rogue/under/cavewet)
 "eFi" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/candle/skull/lit,
 /obj/structure/table/wood{
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/carpet/stellar,
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -8997,7 +9082,7 @@
 "eLM" = (
 /obj/machinery/light/rogue/oven/south,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -9531,7 +9616,8 @@
 	},
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
@@ -9650,6 +9736,17 @@
 /obj/structure/table/vtable/v2,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/shelter/mountains)
+"eZx" = (
+/obj/structure/chair/wood/rogue{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "eZD" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -10346,7 +10443,9 @@
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/natural/cloth,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -10438,6 +10537,17 @@
 	},
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
+	})
+"frF" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "frN" = (
 /obj/structure/closet/crate/chest,
@@ -11630,6 +11740,13 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"fXB" = (
+/obj/structure/bed/rogue/inn/wool,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "fXC" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/effect/mist,
@@ -11902,6 +12019,18 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"gdz" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "gdE" = (
 /obj/structure/flora/newleaf{
 	icon_state = "center-leaf2"
@@ -12058,7 +12187,9 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/library)
 "ghn" = (
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -12805,7 +12936,9 @@
 "gHx" = (
 /obj/structure/chair/stool/rogue,
 /obj/effect/landmark/start/templar,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -12841,7 +12974,7 @@
 	})
 "gIe" = (
 /obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -12973,7 +13106,9 @@
 "gLu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -12991,6 +13126,13 @@
 /area/rogue/outdoors/exposed/magiciantower{
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
+	})
+"gMs" = (
+/turf/open/floor/rogue/rooftop{
+	dir = 4
+	},
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
 	})
 "gMu" = (
 /obj/structure/flora/newtree,
@@ -13213,6 +13355,20 @@
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
 	})
+"gUp" = (
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "gUG" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/caves)
@@ -13284,7 +13440,8 @@
 "gXx" = (
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/outdoors)
 "gXN" = (
@@ -13749,7 +13906,8 @@
 /obj/structure/flora/newtree,
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -13919,6 +14077,16 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"hng" = (
+/obj/structure/table/wood/crafted,
+/obj/item/candle/magic/lit,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "hnn" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/twig,
@@ -13944,7 +14112,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak/fried,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak/fried,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak/fried,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -14904,10 +15072,7 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
-	},
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -15166,7 +15331,9 @@
 "hVW" = (
 /obj/structure/chair/stool/rogue,
 /obj/effect/landmark/start/churchling,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -15474,9 +15641,8 @@
 	})
 "idt" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -15622,6 +15788,13 @@
 	first_time_text = "Shrine of Natures";
 	name = "Shrine of Natures"
 	})
+"ihe" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "ihE" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -15729,6 +15902,17 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"ikm" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "ikr" = (
 /obj/structure/fluff/statue/gargoyle/moss/candles,
 /obj/structure/fluff/railing/wood{
@@ -15823,6 +16007,14 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/river)
+"iml" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "imx" = (
 /obj/effect/decal/stone/mossy{
 	dir = 8
@@ -15898,6 +16090,15 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/dirt/ambush,
 /area/rogue/indoors/cave/minotaurcave)
+"inJ" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/rooftop{
+	dir = 8
+	},
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
 "iog" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/machinery/light/rogue/firebowl,
@@ -15928,6 +16129,16 @@
 /area/rogue/outdoors/exposed/magiciantower{
 	first_time_text = "Ravenloft Academy";
 	name = "Schoolgrounds"
+	})
+"ioP" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/water/cleanshallow,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "ipF" = (
 /turf/open/floor/rogue/dirt/road,
@@ -16279,6 +16490,17 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"ixD" = (
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors)
 "ixO" = (
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/indoors/town/bath)
@@ -16538,7 +16760,9 @@
 	pixel_y = 1
 	},
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -16985,7 +17209,8 @@
 	},
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -17045,12 +17270,20 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
+"iTt" = (
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors)
 "iTF" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
-	},
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -17524,6 +17757,17 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
+"jet" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "jeV" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -17615,9 +17859,8 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/reagent_containers/glass/cup/wooden,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -17793,7 +18036,9 @@
 	})
 "jmd" = (
 /obj/structure/fermenting_barrel/random/beer,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -19019,6 +19264,20 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"jTs" = (
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "jTt" = (
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "Rosehedge1"
@@ -19617,7 +19876,9 @@
 "kgQ" = (
 /obj/effect/landmark/start/churchling,
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -20596,9 +20857,8 @@
 	})
 "kHg" = (
 /obj/structure/fluff/railing/wood,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -20824,6 +21084,23 @@
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
 	})
+"kNv" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "kNG" = (
 /obj/structure/glowshroom{
 	icon_state = "glowshroom2"
@@ -20870,6 +21147,29 @@
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/outdoors/rtfield{
 	first_time_text = null
+	})
+"kOE" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "kPb" = (
 /obj/machinery/light/rogue/torchholder{
@@ -21150,12 +21450,10 @@
 	name = "far stonehedge"
 	})
 "kVf" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -5;
-	pixel_y = -1
+/obj/structure/bookcase/random/religion,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -22343,7 +22641,9 @@
 "lBo" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/reagent_containers/glass/bucket/pot,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -22383,9 +22683,8 @@
 	dir = 8;
 	pixel_y = -1
 	},
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -22463,6 +22762,17 @@
 /area/rogue/outdoors/exposed/church{
 	first_time_text = "Shrine of Elysius";
 	name = "Shrine of Elysius"
+	})
+"lGC" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "lGH" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -22878,6 +23188,16 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"lSw" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/structure/chair/bench/church/smallbench{
+	dir = 4
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "lSz" = (
 /obj/structure/fluff/walldeco/innsign{
 	icon_state = "medposter5";
@@ -23287,7 +23607,7 @@
 "mel" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -23358,7 +23678,7 @@
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -24719,7 +25039,7 @@
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -24855,7 +25175,9 @@
 	})
 "mPW" = (
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -25126,6 +25448,14 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
 	})
+"mXF" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/turf/closed/wall/shroud,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "mXQ" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/dirt,
@@ -25331,7 +25661,8 @@
 	},
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
@@ -25897,7 +26228,8 @@
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
@@ -26326,6 +26658,18 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cavewet)
+"nCt" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "nCy" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
@@ -26496,7 +26840,9 @@
 /obj/item/sleepingbag,
 /obj/item/sleepingbag,
 /obj/item/sleepingbag,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -26904,13 +27250,24 @@
 	first_time_text = "Ravenloft Academy";
 	name = "Ravenloft Academy"
 	})
+"nRf" = (
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "nRs" = (
 /obj/structure/flora/newbranch{
 	dir = 8
 	},
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
@@ -27101,10 +27458,7 @@
 	})
 "nWy" = (
 /obj/effect/landmark/start/templar,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
-	},
+/turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -27254,6 +27608,17 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"nZi" = (
+/obj/structure/fluff/railing/border{
+	dir = 10
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "nZx" = (
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/hexstone,
@@ -27672,6 +28037,9 @@
 /obj/effect/spawner/roguemap/shroud,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/river)
+"okC" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/outdoors)
 "okQ" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/spacevine,
@@ -27968,9 +28336,8 @@
 	first_time_text = "Stonehedge"
 	})
 "ovd" = (
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -27979,6 +28346,10 @@
 "ovy" = (
 /obj/structure/fluff/statue/knight/interior/r,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/structure/fluff/railing/border{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/water/river{
 	icon_state = "rockwd"
 	},
@@ -28429,7 +28800,7 @@
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -28509,8 +28880,19 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/town)
 "oHO" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/water/cleanshallow,
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -28728,6 +29110,15 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/river)
+"oMG" = (
+/obj/structure/table/wood/crafted,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "oMQ" = (
 /obj/structure/fluff/walldeco/rpainting{
 	icon_state = "medposter3"
@@ -28879,6 +29270,24 @@
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
+	})
+"oRF" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "oRO" = (
 /obj/structure/flora/roguetree/stump/log,
@@ -30021,6 +30430,17 @@
 /obj/structure/spacevine,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/caves)
+"psE" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "psY" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/water/swamp,
@@ -30109,6 +30529,9 @@
 	pixel_y = 1
 	},
 /obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/structure/chair/bench/church/smallbench{
+	dir = 8
+	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -30768,6 +31191,13 @@
 /obj/structure/spacevine/dendor,
 /turf/open/water/swamp,
 /area/rogue/outdoors/caves)
+"pNj" = (
+/turf/open/floor/rogue/rooftop{
+	dir = 8
+	},
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge"
+	})
 "pNl" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/grass,
@@ -31113,6 +31543,9 @@
 "pVd" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/wisp,
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
@@ -32784,7 +33217,7 @@
 	dir = 1;
 	icon_state = "tablewood1"
 	},
-/turf/open/floor/carpet/stellar,
+/turf/open/floor/rogue/blocks/platform,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -32803,6 +33236,12 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors/caves)
+"qLt" = (
+/turf/open/floor/rogue/rooftop{
+	dir = 4;
+	icon_state = "roof"
+	},
+/area/rogue/outdoors)
 "qLS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed/rogue/inn/wool,
@@ -33211,7 +33650,7 @@
 /obj/item/reagent_containers/food/snacks/rogue/bun,
 /obj/item/reagent_containers/food/snacks/rogue/bun,
 /obj/item/reagent_containers/food/snacks/rogue/bun,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -33704,7 +34143,8 @@
 /obj/structure/flora/newbranch,
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
@@ -33979,10 +34419,7 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
-	},
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -34124,7 +34561,12 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -34511,7 +34953,7 @@
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -34909,6 +35351,14 @@
 /area/rogue/outdoors/beach{
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
+	})
+"rNh" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "rNA" = (
 /obj/structure/fluff/walldeco/chains{
@@ -35513,9 +35963,8 @@
 /obj/structure/fluff/railing/wood{
 	dir = 4
 	},
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -36000,7 +36449,9 @@
 /obj/structure/fluff/railing/border{
 	dir = 1
 	},
-/turf/open/floor/rogue/blocks/platform,
+/turf/open/floor/rogue/rooftop{
+	dir = 8
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -36736,15 +37187,15 @@
 /turf/open/floor/rogue/greenstone,
 /area/rogue/indoors/town/bath)
 "sPi" = (
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
 /obj/structure/projected_forcefield{
 	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
 	icon_state = "purplesparkles";
 	name = "Magick Barrier"
 	},
-/obj/structure/roguewindow/stained/silver{
-	opacity = 0
-	},
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/blocks/stone/stonepattern2,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -38282,7 +38733,9 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -38372,6 +38825,19 @@
 /turf/open/floor/rogue/dirt/nrich,
 /area/rogue/outdoors/rtfield{
 	first_time_text = null
+	})
+"tIp" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "tIt" = (
 /obj/item/book/granter/spell/spells5e/random,
@@ -38497,7 +38963,15 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -39053,6 +39527,18 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/bath)
+"tXU" = (
+/obj/structure/fluff/railing/border{
+	dir = 8;
+	pixel_x = -8
+	},
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "tYu" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/roguegrass/water/reeds,
@@ -39297,7 +39783,9 @@
 	})
 "ueO" = (
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -39417,7 +39905,8 @@
 "uhm" = (
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -39738,7 +40227,9 @@
 /area/rogue)
 "urx" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -39956,7 +40447,7 @@
 	dir = 1;
 	icon_state = "longtable_mid"
 	},
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -40365,7 +40856,9 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -40444,7 +40937,9 @@
 /obj/structure/fluff/psycross{
 	name = "Divine Conduit"
 	},
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -40720,7 +41215,9 @@
 /area/rogue/indoors/cave/minotaurcave)
 "uPU" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_marble"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -41209,7 +41706,7 @@
 	dir = 1;
 	icon_state = "longtable"
 	},
-/turf/open/floor/rogue/blocks/stone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -41789,6 +42286,24 @@
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
 	})
+"vtp" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/turf/open/floor/rogue/blocks/stone,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "vtG" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/outdoors/woods{
@@ -41849,11 +42364,9 @@
 	first_time_text = "The Twilight Woods"
 	})
 "vvr" = (
-/obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/floor/rogue/blocks/stone/stonepattern3,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "Temple of Lune";
-	name = "Temple of Lune"
+/turf/closed/wall/mineral/rogue/decostone/mossy/cand,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "vvy" = (
 /obj/structure/mineral_door/wood/deadbolt,
@@ -42147,9 +42660,8 @@
 	pixel_y = 1
 	},
 /obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -42582,7 +43094,8 @@
 	},
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -42836,6 +43349,10 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
+/obj/structure/fluff/railing/border{
+	dir = 8;
+	pixel_x = -8
+	},
 /turf/open/water/river{
 	icon_state = "rockwd"
 	},
@@ -42930,9 +43447,8 @@
 	pixel_y = -1
 	},
 /obj/structure/fluff/statue/small,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -43283,9 +43799,8 @@
 	dir = 4
 	},
 /obj/structure/fluff/statue/small,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -43474,7 +43989,9 @@
 /area/rogue/under/cavewet)
 "wsS" = (
 /obj/structure/bed/rogue/inn/wool,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -43638,6 +44155,17 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods{
 	first_time_text = "The Twilight Woods"
+	})
+"wwM" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
+	},
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
 	})
 "wwQ" = (
 /obj/structure/roguewindow/openclose{
@@ -43839,7 +44367,8 @@
 "wCE" = (
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
@@ -44024,6 +44553,20 @@
 	first_time_text = "Emerald Shores";
 	name = "Shores of the Emerald Coast"
 	})
+"wJm" = (
+/obj/structure/roguewindow/stained/silver{
+	opacity = 0
+	},
+/obj/structure/projected_forcefield{
+	desc = "It glistens and humswith arcane energy. Powerful Magicks, this.";
+	icon_state = "purplesparkles";
+	name = "Magick Barrier"
+	},
+/turf/open/floor/rogue/rooftop{
+	dir = 4;
+	icon_state = "roof"
+	},
+/area/rogue/outdoors)
 "wJA" = (
 /obj/effect/decal/stone/hex{
 	dir = 4
@@ -44600,10 +45143,7 @@
 /area/rogue/indoors/town)
 "xbi" = (
 /obj/effect/landmark/start/grandtemplar,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
-	},
+/turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -45375,7 +45915,7 @@
 	})
 "xvd" = (
 /obj/structure/fluff/statue/small,
-/turf/open/water/cleanshallow,
+/turf/open/floor/rogue/grasscold,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -45597,7 +46137,8 @@
 /obj/structure/fluff/statue/knight/interior,
 /turf/open/transparent/glass{
 	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	desc = "I can see through this. It doesn't look like it can take overwhelming force..";
+	initial_gas_mix = ss
 	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -46148,9 +46689,8 @@
 	})
 "xQg" = (
 /obj/structure/chair/stool/rogue,
-/turf/open/transparent/glass{
-	canSmoothWith = null;
-	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+/turf/open/floor/rogue/ruinedwood/spiral{
+	icon_state = "church_rough"
 	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
@@ -46798,6 +47338,19 @@
 /obj/item/cooking/platter,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town)
+"yfu" = (
+/obj/structure/flora/grass/jungle/b{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/structure/chair/bench/church/smallbench{
+	dir = 4
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/indoors/town/church/chapel{
+	first_time_text = "Temple of Lune";
+	name = "Temple of Lune"
+	})
 "yfM" = (
 /turf/open/water/river{
 	dir = 4;
@@ -106101,7 +106654,7 @@ cgq
 rxm
 rxm
 bOL
-kFw
+gFP
 lFQ
 lFQ
 rxm
@@ -106307,7 +106860,7 @@ hou
 ejX
 kFw
 lFQ
-kFw
+gFP
 bOL
 rxm
 rxm
@@ -106504,15 +107057,15 @@ rxm
 rxm
 rxm
 rxm
-kFw
+gFP
 sbM
 twR
 jgc
 lli
 oBD
 bOL
-kFw
-kFw
+gFP
+vvr
 kFw
 rxm
 rxm
@@ -106706,7 +107259,7 @@ rxm
 rxm
 rxm
 rxm
-kFw
+gFP
 dMP
 dMP
 oBD
@@ -106908,7 +107461,7 @@ rxm
 rxm
 rxm
 kFw
-kFw
+vvr
 pVd
 jgc
 pol
@@ -107108,7 +107661,7 @@ aaK
 eHx
 rxm
 rxm
-kFw
+gFP
 tzK
 lli
 jgc
@@ -107310,7 +107863,7 @@ aaK
 lyF
 rxm
 nVt
-kFw
+gFP
 lli
 mzr
 pDe
@@ -107713,7 +108266,7 @@ ifi
 jlJ
 lyF
 rxm
-kFw
+gFP
 yje
 uNC
 lFW
@@ -107915,7 +108468,7 @@ aaK
 ifi
 xRt
 rxm
-kFw
+gFP
 mFu
 ePM
 uNC
@@ -108320,8 +108873,8 @@ tmk
 ifi
 jlJ
 rxm
-kFw
-bOL
+vvr
+mXF
 bCg
 kxu
 mFO
@@ -108329,8 +108882,8 @@ njX
 lBJ
 njX
 vqu
-kFw
-kFw
+gFP
+gFP
 kFw
 rxm
 rxm
@@ -108731,8 +109284,8 @@ fPM
 pTL
 bti
 kWY
-kFw
-kFw
+gFP
+gFP
 kFw
 rxm
 xVg
@@ -108929,8 +109482,8 @@ tmk
 iBq
 tmk
 rxm
-kFw
-kFw
+gFP
+gFP
 kFw
 kFw
 rxm
@@ -134178,7 +134731,7 @@ wsc
 uRb
 uRb
 jtK
-pJt
+ioP
 xDh
 xDh
 xDh
@@ -134371,14 +134924,14 @@ xDh
 xDh
 jtK
 tNT
-iGQ
+lSw
+vSS
 jfX
+urx
+dTO
 jfX
-vvr
-mpx
-jfX
-jfX
-oBV
+vSS
+yfu
 gUh
 jtK
 xDh
@@ -134573,15 +135126,15 @@ xDh
 jtK
 tNT
 htw
-xTh
-guW
-guW
-guW
-guW
-guW
-xTh
-xTh
-gUh
+ovd
+aiF
+ovd
+ovd
+ovd
+ovd
+aiF
+aiF
+ovd
 tNT
 jtK
 xDh
@@ -134774,19 +135327,19 @@ xDh
 pJt
 jtK
 rrR
-mpx
-mpx
-xTh
-gUh
-cKc
-cKc
-gUh
-guW
-mpx
-xTh
-vvr
+dTO
+aLt
+aiF
+kVf
+nfp
+rVG
+kVf
+ovd
+aLt
+aiF
+urx
 xPF
-jtK
+gUp
 jtK
 xDh
 jtK
@@ -134978,15 +135531,15 @@ rrR
 tNT
 wkB
 ndY
-gUh
-nsi
+kVf
+iml
 xkt
 xkt
 xkt
-gUh
-xTh
-xTh
-xTh
+kVf
+ovd
+aiF
+aiF
 loJ
 mfc
 fVg
@@ -135177,18 +135730,18 @@ xDh
 tWR
 uRb
 rVG
-guW
+nfp
 xTh
 tNT
-oHO
+iGQ
 xkt
 xkt
 xkt
 gUd
 xkt
-oBV
-xTh
-xTh
+lGC
+ovd
+aiF
 loJ
 mfc
 tNT
@@ -135378,7 +135931,7 @@ xDh
 uNM
 oKL
 uRb
-rVG
+rNh
 guW
 xTh
 rrR
@@ -135387,13 +135940,13 @@ oTG
 xkt
 eOW
 xkt
-xvd
+xkt
 xkt
 gUh
-guW
+ovd
 tFv
-kVf
-xTh
+tFv
+ovd
 emy
 qvl
 guW
@@ -135580,7 +136133,7 @@ xDh
 vVw
 awm
 uRb
-guW
+ovd
 guW
 ldZ
 iAB
@@ -135592,10 +136145,10 @@ xkt
 xkt
 xkt
 xAN
-xTh
-guW
-xTh
-xTh
+ovd
+aiF
+aiF
+aiF
 emy
 qvl
 guW
@@ -135782,22 +136335,22 @@ xDh
 vVw
 oxf
 jtK
-jja
+urx
 guW
 ldZ
 iAB
 rrR
 gUd
-rVG
+rNh
 xIQ
-arG
+abF
 xkt
 xkt
 pgm
 dAL
-rVG
+kOE
 dMg
-rVG
+kNv
 tKG
 cCV
 lhA
@@ -135984,7 +136537,7 @@ xDh
 oxf
 xDh
 uRb
-guW
+ovd
 guW
 ldZ
 iAB
@@ -135996,10 +136549,10 @@ xkt
 xkt
 oTG
 ksK
-xTh
-xTh
-xTh
-xTh
+ovd
+aiF
+aiF
+aiF
 emy
 qvl
 guW
@@ -136186,7 +136739,7 @@ xDh
 xDh
 oxf
 uRb
-rVG
+rNh
 guW
 mpx
 rrR
@@ -136195,12 +136748,12 @@ uCw
 xkt
 xkt
 gUd
-xvd
+xkt
 eOW
 gUh
-xTh
-xTh
-xTh
+ovd
+ovd
+ovd
 apO
 emy
 qvl
@@ -136389,18 +136942,18 @@ xDh
 uNM
 uRb
 rVG
-guW
+nfp
 xTh
 tNT
-oHO
+iGQ
 nsi
 xkt
 xkt
 oTG
 xkt
-oBV
-guW
-xTh
+lGC
+ovd
+aiF
 sCq
 qgd
 tNT
@@ -136594,15 +137147,15 @@ rrR
 tNT
 wkB
 wsc
-gUh
+kVf
+nfp
 xkt
 xkt
 xkt
-xkt
-gUh
-xTh
-guW
-xTh
+kVf
+ovd
+aiF
+aiF
 loJ
 mfc
 wsc
@@ -136794,19 +137347,19 @@ xDh
 jtK
 jtK
 rrR
-xTh
-guW
-guW
-gUh
-cKc
-cKc
-gUh
-xTh
-guW
-guW
-vvr
+ovd
+aiF
+aiF
+kVf
+rVG
+nfp
+kVf
+ovd
+aiF
+aiF
+urx
 tNT
-jtK
+gUp
 jtK
 xDh
 pJt
@@ -136997,15 +137550,15 @@ xDh
 pJt
 tNT
 htw
-guW
-guW
-guW
-xTh
-wUB
-wUB
-guW
-guW
-gUh
+ovd
+aiF
+ovd
+ovd
+dTO
+dTO
+aiF
+aiF
+ovd
 tNT
 jtK
 xDh
@@ -137200,13 +137753,13 @@ xDh
 jtK
 tNT
 pvB
+vSS
 nLS
-nLS
-vvr
-xTh
-nLS
+urx
+ovd
 nLS
 vSS
+nLS
 lLc
 jtK
 oxf
@@ -137410,7 +137963,7 @@ wsc
 uRb
 uRb
 pJt
-jtK
+xkt
 xDh
 xDh
 aBk
@@ -168913,17 +169466,17 @@ bcc
 bcc
 bcc
 bcc
-bcc
-bcc
-bcc
-aZy
-aZy
-aZy
-jUO
-aZy
-aZy
-aZy
-aZy
+pNj
+pNj
+pNj
+aAp
+aAp
+aAp
+inJ
+aAp
+aAp
+aAp
+aAp
 aZy
 aZy
 aZy
@@ -169114,19 +169667,19 @@ bcc
 bcc
 bcc
 bcc
-bcc
+pNj
 jtK
 jtK
 rqI
 rqI
-tZW
+sPi
 adc
 rqI
 rqI
+sPi
 jtK
 jtK
-jtK
-aZy
+aAp
 aZy
 aZy
 aZy
@@ -169315,21 +169868,21 @@ bcc
 bcc
 bcc
 bcc
-bcc
+pNj
 pJt
 jtK
 eLM
-guW
-guW
+pfb
+pfb
 rDk
 fej
 ovd
 ghn
 iVM
 iVM
-jtK
-aZy
-aZy
+gUp
+aAp
+aAp
 aZy
 aZy
 aZy
@@ -169518,21 +170071,21 @@ bcc
 bcc
 bcc
 vrx
-pJt
+vtp
 lBo
-guW
+pfb
 qVg
-guW
+pfb
 hnY
 jue
 idt
-guW
+ghn
 iVM
 iVM
 jtK
 jtK
-bDX
-aZy
+fBs
+aAp
 aZy
 aZy
 aZy
@@ -169719,25 +170272,25 @@ bcc
 bcc
 bcc
 vrx
-vrx
+qLt
 rqI
 aYX
 cLA
 uwf
-wUB
-ghn
+roC
+pfb
 vbT
 ghn
-wUB
+gdz
 uGB
 hQe
 iTF
 jtK
 jtK
 aAp
-aZy
-tZW
-tZW
+aAp
+wsc
+fum
 ndY
 aZy
 aZy
@@ -169921,23 +170474,23 @@ bcc
 bcc
 bcc
 vrx
-vrx
+qLt
 rqI
 xhH
-ghn
+pfb
 vcN
-guW
-guW
+pfb
+ovd
 fTn
 ghn
-guW
-guW
-guW
-guW
+ghn
+ghn
+ghn
+ghn
 jIc
 pJt
-aAp
-aZy
+xSp
+xSp
 adc
 jmd
 kHg
@@ -170123,26 +170676,26 @@ bcc
 bcc
 vrx
 vrx
-vrx
+qLt
 cRR
-ghn
-jVB
-guW
-ghn
+ovd
+ihe
+pfb
+ovd
 aSi
 lxn
 ghn
 mPW
 iYC
 ghn
-ghn
+ovd
 uIX
 wsc
 rqI
 rqI
 wsc
 uPU
-ghn
+aiF
 lEq
 waC
 wsc
@@ -170322,31 +170875,31 @@ bcc
 bcc
 bcc
 bcc
-bcc
+cKc
 vrx
-vrx
-vrx
+okC
+wJm
 pJt
 pJt
 jtK
-jtK
-jtK
+jTs
+jTs
 cCV
 urx
 ovd
 mPW
 lXw
-mPW
+xQg
+pfb
 ovd
-ghn
 dgn
 aHt
 aHt
 dgn
-rsg
-guW
-rsg
-ghn
+aLt
+aiF
+dTO
+aiF
 ecb
 aZy
 aZy
@@ -170524,30 +171077,30 @@ bcc
 bcc
 bcc
 bcc
-bcc
+cKc
 vrx
-vrx
-vrx
-sPi
+iTt
+mfc
+mfc
 mfc
 lBk
-xTh
+ghn
 ghn
 ovd
 ovd
 ghn
 mPW
 gxi
+pfb
 ovd
-guW
-guW
-ghn
-ghn
-ghn
-guW
-guW
+nZi
+wwM
+wwM
+psE
+wwM
+frF
 gHx
-iYC
+tIp
 gLu
 kHg
 aZy
@@ -170726,31 +171279,31 @@ bcc
 bcc
 bcc
 bcc
-bcc
+cKc
 vrx
-vrx
-vrx
-sPi
+ixD
+mfc
+mfc
 mfc
 iVM
-xTh
 ghn
 ghn
 ghn
-guW
-ovd
+ghn
+ghn
+nRf
 iRv
 pfb
-ovd
-ovd
+pfb
+pfb
 hjZ
-ovd
+pfb
 roC
-ghn
-ghn
-mPW
-lXw
-ghn
+aiF
+ovd
+ueO
+nCt
+aiF
 kHg
 aZy
 aZy
@@ -170928,30 +171481,30 @@ gue
 bcc
 bcc
 bcc
-bcc
+cKc
 vrx
-vrx
-vrx
-rqI
+ixD
+mfc
+mfc
 mfc
 brN
-xTh
+ghn
 ghn
 ovd
 ovd
 ghn
 ghn
 iYC
+pfb
 ovd
-guW
-guW
-ghn
-uPU
-ghn
-ghn
+ikm
+ovd
+cxZ
+aiF
+ovd
 rsg
 hVW
-iYC
+tIp
 ueO
 kHg
 aZy
@@ -171130,31 +171683,31 @@ bcc
 bcc
 bcc
 bcc
-bcc
+cKc
 vrx
-vrx
-vrx
+okC
+wJm
 jtK
 jtK
 jtK
-pJt
-jtK
+oHO
+jTs
 cCV
 urx
 ovd
 mPW
 jIX
-mPW
+xQg
+pfb
 ovd
-ghn
 ovy
-aHt
-aHt
+tXU
+tXU
 vXN
-guW
-guW
-erQ
-wUB
+aiF
+aiF
+cxZ
+aLt
 bWG
 aZy
 aZy
@@ -171335,11 +171888,11 @@ bcc
 bcc
 vrx
 vrx
-vrx
+qLt
 jtK
 wsS
 cGF
-guW
+pfb
 fpd
 aSi
 lxn
@@ -171347,13 +171900,13 @@ ghn
 mPW
 lXw
 iCK
-guW
+ovd
 uIX
 wsc
 rqI
 rqI
 ndY
-ghn
+aiF
 uPU
 sfp
 wmy
@@ -171537,23 +172090,23 @@ bcc
 bcc
 bcc
 vrx
-vrx
+qLt
 rqI
 mha
-wUB
-guW
-ghn
-mPW
+roC
+pfb
+pfb
+xQg
 jue
 ghn
-guW
-guW
-guW
-guW
+ghn
+ghn
+ghn
+ghn
 nGq
 jtK
-iEL
-aZy
+xSp
+xSp
 adc
 kgQ
 jhB
@@ -171739,25 +172292,25 @@ bcc
 bcc
 bcc
 vrx
-vrx
+qLt
 lwk
 mha
 gIe
 cys
-guW
-guW
+pfb
+pfb
 vbT
 ghn
 ghn
-guW
-ovd
+ghn
+pfb
 iTF
 jtK
 jtK
 iEL
-aZy
-adc
-tZW
+iEL
+ndY
+fum
 wsc
 aZy
 aZy
@@ -171942,12 +172495,12 @@ bcc
 bcc
 bcc
 vrx
-jtK
-wsS
-guW
-guW
-guW
-ghn
+wBd
+fXB
+pfb
+pfb
+pfb
+pfb
 jue
 vFb
 ghn
@@ -171955,8 +172508,8 @@ lqS
 lqS
 jtK
 jtK
-aZy
-aZy
+iEL
+iEL
 aZy
 aZy
 aZy
@@ -172143,21 +172696,21 @@ bcc
 bcc
 bcc
 bcc
-bcc
+gMs
 jtK
 pJt
 mel
 mMv
 oGw
-wsS
+fXB
 jue
 xQg
 ghn
 iVM
 iVM
-pJt
-aZy
-aZy
+oRF
+iEL
+iEL
 aZy
 aZy
 aZy
@@ -172346,19 +172899,19 @@ bcc
 bcc
 bcc
 bcc
-bcc
+gMs
 jtK
 jtK
 rqI
 rqI
+sPi
 mFt
-mFt
 rqI
 rqI
-jtK
+sPi
 pJt
 jtK
-aZy
+iEL
 aZy
 jEw
 aZy
@@ -172549,17 +173102,17 @@ bcc
 bcc
 bcc
 bcc
-bcc
-bcc
-bcc
-bcc
-aZy
-aZy
-aZy
-aZy
-aZy
-aZy
-aZy
+gMs
+gMs
+gMs
+gMs
+iEL
+iEL
+iEL
+iEL
+iEL
+iEL
+iEL
 aZy
 aZy
 aZy
@@ -203865,7 +204418,7 @@ aZy
 aZy
 aZy
 stO
-ejP
+dNN
 aZy
 aZy
 aZy
@@ -205083,10 +205636,10 @@ pfb
 xDZ
 nfp
 bQz
-ovd
-ovd
-ovd
-ovd
+bAC
+bAC
+bAC
+bAC
 jja
 guW
 mKM
@@ -205286,10 +205839,10 @@ pfb
 xDZ
 nWy
 mat
+dPG
+dPG
 mat
-mat
-mat
-ovd
+bAC
 aZi
 tUh
 fBs
@@ -205485,14 +206038,14 @@ bAC
 cCV
 bAC
 pfb
-ovd
+bAC
 uCc
 mat
 bFR
-mat
-mat
+oMG
+eZx
 uCc
-ovd
+bAC
 mKM
 fBs
 fBs
@@ -205691,10 +206244,10 @@ xbi
 uCc
 mat
 mat
-mat
-mat
+hng
+eZx
 uCc
-ovd
+bAC
 tCR
 gXx
 gXx
@@ -205889,14 +206442,14 @@ bAC
 cCV
 bAC
 pfb
-ovd
+bAC
 uCc
 mat
-mat
-mat
-mat
+hng
+oMG
+eZx
 uCc
-ovd
+bAC
 mKM
 nre
 nre
@@ -206094,10 +206647,10 @@ pfb
 xDZ
 nWy
 mat
+jet
+jet
 mat
-mat
-mat
-ovd
+bAC
 aZi
 mKM
 wKz
@@ -206295,10 +206848,10 @@ pfb
 guW
 oBV
 bQz
-ovd
-ovd
-ovd
-ovd
+bAC
+bAC
+bAC
+bAC
 guW
 guW
 mKM
