@@ -1719,7 +1719,10 @@
 	name = "Silver Dragon"
 	})
 "aTc" = (
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
@@ -2336,7 +2339,10 @@
 	dir = 1;
 	pixel_x = -4
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -3730,7 +3736,10 @@
 "bWG" = (
 /obj/structure/fluff/railing/wood,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -7738,7 +7747,10 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -8397,7 +8409,10 @@
 	})
 "ewo" = (
 /obj/structure/fluff/statue/knight/interior/r,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
@@ -9514,7 +9529,10 @@
 /obj/structure/fluff/railing/border{
 	dir = 1
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -13264,7 +13282,10 @@
 	},
 /area/rogue/indoors/shelter/bog)
 "gXx" = (
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/outdoors)
 "gXN" = (
 /obj/structure/flora/roguegrass/water/reeds,
@@ -13726,7 +13747,10 @@
 	})
 "hjZ" = (
 /obj/structure/flora/newtree,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -14880,7 +14904,10 @@
 	pixel_x = -5;
 	pixel_y = -1
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -15447,7 +15474,10 @@
 	})
 "idt" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -16953,7 +16983,10 @@
 /obj/structure/fluff/statue/femalestatue2{
 	name = "Statue of Godess Lune"
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -17014,7 +17047,10 @@
 	})
 "iTF" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -17579,7 +17615,10 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/reagent_containers/glass/cup/wooden,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -20557,7 +20596,10 @@
 	})
 "kHg" = (
 /obj/structure/fluff/railing/wood,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -22341,7 +22383,10 @@
 	dir = 8;
 	pixel_y = -1
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -25284,7 +25329,10 @@
 /obj/structure/flora/newbranch{
 	dir = 4
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
@@ -25847,7 +25895,10 @@
 /area/rogue/indoors/town)
 "nsT" = (
 /obj/structure/fluff/railing/border,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -26857,7 +26908,10 @@
 /obj/structure/flora/newbranch{
 	dir = 8
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
@@ -27047,7 +27101,10 @@
 	})
 "nWy" = (
 /obj/effect/landmark/start/templar,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -27911,7 +27968,10 @@
 	first_time_text = "Stonehedge"
 	})
 "ovd" = (
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -33642,7 +33702,10 @@
 	})
 "rgZ" = (
 /obj/structure/flora/newbranch,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/tavern{
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
@@ -33916,7 +33979,10 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -35447,7 +35513,10 @@
 /obj/structure/fluff/railing/wood{
 	dir = 4
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -39346,7 +39415,10 @@
 	name = "Tavern Stables"
 	})
 "uhm" = (
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
@@ -42075,7 +42147,10 @@
 	pixel_y = 1
 	},
 /obj/machinery/light/rogue/wallfire/candle/blue,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -42505,7 +42580,10 @@
 /obj/machinery/light/rogue/torchholder{
 	dir = 8
 	},
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
@@ -42852,7 +42930,10 @@
 	pixel_y = -1
 	},
 /obj/structure/fluff/statue/small,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -43202,7 +43283,10 @@
 	dir = 4
 	},
 /obj/structure/fluff/statue/small,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -43753,7 +43837,10 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/shelter/bog)
 "wCE" = (
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/outdoors{
 	first_time_text = "Stonehedge Borders";
 	name = "far stonehedge"
@@ -44513,7 +44600,10 @@
 /area/rogue/indoors/town)
 "xbi" = (
 /obj/effect/landmark/start/grandtemplar,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
@@ -45505,7 +45595,10 @@
 	})
 "xBc" = (
 /obj/structure/fluff/statue/knight/interior,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
 	name = "Adventurers Guild"
@@ -46055,7 +46148,10 @@
 	})
 "xQg" = (
 /obj/structure/chair/stool/rogue,
-/turf/open/transparent/glass,
+/turf/open/transparent/glass{
+	canSmoothWith = null;
+	desc = "I can see through this. It doesn't look like it can take overwhelming force.."
+	},
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "Temple of Lune";
 	name = "Temple of Lune"
