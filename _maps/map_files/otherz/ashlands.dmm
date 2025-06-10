@@ -1155,6 +1155,10 @@
 /obj/item/ingot/steel,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town)
+"mU" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/under/cavewet)
 "mX" = (
 /obj/structure/roguetent,
 /turf/open/floor/rogue/naturalstone,
@@ -3052,6 +3056,15 @@
 "FI" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/under/cavewet)
+"FM" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/under/cavewet)
 "FR" = (
 /obj/structure/timeddoor/sixtyminute,
 /turf/open/floor/rogue/blocks/stone/stonepattern2,
@@ -3301,6 +3314,9 @@
 	first_time_text = "Underkeep";
 	name = "Underkeep"
 	})
+"IM" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/under/cavewet)
 "IP" = (
 /obj/structure/bars/grille,
 /obj/structure/bars/grille,
@@ -16353,7 +16369,7 @@ RF
 RF
 qZ
 RF
-qZ
+LC
 yR
 yR
 yR
@@ -16493,10 +16509,10 @@ yR
 yR
 yR
 yR
-yR
-yR
-yR
-yR
+qZ
+qZ
+qZ
+qZ
 wz
 RF
 RF
@@ -16624,11 +16640,11 @@ qZ
 LC
 yR
 yR
-RF
+LC
 qZ
 LC
-yR
-yR
+qZ
+qZ
 LC
 LC
 RF
@@ -16886,15 +16902,15 @@ RF
 RF
 RF
 RF
-qZ
-qZ
+IM
+IM
+IM
 RF
 RF
-RF
 qZ
-qZ
-qZ
-RF
+IM
+IM
+IM
 RF
 RF
 RF
@@ -17018,7 +17034,7 @@ ZR
 RF
 RF
 qZ
-qZ
+IM
 XU
 Vw
 jN
@@ -17026,7 +17042,7 @@ mH
 Vw
 sp
 xs
-bd
+FM
 RF
 qZ
 qZ
@@ -17147,7 +17163,7 @@ yR
 yR
 yR
 yR
-RF
+LC
 RF
 RF
 qZ
@@ -17285,9 +17301,9 @@ qZ
 qZ
 RF
 qZ
-qZ
-qb
-qZ
+IM
+mU
+IM
 RF
 qZ
 qZ
@@ -17549,9 +17565,9 @@ yR
 RF
 RF
 RF
-RF
+IM
 qb
-RF
+IM
 RF
 RF
 RF
@@ -17810,7 +17826,7 @@ Ic
 yI
 yR
 RF
-RF
+IM
 hr
 FA
 UN
@@ -17818,7 +17834,7 @@ mH
 kJ
 FA
 qj
-bd
+FM
 qZ
 Ic
 bh
@@ -17942,15 +17958,15 @@ Jc
 yR
 yR
 RF
-RF
-RF
-qZ
-qZ
-RF
+IM
+IM
+IM
 qZ
 RF
 qZ
-qZ
+IM
+IM
+IM
 Um
 Ic
 oZ
@@ -18205,7 +18221,7 @@ FW
 Jc
 sJ
 yR
-RF
+LC
 RF
 qZ
 qZ
@@ -18338,7 +18354,7 @@ Ic
 kI
 yR
 yR
-yR
+LC
 Um
 qZ
 qZ
