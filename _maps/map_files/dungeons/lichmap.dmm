@@ -23,16 +23,23 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"ak" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/tile/checker,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "al" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/boss/paper_wizard,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cavewet)
+"aq" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors)
+"as" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "at" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/sargoth{
@@ -121,6 +128,13 @@
 	name = "Servant's Hall"
 	},
 /turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"aQ" = (
+/obj/effect/mist,
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -266,6 +280,12 @@
 	},
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cavewet)
+"bN" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "bQ" = (
 /obj/structure/fluff/alch,
 /turf/open/floor/rogue/ruinedwood{
@@ -281,6 +301,13 @@
 /obj/effect/spawner/trap,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cavewet)
+"bS" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "bT" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/reagent_containers/glass/cup/golden{
@@ -331,11 +358,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"cb" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
-/area/rogue/under/cavewet)
 "ce" = (
 /obj/structure/table/wood/fancy/black,
 /obj/structure/spacevine,
@@ -388,11 +410,6 @@
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/under/cavewet)
-"cF" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "cG" = (
 /obj/structure/table/wood{
 	dir = 5;
@@ -405,13 +422,6 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grassred,
 /area/rogue/under/cavewet)
-"cI" = (
-/obj/structure/spacevine,
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "cK" = (
 /obj/structure/bars/passage{
 	max_integrity = 3000;
@@ -433,6 +443,13 @@
 "cP" = (
 /mob/living/carbon/human/species/goblin/npc/ambush,
 /turf/open/floor/carpet/stellar,
+/area/rogue/outdoors)
+"cR" = (
+/obj/effect/decal/border{
+	dir = 4
+	},
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors)
 "cS" = (
 /obj/structure/lever/wall{
@@ -468,6 +485,14 @@
 /obj/structure/closet/crate/chest,
 /obj/item/dildo/gold,
 /turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
+"dc" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "dd" = (
 /turf/open/floor/rogue/cobble,
@@ -551,13 +576,6 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
-"dA" = (
-/obj/effect/decal/border{
-	dir = 4
-	},
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/herringbone,
-/area/rogue/outdoors)
 "dD" = (
 /obj/structure/closet/crate/chest,
 /obj/item/roguecoin/gold/pile,
@@ -578,11 +596,6 @@
 /turf/closed/wall/mineral/rogue/stone{
 	max_integrity = 5000
 	},
-/area/rogue/under/cavewet)
-"dG" = (
-/obj/machinery/light/rogue/firebowl/standing/blue,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood,
 /area/rogue/under/cavewet)
 "dH" = (
 /obj/structure/fluff/railing/border{
@@ -612,13 +625,6 @@
 /obj/structure/bed/rogue/inn/double,
 /obj/item/bedsheet/rogue/fabric_double,
 /turf/open/floor/rogue/carpet/lord/center,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"dP" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/effect/mist,
-/turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -654,6 +660,7 @@
 /area/rogue/under/cavewet)
 "dW" = (
 /obj/structure/closet/crate/roguecloset/inn/south,
+/obj/item/roguegem/diamond,
 /turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
@@ -666,13 +673,6 @@
 /obj/structure/spacevine/dendor,
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
-"ee" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
 /area/rogue/outdoors)
 "eh" = (
 /obj/structure/flora/wildplant/wild_poppy,
@@ -710,17 +710,14 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "ex" = (
-/obj/item/candle/magicpink/lit,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/churchmarble,
+/obj/structure/chair/wood/rogue,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet/lord/right{
+	dir = 1
+	},
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"ey" = (
-/obj/structure/flora/rogueflora/wormwood,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "ez" = (
 /obj/effect/decal/cleanable/blood,
 /turf/closed/wall/mineral/rogue/stone,
@@ -739,6 +736,13 @@
 "eE" = (
 /obj/structure/fluff/walldeco/wallshield,
 /turf/closed/wall/mineral/rogue/decostone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"eK" = (
+/obj/item/roguestatue/iron,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -789,15 +793,6 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
-"eZ" = (
-/mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
-	faction = list("neutral")
-	},
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "fa" = (
 /obj/effect/oneway/lich{
 	dir = 1
@@ -815,9 +810,8 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "ff" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
+/obj/effect/mist,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "fg" = (
 /obj/structure/fluff/walldeco/customflag{
@@ -856,11 +850,6 @@
 /obj/item/book/granter/spell/blackstone/lightning,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet)
-"fm" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "fn" = (
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/town/sargoth{
@@ -879,6 +868,7 @@
 /obj/structure/table/wood{
 	icon_state = "largetable"
 	},
+/obj/item/roguegem/violet,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "fw" = (
@@ -889,6 +879,11 @@
 /obj/structure/spawner/invisible/monster,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cavewet)
+"fC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/border,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "fF" = (
 /mob/living/carbon/human/species/skeleton/dead/noble,
 /obj/item/restraints/legcuffs/beartrap/armed,
@@ -912,6 +907,12 @@
 "fM" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"fO" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -986,6 +987,11 @@
 /obj/structure/mineral_door/wood/red,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
+"gr" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "gt" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/rooftop{
@@ -1029,12 +1035,6 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
-"gA" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "gC" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/woodturned,
@@ -1044,6 +1044,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"gE" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "gG" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -1097,6 +1103,13 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"gQ" = (
+/obj/structure/bed/rogue,
+/mob/living/simple_animal/hostile/retaliate/rogue/brain_gusher_beast{
+	name = "DREAM EATER"
+	},
+/turf/open/floor/plating/ashplanet/rocky,
+/area/rogue/outdoors)
 "gR" = (
 /obj/structure/flora/roguegrass,
 /obj/machinery/light/rogue/torchholder/c,
@@ -1132,7 +1145,7 @@
 	})
 "he" = (
 /obj/structure/chair/wood/rogue/chair3,
-/obj/effect/mist,
+/obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
@@ -1166,21 +1179,26 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"hm" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors)
 "hn" = (
 /obj/structure/lever/wall{
 	redstone_id = "mazedungeondiligence"
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/under/cavewet)
+"ho" = (
+/obj/structure/flora/wildplant/wild_herbs,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "hp" = (
 /obj/machinery/light/rogue/hearth,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet)
+"hs" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet/lord/center,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "hu" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/brain_gusher_beast{
 	name = "DREAM EATER"
@@ -1203,25 +1221,6 @@
 /obj/item/candle/magicpink/lit,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
-"hA" = (
-/obj/structure/spawner/invisible/skeleton,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"hB" = (
-/obj/structure/flora/roguegrass,
-/obj/effect/wisp,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
-"hC" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "hF" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/church,
@@ -1336,6 +1335,12 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/volcanic,
 /area/rogue/under/cavewet)
+"id" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "ie" = (
 /obj/structure/fluff/statue/spider,
 /turf/open/floor/rogue/church,
@@ -1345,6 +1350,11 @@
 	icon_state = "mush3"
 	},
 /turf/open/floor/rogue/dirt,
+/area/rogue/outdoors)
+"ih" = (
+/obj/effect/wisp,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "ij" = (
 /obj/effect/decal/cobbleedge{
@@ -1395,21 +1405,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"is" = (
-/obj/structure/fluff/walldeco/stone{
-	icon_state = "walldec6"
-	},
-/obj/structure/flora/grass/jungle/b,
-/turf/closed/wall/mineral/rogue/decostone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"it" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/hexstone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "iv" = (
 /obj/structure/stairs{
 	dir = 4
@@ -1432,12 +1427,9 @@
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/outdoors)
 "iF" = (
-/obj/structure/chair/wood/rogue/chair3,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood/nosmooth,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/obj/item/roguegem/violet,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "iG" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/ruinedwood{
@@ -1450,8 +1442,8 @@
 	},
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/under/cavewet)
-"iK" = (
-/obj/structure/spacevine/dendor,
+"iI" = (
+/obj/structure/flora/wildplant/wild_poppy,
 /obj/effect/mist,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town/sargoth{
@@ -1475,6 +1467,16 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"iV" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/carpet/lord/center,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "iW" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -1486,6 +1488,11 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
+"iZ" = (
+/obj/structure/bookcase/random,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/carpet/purple,
+/area/rogue/under/cavewet)
 "jb" = (
 /obj/structure/spawner/ghost/wraiths,
 /turf/open/floor/rogue/carpet,
@@ -1507,6 +1514,20 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"jg" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/rack/rogue,
+/obj/item/needle/pestra{
+	name = "Hermeirian Needle"
+	},
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/roguegem/blue,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "jh" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
@@ -1520,9 +1541,9 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/cavewet)
-"jq" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet/lord/center,
+"jo" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/newstone,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -1588,6 +1609,13 @@
 "jF" = (
 /turf/open/floor/carpet/red,
 /area/rogue/under/cavewet)
+"jG" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "jH" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/shoes/roguetown/boots,
@@ -1608,6 +1636,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"jJ" = (
+/obj/structure/spacevine/dendor,
+/obj/effect/mist,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "jK" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/wood,
@@ -1624,20 +1659,6 @@
 "jS" = (
 /obj/effect/wisp,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
-"jT" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors)
-"jU" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
 "jV" = (
 /turf/open/floor/rogue/herringbone,
@@ -1661,6 +1682,12 @@
 /area/rogue/outdoors)
 "kg" = (
 /turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"kj" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -1747,6 +1774,15 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
+"kG" = (
+/obj/structure/chair/wood/rogue{
+	dir = 1
+	},
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet/lord/center,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "kH" = (
 /obj/structure/floordoor/gatehatch/outer{
 	redstone_id = "gatelava"
@@ -1757,6 +1793,11 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"kI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/rogueweapon/shield/tower/metal,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "kK" = (
 /obj/structure/table/wood,
 /obj/item/paper/scroll,
@@ -1765,6 +1806,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"kL" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/rogueweapon/shield/tower/metal,
+/obj/effect/decal/border,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "kO" = (
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet)
@@ -1874,12 +1921,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"lt" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "lw" = (
 /obj/structure/floordoor/gatehatch/outer{
 	redstone_id = "gatelava"
@@ -1906,10 +1947,17 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"lC" = (
+"lB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf/poison,
+/obj/structure/flora/roguegrass,
+/obj/effect/mist,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue)
+"lG" = (
+/obj/structure/flora/wildplant/wild_poppy,
 /obj/structure/spacevine/dendor,
 /obj/effect/mist,
-/turf/open/floor/rogue/church,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -1973,8 +2021,9 @@
 	first_time_text = "Arcadia"
 	})
 "lY" = (
+/obj/machinery/light/rogue/firebowl/standing,
 /obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle/b,
+/obj/effect/mist,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
@@ -1997,10 +2046,27 @@
 /obj/item/reagent_containers/glass/bottle/rogue/manapot,
 /turf/open/floor/bronze,
 /area/rogue/under/cavewet)
+"mg" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "mh" = (
 /obj/effect/decal/border,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
+"mj" = (
+/obj/structure/bars,
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/jungle,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
 /area/rogue/outdoors)
 "mk" = (
 /obj/item/customlock,
@@ -2014,10 +2080,11 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet)
 "mo" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	opacity = 0
+/obj/structure/fluff/walldeco/stone{
+	icon_state = "walldec6"
 	},
-/turf/open/floor/rogue/carpet,
+/obj/structure/flora/grass/jungle/b,
+/turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2035,20 +2102,12 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
-"ms" = (
-/obj/structure/flora/grass/jungle,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet,
+"mu" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/carpet/red,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"mu" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "mx" = (
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall3"
@@ -2061,19 +2120,25 @@
 /obj/structure/ladder,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
+"mB" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "mC" = (
 /obj/structure/healingfountain,
 /turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"mE" = (
-/obj/structure/spacevine/dendor,
+"mD" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/effect/wisp,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/church,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "mF" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/churchmarble,
@@ -2090,15 +2155,21 @@
 /obj/structure/closet/crate/chest/refilling/weapon,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet)
+"mM" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "mN" = (
 /mob/living/simple_animal/hostile/rogue/gravelord,
 /obj/structure/fluff/statue/knight/interior,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cavewet)
-"mO" = (
-/obj/machinery/light/rogue/firebowl/standing,
+"mP" = (
+/obj/structure/chair/wood/rogue/fancy,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/church,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2134,10 +2205,19 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"nc" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
+"mX" = (
+/obj/structure/flora/roguegrass/bush/wall{
+	opacity = 0
+	},
+/turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"na" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/item/bedsheet/rogue/cloth,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2177,15 +2257,6 @@
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet)
-"nw" = (
-/mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
-	faction = list("neutral")
-	},
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "nx" = (
 /turf/closed/wall/shroud,
 /area/rogue/outdoors)
@@ -2214,13 +2285,6 @@
 "nI" = (
 /turf/open/floor/carpet/stellar,
 /area/rogue/outdoors)
-"nK" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "nM" = (
 /obj/item/roguegem/violet,
 /obj/structure/flora/grass/jungle/b,
@@ -2249,16 +2313,16 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
-"nW" = (
-/obj/structure/spawner/invisible/skeleton,
-/turf/open/floor/carpet/red,
+"nV" = (
+/obj/structure/spacevine/dendor,
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"nX" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned,
+"nW" = (
+/obj/structure/spawner/invisible/skeleton,
+/turf/open/floor/carpet/red,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2271,6 +2335,12 @@
 "oa" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/church,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"od" = (
+/obj/effect/mist,
+/turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2287,12 +2357,6 @@
 /obj/item/book/rogue/festus,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors)
-"oo" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/church,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "op" = (
 /obj/structure/floordoor/gatehatch/inner{
 	redstone_id = "gatelava"
@@ -2347,13 +2411,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"oz" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned/nosmooth,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "oA" = (
 /obj/structure/spacevine/dendor,
 /obj/structure/spacevine/dendor,
@@ -2364,15 +2421,16 @@
 /obj/structure/closet/crate/chest/refilling/trait,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
-"oF" = (
-/obj/structure/chair/wood/rogue,
+"oC" = (
+/obj/structure/bed/rogue,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
+"oD" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/spacevine/dendor,
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet/lord/right{
-	dir = 1
-	},
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "oH" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/wood,
@@ -2381,6 +2439,12 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"oL" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "oM" = (
 /obj/structure/roguewindow/openclose{
 	dir = 4
@@ -2404,6 +2468,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"oT" = (
+/obj/structure/fluff/walldeco/customflag,
+/obj/structure/flora/grass/jungle/b,
+/turf/closed/wall/mineral/rogue/decostone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "oV" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
@@ -2416,12 +2487,6 @@
 /obj/structure/spawner/invisible/gravelord,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"oZ" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/closed/wall/shroud,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "pa" = (
 /obj/structure/fluff/walldeco/chains{
 	icon_state = "chains2"
@@ -2457,9 +2522,9 @@
 	first_time_text = "Arcadia"
 	})
 "pj" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
+/obj/structure/chair/wood/rogue/chair3,
+/obj/effect/mist,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2523,11 +2588,6 @@
 	dir = 8
 	},
 /area/rogue/outdoors)
-"pv" = (
-/obj/machinery/light/rogue/firebowl/standing/blue,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
-/area/rogue/under/cavewet)
 "pw" = (
 /obj/item/roguegem/green,
 /turf/open/floor/rogue/blocks/stonered,
@@ -2535,6 +2595,11 @@
 "px" = (
 /turf/closed/wall/mineral/rogue/decostone/center,
 /area/rogue/under/cavewet)
+"pA" = (
+/obj/structure/flora/roguetree/happy,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "pC" = (
 /obj/structure/mineral_door/wood{
 	icon_state = "wcv";
@@ -2555,11 +2620,11 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "pE" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "pH" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -2576,8 +2641,11 @@
 /turf/open/floor/plating/ashplanet/rocky,
 /area/rogue/under/cavewet)
 "pL" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/woodturned,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -2590,14 +2658,17 @@
 	first_time_text = "Arcadia"
 	})
 "pO" = (
-/obj/structure/flora/wildplant/wild_poppy,
-/obj/structure/spacevine/dendor,
-/obj/effect/mist,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"pS" = (
+/area/rogue)
+"pQ" = (
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors)
+"pR" = (
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "Rosehedge1"
 	},
@@ -2609,12 +2680,10 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"pT" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+"pS" = (
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "pV" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/town/sargoth{
@@ -2638,18 +2707,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
-"pZ" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"qb" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
 "qc" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/under/cavewet)
@@ -2680,23 +2737,10 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/carpet/lord/left,
 /area/rogue/under/cavewet)
-"ql" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/herringbone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "qm" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
-"qp" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/church,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "qq" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/grass,
@@ -2728,6 +2772,10 @@
 "qx" = (
 /turf/open/dark_filler,
 /area/rogue)
+"qy" = (
+/turf/closed/wall/mineral/rogue/decowood,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "qC" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4;
@@ -2745,12 +2793,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"qE" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "qG" = (
 /turf/open/transparent/openspace,
 /area/rogue)
@@ -2763,10 +2805,13 @@
 	first_time_text = "Arcadia"
 	})
 "qI" = (
-/obj/structure/spacevine/dendor,
+/obj/structure/closet/crate/roguecloset,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "qJ" = (
 /obj/effect/spawner/roguemap/hauntpile,
 /obj/item/reagent_containers/food/snacks/crow{
@@ -2826,6 +2871,12 @@
 "qW" = (
 /obj/structure/flora/roguetree/evil,
 /turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
+"qX" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/wisp,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "qY" = (
 /obj/structure/chair/stool/rogue,
@@ -2900,6 +2951,13 @@
 /obj/structure/fermenting_barrel,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet)
+"rt" = (
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned/nosmooth,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "ru" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/tile/masonic{
@@ -2952,12 +3010,6 @@
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
-"rE" = (
-/obj/effect/mist,
-/turf/closed/wall/mineral/rogue/decostone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "rG" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/mace/woodclub/crafted,
@@ -2969,13 +3021,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"rK" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/effect/wisp,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "rM" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/cobble/mossy,
@@ -3016,6 +3061,11 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors)
+"rY" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "rZ" = (
 /obj/structure/flora/rogueshroom/happyrandom{
 	icon_state = "mush5"
@@ -3054,13 +3104,6 @@
 /obj/structure/fermenting_barrel/random/beer,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet)
-"si" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "sk" = (
 /obj/structure/closet/crate/chest,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -3085,6 +3128,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"sp" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/newstone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "sq" = (
 /obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/wood,
@@ -3098,16 +3148,6 @@
 /obj/item/roguegem/green,
 /obj/structure/spacevine,
 /turf/open/floor/rogue/tile/masonic,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"su" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -3133,16 +3173,16 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"sA" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "sB" = (
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
-"sC" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "sD" = (
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/town/sargoth{
@@ -3199,6 +3239,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"sV" = (
+/obj/machinery/light/rogue/lanternpost{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue)
 "sW" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
@@ -3227,11 +3273,6 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
-"td" = (
-/obj/structure/bookcase/random,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/carpet/purple,
-/area/rogue/under/cavewet)
 "te" = (
 /obj/item/candle/magicpink/lit,
 /obj/effect/decal/cleanable/blood/bubblegum,
@@ -3247,6 +3288,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"tg" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned/nosmooth,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "ti" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/mist,
@@ -3258,6 +3305,10 @@
 /obj/effect/spawner/lootdrop/roguetown/refilling_chest/randomspawner,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
+"tl" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cavewet)
 "tn" = (
 /obj/structure/mineral_door/wood/fancywood{
 	locked = 1;
@@ -3325,13 +3376,6 @@
 /obj/item/reagent_containers/glass/bottle/rogue/virilitypot,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"tE" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "tH" = (
 /obj/structure/closet/crate/chest/gold/lootbox/trait,
 /obj/item/roguecoin/gold/pile,
@@ -3390,11 +3434,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"tY" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "uc" = (
 /obj/structure/spacevine,
 /turf/open/floor/carpet/red,
@@ -3449,12 +3488,6 @@
 /obj/item/pestle,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/outdoors)
-"ut" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "uw" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 4
@@ -3483,11 +3516,6 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/grass/hell,
 /area/rogue/under/cavewet)
-"uD" = (
-/obj/effect/wisp,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "uE" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/brain_gusher_beast{
 	name = "DREAM EATER"
@@ -3522,6 +3550,8 @@
 /obj/item/reagent_containers/food/snacks/egg,
 /obj/item/reagent_containers/food/snacks/egg,
 /obj/item/reagent_containers/food/snacks/egg,
+/obj/item/clothing/head/roguetown/helmet/heavy/psyhelm,
+/obj/item/rogueweapon/mace/stunmace,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "uN" = (
@@ -3533,12 +3563,6 @@
 "uQ" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/dirt/nrich,
-/area/rogue/outdoors)
-"uS" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "uT" = (
 /obj/structure/table/wood{
@@ -3552,11 +3576,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"uW" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "uY" = (
 /obj/structure/stairs/fancy{
 	dir = 4
@@ -3623,14 +3642,11 @@
 	first_time_text = "Arcadia"
 	})
 "vt" = (
-/obj/structure/bars,
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors)
+/obj/structure/flora/grass/jungle/b,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "vw" = (
 /obj/item/roguegem/blue,
 /obj/item/roguegem/green,
@@ -3644,14 +3660,12 @@
 "vx" = (
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/under/cavewet)
-"vy" = (
+"vz" = (
 /obj/structure/flora/grass/jungle,
-/obj/structure/flora/grass/jungle,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors)
+/turf/open/floor/rogue/hexstone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "vA" = (
 /obj/item/reagent_containers/food/snacks/crow{
 	dir = 8
@@ -3698,18 +3712,19 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
-"vM" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/newstone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "vP" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
 	icon_state = "borderfall"
 	},
 /turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"vR" = (
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -3738,6 +3753,18 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"vX" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"vY" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "wa" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/suit/roguetown/armor/chainmail,
@@ -3745,12 +3772,6 @@
 /obj/item/clothing/gloves/roguetown/chain,
 /obj/item/clothing/gloves/roguetown/chain,
 /turf/open/floor/rogue/herringbone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"wc" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -3788,6 +3809,13 @@
 /obj/effect/mob_spawner/skeleton/lich,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cavewet)
+"wn" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "wo" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/rooftop/green/corner1{
@@ -3835,12 +3863,6 @@
 /obj/structure/bed/rogue,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cavewet)
-"wB" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/carpet/red,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "wC" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
@@ -3878,10 +3900,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"wI" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
 "wJ" = (
 /obj/structure/stairs/fancy/r{
 	dir = 1
@@ -3956,8 +3974,11 @@
 /area/rogue/under/cavewet)
 "xa" = (
 /obj/structure/spacevine/dendor,
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -4006,10 +4027,6 @@
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet)
-"xn" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "xo" = (
 /obj/structure/table/wood/fancy/black,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/spells,
@@ -4017,6 +4034,12 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
+"xr" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "xu" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/tile/masonic{
@@ -4077,10 +4100,13 @@
 /obj/structure/bars/cemetery,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"xU" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
-/area/rogue/under/cavewet)
+"xO" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "xV" = (
 /obj/structure/fluff/wallclock/l,
 /obj/machinery/light/rogue/firebowl/standing,
@@ -4206,19 +4232,6 @@
 "yC" = (
 /turf/open/floor/rogue/carpet/lord/right,
 /area/rogue/under/cavewet)
-"yF" = (
-/obj/structure/table/wood,
-/obj/structure/bars{
-	icon_state = "barsbent";
-	layer = 2.81
-	},
-/obj/item/reagent_containers/food/snacks/rogue/meat/salami/slice,
-/obj/item/reagent_containers/food/snacks/rogue/meat/salami/slice,
-/obj/item/reagent_containers/food/snacks/rogue/meat/salami/slice,
-/turf/open/floor/rogue/churchbrick,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "yG" = (
 /obj/structure/table/vtable/v2,
 /obj/item/clothing/neck/roguetown/psicross/eora,
@@ -4253,23 +4266,10 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
-"yM" = (
-/obj/effect/mist,
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "yN" = (
 /obj/structure/rack/rogue,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
-"yP" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "yQ" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -4277,33 +4277,14 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors)
 "yR" = (
-/obj/effect/decal/cleanable/blood/tracks{
-	dir = 4
-	},
-/obj/effect/mist,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/carpet/lord/center,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "yS" = (
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/rogue/under/cavewet)
-"yV" = (
-/obj/effect/mob_spawner/skeleton/lich,
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"yZ" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet/lord/center,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "zb" = (
 /obj/effect/decal/cleanable/blood/gibs/torso,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
@@ -4336,6 +4317,18 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"zj" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "zk" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /obj/structure/table/wood/fancy/black,
@@ -4349,17 +4342,16 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"zr" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "zu" = (
 /obj/machinery/light/rogue/chand,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors)
+"zv" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "zx" = (
 /obj/structure/stairs{
 	dir = 1
@@ -4394,6 +4386,12 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
+"zF" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "zG" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 8
@@ -4413,12 +4411,6 @@
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/grass/hell,
 /area/rogue/under/cavewet)
-"zK" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "zL" = (
 /obj/machinery/light/rogue/torchholder/c,
 /obj/structure/spacevine,
@@ -4471,21 +4463,30 @@
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
-"zZ" = (
-/obj/structure/fluff/railing/border{
-	dir = 8
-	},
+"Ac" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cavewet)
+"Ad" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "Ae" = (
 /obj/structure/bookcase,
 /obj/item/book/granter/spell/spells5e/mending5e,
 /obj/item/book/granter/spell/spells5e/poisonspray5e,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cavewet)
+"Ag" = (
+/obj/structure/closet/crate/chest/dungeon/treasure,
+/obj/structure/flora/grass/jungle/b,
+/obj/item/roguegem/diamond,
+/turf/open/floor/rogue/blocks/newstone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Ah" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -4523,6 +4524,16 @@
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/cavewet)
+"As" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "At" = (
 /obj/structure/flora/roguetree/evil{
 	icon_state = "t2"
@@ -4530,13 +4541,6 @@
 /obj/structure/spawner/invisible/ghost/cursedsouls,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"Au" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Av" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /obj/structure/fluff/railing/wood{
@@ -4544,6 +4548,13 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"Aw" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Ay" = (
 /obj/effect/decal/cobbleedge{
 	dir = 5
@@ -4555,19 +4566,17 @@
 /obj/structure/spacevine,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cavewet)
-"AD" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/carpet/lord/center,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"AF" = (
+"AC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/rogueweapon/mace/stunmace,
 /obj/structure/closet/crate/roguecloset,
-/obj/item/reagent_containers/food/snacks/rogue/friedegg/tiberian,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/roguegem/yellow,
 /turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
+"AF" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
 "AG" = (
 /obj/structure/spacevine,
@@ -4594,6 +4603,14 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"AK" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/jungle,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors)
 "AL" = (
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cavewet)
@@ -4657,6 +4674,13 @@
 	icon_state = "weird1"
 	},
 /area/rogue/outdoors)
+"Bc" = (
+/obj/structure/spacevine,
+/obj/effect/mist,
+/turf/open/floor/rogue/tile/checker,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Be" = (
 /obj/structure/fluff/grindwheel,
 /turf/open/floor/rogue/cobblerock,
@@ -4675,6 +4699,11 @@
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 8
 	},
+/area/rogue/outdoors)
+"Bp" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
 "Br" = (
 /obj/structure/flora/roguegrass/bush/wall{
@@ -4742,6 +4771,12 @@
 /obj/item/book/granter/spell/blackstone/fireball,
 /turf/open/floor/bronze,
 /area/rogue/under/cavewet)
+"BI" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "BK" = (
 /obj/structure/spawner/invisible/orcs,
 /turf/open/floor/rogue/cobble,
@@ -4794,13 +4829,6 @@
 /obj/structure/roguerock,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/rogue/under/cavewet)
-"Cg" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Ci" = (
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area/rogue/under/cavewet)
@@ -4820,6 +4848,11 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
+"Cm" = (
+/turf/closed/wall/mineral/rogue/decowood{
+	icon_state = "wooddark-k"
+	},
+/area/rogue/outdoors)
 "Cn" = (
 /obj/structure/closet/crate/chest/gold,
 /obj/item/roguegem/blue,
@@ -4827,13 +4860,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"Cp" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors)
 "Cq" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4;
@@ -4857,12 +4883,6 @@
 /obj/structure/mineral_door/wood,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
 /area/rogue/under/cavewet)
-"Cx" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Cy" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /obj/structure/spacevine/dendor,
@@ -4893,6 +4913,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"CG" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "CI" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/blocks,
@@ -4912,10 +4939,6 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cavewet)
-"CO" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "CP" = (
 /obj/structure/flora/rogueshroom/happyrandom{
 	icon_state = "mush2"
@@ -4999,6 +5022,10 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"Dn" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cavewet)
 "Do" = (
 /obj/effect/mist,
 /turf/open/floor/rogue/volcanic,
@@ -5079,22 +5106,27 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
-"DL" = (
-/obj/structure/bars,
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/obj/structure/flora/grass/jungle,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors)
 "DN" = (
 /obj/structure/fluff/walldeco/psybanner/red,
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
 	dir = 4
 	},
 /area/rogue/under/cavewet)
+"DO" = (
+/mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
+	faction = list("neutral")
+	},
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"DQ" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/closed/wall/shroud,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "DS" = (
 /obj/structure/fluff/statue/gargoyle/candles,
 /turf/open/floor/rogue/churchmarble,
@@ -5257,9 +5289,10 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"EF" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
+"ED" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -5278,13 +5311,6 @@
 /obj/item/clothing/shoes/roguetown/boots,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cavewet)
-"EL" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "EM" = (
 /obj/structure/flora/roguegrass,
 /obj/effect/wisp,
@@ -5297,6 +5323,11 @@
 /area/rogue/under/cavewet)
 "EO" = (
 /obj/structure/bars/cemetery,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
+"EQ" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "ER" = (
@@ -5317,12 +5348,6 @@
 /obj/structure/table/vtable,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet)
-"EW" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "EY" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/woodturned/nosmooth,
@@ -5345,6 +5370,13 @@
 /obj/structure/spacevine,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"Fg" = (
+/obj/structure/spacevine/dendor,
+/obj/effect/mist,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Fh" = (
 /obj/structure/spacevine/dendor,
 /obj/effect/mist,
@@ -5416,6 +5448,13 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"Fx" = (
+/obj/structure/closet/crate/roguecloset/inn/south,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Fy" = (
 /obj/structure/spacevine,
 /obj/structure/flora/grass/jungle/b,
@@ -5427,12 +5466,6 @@
 /obj/structure/flora/wildplant/wild_herbs,
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"FD" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -5510,11 +5543,6 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
-"FU" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "FV" = (
 /obj/structure/roguemachine/atm{
 	pixel_x = 32;
@@ -5532,6 +5560,11 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cavewet)
+"Ga" = (
+/obj/item/roguestatue/gold,
+/obj/structure/trap/stun,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "Gb" = (
 /obj/structure/closet/crate/chest/refilling/tools,
 /turf/open/floor/rogue/naturalstone,
@@ -5540,6 +5573,13 @@
 /obj/item/rogueweapon/sword/rapier/lord,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
+"Gd" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Ge" = (
 /obj/effect/mob_spawner/wilderness/hostile,
 /turf/closed/mineral/rogue/bedrock,
@@ -5560,11 +5600,22 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"Gp" = (
+/obj/structure/flora/wildplant/wild_herbs,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "Gq" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/rooftop{
 	dir = 8
 	},
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"Gs" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -5672,9 +5723,11 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "GQ" = (
-/obj/item/roguestatue/gold,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors)
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "GR" = (
 /obj/structure/rack/rogue/shelf/big{
 	icon_state = "shelf_biggest";
@@ -5697,13 +5750,6 @@
 /obj/structure/stairs,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors)
-"GW" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "GY" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/pelt,
@@ -5763,18 +5809,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"Hp" = (
-/obj/effect/mist,
+"Ht" = (
+/obj/structure/spacevine,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
-"Hs" = (
-/obj/effect/decal/border{
-	dir = 8
-	},
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/herringbone,
-/area/rogue/outdoors)
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Hu" = (
 /obj/structure/fluff/alch,
 /turf/open/floor/rogue/blocks/stone/stonepattern3,
@@ -5826,17 +5867,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"HK" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/tile/checker,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"HL" = (
-/obj/structure/flora/wildplant/wild_herbs,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "HM" = (
 /obj/structure/stairs/fancy{
 	dir = 8
@@ -5848,6 +5878,18 @@
 "HN" = (
 /turf/open/water/cleanshallow,
 /area/rogue/under/cavewet)
+"HP" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors)
+"HQ" = (
+/obj/structure/spacevine,
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "HS" = (
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
@@ -5857,17 +5899,22 @@
 /obj/effect/mist,
 /turf/closed/mineral/random/rogue,
 /area/rogue/under/cavewet)
-"HW" = (
-/obj/item/roguegem/violet,
-/turf/open/floor/rogue/churchbrick,
-/area/rogue/under/cavewet)
-"HX" = (
-/obj/structure/chair/wood/rogue/fancy,
+"HU" = (
+/obj/effect/mist,
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"HV" = (
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
+"HW" = (
+/obj/item/roguegem/violet,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cavewet)
 "HZ" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/spacevine/dendor,
@@ -5914,11 +5961,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"Io" = (
-/obj/structure/flora/roguegrass,
+"In" = (
+/obj/structure/spacevine,
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Ip" = (
 /obj/item/roguegem/blue,
 /turf/open/floor/rogue/volcanic,
@@ -6057,13 +6106,6 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grass/hell,
 /area/rogue/under/cavewet)
-"IZ" = (
-/obj/structure/stairs{
-	dir = 1
-	},
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "Ja" = (
 /obj/structure/spawner/invisible/dragger,
 /turf/open/floor/rogue/dirt,
@@ -6099,14 +6141,6 @@
 	icon_state = "rockwd"
 	},
 /area/rogue/outdoors)
-"Jj" = (
-/obj/structure/bed/rogue/inn/hay,
-/obj/item/bedsheet/rogue/cloth,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned/nosmooth,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Jk" = (
 /obj/effect/mob_spawner/skeleton/lich,
 /turf/open/floor/rogue/grass,
@@ -6158,13 +6192,6 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
-"Jv" = (
-/obj/structure/flora/rogueshroom/happyrandom{
-	icon_state = "mush5"
-	},
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "Jw" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 10
@@ -6177,6 +6204,13 @@
 "JA" = (
 /obj/structure/spawner/ghost/wraiths,
 /turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
+"JC" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
 /area/rogue/outdoors)
 "JD" = (
 /obj/structure/closet/crate/chest/steward/redpotion,
@@ -6272,6 +6306,19 @@
 "Ka" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors)
+"Kb" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"Kc" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "Ke" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
@@ -6310,12 +6357,22 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors)
+"Ku" = (
+/obj/structure/roguewindow,
+/turf/closed/wall/mineral/rogue/decowood,
+/area/rogue/outdoors)
 "Kx" = (
 /obj/structure/chair/bench/ultimacouch/r{
 	icon_state = "ultimacochright"
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cavewet)
+"Ky" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Kz" = (
 /obj/effect/mist,
 /turf/open/floor/rogue/naturalstone,
@@ -6348,6 +6405,14 @@
 /obj/effect/spawner/roguemap/hauntpile,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"KI" = (
+/obj/item/candle/magicpink/lit,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet/lord/left,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "KJ" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -6356,6 +6421,13 @@
 /obj/item/candle/magicpink/lit,
 /turf/open/floor/rogue/grass/hell,
 /area/rogue/under/cavewet)
+"KK" = (
+/obj/structure/closet/crate/roguecloset,
+/obj/item/reagent_containers/food/snacks/rogue/preserved/stuffegg,
+/obj/item/clothing/head/roguetown/helmet/heavy/psydonianknighthelm,
+/obj/item/roguegem/red,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "KL" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -6376,34 +6448,27 @@
 /obj/item/reagent_containers/food/snacks/rogue/friedegg/two,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
+"KO" = (
+/obj/structure/flora/grass/jungle/b,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cavewet)
 "KP" = (
 /obj/structure/fluff/walldeco/psybanner/red,
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
 	dir = 8
 	},
 /area/rogue/under/cavewet)
-"KV" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/herringbone,
-/area/rogue/outdoors)
-"KW" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
-"KY" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "KZ" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
 	},
 /obj/structure/spacevine/dendor,
 /turf/open/transparent/openspace,
+/area/rogue/outdoors)
+"Lb" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "Lc" = (
 /obj/structure/table/wood/fancy/orange,
@@ -6472,14 +6537,6 @@
 "Lt" = (
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cavewet)
-"Lu" = (
-/obj/item/candle/magicpink/lit,
-/obj/effect/decal/cleanable/blood/splatter,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet/lord/left,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Lv" = (
 /obj/structure/mineral_door/wood/window{
 	lockid = "tavern"
@@ -6528,13 +6585,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"LE" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "LI" = (
 /obj/item/roguegem/blue,
 /obj/item/roguegem/green,
@@ -6562,23 +6612,43 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"LN" = (
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
+"LO" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet/lord/center,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"LQ" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/blocks/newstone,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"LS" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "LU" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"LW" = (
-/obj/structure/flora/roguetree/happy,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
 "LX" = (
-/obj/machinery/light/rogue/lanternpost{
-	dir = 1
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors)
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/carpet/stellar,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "LY" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
@@ -6587,6 +6657,13 @@
 	icon_state = "weird1"
 	},
 /area/rogue/outdoors)
+"Mb" = (
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Mc" = (
 /obj/structure/table/wood{
 	icon_state = "largetable"
@@ -6594,13 +6671,6 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/food,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
-"Me" = (
-/obj/structure/flora/wildplant/wild_poppy,
-/obj/effect/mist,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Mg" = (
 /obj/structure/closet/crate/chest/refilling/treasure,
 /turf/open/floor/rogue/wood,
@@ -6626,12 +6696,6 @@
 /obj/item/reagent_containers/glass/mortar,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet)
-"Mo" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Mp" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8
@@ -6644,13 +6708,6 @@
 /obj/item/roguegem/blue,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cavewet)
-"Ms" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/newstone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Mt" = (
 /obj/structure/floordoor/gatehatch/outer{
 	redstone_id = "gatelava"
@@ -6683,12 +6740,6 @@
 /obj/item/roguegem/green,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cavewet)
-"MD" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "ME" = (
 /obj/effect/mist,
 /turf/open/floor/rogue/churchmarble,
@@ -6699,6 +6750,11 @@
 /obj/structure/flora/wildplant/wild_poppy,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"MI" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cavewet)
 "MJ" = (
 /obj/structure/closet/crate/roguecloset/inn/south,
 /turf/open/floor/rogue/carpet,
@@ -6707,6 +6763,8 @@
 	})
 "MK" = (
 /obj/structure/closet/crate/roguecloset,
+/obj/item/rogueweapon/mace/stunmace,
+/obj/item/roguegem/green,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "ML" = (
@@ -6753,6 +6811,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"MV" = (
+/obj/structure/flora/roguetree/evil{
+	icon_state = "t3"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue)
 "MX" = (
 /obj/structure/rack/rogue,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
@@ -6780,12 +6844,6 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"Nh" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/carpet/stellar,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Ni" = (
 /obj/structure/fluff/walldeco/wantedposter/r,
 /obj/structure/spacevine/dendor,
@@ -6806,6 +6864,12 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/carpet/stellar,
 /area/rogue/outdoors)
+"Np" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Nr" = (
 /obj/structure/bookcase/random/archive{
 	density = 0;
@@ -6843,7 +6907,8 @@
 	})
 "ND" = (
 /obj/structure/spacevine,
-/turf/open/floor/rogue/blocks/newstone,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -6869,19 +6934,11 @@
 /obj/effect/wisp,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"NK" = (
-/obj/structure/chair/wood/rogue{
-	dir = 1
-	},
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet/lord/center,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "NM" = (
+/obj/structure/flora/rogueflora/wormwood,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood,
-/area/rogue/under/cavewet)
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "NN" = (
 /mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
 	faction = list("neutral")
@@ -6891,6 +6948,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"NP" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/roguestatue/gold,
+/obj/structure/trap/stun,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "NQ" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/carpet/lord/left,
@@ -6904,6 +6967,13 @@
 /obj/effect/mist,
 /obj/effect/mist,
 /obj/effect/mist,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"NT" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
@@ -6923,6 +6993,26 @@
 /turf/open/floor/rogue/rooftop{
 	dir = 4
 	},
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"NW" = (
+/obj/structure/flora/rogueshroom/happyrandom{
+	icon_state = "mush5"
+	},
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
+"NX" = (
+/obj/structure/table/wood,
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/obj/item/reagent_containers/food/snacks/rogue/meat/salami/slice,
+/obj/item/reagent_containers/food/snacks/rogue/meat/salami/slice,
+/obj/item/reagent_containers/food/snacks/rogue/meat/salami/slice,
+/turf/open/floor/rogue/churchbrick,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -6996,20 +7086,21 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"On" = (
-/obj/structure/closet/crate/roguecloset,
-/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Oo" = (
 /obj/structure/stairs/fancy/r{
 	dir = 1
 	},
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/rogue/carpet/lord/right,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"Oq" = (
+/mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
+	faction = list("neutral")
+	},
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -7069,10 +7160,13 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "OG" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/dirt/road,
+/obj/item/rogueweapon/shield/tower/metal,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
+"OO" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue)
 "OP" = (
 /obj/effect/mist,
 /turf/open/floor/rogue/rooftop{
@@ -7169,6 +7263,13 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"Pp" = (
+/obj/structure/spacevine,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Pq" = (
 /obj/structure/table/wood/fancy/orange,
 /obj/item/roguegem/violet,
@@ -7191,25 +7292,39 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"Pv" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors)
 "Pw" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
 /area/rogue/outdoors)
-"PA" = (
-/mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
-	faction = list("neutral")
-	},
+"Px" = (
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
+"Pz" = (
 /obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors)
 "PB" = (
 /obj/item/roguestatue/iron,
 /turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"PC" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -7222,14 +7337,6 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/woodturned,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"PF" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/structure/spacevine/dendor,
-/obj/effect/mist,
-/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -7253,13 +7360,6 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors)
-"PJ" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/carpet/red,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "PM" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/herringbone,
@@ -7305,6 +7405,10 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"Qa" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "Qb" = (
 /obj/effect/spawner/roguemap/hauntpile,
 /turf/open/floor/rogue/grass,
@@ -7330,10 +7434,9 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"Qg" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/hexstone,
+"Qi" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -7402,16 +7505,17 @@
 "Qw" = (
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors)
-"Qz" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "QB" = (
 /obj/effect/spawner/lootdrop/roguetown/refilling_chest/randomspawner,
 /turf/open/floor/rogue/grass/hell,
 /area/rogue/under/cavewet)
+"QE" = (
+/obj/item/candle/magicpink/lit,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "QF" = (
 /obj/structure/bars/passage{
 	max_integrity = 3000;
@@ -7431,17 +7535,21 @@
 	},
 /turf/open/dark_filler,
 /area/rogue/outdoors)
-"QK" = (
-/obj/structure/closet/crate/chest/dungeon/treasure,
+"QJ" = (
+/obj/effect/mist,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/blocks/newstone,
+/turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
 "QN" = (
-/obj/structure/closet/crate/roguecloset,
-/obj/item/reagent_containers/food/snacks/rogue/preserved/stuffegg,
-/turf/open/floor/rogue/wood,
+/obj/structure/bars,
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
 /area/rogue/outdoors)
 "QO" = (
 /obj/structure/table/wood,
@@ -7470,6 +7578,11 @@
 /obj/machinery/light/rogue/wallfire,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/under/cavewet)
+"QV" = (
+/obj/effect/wisp,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors)
 "QX" = (
 /obj/structure/spacevine/dendor,
 /obj/structure/statue/bone/rib,
@@ -7551,30 +7664,20 @@
 /obj/effect/decal/cleanable/blood/bubblegum,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/rogue/under/cavewet)
+"Rw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "Rx" = (
 /obj/structure/bars/cemetery,
 /obj/structure/spacevine/dendor,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/rogue/under/cavewet)
-"Ry" = (
-/obj/structure/spacevine/dendor,
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Rz" = (
-/obj/structure/closet/crate/roguecloset,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
-/obj/item/reagent_containers/food/snacks/egg,
-/turf/open/floor/rogue/wood,
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
 "RB" = (
 /obj/machinery/light/rogue/firebowl/standing,
@@ -7649,6 +7752,24 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"RR" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"RT" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"RV" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/outdoors)
 "RW" = (
 /obj/effect/spawner/roguemap/hauntpile,
 /turf/open/floor/rogue/grass,
@@ -7683,11 +7804,12 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "Sb" = (
-/obj/effect/mist,
-/turf/open/floor/rogue/woodturned/nosmooth,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
+/obj/structure/flora/grass/jungle/b,
+/turf/open/water/river{
+	dir = 4;
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors)
 "Sc" = (
 /obj/item/dildo/plug/gold,
 /turf/open/floor/rogue/grass,
@@ -7717,13 +7839,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"Sj" = (
-/obj/structure/spacevine,
-/obj/effect/mist,
-/turf/open/floor/rogue/tile/checker,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Sk" = (
 /obj/structure/roguewindow/stained/silver,
 /turf/open/floor/rogue/church,
@@ -7748,6 +7863,12 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"So" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "Ss" = (
 /obj/structure/stairs{
 	dir = 4
@@ -7761,6 +7882,13 @@
 /obj/item/roguegem/blue,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/under/cavewet)
+"Sv" = (
+/obj/structure/spawner/invisible/skeleton,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Sw" = (
 /obj/structure/stairs/fancy{
 	dir = 1
@@ -7804,6 +7932,8 @@
 	dir = 1;
 	icon_state = "largetable"
 	},
+/obj/item/rogueweapon/mace/stunmace,
+/obj/item/roguegem/violet,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors)
 "SI" = (
@@ -7813,12 +7943,6 @@
 "SL" = (
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/blocks/stonered/tiny,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"SO" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -7859,6 +7983,12 @@
 	icon_state = "weird1"
 	},
 /area/rogue/under/cavewet)
+"SX" = (
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/tile/checker,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Ta" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
@@ -7885,13 +8015,6 @@
 	},
 /turf/open/floor/rogue/grass/hell,
 /area/rogue/under/cavewet)
-"To" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/carpet/royalblack,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Tq" = (
 /obj/structure/bars/cemetery,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -7937,6 +8060,10 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
+"TJ" = (
+/obj/structure/spacevine/dendor,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "TO" = (
 /obj/machinery/light/rogue/torchholder/l,
 /mob/living/carbon/human/species/goblin/npc/ambush,
@@ -7985,13 +8112,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"TW" = (
-/obj/structure/spacevine,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/carpet,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "TY" = (
 /obj/structure/fluff/walldeco/painting/queen,
 /turf/closed/wall/mineral/rogue/decostone,
@@ -8030,9 +8150,11 @@
 /area/rogue/under/cavewet)
 "Ug" = (
 /obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Uh" = (
 /obj/structure/flora/roguetree/happy,
 /obj/structure/spacevine/dendor,
@@ -8047,6 +8169,12 @@
 	icon_state = "bushwall3"
 	},
 /turf/open/floor/rogue/wood,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
+"Um" = (
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -8074,6 +8202,13 @@
 /obj/structure/flora/rogueflora/wormwood,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
+"Ut" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/obj/item/roguegem/red,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "Uv" = (
 /obj/effect/decal/border/stone{
 	dir = 1
@@ -8090,13 +8225,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"UC" = (
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/roguegrass,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
+"UA" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/obj/effect/mist,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "UG" = (
 /obj/structure/bookcase/random,
 /mob/living/simple_animal/hostile/retaliate/rogue/brain_gusher_beast{
@@ -8107,6 +8242,11 @@
 "UJ" = (
 /obj/structure/flora/wildplant/wild_herbs,
 /turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
+"UK" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors)
 "UL" = (
 /obj/structure/rack/rogue,
@@ -8214,6 +8354,12 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
+"Vi" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/tile/checker,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Vk" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/rogue/grass/hell,
@@ -8236,10 +8382,16 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
-"Vq" = (
-/obj/structure/spacevine/dendor,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors)
+"Vr" = (
+/mob/living/carbon/human/species/skeleton/npc/dungeon/boss{
+	faction = list("neutral")
+	},
+/obj/effect/mist,
+/obj/structure/flora/grass/jungle/b,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Vs" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
@@ -8248,24 +8400,16 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"Vt" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"Vu" = (
-/obj/structure/flora/grass/jungle/b,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors)
 "Vw" = (
 /obj/structure/fluff/statue/knight/interior/r,
 /obj/structure/closet/crate/chest/dungeon/mimic,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/rogue/under/cavewet)
+"Vx" = (
+/obj/structure/spacevine/dendor,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors)
 "Vy" = (
 /obj/effect/decal/border{
 	dir = 4
@@ -8300,6 +8444,15 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
+"VM" = (
+/obj/structure/closet/crate/roguecloset,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/roguegem/diamond,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "VO" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -8327,10 +8480,11 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cavewet)
 "VW" = (
-/obj/structure/flora/roguegrass,
-/obj/effect/mist,
+/obj/effect/decal/border{
+	dir = 8
+	},
 /obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors)
 "VX" = (
 /obj/machinery/light/rogue/firebowl/standing,
@@ -8359,11 +8513,12 @@
 /obj/structure/spacevine/dendor,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors)
-"Wd" = (
-/obj/effect/wisp,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
+"We" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/carpet/lord/center,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "Wf" = (
 /obj/structure/floordoor/gatehatch/outer{
 	redstone_id = "gatelava"
@@ -8399,12 +8554,22 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"Wt" = (
+"Wr" = (
+/obj/effect/mist,
 /obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/woodturned/nosmooth,
+/turf/open/floor/rogue/church,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"Ws" = (
+/obj/structure/closet/crate/roguecloset,
+/obj/item/reagent_containers/food/snacks/rogue/friedegg/tiberian,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors)
 "Wu" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/end,
 /area/rogue/under/cavewet)
@@ -8443,9 +8608,8 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors)
 "WE" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/roguestatue/gold,
-/turf/open/floor/rogue/wood,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
 "WF" = (
 /obj/effect/mist,
@@ -8471,6 +8635,13 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"WK" = (
+/obj/structure/flora/grass/jungle,
+/obj/structure/flora/grass/jungle,
+/turf/open/floor/rogue/carpet,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "WL" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 5
@@ -8491,6 +8662,13 @@
 /obj/effect/mist,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet)
+"WP" = (
+/obj/effect/mob_spawner/skeleton/lich,
+/obj/effect/mist,
+/turf/open/floor/rogue/blocks/stonered/tiny,
+/area/rogue/outdoors/town/sargoth{
+	first_time_text = "Arcadia"
+	})
 "WR" = (
 /obj/structure/table/vtable/v2,
 /turf/open/floor/rogue/blocks,
@@ -8505,33 +8683,10 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"WW" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/churchmarble,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Xb" = (
 /obj/structure/spawner/invisible/goblin,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
-"Xc" = (
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/church,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"Xe" = (
-/obj/structure/fluff/walldeco/customflag,
-/obj/structure/flora/grass/jungle/b,
-/turf/closed/wall/mineral/rogue/decostone,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Xf" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/clothing/under/roguetown/tights/stockings/silk/random,
@@ -8599,11 +8754,6 @@
 /obj/structure/closet/crate/chest/refilling/food,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
-"XB" = (
-/obj/effect/mist,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors)
 "XC" = (
 /obj/structure/roguewindow/openclose{
 	dir = 1
@@ -8628,13 +8778,6 @@
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/tile,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
-"XK" = (
-/obj/structure/closet/crate/roguecloset/inn/south,
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -8682,13 +8825,6 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
-"XY" = (
-/obj/item/roguestatue/iron,
-/obj/structure/flora/grass/jungle,
-/turf/open/floor/rogue/carpet,
-/area/rogue/outdoors/town/sargoth{
-	first_time_text = "Arcadia"
-	})
 "Ya" = (
 /obj/structure/bed/rogue/inn/wooldouble,
 /obj/item/bedsheet/rogue/double_pelt,
@@ -8706,8 +8842,8 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavewet)
 "Yg" = (
-/obj/structure/flora/grass/jungle/b,
-/turf/open/floor/rogue/wood/nosmooth,
+/obj/effect/mist,
+/turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
@@ -8885,6 +9021,9 @@
 /area/rogue/outdoors/town/sargoth{
 	first_time_text = "Arcadia"
 	})
+"Zb" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue)
 "Ze" = (
 /obj/effect/mist,
 /turf/open/floor/rogue/dirt/road,
@@ -9138,7 +9277,7 @@ jh
 Rb
 sG
 mr
-QN
+KK
 RE
 tj
 FW
@@ -9149,22 +9288,22 @@ WF
 jh
 wC
 JJ
+Cm
 FW
 FW
-FW
-FW
+Cm
 RD
 RD
 RD
 RD
 RD
 RD
+Cm
 FW
+Cm
+Cm
 FW
-FW
-FW
-FW
-FW
+Cm
 RD
 RD
 "}
@@ -9197,8 +9336,8 @@ UJ
 wC
 sG
 wY
-Vq
-wY
+TJ
+OG
 wY
 IW
 YE
@@ -9207,12 +9346,12 @@ Ji
 Ji
 UJ
 jr
-FW
+Cm
 FW
 fQ
-vI
+AC
 FW
-FW
+Cm
 aU
 RD
 RD
@@ -9221,7 +9360,7 @@ JJ
 FW
 Ah
 DX
-vI
+fC
 uM
 FW
 RD
@@ -9257,7 +9396,7 @@ bo
 sG
 wY
 wY
-Vq
+TJ
 wY
 sG
 YE
@@ -9280,8 +9419,8 @@ eh
 sG
 KN
 DX
-vI
-wY
+kL
+iF
 FW
 RD
 RD
@@ -9327,8 +9466,8 @@ jh
 WT
 FW
 wY
-hm
-vI
+Rw
+kI
 VE
 IW
 UJ
@@ -9337,10 +9476,10 @@ Vf
 wC
 eh
 IW
-GQ
+Ga
 vI
 mh
-mr
+gQ
 sG
 RD
 RD
@@ -9387,7 +9526,7 @@ wC
 IW
 rN
 vI
-Vq
+TJ
 vI
 ps
 jh
@@ -9395,12 +9534,12 @@ pe
 wC
 wC
 eh
-FW
+IW
 fQ
 wY
 XL
 Sl
-FW
+Cm
 RD
 RD
 "}
@@ -9447,7 +9586,7 @@ FW
 dE
 vI
 wY
-WE
+NP
 IW
 vf
 Bg
@@ -9455,9 +9594,9 @@ wC
 jh
 qW
 FW
-FW
+Cm
 ps
-FW
+Cm
 vI
 sG
 RD
@@ -9497,17 +9636,17 @@ tN
 jh
 JK
 Ji
-Cp
+JC
 jh
 qN
 jh
 Us
-FW
+Cm
 FW
 IW
+IW
 FW
-FW
-FW
+Cm
 AS
 VF
 YE
@@ -9516,7 +9655,7 @@ jh
 wC
 CW
 wC
-IW
+pS
 wY
 FW
 RD
@@ -9555,8 +9694,8 @@ eq
 jh
 jh
 gi
-Cp
-Cp
+JC
+JC
 UJ
 jh
 WT
@@ -9614,7 +9753,7 @@ jh
 Vf
 Vf
 Ji
-Cp
+JC
 Ji
 jh
 gi
@@ -9634,9 +9773,9 @@ eq
 JK
 JK
 wC
-FW
-FW
-FW
+Cm
+pS
+Cm
 RD
 RD
 "}
@@ -9670,11 +9809,11 @@ Bg
 wC
 wC
 cU
-Hs
+VW
 eS
 eS
-Hs
-Hs
+VW
+VW
 eS
 yJ
 Vf
@@ -9685,10 +9824,10 @@ JK
 AH
 Bg
 FW
-FW
+Cm
 IW
+qy
 IW
-FW
 FW
 bC
 Ef
@@ -9729,10 +9868,10 @@ wC
 wC
 Bg
 cU
-KV
-KV
-KV
-KV
+RV
+RV
+RV
+RV
 Bl
 Bl
 yJ
@@ -9748,7 +9887,7 @@ wN
 mr
 fQ
 cG
-FW
+Cm
 Vh
 Vf
 wC
@@ -9789,11 +9928,11 @@ Bg
 wC
 cU
 Vy
-dA
-dA
+cR
+cR
 Vy
 Vy
-dA
+cR
 yJ
 Vf
 wC
@@ -9804,9 +9943,9 @@ YE
 eq
 ps
 vI
-wY
+OG
 vI
-Mp
+Ut
 IW
 bC
 wC
@@ -9848,7 +9987,7 @@ Vf
 jh
 Yh
 Ji
-Cp
+JC
 Ji
 JK
 JK
@@ -9865,8 +10004,8 @@ IW
 wY
 vI
 wY
-GQ
-FW
+Ga
+Cm
 tN
 wC
 wC
@@ -9906,8 +10045,8 @@ JK
 Vf
 eq
 eq
-Cp
-Cp
+JC
+JC
 gi
 Vf
 Ef
@@ -9921,8 +10060,8 @@ Hy
 VF
 wC
 FW
-FW
-FW
+Cm
+IW
 FW
 IW
 FW
@@ -9965,7 +10104,7 @@ JK
 jh
 jh
 gi
-Cp
+JC
 Ji
 WT
 Vf
@@ -10083,14 +10222,14 @@ WT
 WT
 eq
 jh
-Cp
+JC
 Ji
 gi
 WT
 jh
 eq
 FW
-Vq
+TJ
 vI
 FW
 Ir
@@ -10100,7 +10239,7 @@ JK
 JK
 wC
 wC
-jh
+wC
 JK
 JK
 xD
@@ -10142,7 +10281,7 @@ jh
 jh
 jr
 Ji
-Cp
+JC
 Ji
 WT
 eq
@@ -10158,9 +10297,9 @@ jh
 Yh
 JK
 jh
-jr
-WT
-jh
+SI
+bo
+wC
 FQ
 Vf
 jr
@@ -10201,14 +10340,14 @@ jh
 jh
 gi
 Ji
-Cp
+JC
 Ji
 jh
 pX
 RD
 RD
 FW
-GQ
+Ga
 wY
 FW
 IW
@@ -10218,8 +10357,8 @@ oM
 FW
 BF
 JK
-Vf
-Vf
+oJ
+oJ
 bC
 bC
 bC
@@ -10261,7 +10400,7 @@ Vf
 jh
 Ji
 Ji
-HL
+Gp
 jh
 pX
 RD
@@ -10269,16 +10408,16 @@ RD
 FW
 FW
 wY
-hm
-hm
+Rw
+Rw
 wY
 vI
 Fu
 FW
 UJ
 jh
-jh
-jh
+wC
+wC
 jh
 BF
 WT
@@ -10319,7 +10458,7 @@ RD
 pX
 jh
 Ji
-Cp
+JC
 jr
 qN
 eq
@@ -10329,7 +10468,7 @@ RD
 FW
 fQ
 wY
-vI
+kI
 vI
 wY
 MK
@@ -10377,8 +10516,8 @@ RD
 RD
 RD
 Ji
-Cp
-Cp
+JC
+JC
 jh
 WT
 eq
@@ -10393,7 +10532,7 @@ DX
 Rl
 FW
 FW
-wC
+oJ
 Xl
 wC
 bo
@@ -10436,7 +10575,7 @@ aU
 aU
 pg
 Ji
-Cp
+JC
 gi
 jh
 gi
@@ -10452,19 +10591,19 @@ FW
 FW
 FW
 Us
+Po
+oJ
+wC
+wC
+wC
 bo
 wC
 wC
 wC
-wC
-bo
-wC
-wC
-wC
+Cm
 FW
 FW
-FW
-FW
+Cm
 "}
 (25,1,1) = {"
 qx
@@ -10494,7 +10633,7 @@ MT
 Vf
 jh
 JK
-Cp
+JC
 Ji
 UJ
 Ef
@@ -10513,13 +10652,13 @@ RD
 RD
 pX
 pX
-RD
+Zb
 aU
-LX
+wC
 wC
 Xl
 wC
-wC
+jh
 IW
 Ck
 Mc
@@ -10553,13 +10692,13 @@ Vf
 jr
 WT
 JK
-Cp
+JC
 Ji
 jh
 WT
 Vf
 Vf
-jh
+wC
 WT
 jh
 YR
@@ -10572,13 +10711,13 @@ RD
 pX
 pX
 RD
-RD
-RD
-RD
-RD
-RD
-wC
-wC
+OO
+OO
+Zb
+Zb
+MV
+Vf
+Vf
 ps
 wY
 Mp
@@ -10611,35 +10750,35 @@ wC
 bo
 wC
 cU
-Hs
-Hs
-Hs
+VW
+VW
+VW
 PI
 yJ
 wC
-xn
-qb
-xn
-jh
+Qa
+HP
+Qa
+wC
 jh
 jS
 jh
 wC
 kQ
 jh
-OG
-KW
+AF
+So
 WT
 pX
-RD
-RD
-RD
-RD
-RD
-FW
+Zb
+Zb
+sV
+pO
+pX
+Cm
 IW
-FW
-wY
+Cm
+ff
 wY
 FW
 "}
@@ -10673,32 +10812,32 @@ cU
 Kr
 Kr
 Vy
-dA
-IZ
+cR
+Kc
 kQ
 wC
 wC
-xn
-wI
-jh
+Qa
+Qa
+wC
 gi
 bo
-uW
+HV
 bd
 YE
 WT
-Wd
+ih
 Oh
 jh
-UJ
+ho
+Zb
 pX
 pX
-RD
-RD
+pX
 FW
-Rz
+VM
 wY
-wY
+ff
 wY
 FW
 "}
@@ -10723,7 +10862,7 @@ qx
 qx
 RD
 FW
-SH
+dc
 fu
 FW
 jh
@@ -10731,33 +10870,33 @@ tN
 jh
 jh
 Ji
-Cp
+JC
 gi
 eq
 jh
 WT
 wC
 wC
-xn
-wI
-xn
-pE
-xn
-XB
-fm
+Qa
+WE
+Qa
+aq
+Qa
+LN
+Ad
 YE
 jh
 jh
 gi
-WT
-jS
+bo
+zf
 pX
-RD
-RD
-FW
+pX
+lB
+Ku
 wY
-wY
-wY
+ff
+ff
 Mg
 FW
 "}
@@ -10790,29 +10929,29 @@ jh
 jh
 gi
 Ji
-Cp
+JC
 eq
 eq
-cF
+gr
 jr
 jh
 jh
 gi
-jh
+wC
 cN
 bo
 jS
 wC
-CO
-Jv
+Lb
+NW
 wC
 wC
-jh
-Vf
+wC
+oJ
 Po
 jh
-RD
-RD
+pX
+pX
 FW
 mr
 wY
@@ -10841,7 +10980,7 @@ qx
 RD
 RD
 sG
-Vq
+TJ
 wY
 FW
 aJ
@@ -10849,7 +10988,7 @@ eq
 WT
 jh
 Ji
-Cp
+JC
 Ji
 jh
 gi
@@ -10863,21 +11002,21 @@ jh
 jh
 gi
 kQ
-uW
-xn
+HV
+Qa
 cN
-hg
-xD
-WT
+Qk
+Tz
+bo
 WT
 pX
-RD
+pX
+Cm
 FW
 FW
+Cm
 FW
-FW
-FW
-FW
+Cm
 "}
 (32,1,1) = {"
 qx
@@ -10900,7 +11039,7 @@ qx
 RD
 FW
 sG
-Vq
+TJ
 wY
 FW
 FW
@@ -10908,7 +11047,7 @@ xD
 WT
 jr
 WT
-Cp
+JC
 Ji
 gi
 jh
@@ -10923,11 +11062,11 @@ jh
 jr
 jr
 WT
-Vu
-xn
+Bp
+Qa
 RK
-fm
-FU
+Ad
+Vx
 ZH
 vf
 pX
@@ -10967,8 +11106,8 @@ ps
 IW
 FW
 Vf
-Cp
-Cp
+JC
+JC
 UJ
 JK
 JK
@@ -10986,7 +11125,7 @@ jr
 pn
 oJ
 bo
-qb
+HP
 Tz
 vf
 Vf
@@ -11017,17 +11156,17 @@ qx
 qx
 RD
 FW
-mr
+oC
 wY
 wY
-Vq
-Vq
+TJ
+TJ
 vI
 wY
 FW
 Vf
 gi
-Cp
+JC
 Ji
 jh
 jh
@@ -11041,14 +11180,14 @@ aU
 aU
 Ge
 YR
-hB
+qX
 EG
 Vf
 ZH
 cN
-Io
+UK
 bo
-rK
+mD
 vf
 ZH
 jh
@@ -11076,17 +11215,17 @@ qx
 qx
 RD
 FW
-tj
+wY
 wY
 vI
 wY
 wY
-Vq
-wY
+TJ
+Px
 FW
 jh
 JK
-Cp
+JC
 Ji
 nx
 aU
@@ -11101,13 +11240,13 @@ aU
 aU
 nx
 UJ
-uS
-mu
+bN
+xO
 YT
 wC
 CP
-xn
-pE
+Qa
+aq
 Oh
 bo
 Ta
@@ -11135,9 +11274,9 @@ qx
 qx
 RD
 FW
-AF
+Ws
 wY
-vI
+jg
 fQ
 FW
 FW
@@ -11146,7 +11285,7 @@ FW
 YR
 JK
 Ji
-Cp
+JC
 nx
 aU
 aU
@@ -11166,9 +11305,9 @@ jr
 vf
 vf
 WT
-EW
+gE
 gx
-jU
+oD
 bo
 wC
 YR
@@ -11205,7 +11344,7 @@ aU
 aU
 tC
 rX
-DL
+mj
 tC
 aU
 aU
@@ -11227,8 +11366,8 @@ WT
 NI
 Zs
 Qk
-ff
-Io
+rY
+UK
 cN
 ZH
 RD
@@ -11264,7 +11403,7 @@ aU
 aU
 tC
 WF
-jT
+pQ
 tC
 aU
 aU
@@ -11287,7 +11426,7 @@ WT
 WT
 wC
 gi
-Io
+UK
 mR
 jt
 RD
@@ -11323,7 +11462,7 @@ tC
 tC
 tC
 rX
-vt
+QN
 tC
 tC
 tC
@@ -11347,7 +11486,7 @@ wC
 WT
 oJ
 Qk
-xn
+Qa
 Vd
 RD
 "}
@@ -11381,7 +11520,7 @@ gi
 jh
 WT
 JK
-Cp
+JC
 Ji
 JK
 zl
@@ -11405,8 +11544,8 @@ tT
 Ta
 oV
 iX
-hC
-hC
+BI
+BI
 jh
 RD
 "}
@@ -11440,7 +11579,7 @@ jr
 jr
 jh
 JK
-Cp
+JC
 Ji
 JK
 xD
@@ -11463,8 +11602,8 @@ tT
 tT
 ZH
 UV
-wI
-Io
+WE
+UK
 wC
 Xl
 RD
@@ -11499,7 +11638,7 @@ jh
 jr
 MF
 JK
-vy
+AK
 Ji
 JK
 Vf
@@ -11522,7 +11661,7 @@ Nl
 tT
 Zs
 EM
-hC
+BI
 WT
 zB
 ZH
@@ -11558,7 +11697,7 @@ jh
 jr
 MF
 JK
-Cp
+JC
 Ji
 JK
 WT
@@ -11581,7 +11720,7 @@ Nl
 tT
 Tz
 cN
-hC
+BI
 Po
 Ta
 Qk
@@ -11617,7 +11756,7 @@ WT
 jr
 JK
 JK
-Cp
+JC
 Ji
 JK
 jh
@@ -11640,7 +11779,7 @@ dd
 tT
 gi
 hg
-wI
+WE
 Po
 Vs
 Tz
@@ -11676,8 +11815,8 @@ jh
 jh
 jr
 jr
-Cp
-Cp
+JC
+JC
 jh
 jh
 JK
@@ -11691,7 +11830,7 @@ JK
 JK
 JK
 jr
-ey
+NM
 jf
 tT
 dd
@@ -11699,8 +11838,8 @@ dd
 tT
 YR
 bo
-pE
-qb
+aq
+HP
 ZH
 Tz
 RD
@@ -11736,7 +11875,7 @@ Jf
 JK
 jr
 Ji
-Cp
+JC
 jh
 jh
 tt
@@ -11759,7 +11898,7 @@ tT
 bo
 wC
 cO
-UC
+Pv
 Qk
 GO
 RD
@@ -11794,8 +11933,8 @@ jh
 JK
 jh
 jr
-ee
-Cp
+Sb
+JC
 jh
 jh
 jh
@@ -11803,13 +11942,13 @@ MF
 MF
 MF
 jr
-cF
+gr
 Qb
 Vf
 Vf
 jh
 UJ
-Hp
+Rz
 JK
 tT
 WM
@@ -11818,7 +11957,7 @@ tT
 wC
 cN
 Qk
-xn
+Qa
 jh
 UJ
 RD
@@ -11862,7 +12001,7 @@ gu
 gu
 ZC
 jh
-HL
+Gp
 JK
 Gi
 eq
@@ -11874,9 +12013,9 @@ tT
 WM
 dd
 tT
-LW
-wI
-VW
+pA
+WE
+mB
 jh
 jr
 gi
@@ -11905,17 +12044,17 @@ uQ
 uQ
 ZC
 mW
-tE
+ND
 sJ
 rI
 lb
-Ry
+zj
 ZC
 gu
 gu
 ZC
 ul
-Sb
+Yg
 ul
 SR
 ul
@@ -11935,7 +12074,7 @@ WM
 tT
 jh
 oJ
-xn
+Qa
 jS
 WT
 jh
@@ -11953,7 +12092,7 @@ jh
 eq
 eq
 ZC
-mo
+mX
 kg
 Pu
 kg
@@ -11964,18 +12103,18 @@ ZC
 ZC
 ZC
 Jg
-HK
-HK
-ak
-HK
+SX
+SX
+Vi
+SX
 lZ
 GD
 rI
-Vt
+RT
 ZC
 KM
 SR
-oz
+rt
 Zl
 EY
 ZC
@@ -11994,7 +12133,7 @@ WM
 tT
 jh
 Xl
-Io
+UK
 gi
 WT
 Vf
@@ -12016,34 +12155,34 @@ kg
 kg
 Ls
 kg
-mo
+mX
 ZC
 bV
 wH
 kV
 gu
 cT
-ak
+Vi
 hP
 yp
-ak
+Vi
 bv
 ZC
 ZC
 ZC
 ZC
 dW
-Sb
+Yg
 ul
-Wt
-Jj
+tg
+na
 ZC
 rB
 eq
 JK
 JK
 eq
-HL
+Gp
 Vf
 jh
 JK
@@ -12053,7 +12192,7 @@ WM
 tT
 WT
 kQ
-wI
+WE
 wC
 wC
 Po
@@ -12075,17 +12214,17 @@ kg
 ZC
 ZC
 ZC
-mo
+mX
 ZC
 Dm
-yP
+Ky
 Ei
 gu
 NU
 lf
 Gv
 Dh
-HK
+SX
 tu
 ZC
 vl
@@ -12103,7 +12242,7 @@ JK
 UJ
 jh
 jr
-Hp
+Rz
 WT
 QH
 tT
@@ -12112,7 +12251,7 @@ WM
 tT
 jh
 RJ
-wI
+WE
 wC
 RJ
 wC
@@ -12138,20 +12277,20 @@ kg
 ZC
 wF
 Qu
-yP
+Ky
 GD
 rI
 lf
-Sj
-Sj
-HK
+Bc
+Bc
+SX
 rI
 aO
 Ei
 Qu
 fg
-Yg
-FD
+PC
+zF
 Wm
 ZC
 Ei
@@ -12163,14 +12302,14 @@ jr
 jh
 XU
 jr
-tY
+yR
 JK
 tT
 dd
 dd
 tT
 jh
-Io
+UK
 oJ
 bo
 jr
@@ -12203,15 +12342,15 @@ Pk
 lb
 Uk
 rI
-qE
-qE
+Kb
+Kb
 ZC
 wO
 Li
 ZC
-iF
+he
 uE
-FD
+zF
 wX
 Ei
 Ei
@@ -12229,8 +12368,8 @@ dd
 WM
 tT
 UJ
-uD
-Ug
+QV
+Pz
 jh
 oJ
 bo
@@ -12262,13 +12401,13 @@ GG
 lb
 ZC
 qh
-yF
+NX
 ZC
 mx
 Jb
 wO
 ZC
-he
+pj
 gD
 VX
 ZC
@@ -12289,8 +12428,8 @@ WM
 tT
 WT
 cN
-qb
-xn
+HP
+Qa
 oJ
 cN
 RD
@@ -12308,14 +12447,14 @@ jh
 jh
 gu
 Jt
-eZ
-zK
+Oq
+Qi
 gc
 lP
 ZC
 Sw
-zK
-lY
+Qi
+as
 ZC
 TY
 fj
@@ -12349,7 +12488,7 @@ tT
 wC
 kQ
 wC
-qb
+HP
 Zv
 wC
 RD
@@ -12368,28 +12507,28 @@ JK
 ZC
 ka
 gc
-zK
+Qi
 gc
 SL
 Cy
 gc
-zK
-Qz
-Qz
-Qz
-Qz
+Qi
+Np
+Np
+Np
+Np
 ka
-Au
-Au
+Ug
+Ug
 gc
-Qz
-Qz
+Np
+Np
 gc
 ka
-zK
-zK
-Qz
-lY
+Qi
+Qi
+Np
+as
 SL
 ka
 ZC
@@ -12408,8 +12547,8 @@ tT
 if
 kQ
 wC
-Io
-LW
+UK
+pA
 wC
 RD
 "}
@@ -12429,34 +12568,34 @@ Jt
 Jt
 Jt
 SL
-xa
-zK
+nV
+Qi
 gc
 Jt
 Jt
 gc
 lP
-Qz
-zK
-yM
-nw
+Np
+Qi
+aQ
+DO
 or
 or
 SL
-Qz
-zK
-yV
+Np
+Qi
+WP
 gc
 gc
 gc
-lY
+as
 lP
 ZC
 eq
 du
 Vf
 JK
-qI
+EQ
 jh
 jh
 pg
@@ -12467,7 +12606,7 @@ tT
 jr
 oJ
 WI
-xn
+Qa
 oJ
 oJ
 RD
@@ -12497,7 +12636,7 @@ mx
 mx
 ZC
 GN
-Xe
+oT
 GN
 Nm
 GN
@@ -12525,7 +12664,7 @@ dd
 tT
 tC
 wC
-xn
+Qa
 kQ
 wC
 Xl
@@ -12556,18 +12695,18 @@ Nl
 NY
 Zn
 dw
-oo
-gA
+GQ
+oL
 fs
 Jn
 dx
 ZC
 Dx
 Dx
-Me
+iI
 TP
-pO
-pO
+lG
+lG
 TP
 TP
 jh
@@ -12575,7 +12714,7 @@ tt
 eq
 WT
 Vf
-HL
+Gp
 jf
 Hg
 tT
@@ -12585,7 +12724,7 @@ go
 tC
 wC
 LM
-wI
+WE
 RY
 kQ
 RD
@@ -12599,11 +12738,11 @@ jh
 ZC
 sx
 kg
-zr
-zr
+bS
+bS
 fs
-oo
-oo
+GQ
+GQ
 gu
 Nl
 KC
@@ -12616,8 +12755,8 @@ ZC
 Kk
 uJ
 fs
-gA
-nK
+oL
+QJ
 ME
 Jn
 mx
@@ -12625,9 +12764,9 @@ ZC
 ZC
 ZC
 UZ
-EF
+vX
 Lq
-iK
+jJ
 fS
 cp
 rB
@@ -12644,8 +12783,8 @@ UR
 Bl
 oJ
 wC
-xn
-xn
+Qa
+Qa
 My
 RD
 "}
@@ -12662,7 +12801,7 @@ Uw
 Uw
 ZC
 no
-mE
+Aw
 gu
 Nl
 KC
@@ -12685,7 +12824,7 @@ Jn
 eE
 RM
 aB
-pS
+pR
 aB
 RM
 Yy
@@ -12704,7 +12843,7 @@ bW
 qW
 zf
 bo
-xn
+Qa
 wC
 RD
 "}
@@ -12735,11 +12874,11 @@ ZC
 ab
 ab
 ab
-ql
+sA
 ab
 ab
 vj
-ql
+sA
 ab
 Nm
 vn
@@ -12747,11 +12886,11 @@ MU
 Ze
 zR
 ab
-ql
+sA
 zR
 zR
-ql
-ql
+sA
+sA
 ab
 vn
 RN
@@ -12762,8 +12901,8 @@ lw
 jM
 oJ
 wC
-xn
-wI
+Qa
+WE
 wC
 RD
 "}
@@ -12791,27 +12930,27 @@ ZC
 DY
 ZW
 iS
-ql
-ql
+sA
+sA
 ab
 TP
-ql
-ql
-AD
+sA
+sA
+We
 Jl
-ql
+sA
 vn
 Ds
 Ze
 ab
 ab
 RN
-MD
-ql
+fO
+sA
 ab
 XX
-su
-ql
+xa
+sA
 vB
 Ze
 jM
@@ -12819,9 +12958,9 @@ Wf
 Ds
 Wf
 jM
-xn
-xn
-wI
+Qa
+Qa
+WE
 kQ
 bo
 RD
@@ -12851,11 +12990,11 @@ ZC
 ZC
 ZC
 ab
-ql
+sA
 sc
 AQ
 TP
-ql
+sA
 Tx
 vn
 ab
@@ -12863,7 +13002,7 @@ Nm
 RN
 vn
 RN
-ql
+sA
 ab
 ab
 vn
@@ -12912,11 +13051,11 @@ fs
 Lo
 GZ
 dw
-is
-ex
+mo
+QE
 Jn
 ZC
-dP
+UA
 ME
 eE
 xK
@@ -12951,12 +13090,12 @@ MF
 Qb
 jh
 ZC
-XK
-SO
+Fx
+mM
 Ei
 Zt
-mE
-oo
+Aw
+GQ
 fs
 ZC
 Nl
@@ -12967,13 +13106,13 @@ gu
 LA
 cX
 ZC
-oo
+GQ
 uJ
-qp
+Wr
 Jn
 ME
-nK
-gA
+QJ
+oL
 ZC
 ZC
 ZC
@@ -13012,10 +13151,10 @@ jh
 ZC
 sx
 kg
-HX
+mP
 kK
 ZC
-mO
+NT
 Zn
 ZC
 Nl
@@ -13024,18 +13163,18 @@ Nl
 Nl
 ZC
 kt
-vM
+jo
 GN
-gA
-gA
-qp
-gA
+oL
+oL
+Wr
+oL
 fs
 Jn
-oo
+GQ
 ZC
-Me
-pO
+iI
+lG
 Dx
 xK
 gu
@@ -13082,8 +13221,8 @@ ZC
 TY
 ZC
 ZC
-ND
-vM
+LQ
+jo
 ZC
 ZC
 GN
@@ -13137,14 +13276,14 @@ eq
 eq
 ZC
 aC
-ND
-ND
-vM
-ND
+LQ
+LQ
+jo
+LQ
 yh
 ZC
 gu
-GW
+ED
 gc
 gc
 Lw
@@ -13154,11 +13293,11 @@ gc
 gc
 Jt
 Jt
-zK
-zK
+Qi
+Qi
 lP
-zK
-PF
+Qi
+lY
 ZC
 eq
 jh
@@ -13196,25 +13335,25 @@ jh
 eq
 ZC
 Wx
-ND
-vM
-Ms
+LQ
+jo
+sp
 DV
 ZC
 gu
-pZ
+Ht
 Lw
-eZ
-zK
+Oq
+Qi
 Jt
 Jt
-PA
-zK
+Vr
+Qi
 Lw
 Lw
-zK
+Qi
 xx
-cI
+HQ
 FV
 gc
 gH
@@ -13254,24 +13393,24 @@ JK
 JK
 jh
 gu
-QK
+Ag
 yh
-vM
-vM
+jo
+jo
 kq
 ZC
 wh
 US
-zZ
+pL
 Xt
 ZC
 zx
-lt
-wc
+pE
+Gs
 Ce
 ZC
-GW
-zK
+ED
+Qi
 ZC
 ku
 ZC
@@ -13314,26 +13453,26 @@ jh
 jh
 gu
 Qm
-Ms
+sp
 cX
 yh
 Yo
 ZC
 kP
-lt
-wc
+pE
+Gs
 Ce
 ZC
 zx
-lt
+pE
 wh
 hX
 ZC
 Lw
 gc
 ZC
-LE
-LE
+HU
+HU
 Ei
 Zg
 gu
@@ -13392,8 +13531,8 @@ CV
 Jt
 ZC
 Ei
-LE
-LE
+HU
+HU
 Ei
 gu
 Ng
@@ -13443,11 +13582,11 @@ jh
 jh
 jh
 gu
-On
+qI
 RQ
 Zg
 ZC
-zK
+Qi
 Jt
 gu
 Li
@@ -13503,11 +13642,11 @@ tS
 jh
 gu
 RQ
-yP
+Ky
 Ei
 ku
-zK
-zK
+Qi
+Qi
 ZC
 gu
 TY
@@ -13563,12 +13702,12 @@ Gi
 ZC
 ls
 RQ
-nX
+LS
 ZC
 Jt
-zK
+Qi
 ku
-LE
+HU
 Ei
 Zg
 ZC
@@ -13627,8 +13766,8 @@ ZC
 ZC
 gu
 gu
-yP
-LE
+Ky
+HU
 Ei
 ZC
 dQ
@@ -13852,9 +13991,9 @@ EO
 Vc
 Vc
 fw
-xU
-xU
-cb
+tl
+tl
+KO
 xh
 fw
 Hg
@@ -13911,10 +14050,10 @@ XU
 Vc
 Oc
 Zu
-xU
+tl
 Vc
 Vc
-cb
+KO
 xh
 UG
 Hg
@@ -13969,12 +14108,12 @@ WT
 WT
 Hg
 fw
-cb
-pv
+KO
+MI
 Vc
 Yt
-cb
-dG
+KO
+Ac
 fw
 Vc
 Vf
@@ -14028,12 +14167,12 @@ jh
 jh
 Hg
 fw
-cb
+KO
 Qj
 Vc
 Ss
-xU
-cb
+tl
+KO
 xh
 ju
 oJ
@@ -14088,12 +14227,12 @@ jh
 Vc
 fw
 xh
-cb
+KO
 Vc
 Vc
-xU
+tl
 xh
-td
+iZ
 Vc
 jh
 jh
@@ -14147,10 +14286,10 @@ jh
 Vc
 Vc
 fw
-NM
+Dn
 xh
-NM
-xU
+Dn
+tl
 fw
 Vc
 Vc
@@ -22456,7 +22595,7 @@ qx
 qx
 Nl
 Dw
-KY
+kj
 PU
 lA
 Dw
@@ -22517,7 +22656,7 @@ Nl
 Dw
 dJ
 pV
-KY
+kj
 Dw
 ZC
 ec
@@ -22575,7 +22714,7 @@ qx
 Nl
 LC
 lA
-KY
+kj
 pV
 LC
 ZC
@@ -22694,8 +22833,8 @@ wj
 ZC
 rc
 Ot
-it
-it
+vz
+vz
 qP
 gu
 Xk
@@ -22704,7 +22843,7 @@ ec
 ZC
 ZC
 ZC
-XY
+eK
 oR
 kg
 kR
@@ -22763,10 +22902,10 @@ gu
 ZC
 ZC
 ZC
-sC
+id
 kg
 kg
-ms
+WK
 ZC
 xk
 ZC
@@ -22871,12 +23010,12 @@ ZC
 xV
 Qf
 Ca
-it
+vz
 sD
 Un
 ZC
 zL
-ql
+sA
 zi
 ZC
 vm
@@ -22930,15 +23069,15 @@ ZC
 Fk
 BY
 Ot
-Qg
-it
+Gd
+vz
 Ex
 Hw
-ql
+sA
 ab
 ab
 UW
-sC
+id
 kg
 bz
 ZC
@@ -23000,7 +23139,7 @@ ZC
 lU
 kg
 kg
-SO
+mM
 kg
 kg
 ZC
@@ -23046,7 +23185,7 @@ qx
 RD
 ZC
 ZC
-oZ
+DQ
 ZC
 Bt
 ZC
@@ -23057,7 +23196,7 @@ ZC
 ZC
 ZC
 kg
-TW
+Pp
 Ls
 ZC
 YJ
@@ -23105,8 +23244,8 @@ qx
 RD
 RD
 gu
-nX
-yP
+LS
+Ky
 bb
 Dk
 Pj
@@ -23166,14 +23305,14 @@ RD
 Nm
 bb
 pi
-hA
+Sv
 Tm
 kw
 hT
 hT
 JP
 RQ
-nX
+LS
 RQ
 Ei
 Ei
@@ -23229,11 +23368,11 @@ Ww
 UX
 UX
 Pj
-PJ
+CG
 uc
 Pj
-wB
-wB
+mu
+mu
 IO
 UX
 UX
@@ -23406,11 +23545,11 @@ ZC
 Iu
 rP
 xY
-Xc
+RR
 fs
 yx
-oo
-lC
+GQ
+Fg
 Rk
 at
 WV
@@ -23459,12 +23598,12 @@ qx
 qx
 RD
 ZC
-pT
+vt
 ZD
 ZC
 Ho
 vw
-WW
+As
 yw
 sU
 ti
@@ -23528,7 +23667,7 @@ FM
 Uv
 jI
 vs
-Lu
+KI
 rl
 WV
 at
@@ -23583,7 +23722,7 @@ ZC
 wQ
 nM
 wp
-yR
+iV
 rz
 lW
 SP
@@ -23708,7 +23847,7 @@ sP
 yw
 Rk
 WV
-rE
+od
 at
 Yz
 Kk
@@ -23763,8 +23902,8 @@ TF
 hL
 Fn
 yx
-Xc
-Xc
+RR
+RR
 dH
 at
 at
@@ -23822,7 +23961,7 @@ Db
 VC
 kr
 yb
-Xc
+RR
 QY
 gN
 OP
@@ -23943,9 +24082,9 @@ bc
 fn
 WJ
 OZ
-ut
-ut
-To
+xr
+xr
+In
 OZ
 ks
 ks
@@ -23956,7 +24095,7 @@ rI
 rI
 sy
 nB
-jq
+hs
 ZC
 Xk
 ec
@@ -24012,10 +24151,10 @@ fn
 fn
 ZZ
 jK
-Cg
-oF
+Mb
+ex
 RZ
-NK
+kG
 yK
 Xk
 ec
@@ -24059,9 +24198,9 @@ wL
 Rj
 fn
 Zj
-pL
+Um
 Tm
-EL
+mg
 Pl
 at
 rR
@@ -24120,7 +24259,7 @@ Da
 fn
 fn
 WJ
-Mo
+zv
 Pl
 at
 rR
@@ -24187,12 +24326,12 @@ ZZ
 ZC
 ZC
 jK
-Cx
+vY
 ZC
-nc
+jG
 sy
 rk
-yZ
+LO
 ZC
 Xk
 Xk
@@ -24245,7 +24384,7 @@ jK
 wL
 fn
 fn
-ut
+xr
 fn
 ZC
 mx
@@ -24297,18 +24436,18 @@ Xk
 Xk
 Xk
 ZC
-ut
-To
+xr
+In
 gu
 jK
-si
-ut
+vR
+xr
 fn
 wL
 wL
-Cx
+vY
 rI
-Cx
+vY
 rI
 yn
 KG
@@ -24361,13 +24500,13 @@ fn
 ZC
 jK
 fn
-To
-To
+In
+In
 WJ
 fn
-pj
-Cg
-Cx
+wn
+Mb
+vY
 cT
 se
 KG
@@ -24426,7 +24565,7 @@ uA
 ZC
 ZC
 jK
-Cx
+vY
 cT
 yn
 KG
@@ -24475,7 +24614,7 @@ Xk
 Xk
 ZC
 xd
-ut
+xr
 ZC
 Xk
 Xk
@@ -24592,8 +24731,8 @@ Xk
 ZC
 gu
 DA
-Nh
-Nh
+LX
+LX
 rI
 ZC
 gu
@@ -24651,10 +24790,10 @@ gu
 gu
 jK
 Fy
-Nh
-Nh
-Nh
-Cx
+LX
+LX
+LX
+vY
 ZC
 ZC
 Xk
@@ -24708,12 +24847,12 @@ Xk
 Xk
 ZC
 Fj
-Cx
+vY
 Sf
 ZC
 ZC
 Sf
-qE
+Kb
 Fj
 ZC
 ec
@@ -24767,11 +24906,11 @@ Xk
 Xk
 yK
 uT
-Cx
-Nh
+vY
+LX
 fM
 ZC
-Nh
+LX
 rI
 ia
 yK
@@ -24826,12 +24965,12 @@ Xk
 Xk
 yK
 hx
-Cx
+vY
 cq
 ZC
 at
-Nh
-Cx
+LX
+vY
 Sm
 yK
 Xk
@@ -24885,12 +25024,12 @@ Xk
 Xk
 ZC
 YL
-pj
+wn
 Sf
 ZC
 Ld
 Sf
-Cx
+vY
 YL
 gu
 Xk
@@ -24945,11 +25084,11 @@ Xk
 ZC
 ZC
 HI
-Nh
-Nh
-Nh
-Nh
-Cx
+LX
+LX
+LX
+LX
+vY
 ZC
 ZC
 Xk
