@@ -249,6 +249,12 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cavewet)
+"be" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog1"
+	},
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/indoors/shelter/town/dwarf)
 "bf" = (
 /obj/item/natural/bundle/stick,
 /turf/open/floor/rogue/dirt,
@@ -699,7 +705,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/cup/steel,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town/dwarf)
 "dv" = (
 /obj/structure/flora/newleaf,
@@ -1142,7 +1148,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/cup/skull,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town/dwarf)
 "fG" = (
 /obj/structure/closet/crate/chest,
@@ -2544,7 +2550,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/cup/steel,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town/dwarf)
 "ms" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -2979,6 +2985,14 @@
 	first_time_text = "The Woodland Tribe";
 	name = "Wood elf Tribes"
 	})
+"oq" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog2"
+	},
+/turf/closed/wall/mineral/rogue/pipe{
+	icon_state = "Cog"
+	},
+/area/rogue/indoors/shelter/town/dwarf)
 "ot" = (
 /obj/structure/bars/passage{
 	gid = "dwarfinner2";
@@ -3128,6 +3142,14 @@
 	first_time_text = "The Woodland Tribe";
 	name = "Wood elf Tribes"
 	})
+"pj" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog1"
+	},
+/turf/closed/wall/mineral/rogue/pipe{
+	icon_state = "Cog"
+	},
+/area/rogue/indoors/shelter/town/dwarf)
 "pl" = (
 /obj/structure/barricade/wood_spike,
 /turf/open/floor/grass,
@@ -5332,7 +5354,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/cup/skull,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town/dwarf)
 "Ax" = (
 /obj/structure/flora/roguetree/stump,
@@ -5596,6 +5618,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"BF" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog2"
+	},
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/indoors/shelter/town/dwarf)
 "BG" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -5869,6 +5897,10 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"CS" = (
+/obj/machinery/light/rogue/forge,
+/turf/open/floor/bronze,
+/area/rogue/indoors/shelter/town/dwarf)
 "CT" = (
 /obj/structure/roguerock,
 /turf/open/water/cleanshallow,
@@ -6255,6 +6287,12 @@
 /obj/structure/fermenting_barrel/random/beer,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/cave/minotaurcave)
+"Ey" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog2"
+	},
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/indoors/shelter/town/dwarf)
 "Ez" = (
 /obj/structure/table/wood{
 	dir = 6;
@@ -7941,6 +7979,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"Mn" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog1"
+	},
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/indoors/shelter/town/dwarf)
 "Mo" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/dirt,
@@ -8460,6 +8504,9 @@
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/river)
+"OS" = (
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/shelter/town/dwarf)
 "OT" = (
 /obj/effect/wisp,
 /obj/structure/flora/grass/jungle/b,
@@ -8467,6 +8514,11 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"OU" = (
+/turf/closed/wall/mineral/rogue/pipe{
+	icon_state = "Cog"
+	},
+/area/rogue/indoors/shelter/town/dwarf)
 "OV" = (
 /turf/open/lava,
 /area/rogue/under/cavewet)
@@ -9488,7 +9540,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/reagent_containers/glass/cup/skull,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town/dwarf)
 "Uo" = (
 /obj/structure/rack/rogue,
@@ -9824,7 +9876,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/candle/skull/lit,
-/turf/open/floor/rogue/blocks/stone/stonepattern2,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/town/dwarf)
 "VR" = (
 /obj/machinery/light/rogue/oven/south,
@@ -10132,6 +10184,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "The Deepwoods"
 	})
+"Xy" = (
+/obj/structure/fluff/walldeco/rpainting{
+	icon_state = "Cog1"
+	},
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/indoors/cave/underdark)
 "Xz" = (
 /obj/structure/fluff/statue/myth,
 /turf/open/floor/bronze,
@@ -18385,8 +18443,8 @@ Aj
 Aj
 Aj
 sp
-sJ
-sJ
+OU
+OU
 sp
 KZ
 Aj
@@ -18654,13 +18712,13 @@ sJ
 Bx
 Bx
 sJ
-sp
+be
 JQ
 JQ
 JQ
 Nj
 Nj
-Nj
+Xy
 Aj
 Aj
 Aj
@@ -18781,20 +18839,20 @@ Aj
 Aj
 JQ
 sp
-sJ
-sJ
-sJ
+OU
+Ey
+Mn
 Bx
 Bx
 sJ
 sJ
-sp
+BF
 sp
 JQ
 sp
 sp
-sJ
-sJ
+OU
+Ey
 OE
 OE
 KZ
@@ -18907,8 +18965,8 @@ EI
 Nj
 sp
 sp
-Nk
-sp
+oq
+pj
 Nk
 sp
 Nk
@@ -18921,7 +18979,7 @@ KC
 Bx
 ON
 Fq
-sJ
+OU
 sp
 sp
 sp
@@ -19719,8 +19777,8 @@ KC
 lu
 Cy
 KL
-sJ
-sp
+OU
+be
 sp
 sp
 sJ
@@ -19852,13 +19910,13 @@ sJ
 sp
 sJ
 sJ
-sp
+BF
 sp
 sj
 sp
 sp
-sJ
-sJ
+OU
+Ey
 Aj
 sj
 Wn
@@ -19977,7 +20035,7 @@ Bx
 KC
 KC
 eM
-sp
+pj
 pb
 KC
 Bx
@@ -19990,7 +20048,7 @@ JQ
 JQ
 Nj
 Nj
-Nj
+Xy
 Aj
 Aj
 Aj
@@ -20103,14 +20161,14 @@ nD
 nD
 bz
 sp
-sp
-sp
+be
+BF
 sp
 Bx
 KC
 sp
 sp
-sp
+oq
 pb
 KC
 Bx
@@ -20235,7 +20293,7 @@ nD
 nD
 nD
 sj
-sp
+BF
 jT
 qy
 ks
@@ -20773,7 +20831,7 @@ Rc
 qa
 KC
 Rc
-zq
+CS
 Bx
 Rc
 KC
@@ -20906,7 +20964,7 @@ Rc
 jD
 KC
 Rc
-zq
+CS
 KC
 Rc
 KC
@@ -21312,7 +21370,7 @@ KC
 KC
 KC
 wZ
-sp
+oq
 JQ
 JQ
 JQ
@@ -21445,7 +21503,7 @@ Eh
 KC
 KC
 ww
-sp
+be
 JQ
 JQ
 JQ
@@ -21565,25 +21623,25 @@ FN
 wO
 wO
 sp
+oq
 sp
+pj
 sp
-sp
-sp
-sp
+pj
 sJ
 sJ
 sp
-sp
+BF
 sp
 Vn
 KC
+be
 sp
-sp
-sp
-sp
-sp
-sp
-sJ
+oq
+be
+BF
+be
+pj
 EI
 Aj
 EI
@@ -21717,7 +21775,7 @@ WY
 KC
 HB
 sp
-sJ
+oq
 Aj
 Hl
 KZ
@@ -21838,12 +21896,12 @@ pU
 qy
 RN
 KC
-Bx
-Bx
-KC
-Bx
-Bx
-KC
+OS
+OS
+OS
+OS
+OS
+OS
 Bx
 KC
 KC
@@ -21971,12 +22029,12 @@ kB
 qy
 xb
 KC
-KC
-Bx
-KC
-Bx
-Bx
-KC
+OS
+OS
+OS
+OS
+OS
+OS
 KC
 sp
 sp
@@ -22636,12 +22694,12 @@ vJ
 qy
 xb
 hv
-KC
-Bx
-KC
-KC
-Bx
-KC
+OS
+OS
+OS
+OS
+OS
+OS
 KC
 sp
 sp
@@ -22769,12 +22827,12 @@ pU
 qy
 RN
 Qu
-KC
-Bx
-Bx
-KC
-Bx
-KC
+OS
+OS
+OS
+OS
+OS
+OS
 KC
 KC
 KC
@@ -23030,13 +23088,13 @@ sb
 sp
 sp
 sp
+pj
 sp
 sp
-sp
-sp
+pj
 sJ
 sp
-sJ
+Mn
 sp
 Pv
 KC
@@ -23299,7 +23357,7 @@ wO
 wO
 SP
 SP
-sp
+oq
 fq
 qy
 KC
@@ -23308,7 +23366,7 @@ KC
 KC
 KC
 fK
-sp
+pj
 wO
 wO
 wO
@@ -23441,7 +23499,7 @@ KC
 KC
 KC
 fK
-sp
+oq
 wO
 wO
 wO
@@ -23565,7 +23623,7 @@ OV
 OV
 OV
 OV
-sp
+pj
 sJ
 sp
 sJ
@@ -24230,7 +24288,7 @@ FN
 FN
 wO
 wO
-sp
+oq
 fq
 qy
 KC
