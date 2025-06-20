@@ -2934,6 +2934,7 @@
 /obj/structure/flora/roguegrass/bush/wall/tall{
 	icon_state = "glorybush2"
 	},
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors/mountains)
 "bpa" = (
 /obj/structure/stairs,
@@ -3287,6 +3288,7 @@
 /obj/structure/flora/roguegrass/bush/wall/tall{
 	icon_state = "glorybush1"
 	},
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors/mountains)
 "byF" = (
 /obj/structure/fluff/railing/wood{
@@ -4762,14 +4764,6 @@
 /obj/item/rogueweapon/mace/wsword,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
-"cjk" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
-	})
 "cjU" = (
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "rosehedge8"
@@ -16280,7 +16274,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "rosehedge5"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/rogue/shroud,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
@@ -17007,7 +17001,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall3"
 	},
-/turf/open/dark_filler,
+/turf/open/floor/rogue/shroud,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
@@ -17056,13 +17050,6 @@
 "hKD" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/cand,
 /area/rogue/indoors/shelter/bog)
-"hKO" = (
-/obj/item/reagent_containers/glass/cup/golden,
-/turf/closed/wall/mineral/rogue/decostone/mossy/cand,
-/area/rogue/indoors/town/church/chapel{
-	first_time_text = "HALLOWED GROUND";
-	name = "HALLOWED GROUND"
-	})
 "hKQ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -21537,6 +21524,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall3"
 	},
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors)
 "jHC" = (
 /obj/item/natural/stone,
@@ -27989,7 +27977,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "rosehedge6"
 	},
-/turf/open/floor/grass,
+/turf/open/floor/rogue/shroud,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
@@ -29572,6 +29560,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall3"
 	},
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
@@ -31165,7 +31154,7 @@
 	dir = 8;
 	pixel_x = 27
 	},
-/turf/open/dark_filler,
+/turf/open/floor/rogue/shroud,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
@@ -35741,6 +35730,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall4"
 	},
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
@@ -36002,7 +35992,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall3"
 	},
-/turf/open/dark_filler,
+/turf/open/floor/rogue/shroud,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
@@ -40386,6 +40376,7 @@
 /obj/structure/flora/roguegrass/bush/wall/tall{
 	icon_state = "glorybush1"
 	},
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
@@ -43032,7 +43023,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "Rosehedge1"
 	},
-/turf/open/dark_filler,
+/turf/open/floor/rogue/shroud,
 /area/rogue/indoors/town/church/chapel{
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
@@ -47907,7 +47898,7 @@
 /obj/structure/flora/roguegrass/bush/wall{
 	icon_state = "bushwall3"
 	},
-/turf/open/dark_filler,
+/turf/open/floor/rogue/shroud,
 /area/rogue/outdoors/mountains)
 "vif" = (
 /obj/effect/mist,
@@ -48087,13 +48078,12 @@
 /turf/closed/wall/mineral/rogue/decostone/cand,
 /area/rogue/indoors/shelter/town)
 "vmZ" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
+/obj/structure/flora/roguegrass/bush/wall/tall{
+	icon_state = "tallbush4"
 	},
-/turf/closed/wall/shroud,
-/area/rogue/outdoors{
-	first_time_text = "Stonehedge Borders";
-	name = "far stonehedge"
+/turf/open/floor/rogue/shroud,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
 	})
 "vnp" = (
 /obj/structure/flora/ausbushes/stalkybush,
@@ -138325,7 +138315,7 @@ hZF
 wZY
 hZF
 hZF
-shH
+hZF
 hZp
 qhN
 lvj
@@ -170023,7 +170013,7 @@ cYI
 vlx
 uvs
 hqK
-hKO
+lxH
 hqK
 lxH
 hqK
@@ -184473,7 +184463,7 @@ bcc
 bJy
 btB
 xgj
-afM
+bUc
 rPR
 czB
 aOq
@@ -204976,7 +204966,7 @@ wcF
 aUN
 tcW
 hIV
-pCq
+pWY
 hqU
 yle
 rmY
@@ -217404,9 +217394,9 @@ gCQ
 aQK
 qzW
 toK
-cjk
+vcj
 toK
-cjk
+vcj
 qYZ
 aZy
 aZy
@@ -217606,10 +217596,10 @@ sec
 jQX
 jQX
 toK
-cjk
+vcj
 toK
 toK
-cjk
+vcj
 aZy
 oYm
 aZy
@@ -217808,15 +217798,15 @@ oZz
 oYm
 qYZ
 oYm
-cjk
-cjk
+vcj
+vcj
 toK
 toK
-cjk
+vcj
 jpn
-cjk
-cjk
-cjk
+vcj
+vcj
+vcj
 aZy
 aZy
 aZy
@@ -218006,22 +217996,22 @@ aZy
 itq
 qzW
 aZy
-cjk
+vcj
 jpn
-cjk
+vcj
 jpn
 oYm
-cjk
+vcj
 toK
 oYm
 toK
 jpn
 oYm
 oYm
-cjk
+vcj
 oYm
-cjk
-cjk
+vcj
+vcj
 aZy
 aZy
 aZy
@@ -218207,22 +218197,22 @@ aZy
 itq
 qzW
 jQX
-cjk
-cjk
+vcj
+vcj
 jpn
-cjk
+vcj
 jpn
 jpn
 qYZ
 toK
 jpn
-cjk
+vcj
 jpn
-cjk
+vcj
 jpn
 oYm
 jpn
-cjk
+vcj
 aZy
 toK
 aZy
@@ -218408,8 +218398,8 @@ rKb
 aZy
 qzW
 jQX
-cjk
-cjk
+vcj
+vcj
 oYm
 jpn
 toK
@@ -218420,7 +218410,7 @@ bUc
 pRB
 nlZ
 kFw
-cjk
+vcj
 jpn
 jpn
 jpn
@@ -218830,7 +218820,7 @@ kFw
 kFw
 toK
 toK
-cjk
+vcj
 toK
 aZy
 aZy
@@ -219216,7 +219206,7 @@ aZy
 qzW
 sec
 toK
-cjk
+vcj
 rOE
 vHq
 bRj
@@ -219823,7 +219813,7 @@ qzW
 toK
 tQB
 qYZ
-acn
+vmZ
 ykE
 jty
 qTy
@@ -220024,7 +220014,7 @@ jQX
 jQX
 qYZ
 toK
-cjk
+vcj
 kFw
 mXQ
 nTk
@@ -220226,7 +220216,7 @@ oZz
 jQX
 oZz
 eKm
-cjk
+vcj
 jHy
 kFw
 bUc
@@ -220239,13 +220229,13 @@ xmp
 kax
 uho
 wFi
-acn
+vmZ
 kFw
 kFw
 toK
 aZy
 vcj
-cjk
+vcj
 aZy
 aZy
 aZy
@@ -220443,7 +220433,7 @@ kFw
 nlZ
 kFw
 rxn
-cjk
+vcj
 toK
 toK
 toK
@@ -220632,7 +220622,7 @@ aZy
 toK
 toK
 toK
-cjk
+vcj
 toK
 rxn
 qYZ
@@ -220642,13 +220632,13 @@ bUc
 nlZ
 nlZ
 kFw
-vmZ
-cjk
+vcj
+vcj
 lTD
 toK
-cjk
-cjk
-cjk
+vcj
+vcj
+vcj
 toK
 aZy
 aZy
@@ -220834,8 +220824,8 @@ toK
 toK
 toK
 qYZ
-cjk
-cjk
+vcj
+vcj
 lTD
 toK
 toK
@@ -220844,13 +220834,13 @@ toK
 toK
 qYZ
 lbA
-cjk
+vcj
 aZy
-cjk
+vcj
 toK
 toK
 oZz
-cjk
+vcj
 qYZ
 aZy
 aZy
@@ -221049,7 +221039,7 @@ aZy
 aZy
 aZy
 oZz
-cjk
+vcj
 toK
 toK
 toK
