@@ -103,6 +103,7 @@
 /obj/structure/flora/roguegrass/bush/wall/tall{
 	icon_state = "tallbush4"
 	},
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/grove{
 	first_time_text = "The Great Tree"
 	})
@@ -2931,11 +2932,13 @@
 	name = "Grove"
 	})
 "boU" = (
-/obj/structure/flora/roguegrass/bush/wall/tall{
-	icon_state = "glorybush2"
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall3"
 	},
-/turf/open/floor/rogue/shroud,
-/area/rogue/outdoors/mountains)
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "bpa" = (
 /obj/structure/stairs,
 /obj/structure/spider/stickyweb,
@@ -3285,11 +3288,13 @@
 	first_time_text = "The Twilight Woods"
 	})
 "bys" = (
-/obj/structure/flora/roguegrass/bush/wall/tall{
-	icon_state = "glorybush1"
+/obj/structure/flora/roguegrass/bush/wall{
+	icon_state = "bushwall4"
 	},
-/turf/open/floor/rogue/shroud,
-/area/rogue/outdoors/mountains)
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/grove{
+	first_time_text = "The Great Tree"
+	})
 "byF" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -33019,12 +33024,6 @@
 	first_time_text = "The Sylver Dragonne..";
 	name = "Silver Dragon"
 	})
-"oKa" = (
-/obj/structure/flora/roguegrass/bush/wall{
-	icon_state = "bushwall3"
-	},
-/turf/closed/mineral/rogue/bedrock,
-/area/rogue/outdoors/mountains)
 "oKf" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/table/wood{
@@ -172647,7 +172646,7 @@ ehC
 sYp
 sYp
 jpJ
-oKa
+ehC
 jpJ
 eZc
 dxc
@@ -173459,8 +173458,8 @@ jrZ
 mQl
 jrZ
 dTB
-bys
-boU
+dxc
+eZc
 jrZ
 mQl
 jrZ
@@ -218206,7 +218205,7 @@ jpn
 qYZ
 toK
 jpn
-vcj
+lgz
 jpn
 vcj
 jpn
@@ -218407,8 +218406,8 @@ jpn
 bHK
 pRB
 bUc
-pRB
-nlZ
+bys
+boU
 kFw
 vcj
 jpn
