@@ -38143,7 +38143,8 @@
 /area/rogue/indoors/shelter/town)
 "qQt" = (
 /obj/structure/flora/roguetree/wise{
-	step_x = 5
+	step_x = 5;
+	layer = 5
 	},
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/exposed/church{
