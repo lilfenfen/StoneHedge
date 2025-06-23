@@ -15166,10 +15166,10 @@
 /obj/structure/table/wood{
 	icon_state = "longtable"
 	},
-/obj/item/reagent_containers/food/snacks/store/cheesewheel,
 /obj/effect/decal/stone/mossy{
 	dir = 8
 	},
+/obj/item/reagent_containers/food/snacks/rogue/cheddar/aged,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -23769,15 +23769,15 @@
 	})
 "kFR" = (
 /obj/structure/closet/crate/chest,
-/obj/item/reagent_containers/food/snacks/rogue/fryfish/carp,
-/obj/item/reagent_containers/food/snacks/rogue/fryfish/carp,
-/obj/item/reagent_containers/food/snacks/rogue/fryfishfresh/ratfish,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/fish/carp,
+/obj/item/reagent_containers/food/snacks/fish/carp,
+/obj/item/reagent_containers/food/snacks/fishfresh/ratfish,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/town/garrison{
 	first_time_text = "Adventurers Guild";
@@ -38143,8 +38143,8 @@
 /area/rogue/indoors/shelter/town)
 "qQt" = (
 /obj/structure/flora/roguetree/wise{
-	step_x = 5;
-	layer = 5
+	pixel_x = -12;
+	pixel_y = 6
 	},
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/exposed/church{
@@ -42669,6 +42669,10 @@
 	first_time_text = "HALLOWED GROUND";
 	name = "HALLOWED GROUND"
 	})
+"sSb" = (
+/obj/structure/stairs/stone/d,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
 "sSk" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
@@ -50541,6 +50545,18 @@
 /obj/item/bedsheet/rogue/double_pelt,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"wxE" = (
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/obj/structure/stairs,
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/outdoors{
+	first_time_text = "Stonehedge Borders";
+	name = "far stonehedge"
+	})
 "wxO" = (
 /obj/structure/rack/rogue/shelf,
 /obj/structure/table/wood{
@@ -170819,7 +170835,7 @@ jrZ
 jrZ
 jrZ
 jrZ
-vlx
+sSb
 hqK
 lYt
 aUN
@@ -171021,7 +171037,7 @@ jrZ
 jrZ
 jrZ
 jrZ
-vlx
+sSb
 wGN
 qVR
 aUN
@@ -171223,7 +171239,7 @@ jrZ
 jrZ
 jrZ
 jrZ
-vlx
+sSb
 hqK
 hqK
 hTs
@@ -179640,9 +179656,9 @@ aZy
 nWu
 xCW
 ckJ
-tiA
-kUm
+ckJ
 jdS
+nyq
 nyq
 nyq
 nMr
@@ -179842,9 +179858,9 @@ aZy
 hiA
 eOF
 ckJ
-tiA
-kUm
+ckJ
 jdS
+nyq
 nyq
 nyq
 hiA
@@ -206442,7 +206458,7 @@ aZy
 aZy
 aZy
 aZy
-kTR
+wxE
 kTR
 kTR
 jQX
@@ -214587,7 +214603,7 @@ aZy
 nWu
 dYB
 dYB
-jdS
+tiA
 nyq
 nyq
 nyq
@@ -214789,7 +214805,7 @@ aZy
 kvk
 dYB
 dtr
-jdS
+tiA
 nyq
 nyq
 nyq
